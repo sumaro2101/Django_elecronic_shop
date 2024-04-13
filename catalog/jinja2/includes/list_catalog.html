@@ -1,0 +1,16 @@
+<ul class="list-group list-group-flush">
+    {% for category in categories %}
+    <li class="list-group-item">
+        <a class="btn p-0 dropdown-toggle" href=#{{category.id}} data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls={{category.id}}>{{category.name}}</a>
+        <div class="collapse" id={{category.id}}>
+            {% for item in category.sub_categories %}
+            <a class="btn p-0 d-flex flex-column text-start" role="button" href="catalog/{{category.id}}" role="button" style="font-size: small;">
+                {{item}}
+            </a>
+            {% endfor %}
+        </div>
+        </li>
+        
+    {% endfor %}
+</ul>
+
