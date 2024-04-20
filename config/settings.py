@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    #django-extensions
-    'django-extensions',
+    #django_extensions
+    'django_extensions',
     
     #apps
     'catalog.apps.CatalogConfig',
@@ -82,8 +82,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'elshop',
+        'USER': 'postgres',
+        'HOST': 'localhost',
+        'PORT': 5433,
+        'PASSWORD': os.environ.get('PASSWORD_POSTGRES'),
     }
 }
 
