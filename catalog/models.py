@@ -28,6 +28,7 @@ class Product(models.Model):
     discontinued = models.SmallIntegerField(default=0, choices=[(0, 'В продаже'), (1, 'Снято с продажи')] ,verbose_name='Статус')
     created_at = models.DateTimeField(auto_now=False, auto_now_add=True, verbose_name='Дата создания')
     created_up = models.DateTimeField(auto_now=True, auto_now_add=False, verbose_name='Дата обновления')
+    manufactured_at = models.DateField(auto_now=False, auto_now_add=False, null=True, blank=True)
     
     
     def __str__(self) -> str:
