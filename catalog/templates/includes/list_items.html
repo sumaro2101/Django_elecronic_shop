@@ -1,6 +1,6 @@
-{% macro list_items(sale_list) %}
+{% load static %}
 <ul class='row p-0 justify-content-evenly'>
-{% for item in sale_list %}
+{% for item in list_items %}
 <a href="/1/" class="card col-1 m-1 pt-2 link-underline link-underline-opacity-0" style="width: 12rem; row-grap: 10px; background-color: rgb(238, 238, 238);">
   {% if item.price != item.sale %}
   <div class="position-absolute border text-center" style="left: -0.7px; width: 50px; background-color: rgb(0, 173, 181);">{{item.procent}}%</div>
@@ -20,5 +20,4 @@
     </div>
 </a>
 {% endfor %}
-</ul> 
-{% endmacro %}    
+</ul>  

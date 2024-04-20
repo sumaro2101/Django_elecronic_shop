@@ -1,8 +1,11 @@
 {% extends "includes/index.html" %}
+{% load static %}
 {% block content %}
 
 <div class="p-2">
+
     <h7 class="ps-2">В каких случаях необходимо писать заявку?</h7>
+
     <ul class="mt-2 mb-4 list-group list-group-flush">
         <li class="list-group-item bg-body-tertiary" style="font-size: 15px;">Технические проблемы</li>
         <li class="list-group-item bg-body-tertiary" style="font-size: 15px;">Гарантия</li>
@@ -10,10 +13,14 @@
         <li class="list-group-item bg-body-tertiary" style="font-size: 15px;">Доставка</li>
         <li class="list-group-item bg-body-tertiary" style="font-size: 15px;">Возврат</li>
     </ul>
+
     <h7 class="ps-2" style="font-size: 16px;">Если вам все таки необходимо написать нам письмо форма заявки снизу</h7>
+
     <div class="card p-3 mt-3 ">
+
         <form class="row g-3needs-validation" method="post">
             {{ csrf_input }}
+
             <div class="col-md-4">
                 <label for="validationCustom01" class="form-label">Имя</label>
                 <input name="name" type="text" class="form-control mb-3" id="validationCustom01" placeholder="Максим" required>
@@ -21,13 +28,17 @@
                 Хорошо!
                 </div>
             </div>
+
             <div class="col-md-4">
                 <label for="validationCustom02" class="form-label">Эмеил</label>
                 <input name="email" type="email" class="form-control mb-3" id="validationCustom02" placeholder="example@gmail.com" required>
+
                 <div class="valid-feedback">
                 Хорошо!
                 </div>
+
             </div>
+
             <div class="col-md-4">
                 <label for="validationCustom04" class="form-label">Заявка</label>
                 <select name="statement" class="form-select mb-3" id="validationCustom04" required>
@@ -38,37 +49,51 @@
                 <option value="dilivery">Доставка</option>
                 <option value="return">Возврат</option>
                 </select>
+
                 <div class="invalid-feedback">
                 Пожалуйста выберете вид заявки
                 </div>
+
             </div>
+
             <div class="col-md-6">
                 <label for="validationCustom03" class="form-label">Номер телефона</label>
                 <input class="form-control mb-3" type="tel" name="phone" placeholder="+7(000)000-00-00"  pattern="[\+]\d{11}" minlength="12" maxlength="12" required/>
+
                 <div class="invalid-feedback">
                 Пожалуйста введите корректный номер телефона
                 </div>
+
             </div>
+
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Ваш вопрос</label>
                 <textarea name="text_question" class="form-control mb-3" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
+
             <div class="col-12">
+
                 <div class="form-check">
                 <input class="form-check-input mb-3" type="checkbox" value="" id="invalidCheck" required>
                 <label class="form-check-label" for="invalidCheck">
                     Правила обработки информации
                 </label>
+
                 <div class="invalid-feedback">
                     Вы должны согласиться с правилами обработки информации
                 </div>
+
                 </div>
+
             </div>
+
             <div class="col-12">
                 <button class="btn text-white" style="background-color: rgb(57, 62, 70);" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Отправить заявку</button>
             </div>
+
         </form>
     </div>
+
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
