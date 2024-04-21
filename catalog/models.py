@@ -5,7 +5,7 @@ from django.db import models
    
 class Category(models.Model):
     
-    category = models.CharField(max_length=50, verbose_name='Категория', primary_key=True)
+    category = models.CharField(max_length=50, verbose_name='Категория', primary_key=True, db_column='category')
     descriptions = models.TextField(verbose_name='Описание', null=True, blank=True)
     
     def __str__(self) -> str:
@@ -19,7 +19,7 @@ class Category(models.Model):
     
 class Companies(models.Model):
     
-    company = models.CharField(max_length=100, primary_key=True, verbose_name='Компания')
+    company = models.CharField(max_length=100, primary_key=True, verbose_name='Компания', db_column='company')
     country = models.CharField(max_length=50, null=True, blank=True, verbose_name='Страна')
     adress = models.CharField(max_length=200, null=True, blank=True, verbose_name='Адресс')
     
@@ -36,8 +36,8 @@ class Product(models.Model):
     name = models.CharField(max_length=100, verbose_name='Товар')
     descriptions = models.TextField(verbose_name='Описание', null=True, blank=True)
     image_item = models.ImageField(upload_to='products/', verbose_name='Изображение', null=True, blank=True)
-    company = models.ForeignKey(Companies, verbose_name='Компания', on_delete=models.PROTECT)
-    category = models.ForeignKey(Category, verbose_name='Категория', on_delete=models.CASCADE)
+    company = models.ForeignKey(Companies, verbose_name='Компания', on_delete=models.PROTECT, db_column='company')
+    category = models.ForeignKey(Category, verbose_name='Категория', on_delete=models.CASCADE, db_column='category')
     price = models.DecimalField(max_digits=8, decimal_places=2, verbose_name='Цена')
     discount = models.FloatField(verbose_name='Скидка', default=1)
     quantity = models.IntegerField(verbose_name='Количество')
@@ -58,4 +58,3 @@ class Product(models.Model):
         ]
         ordering = ['-created_at']
         
-    
