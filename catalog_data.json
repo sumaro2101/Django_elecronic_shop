@@ -1,0 +1,357 @@
+[
+    {
+        "model": "catalog.category",
+        "pk": "Прочее",
+        "fields": {
+            "descriptions": null
+        }
+    },
+    {
+        "model": "catalog.category",
+        "pk": "Планшеты",
+        "fields": {
+            "descriptions": null
+        }
+    },
+    {
+        "model": "catalog.category",
+        "pk": "Телефоны",
+        "fields": {
+            "descriptions": null
+        }
+    },
+    {
+        "model": "catalog.category",
+        "pk": "Компьютеры",
+        "fields": {
+            "descriptions": null
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Apple",
+        "fields": {
+            "country": null,
+            "adress": null
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Asus",
+        "fields": {
+            "country": null,
+            "adress": null
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Infinix",
+        "fields": {
+            "country": null,
+            "adress": null
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Lenovo",
+        "fields": {
+            "country": null,
+            "adress": null
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "MSI",
+        "fields": {
+            "country": null,
+            "adress": null
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Poco",
+        "fields": {
+            "country": null,
+            "adress": null
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "ROG",
+        "fields": {
+            "country": null,
+            "adress": null
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Samsung",
+        "fields": {
+            "country": null,
+            "adress": null
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Xiaomi",
+        "fields": {
+            "country": null,
+            "adress": null
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 1,
+        "fields": {
+            "name": "Macbook 16 pro",
+            "descriptions": "",
+            "image_item": "",
+            "company": "Apple",
+            "category": "Компьютеры",
+            "price": "456000.00",
+            "discount": 1.0,
+            "quantity": 3,
+            "discontinued": 0,
+            "created_at": "2024-04-21T15:43:14.091Z",
+            "created_up": "2024-04-21T15:43:14.091Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 2,
+        "fields": {
+            "name": "ROG Zephyrus g16",
+            "descriptions": null,
+            "image_item": "",
+            "company": "ROG",
+            "category": "Компьютеры",
+            "price": "224000.00",
+            "discount": 0.83,
+            "quantity": 5,
+            "discontinued": 0,
+            "created_at": "2024-04-21T15:47:08.282Z",
+            "created_up": "2024-04-21T15:47:08.282Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 3,
+        "fields": {
+            "name": "AirPods 2 pro",
+            "descriptions": null,
+            "image_item": "",
+            "company": "Apple",
+            "category": "Прочее",
+            "price": "54000.00",
+            "discount": 0.97,
+            "quantity": 20,
+            "discontinued": 0,
+            "created_at": "2024-04-21T15:49:19.635Z",
+            "created_up": "2024-04-21T15:49:19.635Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 5,
+        "fields": {
+            "name": "IPhone 16 Pro Max",
+            "descriptions": null,
+            "image_item": "",
+            "company": "Apple",
+            "category": "Телефоны",
+            "price": "160000.00",
+            "discount": 0.8,
+            "quantity": 15,
+            "discontinued": 0,
+            "created_at": "2024-04-21T15:54:32.788Z",
+            "created_up": "2024-04-21T15:54:32.788Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 6,
+        "fields": {
+            "name": "MSI",
+            "descriptions": null,
+            "image_item": "",
+            "company": "MSI",
+            "category": "Компьютеры",
+            "price": "223000.00",
+            "discount": 1.0,
+            "quantity": 6,
+            "discontinued": 0,
+            "created_at": "2024-04-21T15:55:39.557Z",
+            "created_up": "2024-04-21T15:55:39.557Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 7,
+        "fields": {
+            "name": "Lenovo Legion 7",
+            "descriptions": null,
+            "image_item": "",
+            "company": "Lenovo",
+            "category": "Компьютеры",
+            "price": "180000.00",
+            "discount": 1.0,
+            "quantity": 14,
+            "discontinued": 0,
+            "created_at": "2024-04-21T15:56:16.140Z",
+            "created_up": "2024-04-21T15:56:16.140Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 8,
+        "fields": {
+            "name": "Samsung s23",
+            "descriptions": null,
+            "image_item": "",
+            "company": "Samsung",
+            "category": "Телефоны",
+            "price": "90000.00",
+            "discount": 1.0,
+            "quantity": 30,
+            "discontinued": 0,
+            "created_at": "2024-04-21T15:57:03.315Z",
+            "created_up": "2024-04-21T15:57:03.315Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 9,
+        "fields": {
+            "name": "Poco",
+            "descriptions": null,
+            "image_item": "",
+            "company": "Poco",
+            "category": "Телефоны",
+            "price": "40000.00",
+            "discount": 1.0,
+            "quantity": 43,
+            "discontinued": 0,
+            "created_at": "2024-04-21T15:57:32.983Z",
+            "created_up": "2024-04-21T15:57:32.983Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 10,
+        "fields": {
+            "name": "MAC",
+            "descriptions": null,
+            "image_item": "",
+            "company": "Apple",
+            "category": "Компьютеры",
+            "price": "760000.00",
+            "discount": 1.0,
+            "quantity": 2,
+            "discontinued": 0,
+            "created_at": "2024-04-21T15:58:23.300Z",
+            "created_up": "2024-04-21T15:58:23.300Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 11,
+        "fields": {
+            "name": "Xiaomi",
+            "descriptions": null,
+            "image_item": "",
+            "company": "Xiaomi",
+            "category": "Телефоны",
+            "price": "55000.00",
+            "discount": 0.9,
+            "quantity": 55,
+            "discontinued": 0,
+            "created_at": "2024-04-21T15:59:18.046Z",
+            "created_up": "2024-04-21T15:59:18.046Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 12,
+        "fields": {
+            "name": "ROG strix",
+            "descriptions": null,
+            "image_item": "",
+            "company": "ROG",
+            "category": "Компьютеры",
+            "price": "180000.00",
+            "discount": 0.97,
+            "quantity": 9,
+            "discontinued": 0,
+            "created_at": "2024-04-21T16:00:13.766Z",
+            "created_up": "2024-04-21T16:00:13.766Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 13,
+        "fields": {
+            "name": "Asus Zenbook",
+            "descriptions": null,
+            "image_item": "",
+            "company": "Asus",
+            "category": "Компьютеры",
+            "price": "90000.00",
+            "discount": 0.91,
+            "quantity": 17,
+            "discontinued": 0,
+            "created_at": "2024-04-21T16:00:55.638Z",
+            "created_up": "2024-04-21T16:00:55.638Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 14,
+        "fields": {
+            "name": "IPhone 16",
+            "descriptions": null,
+            "image_item": "",
+            "company": "Apple",
+            "category": "Телефоны",
+            "price": "120000.00",
+            "discount": 0.8,
+            "quantity": 34,
+            "discontinued": 0,
+            "created_at": "2024-04-21T16:01:49.628Z",
+            "created_up": "2024-04-21T16:01:49.628Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 15,
+        "fields": {
+            "name": "IPhone 16 Plus",
+            "descriptions": null,
+            "image_item": "",
+            "company": "Apple",
+            "category": "Телефоны",
+            "price": "140000.00",
+            "discount": 0.8,
+            "quantity": 24,
+            "discontinued": 0,
+            "created_at": "2024-04-21T16:02:11.075Z",
+            "created_up": "2024-04-21T16:02:11.075Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 16,
+        "fields": {
+            "name": "IPhone 16 Pro",
+            "descriptions": null,
+            "image_item": "",
+            "company": "Apple",
+            "category": "Телефоны",
+            "price": "130000.00",
+            "discount": 0.8,
+            "quantity": 39,
+            "discontinued": 0,
+            "created_at": "2024-04-21T16:02:32.068Z",
+            "created_up": "2024-04-21T16:02:32.068Z"
+        }
+    }
+]

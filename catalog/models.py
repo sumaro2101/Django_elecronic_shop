@@ -1,7 +1,8 @@
 from django.db import models
 
-# Create your models here.
-
+# Create your models here.  
+        
+   
 class Category(models.Model):
     
     category = models.CharField(max_length=50, verbose_name='Категория', primary_key=True)
@@ -12,24 +13,24 @@ class Category(models.Model):
     
     
     class Meta:
-        verbose_name = 'катерогий'
-        verbose_name_plural = 'категории'
-  
-        
+        verbose_name = 'катерогии'
+        verbose_name_plural = 'категорий'
+    
+    
 class Companies(models.Model):
     
     company = models.CharField(max_length=100, primary_key=True, verbose_name='Компания')
-    county = models.CharField(max_length=50, null=True, blank=True, verbose_name='Страна')
+    country = models.CharField(max_length=50, null=True, blank=True, verbose_name='Страна')
     adress = models.CharField(max_length=200, null=True, blank=True, verbose_name='Адресс')
     
     def __str__(self) -> str:
         return self.company
     
     class Meta:
-        verbose_name = 'компаний'
-        verbose_name_plural = 'компании'
-   
-    
+        verbose_name = 'компании'
+        verbose_name_plural = 'компаний'
+
+
 class Product(models.Model):
     
     name = models.CharField(max_length=100, verbose_name='Товар')
@@ -50,8 +51,8 @@ class Product(models.Model):
     
     
     class Meta:
-        verbose_name = 'товаров'
-        verbose_name_plural= 'товары'
+        verbose_name = 'товары'
+        verbose_name_plural= 'товаров'
         constraints = [
             models.CheckConstraint(check=models.Q(price__gte=0, quantity__gte=0), name='price_quantity_gte-0'),
         ]
