@@ -1,0 +1,482 @@
+[
+    {
+        "model": "catalog.category",
+        "pk": "Прочее",
+        "fields": {
+            "descriptions": null
+        }
+    },
+    {
+        "model": "catalog.category",
+        "pk": "Планшеты",
+        "fields": {
+            "descriptions": null
+        }
+    },
+    {
+        "model": "catalog.category",
+        "pk": "Телефоны",
+        "fields": {
+            "descriptions": null
+        }
+    },
+    {
+        "model": "catalog.category",
+        "pk": "Компьютеры",
+        "fields": {
+            "descriptions": null
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Apple",
+        "fields": {
+            "country": null,
+            "adress": null
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Asus",
+        "fields": {
+            "country": null,
+            "adress": null
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Infinix",
+        "fields": {
+            "country": null,
+            "adress": null
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Lenovo",
+        "fields": {
+            "country": null,
+            "adress": null
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "MSI",
+        "fields": {
+            "country": null,
+            "adress": null
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Poco",
+        "fields": {
+            "country": null,
+            "adress": null
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "ROG",
+        "fields": {
+            "country": null,
+            "adress": null
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Samsung",
+        "fields": {
+            "country": null,
+            "adress": null
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Xiaomi",
+        "fields": {
+            "country": null,
+            "adress": null
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 1,
+        "fields": {
+            "name": "Macbook 16 pro",
+            "descriptions": "",
+            "image_item": "",
+            "company_id": "Apple",
+            "category_id": "Компьютеры",
+            "price": "456000.00",
+            "discount": 1.0,
+            "quantity": 3,
+            "discontinued": 0,
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 2,
+        "fields": {
+            "name": "ROG Zephyrus g16",
+            "descriptions": null,
+            "image_item": "",
+            "company_id": "ROG",
+            "category_id": "Компьютеры",
+            "price": "224000.00",
+            "discount": 0.83,
+            "quantity": 5,
+            "discontinued": 0,
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 3,
+        "fields": {
+            "name": "AirPods 2 pro",
+            "descriptions": null,
+            "image_item": "",
+            "company_id": "Apple",
+            "category_id": "Прочее",
+            "price": "54000.00",
+            "discount": 0.97,
+            "quantity": 20,
+            "discontinued": 0,
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 5,
+        "fields": {
+            "name": "IPhone 16 Pro Max",
+            "descriptions": null,
+            "image_item": "",
+            "company_id": "Apple",
+            "category_id": "Телефоны",
+            "price": "160000.00",
+            "discount": 0.8,
+            "quantity": 15,
+            "discontinued": 0,
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 6,
+        "fields": {
+            "name": "MSI",
+            "descriptions": null,
+            "image_item": "",
+            "company_id": "MSI",
+            "category_id": "Компьютеры",
+            "price": "223000.00",
+            "discount": 1.0,
+            "quantity": 6,
+            "discontinued": 0,
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 7,
+        "fields": {
+            "name": "Lenovo Legion 7",
+            "descriptions": null,
+            "image_item": "",
+            "company_id": "Lenovo",
+            "category_id": "Компьютеры",
+            "price": "180000.00",
+            "discount": 1.0,
+            "quantity": 14,
+            "discontinued": 0,
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 8,
+        "fields": {
+            "name": "Samsung s23",
+            "descriptions": null,
+            "image_item": "",
+            "company_id": "Samsung",
+            "category_id": "Телефоны",
+            "price": "90000.00",
+            "discount": 1.0,
+            "quantity": 30,
+            "discontinued": 0,
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 9,
+        "fields": {
+            "name": "Poco",
+            "descriptions": null,
+            "image_item": "",
+            "company_id": "Poco",
+            "category_id": "Телефоны",
+            "price": "40000.00",
+            "discount": 1.0,
+            "quantity": 43,
+            "discontinued": 0,
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 10,
+        "fields": {
+            "name": "MAC",
+            "descriptions": null,
+            "image_item": "",
+            "company_id": "Apple",
+            "category_id": "Компьютеры",
+            "price": "760000.00",
+            "discount": 1.0,
+            "quantity": 2,
+            "discontinued": 0,
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 11,
+        "fields": {
+            "name": "Xiaomi",
+            "descriptions": null,
+            "image_item": "",
+            "company_id": "Xiaomi",
+            "category_id": "Телефоны",
+            "price": "55000.00",
+            "discount": 0.9,
+            "quantity": 55,
+            "discontinued": 0,
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 12,
+        "fields": {
+            "name": "ROG strix",
+            "descriptions": null,
+            "image_item": "",
+            "company_id": "ROG",
+            "category_id": "Компьютеры",
+            "price": "180000.00",
+            "discount": 0.97,
+            "quantity": 9,
+            "discontinued": 0,
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 13,
+        "fields": {
+            "name": "Asus Zenbook",
+            "descriptions": null,
+            "image_item": "",
+            "company_id": "Asus",
+            "category_id": "Компьютеры",
+            "price": "90000.00",
+            "discount": 0.91,
+            "quantity": 17,
+            "discontinued": 0,
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 14,
+        "fields": {
+            "name": "IPhone 16",
+            "descriptions": null,
+            "image_item": "",
+            "company_id": "Apple",
+            "category_id": "Телефоны",
+            "price": "120000.00",
+            "discount": 0.8,
+            "quantity": 34,
+            "discontinued": 0,
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 15,
+        "fields": {
+            "name": "IPhone 16 Plus",
+            "descriptions": null,
+            "image_item": "",
+            "company_id": "Apple",
+            "category_id": "Телефоны",
+            "price": "140000.00",
+            "discount": 0.8,
+            "quantity": 24,
+            "discontinued": 0,
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 16,
+        "fields": {
+            "name": "IPhone 16 Pro",
+            "descriptions": null,
+            "image_item": "",
+            "company_id": "Apple",
+            "category_id": "Телефоны",
+            "price": "130000.00",
+            "discount": 0.8,
+            "quantity": 39,
+            "discontinued": 0,
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
+        }
+    },
+    {
+        "model": "catalog.contact",
+        "pk": 1,
+        "fields": {
+            "title": "Связь с нами",
+            "text_to_form": "В каких случаях необходимо писать заявку?",
+            "text_title_form": "Если вам все таки необходимо написать нам письмо форма заявки снизу"
+        }
+    },
+    {
+        "model": "catalog.statementlist",
+        "pk": 1,
+        "fields": {
+            "contact_id": 1,
+            "statement": "Технические проблемы"
+        }
+    },
+    {
+        "model": "catalog.statementlist",
+        "pk": 2,
+        "fields": {
+            "contact_id": 1,
+            "statement": "Гарантия"
+        }
+    },
+    {
+        "model": "catalog.statementlist",
+        "pk": 3,
+        "fields": {
+            "contact_id": 1,
+            "statement": "Общие вопросы"
+        }
+    },
+    {
+        "model": "catalog.statementlist",
+        "pk": 4,
+        "fields": {
+            "contact_id": 1,
+            "statement": "Доставка"
+        }
+    },
+    {
+        "model": "catalog.statementlist",
+        "pk": 5,
+        "fields": {
+            "contact_id": 1,
+            "statement": "Возврат"
+        }
+    },
+    {
+        "model": "catalog.formcontact",
+        "pk": 1,
+        "fields": {
+            "name": "Имя",
+            "first_name": "Максим",
+            "email": "Эмеил",
+            "email_fill": "example@gmail.com",
+            "tel": "Номер телефона",
+            "tel_fill": "+7(000)000-00-00",
+            "question": "Ваш вопрос",
+            "ruls": "Правила обработки информации",
+            "button": "Отправить заявку"
+        }
+    },
+    {
+        "model": "catalog.statementform",
+        "pk": 1,
+        "fields": {
+            "form_id": 1,
+            "statement_form": "Вид заявки"
+        }
+    },
+    {
+        "model": "catalog.statementform",
+        "pk": 2,
+        "fields": {
+            "form_id": 1,
+            "statement_form": "Технические проблемы"
+        }
+    },
+    {
+        "model": "catalog.statementform",
+        "pk": 3,
+        "fields": {
+            "form_id": 1,
+            "statement_form": "Гарантия"
+        }
+    },
+    {
+        "model": "catalog.statementform",
+        "pk": 4,
+        "fields": {
+            "form_id": 1,
+            "statement_form": "Общие вопросы"
+        }
+    },
+    {
+        "model": "catalog.statementform",
+        "pk": 5,
+        "fields": {
+            "form_id": 1,
+            "statement_form": "Доставка"
+        }
+    },
+    {
+        "model": "catalog.statementform",
+        "pk": 6,
+        "fields": {
+            "form_id": 1,
+            "statement_form": "Возврат"
+        }
+    },
+    {
+        "model": "catalog.informationcontact",
+        "pk": 1,
+        "fields": {
+            "title": "Наши контакты:",
+            "email": "Эмеил:",
+            "email_value": "elshopcompany_id@gmail.com",
+            "tel": "Телефон:_id",
+            "tel_value": "+7 (499) 922-89-74",
+            "fax": "Факс:",
+            "fax_value": "+7 (499) 922-89-74"
+        }
+    }
+]

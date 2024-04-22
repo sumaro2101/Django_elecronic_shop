@@ -1,0 +1,49 @@
+<form class="row g-3needs-validation" method="post">
+
+    {% csrf_token %}
+
+    <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">{{ name }}</label>
+        <input name="name" type="text" class="form-control mb-3" id="validationCustom01" placeholder="{{ name_example }}" required>
+    </div>
+
+    <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">{{ email }}</label>
+        <input name="email" type="email" class="form-control mb-3" id="validationCustom02" placeholder="{{ mask_email }}" required>
+    </div>
+
+    <div class="col-md-4">
+        <label for="validationCustom04" class="form-label">{{ statement }}</label>
+        <select name="statement" class="form-select mb-3" id="validationCustom04" required>
+        <option selected disabled value="">{{ type_statement }}</option>
+        {% for option in options %}
+        <option value="{{ forloop.counter }}">{{ option.statement_form }}</option>
+        {% endfor %}
+        </select>
+    </div>
+
+    <div class="col-md-6">
+        <label for="validationCustom03" class="form-label">{{ tel }}</label>
+        <input class="form-control mb-3" type="tel" name="phone" placeholder="{{ mask_tel }}"  pattern="[\+]\d{11}" minlength="12" maxlength="12" required/>
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">{{ question }}</label>
+        <textarea name="text_question" class="form-control mb-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+    <div class="col-12">
+        <div class="form-check">
+        <input class="form-check-input mb-3" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+            {{ ruls }}
+        </label>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <button class="btn text-white" style="background-color: rgb(57, 62, 70);" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">{{ button_ }}</button>
+    </div>
+
+</form>
+</div>
