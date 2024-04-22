@@ -2,7 +2,7 @@ from django.core.management import BaseCommand
 from config.settings import BASE_DIR
 import json
 
-from catalog.models import Product, Category, Companies
+from catalog.models import Product, Category, Companies, StatementList, Contact, StatementForm, InformationContact, FormContact
 
 
 class Command(BaseCommand):
@@ -12,6 +12,7 @@ class Command(BaseCommand):
     
     @staticmethod
     def json_read(path: str , model: str) -> list[dict]:
+        
         with open(BASE_DIR / path) as file:
             json_file = json.load(file)
             list_category = [item for item in json_file if model in item['model']]
@@ -20,7 +21,7 @@ class Command(BaseCommand):
     
     def handle(self, *args, **options) -> str | None:
         
-        models = (Companies, Category, Product)
+        models = (Companies, Category, Product, Contact, StatementList, FormContact, StatementForm, InformationContact)
         [model.objects.all().delete() for model in list(models)[::-1]]
 
         for model in models:

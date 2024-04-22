@@ -1,27 +1,27 @@
 [
     {
-        "model": "catalog.category_id",
+        "model": "catalog.category",
         "pk": "Прочее",
         "fields": {
             "descriptions": null
         }
     },
     {
-        "model": "catalog.category_id",
+        "model": "catalog.category",
         "pk": "Планшеты",
         "fields": {
             "descriptions": null
         }
     },
     {
-        "model": "catalog.category_id",
+        "model": "catalog.category",
         "pk": "Телефоны",
         "fields": {
             "descriptions": null
         }
     },
     {
-        "model": "catalog.category_id",
+        "model": "catalog.category",
         "pk": "Компьютеры",
         "fields": {
             "descriptions": null
@@ -112,8 +112,8 @@
             "discount": 1.0,
             "quantity": 3,
             "discontinued": 0,
-            "created_at": "2024-04-21T19:35:02.013Z",
-            "created_up": "2024-04-21T19:35:02.013Z"
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
         }
     },
     {
@@ -129,8 +129,8 @@
             "discount": 0.83,
             "quantity": 5,
             "discontinued": 0,
-            "created_at": "2024-04-21T19:35:02.013Z",
-            "created_up": "2024-04-21T19:35:02.013Z"
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
         }
     },
     {
@@ -146,8 +146,8 @@
             "discount": 0.97,
             "quantity": 20,
             "discontinued": 0,
-            "created_at": "2024-04-21T19:35:02.013Z",
-            "created_up": "2024-04-21T19:35:02.013Z"
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
         }
     },
     {
@@ -163,8 +163,8 @@
             "discount": 0.8,
             "quantity": 15,
             "discontinued": 0,
-            "created_at": "2024-04-21T19:35:02.013Z",
-            "created_up": "2024-04-21T19:35:02.013Z"
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
         }
     },
     {
@@ -180,8 +180,8 @@
             "discount": 1.0,
             "quantity": 6,
             "discontinued": 0,
-            "created_at": "2024-04-21T19:35:02.013Z",
-            "created_up": "2024-04-21T19:35:02.013Z"
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
         }
     },
     {
@@ -197,8 +197,8 @@
             "discount": 1.0,
             "quantity": 14,
             "discontinued": 0,
-            "created_at": "2024-04-21T19:35:02.013Z",
-            "created_up": "2024-04-21T19:35:02.013Z"
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
         }
     },
     {
@@ -214,8 +214,8 @@
             "discount": 1.0,
             "quantity": 30,
             "discontinued": 0,
-            "created_at": "2024-04-21T19:35:02.013Z",
-            "created_up": "2024-04-21T19:35:02.013Z"
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
         }
     },
     {
@@ -231,8 +231,8 @@
             "discount": 1.0,
             "quantity": 43,
             "discontinued": 0,
-            "created_at": "2024-04-21T19:35:02.013Z",
-            "created_up": "2024-04-21T19:35:02.013Z"
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
         }
     },
     {
@@ -248,8 +248,8 @@
             "discount": 1.0,
             "quantity": 2,
             "discontinued": 0,
-            "created_at": "2024-04-21T19:35:02.013Z",
-            "created_up": "2024-04-21T19:35:02.013Z"
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
         }
     },
     {
@@ -265,8 +265,8 @@
             "discount": 0.9,
             "quantity": 55,
             "discontinued": 0,
-            "created_at": "2024-04-21T19:35:02.013Z",
-            "created_up": "2024-04-21T19:35:02.013Z"
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
         }
     },
     {
@@ -282,8 +282,8 @@
             "discount": 0.97,
             "quantity": 9,
             "discontinued": 0,
-            "created_at": "2024-04-21T19:35:02.013Z",
-            "created_up": "2024-04-21T19:35:02.013Z"
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
         }
     },
     {
@@ -299,8 +299,8 @@
             "discount": 0.91,
             "quantity": 17,
             "discontinued": 0,
-            "created_at": "2024-04-21T19:35:02.013Z",
-            "created_up": "2024-04-21T19:35:02.013Z"
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
         }
     },
     {
@@ -316,8 +316,8 @@
             "discount": 0.8,
             "quantity": 34,
             "discontinued": 0,
-            "created_at": "2024-04-21T19:35:02.013Z",
-            "created_up": "2024-04-21T19:35:02.013Z"
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
         }
     },
     {
@@ -333,8 +333,8 @@
             "discount": 0.8,
             "quantity": 24,
             "discontinued": 0,
-            "created_at": "2024-04-21T19:35:02.013Z",
-            "created_up": "2024-04-21T19:35:02.013Z"
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
         }
     },
     {
@@ -350,8 +350,133 @@
             "discount": 0.8,
             "quantity": 39,
             "discontinued": 0,
-            "created_at": "2024-04-21T19:35:02.013Z",
-            "created_up": "2024-04-21T19:35:02.013Z"
+            "created_at": "2024-04-22T05:45:39.731Z",
+            "created_up": "2024-04-22T05:45:39.731Z"
+        }
+    },
+    {
+        "model": "catalog.contact",
+        "pk": 1,
+        "fields": {
+            "title": "Связь с нами",
+            "text_to_form": "В каких случаях необходимо писать заявку?",
+            "text_title_form": "Если вам все таки необходимо написать нам письмо форма заявки снизу"
+        }
+    },
+    {
+        "model": "catalog.statementlist",
+        "pk": 1,
+        "fields": {
+            "contact_id": 1,
+            "statement": "Технические проблемы"
+        }
+    },
+    {
+        "model": "catalog.statementlist",
+        "pk": 2,
+        "fields": {
+            "contact_id": 1,
+            "statement": "Гарантия"
+        }
+    },
+    {
+        "model": "catalog.statementlist",
+        "pk": 3,
+        "fields": {
+            "contact_id": 1,
+            "statement": "Общие вопросы"
+        }
+    },
+    {
+        "model": "catalog.statementlist",
+        "pk": 4,
+        "fields": {
+            "contact_id": 1,
+            "statement": "Доставка"
+        }
+    },
+    {
+        "model": "catalog.statementlist",
+        "pk": 5,
+        "fields": {
+            "contact_id": 1,
+            "statement": "Возврат"
+        }
+    },
+    {
+        "model": "catalog.formcontact",
+        "pk": 1,
+        "fields": {
+            "name": "Имя",
+            "first_name": "Максим",
+            "email": "Эмеил",
+            "email_fill": "example@gmail.com",
+            "tel": "Номер телефона",
+            "tel_fill": "+7(000)000-00-00",
+            "question": "Ваш вопрос",
+            "ruls": "Правила обработки информации",
+            "button": "Отправить заявку"
+        }
+    },
+    {
+        "model": "catalog.statementform",
+        "pk": 1,
+        "fields": {
+            "form_id": 1,
+            "statement_form": "Вид заявки"
+        }
+    },
+    {
+        "model": "catalog.statementform",
+        "pk": 2,
+        "fields": {
+            "form_id": 1,
+            "statement_form": "Технические проблемы"
+        }
+    },
+    {
+        "model": "catalog.statementform",
+        "pk": 3,
+        "fields": {
+            "form_id": 1,
+            "statement_form": "Гарантия"
+        }
+    },
+    {
+        "model": "catalog.statementform",
+        "pk": 4,
+        "fields": {
+            "form_id": 1,
+            "statement_form": "Общие вопросы"
+        }
+    },
+    {
+        "model": "catalog.statementform",
+        "pk": 5,
+        "fields": {
+            "form_id": 1,
+            "statement_form": "Доставка"
+        }
+    },
+    {
+        "model": "catalog.statementform",
+        "pk": 6,
+        "fields": {
+            "form_id": 1,
+            "statement_form": "Возврат"
+        }
+    },
+    {
+        "model": "catalog.informationcontact",
+        "pk": 1,
+        "fields": {
+            "title": "Наши контакты:",
+            "email": "Эмеил:",
+            "email_value": "elshopcompany_id@gmail.com",
+            "tel": "Телефон:_id",
+            "tel_value": "+7 (499) 922-89-74",
+            "fax": "Факс:",
+            "fax_value": "+7 (499) 922-89-74"
         }
     }
 ]
