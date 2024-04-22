@@ -6,7 +6,7 @@ from .models import Product
 
 
 def home_page(request):
-    print(Product.objects.get_queryset()[Product.objects.count() - 5:])
+    print(Product.objects.get_queryset()[::-1][:5][::-1])
     return render(request, 'catalog/homepage.html', {'title': 'Electronic Shop', 'categories': data_example.list_catalog, 'new_items': data_example.new_items, 'list_sale': data_example.new_items, 'list_items': data_example.simple_items})
 
 

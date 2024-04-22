@@ -8,8 +8,14 @@ register = template.Library()
 def show_statemen_list():
     
     list_ = models.StatementList.objects.get_queryset()
+    try:
+        text = models.Contact.objects.get(pk=1)
+    except Exception:
+        text = {'text_to_form': 'В разработке',
+                'text_title_form':' В разработке',
+                'statement': list_}
+        return text
     
-    text = models.Contact.objects.get(pk=1)
     
     return {
         'statement': list_,
@@ -20,8 +26,23 @@ def show_statemen_list():
   
 @register.inclusion_tag('includes/contact/statement_form.html')
 def show_statemen_form():
-    
-    model = models.FormContact.objects.get(pk=1)
+    try:
+        model = models.FormContact.objects.get(pk=1)
+    except Exception:
+        return {
+        'name': 'В разработке',
+        'name_example': 'В разработке',
+        'email': 'В разработке',
+        'mask_email': 'В разработке',
+        'statement': 'В разработке',
+        'type_statement': 'В разработке',
+        'options': 'В разработке',
+        'tel': 'В разработке',
+        'mask_tel': 'В разработке',
+        'question': 'В разработке',
+        'ruls': 'В разработке',
+        'button_': 'В разработке',        
+        }
     list_options = models.StatementForm.objects.get_queryset()
     
     
@@ -43,8 +64,18 @@ def show_statemen_form():
     
 @register.inclusion_tag('includes/contact/contacts.html')
 def show_contacts():
-    
-    list_ = models.InformationContact.objects.get(pk=1)
+    try:
+        list_ = models.InformationContact.objects.get(pk=1)
+    except Exception:
+        return {
+        'title': 'Разработка',
+        'email': 'Разработка',
+        'email_value': 'Разработка',
+        'tel': 'Разработка',
+        'tel_value': 'Разработка',
+        'fax': 'Разработка',
+        'fax_value': 'Разработка',
+        }
     
     return {
         'title': list_.title,
