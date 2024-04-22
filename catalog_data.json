@@ -3,28 +3,32 @@
         "model": "catalog.category",
         "pk": "Прочее",
         "fields": {
-            "descriptions": null
+            "descriptions": null,
+            "url": "other"
         }
     },
     {
         "model": "catalog.category",
         "pk": "Планшеты",
         "fields": {
-            "descriptions": null
+            "descriptions": null,
+            "url": "tablets"
         }
     },
     {
         "model": "catalog.category",
         "pk": "Телефоны",
         "fields": {
-            "descriptions": null
+            "descriptions": null,
+            "url": "phones"
         }
     },
     {
         "model": "catalog.category",
         "pk": "Компьютеры",
         "fields": {
-            "descriptions": null
+            "descriptions": null,
+            "url": "computers"
         }
     },
     {

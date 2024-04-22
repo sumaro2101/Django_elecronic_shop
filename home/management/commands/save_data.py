@@ -2,7 +2,9 @@ from django.core.management import BaseCommand
 from config.settings import BASE_DIR
 import json
 
-from catalog.models import Product, Category, Companies, StatementList, Contact, StatementForm, InformationContact, FormContact
+from catalog.models import Product, Category, Companies 
+from home.models import StatementList, Contact, StatementForm, InformationContact, FormContact
+
 
 
 class Command(BaseCommand):
