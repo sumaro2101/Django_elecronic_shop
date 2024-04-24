@@ -3,13 +3,13 @@ from config.settings import BASE_DIR
 import json
 
 from catalog.models import Product, Category, Companies 
-from home.models import StatementList, Contact, StatementForm, InformationContact, FormContact
+from home.models import StatementList, Contact, StatementForm, InformationContact, FormContact, NavMainHome, NavList
 
 
 
 class Command(BaseCommand):
     
-    path = 'catalog_data.json'
+    path = 'data.json'
     
     
     @staticmethod
@@ -23,7 +23,7 @@ class Command(BaseCommand):
     
     def handle(self, *args, **options) -> str | None:
         
-        models = (Companies, Category, Product, Contact, StatementList, FormContact, StatementForm, InformationContact)
+        models = (Companies, Category, Product, Contact, StatementList, FormContact, StatementForm, InformationContact, NavMainHome, NavList)
         [model.objects.all().delete() for model in list(models)[::-1]]
 
         for model in models:

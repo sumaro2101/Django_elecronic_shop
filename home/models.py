@@ -1,7 +1,43 @@
 from django.db import models
 
 # Create your models here.
+class NavLeft(models.Model):
+    title = models.CharField(max_length=50, verbose_name='Заглавление', default='Каталог товаров')
+    
+    def __str__(self) -> str:
+        return self.title
+    
+    class Meta:
+        verbose_name = 'Оглавление'
+        verbose_name_plural = 'Оглавление левого бара'
 
+class NavMainHome(models.Model):
+    name = models.CharField(max_length=20)
+    title = models.CharField(max_length=50) 
+    mask_search = models.CharField(max_length=50)
+    button = models.CharField(max_length=50)
+    
+    def __str__(self) -> str:
+        return self.name
+    
+    class Meta:
+        verbose_name = 'Шапка'
+        verbose_name_plural = 'Шапка Страницы'
+    
+    
+class NavList(models.Model):
+    nav_main = models.ForeignKey(NavMainHome, verbose_name='Поле Навигации', on_delete=models.CASCADE)
+    category = models.CharField(max_length=50, verbose_name='Кнопки шапки навигации')
+    url = models.SlugField(max_length=200, unique=True)
+    
+    def __str__(self) -> str:
+        return self.category
+    
+    class Meta:
+        verbose_name = 'Пунк'
+        verbose_name_plural = 'Пункты Навигации'
+    
+    
 class Contact(models.Model):
     
     title = models.CharField(max_length=20, verbose_name='Шапка Страницы')
