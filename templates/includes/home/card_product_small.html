@@ -7,7 +7,11 @@ box-shadow: 0 1px 2px 0 rgba(0,0,0,.16);">
     {% if item.is_sale %}
     <div class="position-absolute badge text-center text-black" style="left: -0.7px; width: 50px; background-color: rgb(0, 173, 181);">{{item.discount}}%</div>
     {% endif %}
-    <img src="..." class="card-img-top" alt="...">
+    {% if item.image_item  %}
+    <img src="{{ item.image_item.url }}" class="card-img-top" alt="{{ item.name }}">
+    {% else %}
+    <img src="{% static 'images/image not found.jpeg' %}" class="card-img-top" alt="{{ item.name }}">
+    {% endif %}
     <div class="card-body d-flex flex-column justify-content-between">
         <h6 class="card-title" style="font-size: 15px;">{{item.name}}</h6>
         <div>

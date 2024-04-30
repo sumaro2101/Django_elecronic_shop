@@ -59,7 +59,7 @@ class Product(models.Model):
     
     name = models.CharField(max_length=100, verbose_name='Товар')
     descriptions = models.TextField(verbose_name='Описание', null=True, blank=True)
-    image_item = models.ImageField(upload_to='products/', verbose_name='Изображение', null=True, blank=True)
+    image_item = models.ImageField(upload_to='products', verbose_name='Изображение', null=True, blank=True)
     company = models.ForeignKey(Companies, verbose_name='Компания', on_delete=models.PROTECT, db_column='company')
     category = models.ForeignKey(Category, verbose_name='Категория', on_delete=models.CASCADE, db_column='category')
     price = models.DecimalField(max_digits=8, decimal_places=2, verbose_name='Цена')

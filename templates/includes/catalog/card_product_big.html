@@ -3,7 +3,11 @@
 
 
 <div class="card card-style mt-2 pt-2">
-    <img src="..." class="rounded float-start" style="width: 160px; height: 160px" alt="...">
+    {% if item.image_item %}
+    <img src="{{ item.image_item.url }}" class="rounded float-start" style="width: 160px; height: 160px" alt="{{ item.name }}">
+    {% else %}
+    <img src="{% static 'images/image not found.jpeg' %}" class="rounded float-start" style="width: 160px; height: 160px" alt="{{ item.name }}">
+    {% endif %}
     <a href="{{ item.get_absolute_url }}" class="card-body link-underline link-underline-opacity-0">
         <h6 class="card-title" style="font-size: 15px;">{{item.name}}</h6>
         <p>{{ item.descriptions|truncatewords:18 }}</p>
