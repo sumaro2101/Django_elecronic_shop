@@ -1,0 +1,512 @@
+[
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "MSI Titan 18 HX A14VIG-211RU 9S7-182221-211",
+      "descriptions": "tenetur asperiores libero recusandae inventore vel dolorem dolore explicabo sed provident neque vero dicta reiciendis at corrupti incidunt ipsa consequuntur sequi reprehenderit laborum enim consectetur atque autem possimus esse quod voluptatibus est earum fuga illo eum repellendus delectus accusamus deleniti eaque voluptates labore nemo quam odio expedita soluta error ipsam",
+      "image_item": "",
+      "company": "MSI",
+      "category": "Компьютеры",
+      "price": 602990,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "MSI Creator 16 AI Studio A1VIG-060RU 9S7-15F314-060",
+      "descriptions": "saepe dicta possimus incidunt ex accusantium consectetur voluptatem quasi culpa ad rem nihil repellat deleniti corrupti exercitationem quam nam veniam doloribus molestiae eligendi officia facere vel esse placeat fuga assumenda dolor mollitia excepturi fugit cumque voluptatum totam soluta iusto doloremque accusamus ipsa perspiciatis adipisci architecto natus cupiditate quia hic ratione",
+      "image_item": "",
+      "company": "MSI",
+      "category": "Компьютеры",
+      "price": 553640,
+      "discount": 10.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "ASUS ROG Zephyrus Duo 16 GX650PY-NM085W 90NR0BI1-M004X0",
+      "descriptions": "deserunt tempore quis voluptate quibusdam officiis fugit nisi ratione tenetur laboriosam magnam harum inventore vitae maiores architecto voluptates necessitatibus doloribus voluptatem nostrum dicta non explicabo quas nemo veniam eaque provident mollitia voluptas aliquid corporis cumque facere sunt natus ut repellendus dolores nobis deleniti rerum quod sint aut minus similique sapiente",
+      "image_item": "",
+      "company": "Asus",
+      "category": "Компьютеры",
+      "price": 569990,
+      "discount": 19.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "MSI Stealth 16 AI Studio A1VIG-062RU 9S7-15F312-062",
+      "descriptions": "earum numquam veniam ipsam vero rerum dolorum corporis nobis facere a magnam voluptatibus ducimus ex nemo et assumenda nostrum exercitationem reiciendis animi dicta modi id voluptate ea unde quidem adipisci doloribus fuga officia aperiam nulla expedita accusamus sed quasi ipsa voluptatem cum saepe nam sunt soluta eaque minima in tempore",
+      "image_item": "",
+      "company": "MSI",
+      "category": "Компьютеры",
+      "price": 433990,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "MSI CreatorPro X17 HX A13VKS-267RU 9S7-17Q231-267",
+      "descriptions": "maxime quam temporibus voluptate neque modi nisi sint quas at odit ipsum sit rerum velit dolorum porro perspiciatis hic voluptatem blanditiis consectetur expedita quis voluptates consequuntur assumenda quia quisquam aliquam quos dolorem saepe excepturi quibusdam harum unde sequi sapiente eum delectus aliquid minima dicta amet natus tenetur laborum magnam dolore",
+      "image_item": "",
+      "company": "MSI",
+      "category": "Компьютеры",
+      "price": 415990,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "ASUS ROG Strix Scar 18 G834JYR-R6080W 90NR0IP2-M00400",
+      "descriptions": "fugiat eaque temporibus cumque inventore ratione blanditiis dicta at sunt nemo qui praesentium similique porro id culpa architecto ut eius tenetur cum modi maxime itaque esse aspernatur error obcaecati excepturi ducimus sed nisi nesciunt molestiae consequatur possimus doloremque expedita aut exercitationem ipsum iure molestias veritatis quia repudiandae optio incidunt delectus",
+      "image_item": "",
+      "company": "Asus",
+      "category": "Компьютеры",
+      "price": 413990,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "MSI Creator Z17 HX Studio A14VGT-267RU 9S7-17N212-267",
+      "descriptions": "cumque qui repellat possimus sequi magnam incidunt quibusdam illum animi necessitatibus dolore amet tenetur aperiam in tempora esse reiciendis labore ipsum provident architecto nemo perferendis minima facere vel doloribus non obcaecati porro modi deserunt voluptatem maiores expedita autem a maxime consequuntur distinctio illo nam totam eum repudiandae aut sunt laboriosam",
+      "image_item": "",
+      "company": "MSI",
+      "category": "Компьютеры",
+      "price": 412990,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "Samsung Galaxy Book 3 Ultra NP960 NP960XFH-XA1IN",
+      "descriptions": "obcaecati repudiandae delectus fuga dicta maxime animi molestiae accusamus deleniti commodi voluptate quibusdam excepturi laborum rerum alias optio deserunt inventore in sint voluptates a harum est quis perferendis at amet maiores repellendus magnam sit saepe dolorum doloremque aperiam expedita vel doloribus illum cumque incidunt quod facere vero necessitatibus provident voluptatem",
+      "image_item": "",
+      "company": "Samsung",
+      "category": "Компьютеры",
+      "price": 369990,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "ASUS Zenbook Pro 16X OLED UX7602VI-MY073X 90NB10K1-M00430",
+      "descriptions": "recusandae tempora exercitationem dolorem sed distinctio perferendis dolore pariatur quos molestiae quod animi veniam impedit nemo laboriosam sequi modi quae et sunt assumenda voluptatum natus aspernatur soluta adipisci a fuga ab illum nihil nulla at velit labore fugiat cupiditate dicta voluptas placeat ipsa quis incidunt vel hic amet quo minus",
+      "image_item": "",
+      "company": "Asus",
+      "category": "Компьютеры",
+      "price": 335990,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "Lenovo ThinkPad X1 Carbon Gen 10 21CB0068RT",
+      "descriptions": "sunt distinctio in nemo iure magni est repellendus earum velit necessitatibus eaque corporis iusto laudantium nisi atque vitae eum quo consequatur mollitia voluptatem deserunt natus molestiae adipisci dolorem quia assumenda explicabo dolorum non labore incidunt possimus voluptas delectus officiis consequuntur laboriosam odit et quibusdam debitis illo rerum corrupti recusandae dolore",
+      "image_item": "",
+      "company": "Lenovo",
+      "category": "Компьютеры",
+      "price": 334410,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "DELL XPS 15 9530 9530-4160",
+      "descriptions": "suscipit fuga omnis neque natus laudantium blanditiis ratione quidem nesciunt deserunt ex maiores necessitatibus harum obcaecati quos illo veritatis veniam expedita eius aliquam a ipsum non excepturi magnam ullam dolore quo ipsam nobis quaerat doloribus perferendis velit sunt dolorem beatae odio animi laboriosam voluptates porro explicabo placeat sit accusamus doloremque",
+      "image_item": "",
+      "company": "Dell",
+      "category": "Компьютеры",
+      "price": 371840,
+      "discount": 11.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "DELL XPS 13 9320 9320-4317",
+      "descriptions": "error sequi possimus quam nam hic soluta deleniti laudantium est temporibus esse enim fuga nihil quae minus corrupti veniam nobis doloremque adipisci exercitationem fugiat quibusdam rem ipsum inventore suscipit ducimus cupiditate rerum unde sint beatae tempore eveniet facilis libero eum saepe mollitia impedit ex corporis ullam iure itaque magni quo",
+      "image_item": "",
+      "company": "Dell",
+      "category": "Компьютеры",
+      "price": 298410,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "HP Omen 16-wf0032ci 9E694EA",
+      "descriptions": "veniam nisi alias cum voluptatem eum distinctio quis esse fugiat mollitia cumque facilis molestias quia reprehenderit eaque quaerat incidunt saepe atque delectus voluptatum corporis quibusdam laborum aliquam hic minus ad sit magnam labore tenetur iusto aperiam itaque illum voluptas facere quam sequi vero vel enim unde blanditiis ipsam consequatur aspernatur",
+      "image_item": "",
+      "company": "Hp",
+      "category": "Компьютеры",
+      "price": 289990,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "HP Spectre x360 16-f1028nn 79S16EA",
+      "descriptions": "velit dicta veritatis odit molestiae nostrum deserunt fuga ipsum sapiente autem nisi sit similique eaque explicabo dolorum soluta mollitia necessitatibus quasi temporibus eveniet laborum iusto earum culpa odio exercitationem suscipit ab molestias ipsam esse consequatur provident reiciendis distinctio dolore vitae eos eligendi illum hic architecto porro nihil possimus incidunt quibusdam",
+      "image_item": "",
+      "company": "Hp",
+      "category": "Компьютеры",
+      "price": 285990,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "ASUS ROG Flow GV601VI-NL055W 90NR0G01-M002V0",
+      "descriptions": "quisquam praesentium qui eveniet harum iure natus perspiciatis dolores quaerat odio sapiente nostrum voluptas assumenda placeat aperiam numquam ipsum culpa tempore doloribus ex mollitia dicta at quia atque deleniti repudiandae temporibus ducimus molestiae error dolorem laborum cum corporis accusantium inventore fuga obcaecati aut sequi aliquid consequatur doloremque dolorum ipsam a",
+      "image_item": "",
+      "company": "Asus",
+      "category": "Компьютеры",
+      "price": 325990,
+      "discount": 15.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "MSI Pulse 17 AI C1VGKG-023RU 9S7-17T311-023",
+      "descriptions": "voluptatibus consequuntur repellat minus maxime libero molestias aliquid delectus fuga atque dolorum doloremque voluptate ut omnis nam quaerat sit illum obcaecati nihil earum officia expedita beatae eligendi aperiam velit saepe harum perferendis accusantium voluptatum soluta illo dolor temporibus hic impedit porro exercitationem blanditiis explicabo repudiandae sed odit sint magnam praesentium",
+      "image_item": "",
+      "company": "MSI",
+      "category": "Компьютеры",
+      "price": 272810,
+      "discount": 8.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "MSI Vector 16 HX A14VGG-283RU 9S7-15M242-283",
+      "descriptions": "sapiente ad eum consectetur qui consequatur atque molestias laborum nisi magni repudiandae tenetur nobis dolores et impedit reiciendis labore iusto explicabo debitis amet fuga doloribus quis maxime ducimus quisquam adipisci neque natus asperiores a numquam quod quasi illo earum iste omnis quam unde id laudantium libero saepe eius enim aliquam",
+      "image_item": "",
+      "company": "MSI",
+      "category": "Компьютеры",
+      "price": 244990,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "MSI Raider GE77HX 12UHS-232RU 9S7-17K514-232",
+      "descriptions": "tempora voluptate aliquid esse incidunt perferendis iste quasi non unde magnam ipsam a facilis quas doloribus molestiae eaque ducimus qui ad ut repellendus placeat reiciendis recusandae illo eligendi odit omnis iure dolores blanditiis possimus accusantium voluptatibus aliquam amet impedit cum asperiores explicabo dolor mollitia nobis sit nesciunt quod dignissimos odio",
+      "image_item": "",
+      "company": "MSI",
+      "category": "Компьютеры",
+      "price": 245990,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "Lenovo ThinkPad X1 Carbon G10 21CCS9Q201",
+      "descriptions": "unde aut iure sit maiores illum facilis delectus quia architecto eveniet veniam repellat voluptas quos mollitia minima et sint perferendis maxime quod error voluptates explicabo harum provident ullam quam veritatis cum iusto impedit hic dolorem ea ipsa vero incidunt necessitatibus qui enim soluta laborum sequi animi iste minus nam rem",
+      "image_item": "",
+      "company": "Lenovo",
+      "category": "Компьютеры",
+      "price": 233990,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "MSI Summit E16 AI Studio A1VETG-017RU 9S7-159621-017",
+      "descriptions": "eius molestiae rem harum maxime dolor maiores aperiam eaque iste cum quas accusamus doloribus veniam consequuntur autem delectus quis ab sed esse amet eligendi perspiciatis temporibus nisi illum libero mollitia atque voluptatem commodi reiciendis aliquam quos quae tenetur sit dolores aut quisquam deleniti ipsum explicabo ut deserunt placeat numquam sequi",
+      "image_item": "",
+      "company": "MSI",
+      "category": "Компьютеры",
+      "price": 220990,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "MSI Prestige 16 AI Studio B1VEG-080RU 9S7-15A211-080",
+      "descriptions": "nostrum placeat enim tenetur ipsam provident porro officia modi qui tempora temporibus magni molestias harum laborum aspernatur quia aut quos possimus quibusdam ipsum eveniet dignissimos cum sapiente hic iusto dicta nesciunt veniam voluptas eum repellat quaerat ut id consequuntur doloremque explicabo quas non aliquid quasi at ex soluta sit architecto",
+      "image_item": "",
+      "company": "MSI",
+      "category": "Компьютеры",
+      "price": 240990,
+      "discount": 10.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "Samsung Galaxy Book 3 Pro NP944 NP944XFG-KC1IT",
+      "descriptions": "adipisci sit rem architecto minus quia enim itaque harum debitis odio at aut reiciendis mollitia labore quas delectus sunt neque quae deleniti perspiciatis accusamus voluptas laudantium magni magnam vel tempore dignissimos deserunt tempora tenetur veniam doloribus eveniet rerum fuga esse facere illo ex vitae voluptatem odit quod commodi ipsum vero",
+      "image_item": "",
+      "company": "Samsung",
+      "category": "Компьютеры",
+      "price": 213990,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "Apple MacBook Air A2681 Z15S0000P",
+      "descriptions": "at voluptatum provident saepe nostrum praesentium eos fugiat consequatur quia iste ad labore fugit minus qui ea itaque est mollitia expedita exercitationem dicta eaque autem dolor hic error cumque commodi voluptas harum quisquam doloremque esse architecto quaerat iusto quae quod eligendi veritatis ex quo consequuntur quis totam omnis corrupti soluta",
+      "image_item": "",
+      "company": "Apple",
+      "category": "Компьютеры",
+      "price": 211990,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "ASUS Vivobook Pro 16X OLED K6604JV-MX112W 90NB1102-M00540",
+      "descriptions": "minus hic soluta quos aperiam quisquam earum voluptatum nihil iure placeat sunt itaque voluptatem alias saepe accusantium aliquid qui reiciendis rem temporibus asperiores omnis aut aspernatur labore commodi suscipit pariatur explicabo ea rerum accusamus autem amet et vitae aliquam nobis obcaecati eum facilis adipisci perferendis laborum repellat fuga debitis fugiat",
+      "image_item": "",
+      "company": "Asus",
+      "category": "Компьютеры",
+      "price": 205990,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "Lenovo Legion Slim 5 16IRH8 82YA009RRK",
+      "descriptions": "tempore earum laborum eos nobis qui repellendus obcaecati enim dolor voluptatem quae id perspiciatis atque iusto neque sed culpa ipsam ad vero quod impedit adipisci doloribus distinctio incidunt omnis aliquam nisi debitis expedita natus placeat deserunt a illum nostrum iure voluptate voluptatibus ex ratione quaerat voluptates facere laudantium veritatis voluptatum",
+      "image_item": "",
+      "company": "Lenovo",
+      "category": "Компьютеры",
+      "price": 203990,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "ASUS ExpertBook B9 B9403CVA-KM0499X 90NX05W1-M00NJ0",
+      "descriptions": "provident minima id itaque similique labore quaerat ullam sunt a fugiat voluptate delectus eligendi ipsam deleniti consequatur maiores iste suscipit soluta tempora inventore dolorem sint accusamus cum vero molestiae totam autem porro odio distinctio sequi praesentium quam atque veritatis assumenda cumque quidem hic nostrum quasi magnam odit voluptatem ab reiciendis",
+      "image_item": "",
+      "company": "Asus",
+      "category": "Компьютеры",
+      "price": 201990,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "MSI Sword 17 HX B14VGKG-048XRU 9S7-17T214-048",
+      "descriptions": "vero itaque voluptatem unde blanditiis omnis quisquam alias atque molestias ipsam iste maiores odit tempore quidem ducimus officia perspiciatis ex placeat quod doloribus enim magnam autem consequuntur dolor quasi quo facilis amet libero at accusamus est aperiam officiis accusantium vitae eligendi modi nulla laborum illum voluptas error sit exercitationem sunt",
+      "image_item": "",
+      "company": "MSI",
+      "category": "Компьютеры",
+      "price": 199990,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "ASUS TUF Gaming A15 FA507UI-HQ059 90NR0I65-M00330",
+      "descriptions": "expedita perspiciatis neque optio maxime minus quos esse fugit doloremque velit magnam voluptatum ratione consequatur repellendus quae sed amet quas molestias hic quisquam repellat numquam facilis a ea eius soluta voluptatem voluptate dignissimos assumenda veritatis aliquid culpa incidunt perferendis libero accusantium beatae ut consequuntur eos reprehenderit dolorem quasi aperiam laudantium",
+      "image_item": "",
+      "company": "Asus",
+      "category": "Компьютеры",
+      "price": 193990,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "Lenovo Legion Slim 5 16APH8 82Y9000BRK",
+      "descriptions": "numquam itaque exercitationem unde quasi voluptate tenetur accusamus quia voluptatem repellat obcaecati perferendis nostrum veniam dolor qui aut alias cum atque molestias ea est libero cumque inventore sit quod expedita porro commodi praesentium voluptates impedit amet recusandae similique vero rem maxime quibusdam in neque placeat quidem facere provident sequi quisquam",
+      "image_item": "",
+      "company": "Lenovo",
+      "category": "Компьютеры",
+      "price": 189990,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "Lenovo LOQ 15IRH8 82XV00KCRK",
+      "descriptions": "quidem amet expedita reprehenderit placeat sint saepe totam nisi fugit necessitatibus soluta quibusdam repellat sapiente vel blanditiis tenetur porro deserunt est vitae eius minus maiores magnam dolorem ratione laboriosam odio distinctio neque quia officia molestias laborum rem quasi modi suscipit nobis asperiores quam tempora sit maxime nostrum praesentium ut earum",
+      "image_item": "",
+      "company": "Lenovo",
+      "category": "Компьютеры",
+      "price": 169490,
+      "discount": 0.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  }
+]

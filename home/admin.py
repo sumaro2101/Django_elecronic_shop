@@ -1,6 +1,13 @@
 from django.contrib import admin
-from .models import Contact, FormContact, StatementList, StatementForm, InformationContact, NavMainHome, NavList, NavLeft
+from .models import (Contact, FormContact, StatementList, 
+                     StatementForm, InformationContact, 
+                     NavMainHome, NavList, NavLeft, 
+                     NavRight, Footer, FooterBlocks,
+                     HomePage)
 # Register your models here.
+@admin.register(NavRight)
+class NavRightAdmin(admin.ModelAdmin):
+    list_display = ('title',)
 
 @admin.register(NavLeft)
 class NavLeftAdmin(admin.ModelAdmin):
@@ -33,4 +40,16 @@ class NavMainHomeAdmin(admin.ModelAdmin):
 @admin.register(NavList)
 class NavListAdmin(admin.ModelAdmin):
     list_display = ('pk', 'nav_main', 'category', 'url')
+    
+@admin.register(Footer)
+class FooterAdmin(admin.ModelAdmin):
+    list_display = ('name_company', 'policy', 'url_policy')
+    
+@admin.register(FooterBlocks)
+class FooterBlocksAdmin(admin.ModelAdmin):
+    list_display = ('footer', 'block')
+    
+@admin.register(HomePage)
+class HomePageAdmin(admin.ModelAdmin):
+    list_display = ('title', 'url', 'button')
     

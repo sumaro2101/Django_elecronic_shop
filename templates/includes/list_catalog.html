@@ -22,9 +22,15 @@
                 {% else %}
 
                     {% for company in companies|filter_query:category.category %}
-                        <a class="btn p-0 d-flex flex-column text-start" role="button" href="{% url 'catalog' %}" role="button" style="font-size: small;">
-                            {{ company.company }}
-                        </a>
+                        {% if company.url == 'all' %}
+                            <a class="btn p-0 d-flex flex-column text-start" role="button" href="{% url 'companies' category.url %}?filter=all" role="button" style="font-size: small;">
+                                {{ company.company }}
+                            </a>
+                        {% else %}
+                            <a class="btn p-0 d-flex flex-column text-start" role="button" href="{% url 'companies' category.url %}?filter=all&comp={{ company.url }}" role="button" style="font-size: small;">
+                                {{ company.company }}
+                            </a>
+                        {% endif %}
                     {% endfor %}
 
                 {% endif %}

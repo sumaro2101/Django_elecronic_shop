@@ -1,5 +1,8 @@
 import datetime
+from typing import Any
 from django.db import models
+from django.db.models import Lookup, Field
+from django.urls import reverse
 from django.utils import timezone
 # Create your models here.  
 
@@ -17,7 +20,10 @@ class Category(models.Model):
     class Meta:
         verbose_name = 'катерогии'
         verbose_name_plural = 'Категории'
-        
+    
+    def get_absolute_url(self):
+        return reverse("companies", kwargs={"cats_id": self.url})
+    
         
 class SubCategory(models.Model):
     category = models.ForeignKey(Category, verbose_name='Категория', on_delete=models.PROTECT)
@@ -31,7 +37,7 @@ class SubCategory(models.Model):
     class Meta:
         verbose_name = 'под катерогии'
         verbose_name_plural = 'Под Категории'
-
+        
 
 class Companies(models.Model):
     
@@ -59,10 +65,12 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=8, decimal_places=2, verbose_name='Цена')
     discount = models.FloatField(verbose_name='Скидка в %', default=1)
     quantity = models.IntegerField(verbose_name='Количество')
+    name_button = models.CharField(max_length=20, verbose_name='Название кнопки', default='Подробнее')
     discontinued = models.SmallIntegerField(default=0, choices=[(0, 'В продаже'), (1, 'Снято с продажи')] ,verbose_name='Статус')
     created_at = models.DateTimeField(auto_now=False, auto_now_add=True, verbose_name='Дата создания')
     created_up = models.DateTimeField(auto_now=True, auto_now_add=False, verbose_name='Дата обновления')
-    release = models.DateField(auto_now_add=True ,verbose_name='Дата релиза продукта', editable=True)
+    release = models.DateTimeField(auto_now_add=True ,verbose_name='Дата релиза продукта', editable=True)
+    url = models.SlugField(max_length=256)
     
     def is_sale(self):
         return self.discount != 0
@@ -70,9 +78,11 @@ class Product(models.Model):
     def is_new(self):
         return self.release >= timezone.now() - datetime.timedelta(days=180)
     
+    def get_absolute_url(self):
+        return reverse("product", kwargs={"product_id": self.url})
+    
     def __str__(self) -> str:
         return f'{self.category}: {self.name}'
-    
     
     class Meta:
         verbose_name = 'товары'
@@ -81,4 +91,42 @@ class Product(models.Model):
             models.CheckConstraint(check=models.Q(price__gte=0, quantity__gte=0, discount__gte=0), name='price_quantity_gte_discount__gte-0'),
         ]
         ordering = ['-created_at']
-       
+
+    
+    
+class TopFilters(models.Model):
+    type_filter = models.CharField(max_length=50, unique=True, verbose_name='тип фильтров')
+    
+    def __str__(self) -> str:
+        return self.type_filter
+    
+    class Meta:
+        verbose_name = 'тип фильтров'
+        verbose_name_plural= 'тип фильтров'
+    
+    
+class Filters(models.Model):
+    type_filter = models.ForeignKey(TopFilters, verbose_name=('тип фильтра'), on_delete=models.CASCADE)
+    name_filter = models.CharField(max_length=50, unique=True, verbose_name='фильтр')
+    url = models.SlugField(max_length=256, unique=True)
+    
+    def __str__(self) -> str:
+        return self.name_filter
+    
+    class Meta:
+        verbose_name = 'фильтры'
+        verbose_name_plural= 'фильтры'
+    
+    
+
+@Field.register_lookup       
+class NotEqualLookup(Lookup):
+    lookup_name = 'ne'
+    
+    def as_sql(self, compiler, connection):
+        lhs, lhs_params = self.process_lhs(compiler, connection)
+        rhs, rhs_params = self.process_rhs(compiler, connection)
+        
+        params = lhs_params + rhs_params
+        return "%s != %s" %(lhs, rhs), params
+    

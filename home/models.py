@@ -1,6 +1,55 @@
 from django.db import models
 
-# Create your models here.
+class HomePage(models.Model):
+    title = models.CharField(max_length=50, verbose_name='Оглавление блока')
+    url = models.SlugField(max_length=256, unique=True)
+    button = models.CharField(max_length=20, verbose_name='Имя кнопки')
+    
+    def __str__(self) -> str:
+        return self.title
+    
+    class Meta:
+        verbose_name = 'страница'
+        verbose_name_plural = 'Доманшняя страница'
+
+
+class Footer(models.Model):
+    name_company = models.CharField(max_length=20, default='EL_COM', verbose_name='Название компании')
+    policy = models.CharField(max_length=50, default='Политика конфидециальности')
+    url_policy = models.SlugField(max_length=256, default='policy')
+    
+    def __str__(self) -> str:
+        return self.name_company
+    
+    class Meta:
+        verbose_name = 'Футтер'
+        verbose_name_plural = 'Футтер'
+   
+    
+class FooterBlocks(models.Model):
+    footer = models.ForeignKey(Footer, on_delete=models.CASCADE)
+    block = models.CharField(max_length=30, verbose_name='Имя блока')
+    url = models.SlugField(max_length=256, verbose_name='Адресс блока', unique=True)
+    
+    def __str__(self) -> str:
+        return self.block
+    
+    class Meta:
+        verbose_name = 'Блоки'
+        verbose_name_plural = 'Блоки футтера'
+
+class NavRight(models.Model):
+    title = models.CharField(max_length=50, verbose_name='Заглавление', default='Новинки')
+    end_lines = models.CharField(max_length=20, verbose_name='Ливрея для товаров', default='New')
+    
+    def __str__(self) -> str:
+        return self.title
+    
+    class Meta:
+        verbose_name = 'Оглавление'
+        verbose_name_plural = 'Оглавление правого бара'
+
+
 class NavLeft(models.Model):
     title = models.CharField(max_length=50, verbose_name='Заглавление', default='Каталог товаров')
     
@@ -10,6 +59,7 @@ class NavLeft(models.Model):
     class Meta:
         verbose_name = 'Оглавление'
         verbose_name_plural = 'Оглавление левого бара'
+
 
 class NavMainHome(models.Model):
     name = models.CharField(max_length=20)
@@ -36,6 +86,7 @@ class NavList(models.Model):
     class Meta:
         verbose_name = 'Пунк'
         verbose_name_plural = 'Пункты Навигации'
+        ordering = ['pk']
     
     
 class Contact(models.Model):

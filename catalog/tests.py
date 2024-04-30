@@ -5,6 +5,7 @@ from .models import Product, Companies, Category
 from .templatetags.tags_filter import discount, filter_query
 
 
+
 class ProductModelTests(TestCase):
     
     def test_is_new(self):
