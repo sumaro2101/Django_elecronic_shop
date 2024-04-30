@@ -2,13 +2,13 @@
   {
     "model": "catalog.product",
     "fields": {
-      "name": "MSI Titan 18 HX A14VIG-211RU 9S7-182221-211",
-      "descriptions": "tenetur asperiores libero recusandae inventore vel dolorem dolore explicabo sed provident neque vero dicta reiciendis at corrupti incidunt ipsa consequuntur sequi reprehenderit laborum enim consectetur atque autem possimus esse quod voluptatibus est earum fuga illo eum repellendus delectus accusamus deleniti eaque voluptates labore nemo quam odio expedita soluta error ipsam",
+      "name": "Honor 90 Lite 5G 8/256Gb",
+      "descriptions": "Смартфон Honor 90 Lite 5G оптимально подходит для голосовой и текстовой связи, доступа к интернету, работы и развлечений. Сканер отпечатка пальца позволяет легко разблокировать устройство и защищает от постороннего доступа.  диагональ экрана: 6.7; разрешение: 2388x1080; оперативная память: 8 Гб; внутренний накопитель: 256 Гб; емкость аккумулятора: 4500 мАч.  Качественный экран IPS-дисплей передает насыщенные цвета и обеспечивает широкие углы обзора. Высокая частота обновления экрана делает динамичные сцены четкими и снижает нагрузку на зрение. Плотность пикселей составляет 391 PPI, что дает возможность рассмотреть мельчайшие детали на изображении. Производительная система Большой объем оперативной памяти позволяет работать с несколькими приложениями одновременно без ущерба производительности. Мощный 8-ядерный процессор MediaTek Dimensity 6020 позволяет справиться с задачами любой сложности. Смартфон поддерживает все современные приложения и игры. Длительная работа без подзарядки Встроенный литий-полимерный аккумулятор способен поддерживать работу устройства на протяжении 31 часа в режиме разговора. При помощи кабеля Type-C пользователь может легко подзарядить смартфон в любом месте.",
       "image_item": "",
-      "company": "MSI",
-      "category": "Компьютеры",
-      "price": 602990,
-      "discount": 0.0,
+      "company": "Honor",
+      "category": "Телефоны",
+      "price": 21990,
+      "discount": 24.0,
       "quantity": 0,
       "discontinued": 0,
       "created_at": "2024-04-23T17:57:05.539Z",
@@ -19,12 +19,29 @@
   {
     "model": "catalog.product",
     "fields": {
-      "name": "MSI Creator 16 AI Studio A1VIG-060RU 9S7-15F314-060",
-      "descriptions": "saepe dicta possimus incidunt ex accusantium consectetur voluptatem quasi culpa ad rem nihil repellat deleniti corrupti exercitationem quam nam veniam doloribus molestiae eligendi officia facere vel esse placeat fuga assumenda dolor mollitia excepturi fugit cumque voluptatum totam soluta iusto doloremque accusamus ipsa perspiciatis adipisci architecto natus cupiditate quia hic ratione",
+      "name": "Honor X9a 5G 8/256Gb",
+      "descriptions": "Honor X9a 5G &mdash; среднебюджетный смартфон с достойными техническими и эксплуатационными характеристиками, высококачественным дисплеем и красивым дизайном. Яркий AMOLED-дисплей Модель оснащена антибликовым экраном с AMOLED-матрицей, обеспечивающей глубокий чёрный цвет, высокую контрастность, широкий угол обзора, равномерную подсветку и низкое энергопотребление. Его разрешение составляет 1080х2400 рх. Тонкая рамка дисплея не мешает просмотру мультимедиа или чтению документов/книг. Лицевая поверхность дисплея выполнена из прочной стеклянной пластины, устойчивой к потёртостям и царапинам. Достоинства камер Модель имеет три камеры: основную 64 Мп, f/1/8, широкоугольную 5 Мп, f/2.2 и макро 2 Мп, f/2.4. Такое оснащение позволяет устройству делать красивые, детализированные фотографии, а также работать в различных эффектах. Основная камера оснащена сверхбыстрым фазовым автофокусом. Производительность Установленного 8-ядерного процессора Qualcomm Snapdragon 695 и 8 Гб оперативной памяти достаточно для стабильной работы &mdash; даже в режиме многозадачности. При необходимости ОЗУ можно увеличить до 13 Гб благодаря реализованной фирменной технологии HONOR RAM Turbo. Встроенной памяти объемом 256 Гб хватит для хранения файлов и мультимедиа. Автономность Модель получила аккумуляторную батарею ёмкостью 5100 мАч, которая обеспечивает автономную работу без подзаряда в течение 26 часов в режиме чтения, 25 часов в видео-режиме и 10 часов в режиме 3D-игр.",
       "image_item": "",
-      "company": "MSI",
-      "category": "Компьютеры",
-      "price": 553640,
+      "company": "Honor",
+      "category": "Телефоны",
+      "price": 26990,
+      "discount": 23.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "Honor X7a 4/128Gb",
+      "descriptions": "Смартфон HONOR X7a отличается стильным корпусом и привлекает внимание элегантными расцветками. Диагональ IPS-экрана составляет 6,74 дюйма. Производительную работу обеспечивают процессор MediaTek Helio G37 и 4 ГБ оперативной памяти, а для фотографий, игр, приложений и любых других файлом предусмотрено 128 ГБ постоянной памяти с возможностью дополнительного расширения картами microSD. Основная квадро камера 50+5+2+2 Мп с автофокусом и вспышкой предлагает все нужное для реализации творческих задумок и документирования окружающего мира, а впереди в аккуратном каплевидном вырезе расположена камера 8 Мп для селфи и видеосвязи. Аккумулятор емкостью 5330 мА·ч в сочетании с экономичными комплектующими обеспечивает длительное время работы без подзарядки.",
+      "image_item": "",
+      "company": "Honor",
+      "category": "Телефоны",
+      "price": 14540,
       "discount": 10.0,
       "quantity": 0,
       "discontinued": 0,
@@ -36,12 +53,29 @@
   {
     "model": "catalog.product",
     "fields": {
-      "name": "ASUS ROG Zephyrus Duo 16 GX650PY-NM085W 90NR0BI1-M004X0",
-      "descriptions": "deserunt tempore quis voluptate quibusdam officiis fugit nisi ratione tenetur laboriosam magnam harum inventore vitae maiores architecto voluptates necessitatibus doloribus voluptatem nostrum dicta non explicabo quas nemo veniam eaque provident mollitia voluptas aliquid corporis cumque facere sunt natus ut repellendus dolores nobis deleniti rerum quod sint aut minus similique sapiente",
+      "name": "Honor X8a 6/128Gb",
+      "descriptions": "HONOR X8a – доступный смартфон серии HONOR X с узнаваемым дизайном, впечатляющими характеристиками экрана и улучшенными возможностями фотосъемки. HONOR X8a привлекает внимание изящным корпусом с толщиной всего 7,48 мм и весом 179 г, внутри которого инженерам удалось разместить батарею повышенной емкости 4500 мА·ч для эффективной работы смартфона в течение всего дня. Экран HONOR FullView с диагональю 6,7 дюйма обладает одним из лучших в классе показателей полезной площади 93,6% и позволяет комфортно просматривать контент. Собственная технология калибровки экрана HONOR обеспечивает правильную цветовую температуру и реалистичную цветопередачу. Тройная камера с основным сенсором 100 Мп обладает самым высоким разрешением среди смартфонов серии X, что обеспечивает еще больше возможностей для фотосъемки. Режим суперразрешения улучшает качество снимков и видео, до двух раз повышая детализацию картинки.",
       "image_item": "",
-      "company": "Asus",
-      "category": "Компьютеры",
-      "price": 569990,
+      "company": "Honor",
+      "category": "Телефоны",
+      "price": 16990,
+      "discount": 32.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "Honor X7b 8/128Gb",
+      "descriptions": "Смартфон Honor X7b имеет большой экран, при помощи которого будет комфортно смотреть видео, общаться в соцсетях, заниматься сёрфингом в интернете и решать другие задачи. Сбалансированный процессор обеспечит достойную производительность, а камера с тремя объективами &ndash; качественные снимки в любой ситуации. Качественный экран Экран разрешением 2412x1080 пикселей обеспечивает высокую плотность пикселей, а технология IPS имеет хорошую контрастность и передаёт 16,7 миллионов цветов. Частота обновления 90 Гц обеспечивает плавность смены кадров и снижает нагрузку на зрение. Сбалансированное оснащение Восьмиядерный процессор Qualcomm Snapdragon 680 разработан для смартфонов среднего сегмента и поддерживает все приложения, необходимые для повседневного использования. Оперативная память объёмом 8 Гб позволяет открывать большое количество вкладок в браузере и работать в нескольких приложениях без вылетов. Детализированные фотографии Тыловая камера состоит из трёх модулей. Основной объектив разрешением 108 Мп отвечает за высокое качество снимков. Сверхширокоугольная камера на 5 Мп помогает захватить в кадр большое количество объектов, а макрообъектив на 2 Мп позволяет снимать мелкие объекты. Для улучшения качества съёмки используется искусственный интеллект.",
+      "image_item": "",
+      "company": "Honor",
+      "category": "Телефоны",
+      "price": 16990,
       "discount": 19.0,
       "quantity": 0,
       "discontinued": 0,
@@ -53,131 +87,12 @@
   {
     "model": "catalog.product",
     "fields": {
-      "name": "MSI Stealth 16 AI Studio A1VIG-062RU 9S7-15F312-062",
-      "descriptions": "earum numquam veniam ipsam vero rerum dolorum corporis nobis facere a magnam voluptatibus ducimus ex nemo et assumenda nostrum exercitationem reiciendis animi dicta modi id voluptate ea unde quidem adipisci doloribus fuga officia aperiam nulla expedita accusamus sed quasi ipsa voluptatem cum saepe nam sunt soluta eaque minima in tempore",
+      "name": "Honor 70 8/128Gb",
+      "descriptions": "Смартфон с эффектным дизайном и впечатляющими характеристиками. Безрамочный изогнутый OLED-экран с диагональю 6,67 дюйма обладает высоким разрешением, точной цветопередачей и высокой частотой обновления 120 Гц. 8-ядерный процессор Snapdragon 778G Plus в сочетании с 8 ГБ оперативной и 128 ГБ постоянной памяти обеспечивает высокую производительность для игр и любых приложений. Тройная камера с сенсорами 54+50+2 Мп с высочайшим качеством съемки помогает воплощать в жизнь любые творческие задумки. Кроме того, смартфон HONOR 70 получил емкий аккумулятор 4800 мАч, поддерживает быструю зарядку 66 Вт, экосистемные технологии HONOR Share и «Мультиэкран».",
       "image_item": "",
-      "company": "MSI",
-      "category": "Компьютеры",
-      "price": 433990,
-      "discount": 0.0,
-      "quantity": 0,
-      "discontinued": 0,
-      "created_at": "2024-04-23T17:57:05.539Z",
-      "created_up": "2024-04-23T17:57:05.539Z",
-      "release": "2024-04-23T00:00:00Z"
-    }
-  },
-  {
-    "model": "catalog.product",
-    "fields": {
-      "name": "MSI CreatorPro X17 HX A13VKS-267RU 9S7-17Q231-267",
-      "descriptions": "maxime quam temporibus voluptate neque modi nisi sint quas at odit ipsum sit rerum velit dolorum porro perspiciatis hic voluptatem blanditiis consectetur expedita quis voluptates consequuntur assumenda quia quisquam aliquam quos dolorem saepe excepturi quibusdam harum unde sequi sapiente eum delectus aliquid minima dicta amet natus tenetur laborum magnam dolore",
-      "image_item": "",
-      "company": "MSI",
-      "category": "Компьютеры",
-      "price": 415990,
-      "discount": 0.0,
-      "quantity": 0,
-      "discontinued": 0,
-      "created_at": "2024-04-23T17:57:05.539Z",
-      "created_up": "2024-04-23T17:57:05.539Z",
-      "release": "2024-04-23T00:00:00Z"
-    }
-  },
-  {
-    "model": "catalog.product",
-    "fields": {
-      "name": "ASUS ROG Strix Scar 18 G834JYR-R6080W 90NR0IP2-M00400",
-      "descriptions": "fugiat eaque temporibus cumque inventore ratione blanditiis dicta at sunt nemo qui praesentium similique porro id culpa architecto ut eius tenetur cum modi maxime itaque esse aspernatur error obcaecati excepturi ducimus sed nisi nesciunt molestiae consequatur possimus doloremque expedita aut exercitationem ipsum iure molestias veritatis quia repudiandae optio incidunt delectus",
-      "image_item": "",
-      "company": "Asus",
-      "category": "Компьютеры",
-      "price": 413990,
-      "discount": 0.0,
-      "quantity": 0,
-      "discontinued": 0,
-      "created_at": "2024-04-23T17:57:05.539Z",
-      "created_up": "2024-04-23T17:57:05.539Z",
-      "release": "2024-04-23T00:00:00Z"
-    }
-  },
-  {
-    "model": "catalog.product",
-    "fields": {
-      "name": "MSI Creator Z17 HX Studio A14VGT-267RU 9S7-17N212-267",
-      "descriptions": "cumque qui repellat possimus sequi magnam incidunt quibusdam illum animi necessitatibus dolore amet tenetur aperiam in tempora esse reiciendis labore ipsum provident architecto nemo perferendis minima facere vel doloribus non obcaecati porro modi deserunt voluptatem maiores expedita autem a maxime consequuntur distinctio illo nam totam eum repudiandae aut sunt laboriosam",
-      "image_item": "",
-      "company": "MSI",
-      "category": "Компьютеры",
-      "price": 412990,
-      "discount": 0.0,
-      "quantity": 0,
-      "discontinued": 0,
-      "created_at": "2024-04-23T17:57:05.539Z",
-      "created_up": "2024-04-23T17:57:05.539Z",
-      "release": "2024-04-23T00:00:00Z"
-    }
-  },
-  {
-    "model": "catalog.product",
-    "fields": {
-      "name": "Samsung Galaxy Book 3 Ultra NP960 NP960XFH-XA1IN",
-      "descriptions": "obcaecati repudiandae delectus fuga dicta maxime animi molestiae accusamus deleniti commodi voluptate quibusdam excepturi laborum rerum alias optio deserunt inventore in sint voluptates a harum est quis perferendis at amet maiores repellendus magnam sit saepe dolorum doloremque aperiam expedita vel doloribus illum cumque incidunt quod facere vero necessitatibus provident voluptatem",
-      "image_item": "",
-      "company": "Samsung",
-      "category": "Компьютеры",
-      "price": 369990,
-      "discount": 0.0,
-      "quantity": 0,
-      "discontinued": 0,
-      "created_at": "2024-04-23T17:57:05.539Z",
-      "created_up": "2024-04-23T17:57:05.539Z",
-      "release": "2024-04-23T00:00:00Z"
-    }
-  },
-  {
-    "model": "catalog.product",
-    "fields": {
-      "name": "ASUS Zenbook Pro 16X OLED UX7602VI-MY073X 90NB10K1-M00430",
-      "descriptions": "recusandae tempora exercitationem dolorem sed distinctio perferendis dolore pariatur quos molestiae quod animi veniam impedit nemo laboriosam sequi modi quae et sunt assumenda voluptatum natus aspernatur soluta adipisci a fuga ab illum nihil nulla at velit labore fugiat cupiditate dicta voluptas placeat ipsa quis incidunt vel hic amet quo minus",
-      "image_item": "",
-      "company": "Asus",
-      "category": "Компьютеры",
-      "price": 335990,
-      "discount": 0.0,
-      "quantity": 0,
-      "discontinued": 0,
-      "created_at": "2024-04-23T17:57:05.539Z",
-      "created_up": "2024-04-23T17:57:05.539Z",
-      "release": "2024-04-23T00:00:00Z"
-    }
-  },
-  {
-    "model": "catalog.product",
-    "fields": {
-      "name": "Lenovo ThinkPad X1 Carbon Gen 10 21CB0068RT",
-      "descriptions": "sunt distinctio in nemo iure magni est repellendus earum velit necessitatibus eaque corporis iusto laudantium nisi atque vitae eum quo consequatur mollitia voluptatem deserunt natus molestiae adipisci dolorem quia assumenda explicabo dolorum non labore incidunt possimus voluptas delectus officiis consequuntur laboriosam odit et quibusdam debitis illo rerum corrupti recusandae dolore",
-      "image_item": "",
-      "company": "Lenovo",
-      "category": "Компьютеры",
-      "price": 334410,
-      "discount": 0.0,
-      "quantity": 0,
-      "discontinued": 0,
-      "created_at": "2024-04-23T17:57:05.539Z",
-      "created_up": "2024-04-23T17:57:05.539Z",
-      "release": "2024-04-23T00:00:00Z"
-    }
-  },
-  {
-    "model": "catalog.product",
-    "fields": {
-      "name": "DELL XPS 15 9530 9530-4160",
-      "descriptions": "suscipit fuga omnis neque natus laudantium blanditiis ratione quidem nesciunt deserunt ex maiores necessitatibus harum obcaecati quos illo veritatis veniam expedita eius aliquam a ipsum non excepturi magnam ullam dolore quo ipsam nobis quaerat doloribus perferendis velit sunt dolorem beatae odio animi laboriosam voluptates porro explicabo placeat sit accusamus doloremque",
-      "image_item": "",
-      "company": "Dell",
-      "category": "Компьютеры",
-      "price": 371840,
+      "company": "Honor",
+      "category": "Телефоны",
+      "price": 39990,
       "discount": 11.0,
       "quantity": 0,
       "discontinued": 0,
@@ -189,13 +104,13 @@
   {
     "model": "catalog.product",
     "fields": {
-      "name": "DELL XPS 13 9320 9320-4317",
-      "descriptions": "error sequi possimus quam nam hic soluta deleniti laudantium est temporibus esse enim fuga nihil quae minus corrupti veniam nobis doloremque adipisci exercitationem fugiat quibusdam rem ipsum inventore suscipit ducimus cupiditate rerum unde sint beatae tempore eveniet facilis libero eum saepe mollitia impedit ex corporis ullam iure itaque magni quo",
+      "name": "Honor 90 Lite 5G 8/256Gb",
+      "descriptions": "Смартфон Honor 90 Lite 5G оптимально подходит для голосовой и текстовой связи, доступа к интернету, работы и развлечений. Сканер отпечатка пальца позволяет легко разблокировать устройство и защищает от постороннего доступа.  диагональ экрана: 6.7; разрешение: 2388x1080; оперативная память: 8 Гб; внутренний накопитель: 256 Гб; емкость аккумулятора: 4500 мАч.  Качественный экран IPS-дисплей передает насыщенные цвета и обеспечивает широкие углы обзора. Высокая частота обновления экрана делает динамичные сцены четкими и снижает нагрузку на зрение. Плотность пикселей составляет 391 PPI, что дает возможность рассмотреть мельчайшие детали на изображении. Производительная система Большой объем оперативной памяти позволяет работать с несколькими приложениями одновременно без ущерба производительности. Мощный 8-ядерный процессор MediaTek Dimensity 6020 позволяет справиться с задачами любой сложности. Смартфон поддерживает все современные приложения и игры. Длительная работа без подзарядки Встроенный литий-полимерный аккумулятор способен поддерживать работу устройства на протяжении 31 часа в режиме разговора. При помощи кабеля Type-C пользователь может легко подзарядить смартфон в любом месте.",
       "image_item": "",
-      "company": "Dell",
-      "category": "Компьютеры",
-      "price": 298410,
-      "discount": 0.0,
+      "company": "Honor",
+      "category": "Телефоны",
+      "price": 21990,
+      "discount": 24.0,
       "quantity": 0,
       "discontinued": 0,
       "created_at": "2024-04-23T17:57:05.539Z",
@@ -206,13 +121,13 @@
   {
     "model": "catalog.product",
     "fields": {
-      "name": "HP Omen 16-wf0032ci 9E694EA",
-      "descriptions": "veniam nisi alias cum voluptatem eum distinctio quis esse fugiat mollitia cumque facilis molestias quia reprehenderit eaque quaerat incidunt saepe atque delectus voluptatum corporis quibusdam laborum aliquam hic minus ad sit magnam labore tenetur iusto aperiam itaque illum voluptas facere quam sequi vero vel enim unde blanditiis ipsam consequatur aspernatur",
+      "name": "Honor X6a 4/128Gb",
+      "descriptions": "Смартфон Honor X6a обладает оптимальными характеристиками для своего класса. В нем установлен аккумулятор емкостью 5200 мАч, который функционирует около суток в активном режиме и поддерживает быструю зарядку 22,5 Вт. Экран с частотой обновления 90 Гц обеспечивает отзывчивость интерфейса и плавность работы системы при выполнении динамичных действий. Съемка выполняется с помощью блока из 3 камер с высоким разрешением, что позволяет получать профессиональные фото на любом расстоянии и при любом освещении. Широкий функционал Биометрическая аутентификация по лицу и отпечатку пальца гарантирует безопасное хранение данных пользователя и дает возможность мгновенной разблокировки без ввода сложных паролей. Чип NFC помогает проводить оплату в одно касание в кафе, ресторанах, магазинах и супермаркетах. Датчик освещенности выполняет регулировку яркости экрана под уровень окружающего света, тем самым обеспечивая комфорт просмотра. Датчик приближения блокирует дисплей при близости руки и лица, предотвращая случайные срабатывания тачскрина во время телефонных разговоров. Акселерометр производит поворот изображения в соответствии с пространственным положением смартфона.",
       "image_item": "",
-      "company": "Hp",
-      "category": "Компьютеры",
-      "price": 289990,
-      "discount": 0.0,
+      "company": "Honor",
+      "category": "Телефоны",
+      "price": 12990,
+      "discount": 24.0,
       "quantity": 0,
       "discontinued": 0,
       "created_at": "2024-04-23T17:57:05.539Z",
@@ -223,13 +138,13 @@
   {
     "model": "catalog.product",
     "fields": {
-      "name": "HP Spectre x360 16-f1028nn 79S16EA",
-      "descriptions": "velit dicta veritatis odit molestiae nostrum deserunt fuga ipsum sapiente autem nisi sit similique eaque explicabo dolorum soluta mollitia necessitatibus quasi temporibus eveniet laborum iusto earum culpa odio exercitationem suscipit ab molestias ipsam esse consequatur provident reiciendis distinctio dolore vitae eos eligendi illum hic architecto porro nihil possimus incidunt quibusdam",
+      "name": "Honor X6a 6/128Gb",
+      "descriptions": "Honor X6a &mdash; смартфон для веб-серфинга, выполнения стандартных задач, общения в соцсетях и запуска видеороликов в высоком качестве. Поддержка съемных SD-накопителей объемом до 256 гигабайт позволит увеличить внутреннюю память устройства. Характеристики  2 SIM-карты. Сканер лица и отпечатка пальца. Wi-Fi 5 и Bluetooth 5.3. Поддержка NFC. LCD-матрица экрана разрешением 1612х720 и с частотой 90 Гц. Чипсет MediaTek Helio G36 частотой до 2,2 ГГц. 6 Гб оперативной памяти. 128 Гб внутренней памяти. 50+2+2 Мп основная камера. 5 Мп фронтальная камера. Батарея на 5200 мАч.  Высокий уровень защиты Смартфон оборудован высокоточным сканером отпечатка пальца для защиты личных данных от посторонних. Также есть функция распознавания лица, которая позволяет быстро войти в систему без ввода графического пароля. Поддержка связи Модуль Wi-Fi 5 обеспечивает широкополосное беспроводное подключение к интернету с минимальными задержками. Адаптер Bluetooth 5.3 пригодится для высокоскоростного подключения дополнительных устройств к смартфону. Емкий аккумулятор Смартфон оснащен батареей на 5200 мАч для длительной работы без подзарядок. Поддержка технологии Quick Charge позволяет быстро зарядить телефон перед выходом на учебу или работу. Оплата покупок смартфоном Встроенный модуль NFC предназначен для оплаты покупок в магазине без использования физической банковской карты. Пользователю потребуется активировать модуль в настройках и ввести данные карты.",
       "image_item": "",
-      "company": "Hp",
-      "category": "Компьютеры",
-      "price": 285990,
-      "discount": 0.0,
+      "company": "Honor",
+      "category": "Телефоны",
+      "price": 14990,
+      "discount": 21.0,
       "quantity": 0,
       "discontinued": 0,
       "created_at": "2024-04-23T17:57:05.539Z",
@@ -240,13 +155,13 @@
   {
     "model": "catalog.product",
     "fields": {
-      "name": "ASUS ROG Flow GV601VI-NL055W 90NR0G01-M002V0",
-      "descriptions": "quisquam praesentium qui eveniet harum iure natus perspiciatis dolores quaerat odio sapiente nostrum voluptas assumenda placeat aperiam numquam ipsum culpa tempore doloribus ex mollitia dicta at quia atque deleniti repudiandae temporibus ducimus molestiae error dolorem laborum cum corporis accusantium inventore fuga obcaecati aut sequi aliquid consequatur doloremque dolorum ipsam a",
+      "name": "Honor X5 Plus 4/64Gb",
+      "descriptions": "Смартфон Honor X5 Plus станет не только средством связи, но и универсальным помощником в повседневной жизни. Он работает под управлением ОС Android 13 с фирменной оболочкой MagicOS 7.1, обеспечивающей интуитивно понятный интерфейс и надежную защиту конфиденциальных данных. Пластиковый корпус не царапается и не скалывается при падениях на твердые поверхности, гарантируя длительное сохранение первоначального внешнего вида. Качественный дисплей В смартфоне установлена LCD-матрица с разрешением 1612&times;720, которая демонстрирует четкое изображение с точной цветопередачей. Благодаря большим углам обзора картинка не выцветает при взгляде на экран с любой стороны. Частота обновления 90 Гц способствует плавной последовательности кадров при воспроизведении анимации. Функциональная камера Съемка выполняется с помощью двойной камеры 50 Мп. Она позволяет делать детализированные фото при любых условиях освещения. Функция распознавания улыбки позволяет автоматически делать снимки, когда человек улыбается. Портретный режим помогает сфокусироваться на объекте, делая фон размытым. Цифровой зум 10&times; дает возможность увеличения масштаба без смены объектива.",
       "image_item": "",
-      "company": "Asus",
-      "category": "Компьютеры",
-      "price": 325990,
-      "discount": 15.0,
+      "company": "Honor",
+      "category": "Телефоны",
+      "price": 10990,
+      "discount": 27.0,
       "quantity": 0,
       "discontinued": 0,
       "created_at": "2024-04-23T17:57:05.539Z",
@@ -257,13 +172,13 @@
   {
     "model": "catalog.product",
     "fields": {
-      "name": "MSI Pulse 17 AI C1VGKG-023RU 9S7-17T311-023",
-      "descriptions": "voluptatibus consequuntur repellat minus maxime libero molestias aliquid delectus fuga atque dolorum doloremque voluptate ut omnis nam quaerat sit illum obcaecati nihil earum officia expedita beatae eligendi aperiam velit saepe harum perferendis accusantium voluptatum soluta illo dolor temporibus hic impedit porro exercitationem blanditiis explicabo repudiandae sed odit sint magnam praesentium",
+      "name": "Huawei nova Y72 8/128Gb",
+      "descriptions": "Смартфон Huawei nova Y72 оснащен ярким большим экраном, который транслирует качественное изображение. Гаджет работает на базе мощного процессора в сочетании с объемной оперативной памятью, что гарантирует высокую производительность. Блок камер обеспечивает профессиональную съемку. Для селфи и видеозвонков предусмотрен фронтальный сенсор. Емкий аккумулятор с поддержкой технологии быстрой зарядки &mdash; для продолжительной автономной работы. Наличие модуля NFC позволит осуществлять бесконтактные платежи, а система навигации определить местоположение на незнакомой местности. Большой экран диагональю 6,75 дюймов транслирует яркую и детализированную картинку. Технология LCD HD+ делает изображение четким и насыщенным во время просмотра видео или фотографий. Производительность и память Модель работает на восьмиядерном процессоре, который гарантирует быстрый отклик на команды и запуск программ. Оперативная память 8 ГБ отвечает за быстродействие. Емкости встроенного хранилища в 128 ГБ достаточно для большого количества приложений, мультимедийных файлов и другой важной информации. Съемка профессионального уровня Основная камера с модулем 50 МП позволяет получить яркие и четкие фото при любом уровне освещения. Цифровой зум и режим автофокусировки позволяют записывать видеоролики в формате Full HD. Фронтальная камера 8 МП для выразительных и детализированных селфи. Мощная аккумуляторная батарея Гаджет оснащен аккумуляторной батареей энергоемкостью 6000 мАч, которая обеспечит 31 ч автономной работы в режиме воспроизведения видео. Функция быстрой зарядки восстановит ресурс аккумулятора за считаные минуты.",
       "image_item": "",
-      "company": "MSI",
-      "category": "Компьютеры",
-      "price": 272810,
-      "discount": 8.0,
+      "company": "Huawei",
+      "category": "Телефоны",
+      "price": 13990,
+      "discount": 13.0,
       "quantity": 0,
       "discontinued": 0,
       "created_at": "2024-04-23T17:57:05.539Z",
@@ -274,80 +189,12 @@
   {
     "model": "catalog.product",
     "fields": {
-      "name": "MSI Vector 16 HX A14VGG-283RU 9S7-15M242-283",
-      "descriptions": "sapiente ad eum consectetur qui consequatur atque molestias laborum nisi magni repudiandae tenetur nobis dolores et impedit reiciendis labore iusto explicabo debitis amet fuga doloribus quis maxime ducimus quisquam adipisci neque natus asperiores a numquam quod quasi illo earum iste omnis quam unde id laudantium libero saepe eius enim aliquam",
+      "name": "Huawei nova 12i 8/128Gb",
+      "descriptions": "",
       "image_item": "",
-      "company": "MSI",
-      "category": "Компьютеры",
-      "price": 244990,
-      "discount": 0.0,
-      "quantity": 0,
-      "discontinued": 0,
-      "created_at": "2024-04-23T17:57:05.539Z",
-      "created_up": "2024-04-23T17:57:05.539Z",
-      "release": "2024-04-23T00:00:00Z"
-    }
-  },
-  {
-    "model": "catalog.product",
-    "fields": {
-      "name": "MSI Raider GE77HX 12UHS-232RU 9S7-17K514-232",
-      "descriptions": "tempora voluptate aliquid esse incidunt perferendis iste quasi non unde magnam ipsam a facilis quas doloribus molestiae eaque ducimus qui ad ut repellendus placeat reiciendis recusandae illo eligendi odit omnis iure dolores blanditiis possimus accusantium voluptatibus aliquam amet impedit cum asperiores explicabo dolor mollitia nobis sit nesciunt quod dignissimos odio",
-      "image_item": "",
-      "company": "MSI",
-      "category": "Компьютеры",
-      "price": 245990,
-      "discount": 0.0,
-      "quantity": 0,
-      "discontinued": 0,
-      "created_at": "2024-04-23T17:57:05.539Z",
-      "created_up": "2024-04-23T17:57:05.539Z",
-      "release": "2024-04-23T00:00:00Z"
-    }
-  },
-  {
-    "model": "catalog.product",
-    "fields": {
-      "name": "Lenovo ThinkPad X1 Carbon G10 21CCS9Q201",
-      "descriptions": "unde aut iure sit maiores illum facilis delectus quia architecto eveniet veniam repellat voluptas quos mollitia minima et sint perferendis maxime quod error voluptates explicabo harum provident ullam quam veritatis cum iusto impedit hic dolorem ea ipsa vero incidunt necessitatibus qui enim soluta laborum sequi animi iste minus nam rem",
-      "image_item": "",
-      "company": "Lenovo",
-      "category": "Компьютеры",
-      "price": 233990,
-      "discount": 0.0,
-      "quantity": 0,
-      "discontinued": 0,
-      "created_at": "2024-04-23T17:57:05.539Z",
-      "created_up": "2024-04-23T17:57:05.539Z",
-      "release": "2024-04-23T00:00:00Z"
-    }
-  },
-  {
-    "model": "catalog.product",
-    "fields": {
-      "name": "MSI Summit E16 AI Studio A1VETG-017RU 9S7-159621-017",
-      "descriptions": "eius molestiae rem harum maxime dolor maiores aperiam eaque iste cum quas accusamus doloribus veniam consequuntur autem delectus quis ab sed esse amet eligendi perspiciatis temporibus nisi illum libero mollitia atque voluptatem commodi reiciendis aliquam quos quae tenetur sit dolores aut quisquam deleniti ipsum explicabo ut deserunt placeat numquam sequi",
-      "image_item": "",
-      "company": "MSI",
-      "category": "Компьютеры",
-      "price": 220990,
-      "discount": 0.0,
-      "quantity": 0,
-      "discontinued": 0,
-      "created_at": "2024-04-23T17:57:05.539Z",
-      "created_up": "2024-04-23T17:57:05.539Z",
-      "release": "2024-04-23T00:00:00Z"
-    }
-  },
-  {
-    "model": "catalog.product",
-    "fields": {
-      "name": "MSI Prestige 16 AI Studio B1VEG-080RU 9S7-15A211-080",
-      "descriptions": "nostrum placeat enim tenetur ipsam provident porro officia modi qui tempora temporibus magni molestias harum laborum aspernatur quia aut quos possimus quibusdam ipsum eveniet dignissimos cum sapiente hic iusto dicta nesciunt veniam voluptas eum repellat quaerat ut id consequuntur doloremque explicabo quas non aliquid quasi at ex soluta sit architecto",
-      "image_item": "",
-      "company": "MSI",
-      "category": "Компьютеры",
-      "price": 240990,
+      "company": "Huawei",
+      "category": "Телефоны",
+      "price": 17990,
       "discount": 10.0,
       "quantity": 0,
       "discontinued": 0,
@@ -359,12 +206,63 @@
   {
     "model": "catalog.product",
     "fields": {
-      "name": "Samsung Galaxy Book 3 Pro NP944 NP944XFG-KC1IT",
-      "descriptions": "adipisci sit rem architecto minus quia enim itaque harum debitis odio at aut reiciendis mollitia labore quas delectus sunt neque quae deleniti perspiciatis accusamus voluptas laudantium magni magnam vel tempore dignissimos deserunt tempora tenetur veniam doloribus eveniet rerum fuga esse facere illo ex vitae voluptatem odit quod commodi ipsum vero",
+      "name": "Huawei nova Y61 4/128Gb",
+      "descriptions": "",
       "image_item": "",
-      "company": "Samsung",
-      "category": "Компьютеры",
-      "price": 213990,
+      "company": "Huawei",
+      "category": "Телефоны",
+      "price": 10990,
+      "discount": 21.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "Huawei nova 11i 8/128Gb",
+      "descriptions": "Вдохновляйтесь с HUAWEI nova 11i. Мощная батарея емкостью 5000 мА*ч, максимальная громкость 88 дБ, 6,8-дюймовый безрамочный экран HUAWEI FullView, память 128 ГБ, фото в высоком разрешении 48 МП.Толщина всех рамок смартфона, кроме нижней, составляет всего 1 мм. Разрешение дисплея &mdash; 2388x1080 пикселей, частота обновления &mdash; 90 Гц. Вверху по центру панели врезан модуль 16-мегапиксельной селфи-камеры.<br /> За производительность смартфона отвечает процессор Qualcomm Snapdragon 680, работающий при поддержке 8 ГБ оперативной памяти. Объём внутреннего накопителя составляет 128 ГБ. На задней панели размещён двойной блок основной камеры с 48-мегапиксельным главным сенсором и модулем для размытия фона на 2 Мп. Завершают список характеристик аккумулятор на 5000 мАч с поддержкой 40-ваттной быстрой зарядки, а также модули Wi-Fi и Bluetooth 5.0 (SBC, AAC)",
+      "image_item": "",
+      "company": "Huawei",
+      "category": "Телефоны",
+      "price": 16990,
+      "discount": 15.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "Huawei nova Y91 8/128Gb",
+      "descriptions": "Huawei nova Y91 оснащен большим 6,95-дюймовым сенсорным IPS-экраном с разрешением 2376 &times; 1080 точек (Full HD+), частотой обновления 90 Гц и частотой дискретизации касаний в 270 Гц. В вырезе в верхней части экрана находится 8-Мп камера с диафрагмой f/2.0. На задней панели смартфона размещена 50-мегапиксельная камера с диафрагмой F1.8, которую дополняет 2-мегапиксельный датчик измерения глубины (F2.4). Смартфон базируется на восьмиядерном процессоре Qualcomm Snapdragon 680 с графическим ускорителем Adreno 610. Объём оперативной памяти составляет 8 Гбайт, ёмкость флеш-накопителя &mdash; 128 или 256 Гбайт. Аккумулятор ёмкостью 7000 мА&middot;ч поддерживает быструю зарядку Huawei SuperCharge мощностью 22,5 Вт. Спецификации устройства также включают адаптеры беспроводной связи Bluetooth 5.0, Wi-Fi 802.11 a/b/g/n/ac и порт USB-C.",
+      "image_item": "",
+      "company": "Huawei",
+      "category": "Телефоны",
+      "price": 17990,
+      "discount": 18.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "Huawei nova 10 8/128Gb",
+      "descriptions": "На всех смартфонах и планшетах HUAWEI предустановлен магазин приложений AppGallery, где доступны более 95% популярных приложений в России. Также для скачивания доступы все Google-сервисы, в том числе и YouTube. При скачивании Google-приложений из AppGallery необходимо дать разрешение на установку Gbox для корректной работы сервисов.Смартфон Huawei nova 10 оснащен большим OLED-дисплеем с узкими рамками. Края закруглены &mdash; благодаря этому телефон удобно держать в одной руке. Фронтальная сверхширокоугольная селфи-камера с разрешением 60 Мп имеет угол обзора в 100&deg; и позволяет снимать профессиональные видео в популярных форматах Full HD и 4K. Установлен несъемный аккумулятор емкостью 4000 мАч. Полного заряда хватит на целый день активного использования смартфона. Особенности модели  операционная система Windows; быстрая зарядка 66 Вт с поддержкой технологии SuperCharge; бесконтактная оплата NFC; сканер отпечатка пальца.  Экран 6,67-дюймовый дисплей 120 Гц с поддержкой HDR10 имеет соотношение сторон 20:9 и разрешение FHD+ (2400x1080 пикселей). Отличается высокой четкостью изображения при солнечном свете и пониженным энергопотреблением. Имеет хороший запас по яркости. Сенсор отзывчивый &mdash; с частотой 300 Гц &mdash; мгновенно реагирует на касания, что важно во время игр. Технические характеристики Восьмиядерный процессор Snapdragon 778G с тактовой частотой 2400 МГц работает в паре с графическим ускорителем Adreno 642L. Не перегревается под нагрузкой и вытягивает большинство современных игр на высоких настройках. Быстродействие системы обеспечивает 8 Гб оперативной памяти. Для хранения фото и видео выделено 128 Гб внутренней памяти. Камера Основной 50-мегапиксельный объектив поддерживает оптическую стабилизацию и автоматическую фокусировку. Подходит для съемки в дневное и ночное время. Качество фотографий получается достойным, с хорошей детализацией. Дополнительно предусмотрены 8-мегапиксельная сверхширокоугольная камера для макросъемки с расстояния двух сантиметров и стандартный датчик глубины 2 Мп. Светодиодная вспышка будет полезна в темное время суток или при плохом освещении.",
+      "image_item": "",
+      "company": "Huawei",
+      "category": "Телефоны",
+      "price": 33990,
       "discount": 0.0,
       "quantity": 0,
       "discontinued": 0,
@@ -376,12 +274,216 @@
   {
     "model": "catalog.product",
     "fields": {
-      "name": "Apple MacBook Air A2681 Z15S0000P",
-      "descriptions": "at voluptatum provident saepe nostrum praesentium eos fugiat consequatur quia iste ad labore fugit minus qui ea itaque est mollitia expedita exercitationem dicta eaque autem dolor hic error cumque commodi voluptas harum quisquam doloremque esse architecto quaerat iusto quae quod eligendi veritatis ex quo consequuntur quis totam omnis corrupti soluta",
+      "name": "Huawei P60 8/256Gb",
+      "descriptions": "",
       "image_item": "",
-      "company": "Apple",
-      "category": "Компьютеры",
-      "price": 211990,
+      "company": "Huawei",
+      "category": "Телефоны",
+      "price": 59990,
+      "discount": 10.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "INFINIX Note 30 8/256Gb",
+      "descriptions": "",
+      "image_item": "",
+      "company": "Infinix",
+      "category": "Телефоны",
+      "price": 15990,
+      "discount": 33.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "INFINIX Note 30 Pro 8/256Gb",
+      "descriptions": "Гарантия и работоспособность товара распространяются только на аппараты, активированные на территории ТС ЕАЭС.",
+      "image_item": "",
+      "company": "Infinix",
+      "category": "Телефоны",
+      "price": 21990,
+      "discount": 19.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "INFINIX Note 30 8/128Gb",
+      "descriptions": "Гарантия и работоспособность товара распространяются только на аппараты, активированные на территории ТС ЕАЭС.</div>",
+      "image_item": "",
+      "company": "Infinix",
+      "category": "Телефоны",
+      "price": 14990,
+      "discount": 32.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "INFINIX Hot 40i 8/128Gb",
+      "descriptions": "Смартфон INFINIX HOT 40i получил 6,56-дюймовый экран с IPS-матрицей, который поддерживает разрешение HD+, отличается реалистичной цветопередачей и обладает приличным запасом яркости 480 нит. Благодаря увеличенной частоте обновления 90 Гц прокрутка страниц будет максимально плавной, без рывков или подергиваний. Модель имеет торцевой сканер отпечатка пальца и поддерживает разблокировку по лицу. Дисплей защищен ударопрочным стеклом с олеофобным покрытием, на котором не остаются жирные следы, а корпус изготовлен по стандарту IP53, поэтому не боится брызг воды и пыли. Несъемный литий-ионный аккумулятор емкостью 5000 мАч позволит активно пользоваться телефоном на протяжении целого дня. А если батарея полностью разрядится, то с помощью быстрой 18-ваттной зарядки её можно &laquo;оживить&raquo; буквально за один час. Особенности  слот для microSD; цифровой компас; системы навигации ГЛОНАСС/GPS; стандарт Wi-Fi 5.  Смартфон работает на базе восьмиядерного процессора Unisoc t606 и графического ускорителя Mali-G57. Производительности &laquo;железа&raquo; хватит для игр и выполнения любых повседневных задач. Быстродействие обеспечивают 8 Гб ОЗУ, поэтому зависать или тормозить телефон точно не будет. Для хранения мультимедийных файлов выделено 128 гигабайт постоянной памяти. Если этого окажется мало, можно установить microSD-карту объемом до 2 Тб. Камера 50 Мп Основной объектив позволяет снимать четкие фотографии в помещении и на улице в любое время суток. Вспомогательная функция Super Night использует продвинутые алгоритмы ИИ, чтобы при недостаточном освещении каждый кадр выглядел максимально естественно. Видеосъемка доступна в Full HD-качестве. Причем можно выбирать разные режимы: документы, таймлапс, профессиональное, панорама и др.",
+      "image_item": "",
+      "company": "Infinix",
+      "category": "Телефоны",
+      "price": 11990,
+      "discount": 20.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "INFINIX Hot 40 8/256Gb",
+      "descriptions": "INFINIX HOT 40 &mdash; современный многофункциональный ноутбук с тройной камерой, мощным процессором в прочном, ударозащитном корпусе. При использовании в режиме просмотра видео способен автономно работать до 30 часов. Преимущества  8 ГБ оперативной памяти. 256 ГБ основной памяти. Слот для внешнего накопителя до 1 ТБ. Разблокировка по распознаванию лица и отпечатку пальцев. Модули GPS и A-GPS. Поддержка Wi-Fi и Bluetooth.  Функциональные особенности INFINIX HOT 40 получил большой сенсорный экран 6.78 дюймов с высоким разрешением 2460x1080 пикселей и комфортным соотношением сторон 20.5:9. Производительность обеспечивает 8-ядерный процессор MediaTek Helio G88 с частотой процессора 2200 МГц и мощным техпроцессом. Корпус выполнен в виде моноблока, изготовлен из высококачественного пластика, экран покрыт стеклом Panda MN2282.5D с олеофобным покрытием. О камере Смартфон INFINIX HOT 40 получил основную систему камера с тремя объективами &mdash; широкоугольный на 50 Мп с диафрагмой F/1.6, макрообъектив 2 Мп и дополнительный объектив 0.08 Мп. Для съемки в темное время суток предусмотрено сразу четыре вспышки. Есть автофокусировка и 10-кратный цифровой зум. С помощью камер можно выполнять замедленную съемку, делать видео в режиме таймлапс.",
+      "image_item": "",
+      "company": "Infinix",
+      "category": "Телефоны",
+      "price": 14990,
+      "discount": 17.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "INFINIX Note 30i 8/256Gb",
+      "descriptions": "Смартфон INFINIX NOTE 30i обеспечивает стабильную связь и широкие возможности для работы и развлечений. Большой объем встроенной памяти позволяет хранить много изображений, видео и прочих файлов. Характеристики  диагональ экрана: 6.66; разрешение: 2400x1080; оперативная память: 8 Гб; SSD-накопитель: 256 Гб; поддержка сетей: 2G/3G/4G (LTE); основная камера: 64 Мп; емкость аккумулятора: 5000 mAh.  Высокая производительность Благодаря мощному 8-ядерному процессору Mediatek Helio G85 и большому объему оперативной памяти смартфон легко справляется с задачами любой сложности. Он подходит для запуска современных игр и работы с ресурсоемкими приложениями. Яркий экран AMOLED-дисплей большого размера позволяет насладиться яркой картинкой с насыщенными цветами. Такой экран отображает расширенную цветовую гамму, что делает изображение максимально реалистичным. Широкие углы обзора позволяют просматривать картинку из любого положения. Долгое время автономной работы Энергоемкий аккумулятор позволяет использовать смартфон в режиме разговора до 44.1 ч. Разъем Type-C дает возможность легко зарядить устройство в любом месте. Функция быстрой зарядки существенно ускоряет процесс восполнения энергии.",
+      "image_item": "",
+      "company": "Infinix",
+      "category": "Телефоны",
+      "price": 15990,
+      "discount": 27.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "INFINIX Note 30i 8/128Gb",
+      "descriptions": "Смартфон INFINIX NOTE 30i был представлен в 2023 году. Он станет верным помощником современного пользователя, которому важен хороший экран, стабильная работа приложений и возможность снимать детализированные фотографии. Качественный экран Экран AMOLED FHD+ порадует высокой детализацией изображения, отличной контрастностью и точной цветопередачей. Диагональ 6,66 дюймов обеспечивает удобную работу с текстом и комфортный просмотр медиафайлов. Современный процессор Восьмиядерный процессор Mediatek Helio G85 без труда справится с программами для решения повседневных задач. Графический ускоритель ARM Mali-G52 MC2 помогает при рендеринге изображения, позволяя смотреть видео без задержек и играть в игры на средних и высоких настройках. Снимки в высоком разрешении Основная камера имеет разрешение 64 Мп и состоит из нескольких модулей, которые подключаются в различных условиях и обеспечивают высокое качество фото и видео. Фронтальная камера совмещает функцию разблокировки по лицу, альтернатива &ndash; сканер отпечатка пальца. Большой объём памяти Оперативная память объёмом 8 Гб поможет при работе в режиме многозадачности и запуске тяжёлых приложений. Встроенная память имеет объём 128 Гб, её можно расширить установкой карты памяти microSD размером до 1 ТБ.",
+      "image_item": "",
+      "company": "Infinix",
+      "category": "Телефоны",
+      "price": 13990,
+      "discount": 30.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "INFINIX Smart 8 3/64Gb",
+      "descriptions": "Смартфон INFINIX SMART 8 работает на базе восьмиядерного процессора, который в сочетании с оперативной памятью позволяет решать простые ежедневные задачи. Устройство также получило экран с частотой обновления 90 Гц, на котором транслируется качественная картинка. Смарт-панель в области фронтальной камеры отображает информацию о входящих вызовах и другие системные уведомления. Модель поддерживает установку двух SIM-карт формата nano. Удобный и быстрый доступ возможен за счет сканера отпечатка пальца и технологии разблокировки по лицу. Четкое и яркое изображение Модель оснащена экраном на основе IPS-матрицы с диагональю 6.56, который транслирует детализированное изображение с естественной цветопередачей. Частота обновления 90 Гц обеспечивает плавность работы в разных сценариях использования. Пиковая яркость в 500 нит гарантирует четкость картинки на экране при любом уровне освещения. Умный сканер Предусмотрена возможность быстро сканировать сразу несколько страниц документа, изменять свою подпись и сохранять их в формате PDF, а также делиться всего в два касания. Достойная производительность Модель получила 8-ядерный процессор, который демонстрирует достойную производительность в решении ежедневных задач, обеспечивая плавную работу интерфейса. За быстродействие отвечает ОЗУ 3 ГБ. Объема встроенной памяти в 64 ГБ достаточно для хранения важной информации и быстрого запуска приложений, но если делать много фотографий и снимать видео, то лучше обзавестись картой памяти Micro SD объемом до 2 ТБ. Сохранить важные моменты Двойная основная камера 13 Мп с кольцевой вспышкой позволит запечатлеть значимые моменты жизни. Для съемки селфи предусмотрена фронтальная камера 8 Мп и LED-вспышка. Специальный режим обеспечит красивый эффект боке и четкие очертания лица, что позволит делать атмосферные портреты. Впечатляющая автономность Смартфон INFINIX SMART 8 получил внушительную аккумуляторную батарею энергоемкостью 5000 мАч. Зарядка осуществляется через порт Type-C. Режим Марафонская выносливость обеспечит сутки автономной работы гаджета в режиме ожидания или до двух часов разговоров на 5% заряда аккумулятора.",
+      "image_item": "",
+      "company": "Infinix",
+      "category": "Телефоны",
+      "price": 6990,
+      "discount": 30.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "INFINIX Smart 8 4/128Gb",
+      "descriptions": "Смартфон INFINIX SMART 8 &mdash; доступный гаджет с емкой батареей и поддержкой двух nano SIM-карт. Технология Link-Booming обеспечивает стабильность и высокое качество связи. Устройство оснащено безрамочным экраном с интерактивным вырезом под фронтальную камеру, на который выводится информация о входящих вызовах и состоянии аккумулятора. Для быстрой разблокировки предусмотрена технология распознавания лица и сканер отпечатков пальцев. Устройство защищено от попадания внутрь пыли и влаги по стандарту IP53. Дисплей и звук Дисплей диагональю 6.56 на базе IPS-матрицы с разрешением HD+ отображает детализированную картинку с естественной цветопередачей. Отличается широкими углами обзора. За счет частоты обновления 90 Гц динамичные сцены воспроизводятся плавно. Пиковая яркость 500 кд/м&sup2; обеспечивает комфортное использование смартфона даже при ярком солнце. Гаджет воспроизводит громкий и насыщенный звук. Технология DTS дает возможность увеличить громкость до 200%. Производительность и память Восьмиядерный процессор обеспечивает высокую производительность при выполнении ежедневных задач. За быстродействие отвечает ОЗУ 4 ГБ. Для хранения файлов и приложений предусмотрено 128 ГБ встроенной памяти. Этот показатель можно увеличить посредством установки карты памяти формата microSD емкостью до 2 ТБ. Возможности съемки Основная широкоугольная камера 13 Мп с датчиком глубины позволяет делать фото высокого качества с эффектом боке в портретном режиме. Светодиодная вспышка &mdash; для равномерной подсветки объектов в кадре. Для красивых селфи предусмотрен фронтальный сенсор 8 Мп. Гаджет способен записывать видеоролики в форматах Full HD и Ultra HD 4K. Автономность Смартфон INFINIX SMART 8 имеет аккумулятор 5 000 мАч, который обеспечит автономную работу устройства на протяжении суток. Зарядка осуществляется через порт USB Type-C. Режим &laquo;Марафонская выносливость&raquo; позволяет гаджету работать еще 2 часа при 5% заряда батареи.",
+      "image_item": "",
+      "company": "Infinix",
+      "category": "Телефоны",
+      "price": 8490,
+      "discount": 29.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "INFINIX Smart 8 Plus 4/128Gb",
+      "descriptions": "",
+      "image_item": "",
+      "company": "Infinix",
+      "category": "Телефоны",
+      "price": 9990,
+      "discount": 29.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "INFINIX Zero 30 8/256Gb",
+      "descriptions": "Смартфон INFINIX ZERO 30 имеет 6,78-дюймовый дисплей с максимальной частотой обновления 120 Гц, разрешением FHD+ (2400x1080 пикселей) и пиковой яркостью в 950 нит, который воспроизводит четкую картинку и остается хорошо читаемым даже под прямыми солнечными лучами. В режиме защиты зрения можно длительное время просматривать ленту в соцсетях, искать информацию в веб-браузере или читать электронную книгу без вреда для глаз. Производительность обеспечивает восьмиядерный процессор Helio G99, который работает в связке с графическим ускорителем Mali G57. С такой аппаратной &laquo;начинкой&raquo; устройство без проблем справится с запуском требовательных приложений. Благодаря 8 Гб ОЗУ телефон не будет зависать или тормозить в процессе работы, а 256 гигабайт постоянной памяти хватит для хранения большого количества мультимедийных файлов. За счет емкого аккумулятора можно непрерывно смотреть фильмы в интернете в течение 18 часов, а также слушать любимую музыку/радио на протяжении суток. Особенности  поддержка стандарта IP54; универсальный разъем Type-C для подключения наушников и зарядки батареи; сканер отпечатка пальца; есть разблокировка по лицу.  Беспроводные интерфейсы представлены модулем Wi-Fi пятого поколения, NFC и Bluetooth-адаптером. Дополнительно присутствуют системы навигации ГЛОНАСС, GPS и др. Три камеры На основной широкоугольный объектив с разрешением 108 Мп можно делать качественные фотографии при естественном освещении и снимать видео в Full HD качестве. Дополнительно присутствуют макрообъектив для съемки крупным планом и 13-мегапиксельная сверхширокоугольная оптика, на которую можно запечатлеть красивые пейзажи и городские улицы.",
+      "image_item": "",
+      "company": "Infinix",
+      "category": "Телефоны",
+      "price": 22990,
+      "discount": 21.0,
+      "quantity": 0,
+      "discontinued": 0,
+      "created_at": "2024-04-23T17:57:05.539Z",
+      "created_up": "2024-04-23T17:57:05.539Z",
+      "release": "2024-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "fields": {
+      "name": "INFINIX Note 12 VIP NFC 8/256Gb",
+      "descriptions": "INFINIX Note 12 VIP &mdash; современный смартфон с высокопроизводительным процессором. Оснащен дисплеем Super Light AMOLED с частотой обновления 120 Гц и игровым процессором Helio G96. Кинематографическая камера 108 Мп позволяет получать фото и видео в ультракачественном формате. Преимущества  ОС Android 12. Оперативная память 8 Гб. Встроенная память &mdash; 256 Гб. Поддержка нескольких голосовых помощников. Возможность установки карты памяти до 2 ТБ. Аккумулятор емкостью 4500 мАч. Поддержка Wi-Fi и Bluetooth последних версий. Сканер отпечатка пальца. Модуль NFC.  Производительность и функциональность Смартфон INFINIX Note 12 VIP оснащен большим, безрамочным экраном с разрешением 2400&times;1080 пикселей. Дисплей способен передавать все цвета и оттенки с высокой точностью, картинка получается максимально реалистичной и естественной. Мощный 8-ядерный процессор Mediatek Helio G96 отвечает за быстродействие гаджета &mdash; высокая скорость отклика гарантирует, что смартфон не &laquo;затупит&raquo; и не зависнет во время игры или при большом количестве открытых вкладок браузера. Способы подключения Смартфон поддерживает все стандартные интерфейсы. Выход mini-USB отвечает за соединение с зарядным проводом и компьютером. С помощью Wi-Fi можно подключаться к беспроводной сети и выходить в интернет без ограничения скорости и лимита. Модуль Bluetooth отвечает за связь с периферийными устройствами &mdash; беспроводными наушниками, музыкальными колонками или другими смартфонами. Камера с большим потенциалом Устройство оснащено сразу тремя камерами. Основная &mdash; с разрешением 108 Мп &mdash; поддерживает режим автофокусировки: снимает плавно и четко даже объекты в движении. Запись видео возможна в формате 2К.",
+      "image_item": "",
+      "company": "Infinix",
+      "category": "Телефоны",
+      "price": 27990,
       "discount": 0.0,
       "quantity": 0,
       "discontinued": 0,
@@ -393,13 +495,13 @@
   {
     "model": "catalog.product",
     "fields": {
-      "name": "ASUS Vivobook Pro 16X OLED K6604JV-MX112W 90NB1102-M00540",
-      "descriptions": "minus hic soluta quos aperiam quisquam earum voluptatum nihil iure placeat sunt itaque voluptatem alias saepe accusantium aliquid qui reiciendis rem temporibus asperiores omnis aut aspernatur labore commodi suscipit pariatur explicabo ea rerum accusamus autem amet et vitae aliquam nobis obcaecati eum facilis adipisci perferendis laborum repellat fuga debitis fugiat",
+      "name": "INFINIX Smart 7 HD 2/64Gb",
+      "descriptions": "Гарантия и работоспособность товара распространяются только на аппараты, активированные на территории ТС ЕАЭС.",
       "image_item": "",
-      "company": "Asus",
-      "category": "Компьютеры",
-      "price": 205990,
-      "discount": 0.0,
+      "company": "Infinix",
+      "category": "Телефоны",
+      "price": 6290,
+      "discount": 21.0,
       "quantity": 0,
       "discontinued": 0,
       "created_at": "2024-04-23T17:57:05.539Z",
@@ -410,98 +512,13 @@
   {
     "model": "catalog.product",
     "fields": {
-      "name": "Lenovo Legion Slim 5 16IRH8 82YA009RRK",
-      "descriptions": "tempore earum laborum eos nobis qui repellendus obcaecati enim dolor voluptatem quae id perspiciatis atque iusto neque sed culpa ipsam ad vero quod impedit adipisci doloribus distinctio incidunt omnis aliquam nisi debitis expedita natus placeat deserunt a illum nostrum iure voluptate voluptatibus ex ratione quaerat voluptates facere laudantium veritatis voluptatum",
+      "name": "INFINIX Hot 20S 8/128Gb",
+      "descriptions": "",
       "image_item": "",
-      "company": "Lenovo",
-      "category": "Компьютеры",
-      "price": 203990,
-      "discount": 0.0,
-      "quantity": 0,
-      "discontinued": 0,
-      "created_at": "2024-04-23T17:57:05.539Z",
-      "created_up": "2024-04-23T17:57:05.539Z",
-      "release": "2024-04-23T00:00:00Z"
-    }
-  },
-  {
-    "model": "catalog.product",
-    "fields": {
-      "name": "ASUS ExpertBook B9 B9403CVA-KM0499X 90NX05W1-M00NJ0",
-      "descriptions": "provident minima id itaque similique labore quaerat ullam sunt a fugiat voluptate delectus eligendi ipsam deleniti consequatur maiores iste suscipit soluta tempora inventore dolorem sint accusamus cum vero molestiae totam autem porro odio distinctio sequi praesentium quam atque veritatis assumenda cumque quidem hic nostrum quasi magnam odit voluptatem ab reiciendis",
-      "image_item": "",
-      "company": "Asus",
-      "category": "Компьютеры",
-      "price": 201990,
-      "discount": 0.0,
-      "quantity": 0,
-      "discontinued": 0,
-      "created_at": "2024-04-23T17:57:05.539Z",
-      "created_up": "2024-04-23T17:57:05.539Z",
-      "release": "2024-04-23T00:00:00Z"
-    }
-  },
-  {
-    "model": "catalog.product",
-    "fields": {
-      "name": "MSI Sword 17 HX B14VGKG-048XRU 9S7-17T214-048",
-      "descriptions": "vero itaque voluptatem unde blanditiis omnis quisquam alias atque molestias ipsam iste maiores odit tempore quidem ducimus officia perspiciatis ex placeat quod doloribus enim magnam autem consequuntur dolor quasi quo facilis amet libero at accusamus est aperiam officiis accusantium vitae eligendi modi nulla laborum illum voluptas error sit exercitationem sunt",
-      "image_item": "",
-      "company": "MSI",
-      "category": "Компьютеры",
-      "price": 199990,
-      "discount": 0.0,
-      "quantity": 0,
-      "discontinued": 0,
-      "created_at": "2024-04-23T17:57:05.539Z",
-      "created_up": "2024-04-23T17:57:05.539Z",
-      "release": "2024-04-23T00:00:00Z"
-    }
-  },
-  {
-    "model": "catalog.product",
-    "fields": {
-      "name": "ASUS TUF Gaming A15 FA507UI-HQ059 90NR0I65-M00330",
-      "descriptions": "expedita perspiciatis neque optio maxime minus quos esse fugit doloremque velit magnam voluptatum ratione consequatur repellendus quae sed amet quas molestias hic quisquam repellat numquam facilis a ea eius soluta voluptatem voluptate dignissimos assumenda veritatis aliquid culpa incidunt perferendis libero accusantium beatae ut consequuntur eos reprehenderit dolorem quasi aperiam laudantium",
-      "image_item": "",
-      "company": "Asus",
-      "category": "Компьютеры",
-      "price": 193990,
-      "discount": 0.0,
-      "quantity": 0,
-      "discontinued": 0,
-      "created_at": "2024-04-23T17:57:05.539Z",
-      "created_up": "2024-04-23T17:57:05.539Z",
-      "release": "2024-04-23T00:00:00Z"
-    }
-  },
-  {
-    "model": "catalog.product",
-    "fields": {
-      "name": "Lenovo Legion Slim 5 16APH8 82Y9000BRK",
-      "descriptions": "numquam itaque exercitationem unde quasi voluptate tenetur accusamus quia voluptatem repellat obcaecati perferendis nostrum veniam dolor qui aut alias cum atque molestias ea est libero cumque inventore sit quod expedita porro commodi praesentium voluptates impedit amet recusandae similique vero rem maxime quibusdam in neque placeat quidem facere provident sequi quisquam",
-      "image_item": "",
-      "company": "Lenovo",
-      "category": "Компьютеры",
-      "price": 189990,
-      "discount": 0.0,
-      "quantity": 0,
-      "discontinued": 0,
-      "created_at": "2024-04-23T17:57:05.539Z",
-      "created_up": "2024-04-23T17:57:05.539Z",
-      "release": "2024-04-23T00:00:00Z"
-    }
-  },
-  {
-    "model": "catalog.product",
-    "fields": {
-      "name": "Lenovo LOQ 15IRH8 82XV00KCRK",
-      "descriptions": "quidem amet expedita reprehenderit placeat sint saepe totam nisi fugit necessitatibus soluta quibusdam repellat sapiente vel blanditiis tenetur porro deserunt est vitae eius minus maiores magnam dolorem ratione laboriosam odio distinctio neque quia officia molestias laborum rem quasi modi suscipit nobis asperiores quam tempora sit maxime nostrum praesentium ut earum",
-      "image_item": "",
-      "company": "Lenovo",
-      "category": "Компьютеры",
-      "price": 169490,
-      "discount": 0.0,
+      "company": "Infinix",
+      "category": "Телефоны",
+      "price": 18790,
+      "discount": 20.0,
       "quantity": 0,
       "discontinued": 0,
       "created_at": "2024-04-23T17:57:05.539Z",

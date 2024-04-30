@@ -1,5 +1,13 @@
 [
     {
+        "model": "sites.site",
+        "pk": 1,
+        "fields": {
+            "domain": "example.com",
+            "name": "example.com"
+        }
+    },
+    {
         "model": "home.homepage",
         "pk": 1,
         "fields": {
@@ -262,6 +270,7 @@
         "pk": "Прочее",
         "fields": {
             "descriptions": "",
+            "image": "category/headphones.png",
             "url": "other"
         }
     },
@@ -270,6 +279,7 @@
         "pk": "Планшеты",
         "fields": {
             "descriptions": "",
+            "image": "category/planshets.png",
             "url": "tablets"
         }
     },
@@ -278,6 +288,7 @@
         "pk": "Телефоны",
         "fields": {
             "descriptions": "",
+            "image": "category/phone.png",
             "url": "phones"
         }
     },
@@ -286,6 +297,7 @@
         "pk": "Компьютеры",
         "fields": {
             "descriptions": "",
+            "image": "category/noutbooks.png",
             "url": "computers"
         }
     },
@@ -338,6 +350,7 @@
         "model": "catalog.companies",
         "pk": "Apple",
         "fields": {
+            "image": "company/Apple_logo_black.svg.png",
             "country": null,
             "adress": null,
             "url": "apple",
@@ -352,6 +365,7 @@
         "model": "catalog.companies",
         "pk": "Asus",
         "fields": {
+            "image": "company/1024px-AsusTek_logo.svg.png",
             "country": null,
             "adress": null,
             "url": "asus",
@@ -365,6 +379,7 @@
         "model": "catalog.companies",
         "pk": "Dell",
         "fields": {
+            "image": "company/Dell_logo_2016.svg.png",
             "country": null,
             "adress": null,
             "url": "dell",
@@ -377,6 +392,7 @@
         "model": "catalog.companies",
         "pk": "Honor",
         "fields": {
+            "image": "company/Huawei_Honor_Logo.svg.png",
             "country": null,
             "adress": null,
             "url": "honor",
@@ -390,6 +406,7 @@
         "model": "catalog.companies",
         "pk": "Hp",
         "fields": {
+            "image": "company/HP_New_Logo_2D.svg.png",
             "country": null,
             "adress": null,
             "url": "hp",
@@ -402,6 +419,7 @@
         "model": "catalog.companies",
         "pk": "Huawei",
         "fields": {
+            "image": "company/unnamed.png",
             "country": null,
             "adress": null,
             "url": "huawei",
@@ -415,6 +433,7 @@
         "model": "catalog.companies",
         "pk": "Infinix",
         "fields": {
+            "image": "company/Infinix_logo.svg.png",
             "country": null,
             "adress": null,
             "url": "infinix",
@@ -427,6 +446,7 @@
         "model": "catalog.companies",
         "pk": "Lenovo",
         "fields": {
+            "image": "company/Branding_lenovo-logo_lenovologoposred_low_res.png",
             "country": null,
             "adress": null,
             "url": "lenovo",
@@ -441,6 +461,7 @@
         "model": "catalog.companies",
         "pk": "MSI",
         "fields": {
+            "image": "company/rog-republic-of-gamers-logo-84B39C08CE-seeklogo.com_8HaKDb0.png",
             "country": null,
             "adress": null,
             "url": "msi",
@@ -453,6 +474,7 @@
         "model": "catalog.companies",
         "pk": "Poco",
         "fields": {
+            "image": "company/POCO_logo.svg.png",
             "country": null,
             "adress": null,
             "url": "poco",
@@ -465,6 +487,7 @@
         "model": "catalog.companies",
         "pk": "ROG",
         "fields": {
+            "image": "company/rog-republic-of-gamers-logo-84B39C08CE-seeklogo.com.png",
             "country": null,
             "adress": null,
             "url": "rog",
@@ -477,6 +500,7 @@
         "model": "catalog.companies",
         "pk": "Realme",
         "fields": {
+            "image": "company/Realme_logo.png",
             "country": null,
             "adress": null,
             "url": "realme",
@@ -489,6 +513,7 @@
         "model": "catalog.companies",
         "pk": "Samsung",
         "fields": {
+            "image": "company/Samsung_Logo.svg.png",
             "country": null,
             "adress": null,
             "url": "samsung",
@@ -503,6 +528,7 @@
         "model": "catalog.companies",
         "pk": "Xiaomi",
         "fields": {
+            "image": "company/Xiaomi_logo_2021-.svg.png",
             "country": null,
             "adress": null,
             "url": "xiaomi",
@@ -516,6 +542,7 @@
         "model": "catalog.companies",
         "pk": "Все товары",
         "fields": {
+            "image": "",
             "country": null,
             "adress": null,
             "url": "all",
@@ -1382,7 +1409,7 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-28T21:04:20.154Z",
-            "release": "2024-04-23T00:00:00Z",
+            "release": "2023-04-23T00:00:00Z",
             "url": "xiaomi-pad-6-23043rp34g-11"
         }
     },
@@ -1402,7 +1429,7 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-28T21:04:11.194Z",
-            "release": "2024-04-23T00:00:00Z",
+            "release": "2023-04-23T00:00:00Z",
             "url": "honor-pad-9-hey2-w09-121"
         }
     },
@@ -1442,7 +1469,7 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-28T21:03:41.888Z",
-            "release": "2024-04-23T00:00:00Z",
+            "release": "2023-04-23T00:00:00Z",
             "url": "samsung-galaxy-tab-s9-ultra-sm-x916b-so-stilusom-146"
         }
     },
@@ -1450,7 +1477,7 @@
         "model": "catalog.product",
         "pk": 143,
         "fields": {
-            "name": "MSI Titan 18 HX A14VIG-211RU 9S7-182221-211",
+            "name": "MSI Titan 18 HX A14VIG-211RU",
             "descriptions": "tenetur asperiores libero recusandae inventore vel dolorem dolore explicabo sed provident neque vero dicta reiciendis at corrupti incidunt ipsa consequuntur sequi reprehenderit laborum enim consectetur atque autem possimus esse quod voluptatibus est earum fuga illo eum repellendus delectus accusamus deleniti eaque voluptates labore nemo quam odio expedita soluta error ipsam",
             "image_item": "",
             "company": "MSI",
@@ -1462,15 +1489,15 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:33:20.815Z",
-            "release": "2024-04-23T00:00:00Z",
-            "url": "msi-titan-18-hx-a14vig-211ru-9s7-182221-211"
+            "release": "2023-04-23T00:00:00Z",
+            "url": "msi-titan-18-hx-a14vig-211ru"
         }
     },
     {
         "model": "catalog.product",
         "pk": 144,
         "fields": {
-            "name": "MSI Creator 16 AI Studio A1VIG-060RU 9S7-15F314-060",
+            "name": "MSI Creator 16 AI Studio A1VIG-060RU",
             "descriptions": "saepe dicta possimus incidunt ex accusantium consectetur voluptatem quasi culpa ad rem nihil repellat deleniti corrupti exercitationem quam nam veniam doloribus molestiae eligendi officia facere vel esse placeat fuga assumenda dolor mollitia excepturi fugit cumque voluptatum totam soluta iusto doloremque accusamus ipsa perspiciatis adipisci architecto natus cupiditate quia hic ratione",
             "image_item": "",
             "company": "MSI",
@@ -1482,15 +1509,15 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:33:15.395Z",
-            "release": "2024-04-23T00:00:00Z",
-            "url": "msi-creator-16-ai-studio-a1vig-060ru-9s7-15f314-060"
+            "release": "2023-04-23T00:00:00Z",
+            "url": "msi-creator-16-ai-studio-a1vig-060ru"
         }
     },
     {
         "model": "catalog.product",
         "pk": 145,
         "fields": {
-            "name": "ASUS ROG Zephyrus Duo 16 GX650PY-NM085W 90NR0BI1-M004X0",
+            "name": "ASUS ROG Zephyrus Duo 16 GX650PY-NM085W",
             "descriptions": "deserunt tempore quis voluptate quibusdam officiis fugit nisi ratione tenetur laboriosam magnam harum inventore vitae maiores architecto voluptates necessitatibus doloribus voluptatem nostrum dicta non explicabo quas nemo veniam eaque provident mollitia voluptas aliquid corporis cumque facere sunt natus ut repellendus dolores nobis deleniti rerum quod sint aut minus similique sapiente",
             "image_item": "",
             "company": "Asus",
@@ -1502,15 +1529,15 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:33:10.300Z",
-            "release": "2024-04-23T00:00:00Z",
-            "url": "asus-rog-zephyrus-duo-16-gx650py-nm085w-90nr0bi1-m004x0"
+            "release": "2023-04-23T00:00:00Z",
+            "url": "asus-rog-zephyrus-duo-16-gx650py-nm085w"
         }
     },
     {
         "model": "catalog.product",
         "pk": 146,
         "fields": {
-            "name": "MSI Stealth 16 AI Studio A1VIG-062RU 9S7-15F312-062",
+            "name": "MSI Stealth 16 AI Studio A1VIG-062RU",
             "descriptions": "earum numquam veniam ipsam vero rerum dolorum corporis nobis facere a magnam voluptatibus ducimus ex nemo et assumenda nostrum exercitationem reiciendis animi dicta modi id voluptate ea unde quidem adipisci doloribus fuga officia aperiam nulla expedita accusamus sed quasi ipsa voluptatem cum saepe nam sunt soluta eaque minima in tempore",
             "image_item": "",
             "company": "MSI",
@@ -1522,15 +1549,15 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:33:05.185Z",
-            "release": "2024-04-23T00:00:00Z",
-            "url": "msi-stealth-16-ai-studio-a1vig-062ru-9s7-15f312-062"
+            "release": "2023-04-23T00:00:00Z",
+            "url": "msi-stealth-16-ai-studio-a1vig-062ru"
         }
     },
     {
         "model": "catalog.product",
         "pk": 147,
         "fields": {
-            "name": "MSI CreatorPro X17 HX A13VKS-267RU 9S7-17Q231-267",
+            "name": "MSI CreatorPro X17 HX A13VKS-267RU",
             "descriptions": "maxime quam temporibus voluptate neque modi nisi sint quas at odit ipsum sit rerum velit dolorum porro perspiciatis hic voluptatem blanditiis consectetur expedita quis voluptates consequuntur assumenda quia quisquam aliquam quos dolorem saepe excepturi quibusdam harum unde sequi sapiente eum delectus aliquid minima dicta amet natus tenetur laborum magnam dolore",
             "image_item": "",
             "company": "MSI",
@@ -1542,15 +1569,15 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:32:59.473Z",
-            "release": "2024-04-23T00:00:00Z",
-            "url": "msi-creatorpro-x17-hx-a13vks-267ru-9s7-17q231-267"
+            "release": "2023-04-23T00:00:00Z",
+            "url": "msi-creatorpro-x17-hx-a13vks-267ru"
         }
     },
     {
         "model": "catalog.product",
         "pk": 148,
         "fields": {
-            "name": "ASUS ROG Strix Scar 18 G834JYR-R6080W 90NR0IP2-M00400",
+            "name": "ASUS ROG Strix Scar 18 G834JYR-R6080W",
             "descriptions": "fugiat eaque temporibus cumque inventore ratione blanditiis dicta at sunt nemo qui praesentium similique porro id culpa architecto ut eius tenetur cum modi maxime itaque esse aspernatur error obcaecati excepturi ducimus sed nisi nesciunt molestiae consequatur possimus doloremque expedita aut exercitationem ipsum iure molestias veritatis quia repudiandae optio incidunt delectus",
             "image_item": "",
             "company": "Asus",
@@ -1562,15 +1589,15 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:32:53.457Z",
-            "release": "2024-04-23T00:00:00Z",
-            "url": "asus-rog-strix-scar-18-g834jyr-r6080w-90nr0ip2-m00400"
+            "release": "2023-04-23T00:00:00Z",
+            "url": "asus-rog-strix-scar-18-g834jyr-r6080w"
         }
     },
     {
         "model": "catalog.product",
         "pk": 149,
         "fields": {
-            "name": "MSI Creator Z17 HX Studio A14VGT-267RU 9S7-17N212-267",
+            "name": "MSI Creator Z17 HX Studio A14VGT-267RU",
             "descriptions": "cumque qui repellat possimus sequi magnam incidunt quibusdam illum animi necessitatibus dolore amet tenetur aperiam in tempora esse reiciendis labore ipsum provident architecto nemo perferendis minima facere vel doloribus non obcaecati porro modi deserunt voluptatem maiores expedita autem a maxime consequuntur distinctio illo nam totam eum repudiandae aut sunt laboriosam",
             "image_item": "",
             "company": "MSI",
@@ -1582,8 +1609,8 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:32:47.841Z",
-            "release": "2024-04-23T00:00:00Z",
-            "url": "msi-creator-z17-hx-studio-a14vgt-267ru-9s7-17n212-267"
+            "release": "2023-04-23T00:00:00Z",
+            "url": "msi-creator-z17-hx-studio-a14vgt-267ru"
         }
     },
     {
@@ -1602,7 +1629,7 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:32:42.027Z",
-            "release": "2024-04-23T00:00:00Z",
+            "release": "2023-04-23T00:00:00Z",
             "url": "samsung-galaxy-book-3-ultra-np960-np960xfh-xa1in"
         }
     },
@@ -1610,7 +1637,7 @@
         "model": "catalog.product",
         "pk": 151,
         "fields": {
-            "name": "ASUS Zenbook Pro 16X OLED UX7602VI-MY073X 90NB10K1-M00430",
+            "name": "ASUS Zenbook Pro 16X OLED UX7602VI-MY073X",
             "descriptions": "recusandae tempora exercitationem dolorem sed distinctio perferendis dolore pariatur quos molestiae quod animi veniam impedit nemo laboriosam sequi modi quae et sunt assumenda voluptatum natus aspernatur soluta adipisci a fuga ab illum nihil nulla at velit labore fugiat cupiditate dicta voluptas placeat ipsa quis incidunt vel hic amet quo minus",
             "image_item": "",
             "company": "Asus",
@@ -1622,8 +1649,8 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:32:35.082Z",
-            "release": "2024-04-23T00:00:00Z",
-            "url": "asus-zenbook-pro-16x-oled-ux7602vi-my073x-90nb10k1-m00430"
+            "release": "2023-04-23T00:00:00Z",
+            "url": "asus-zenbook-pro-16x-oled-ux7602vi-my073x"
         }
     },
     {
@@ -1642,7 +1669,7 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:32:30.477Z",
-            "release": "2024-04-23T00:00:00Z",
+            "release": "2023-04-23T00:00:00Z",
             "url": "lenovo-thinkpad-x1-carbon-gen-10-21cb0068rt"
         }
     },
@@ -1682,7 +1709,7 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:32:19.379Z",
-            "release": "2024-04-23T00:00:00Z",
+            "release": "2023-04-23T00:00:00Z",
             "url": "dell-xps-13-9320-9320-4317"
         }
     },
@@ -1690,7 +1717,7 @@
         "model": "catalog.product",
         "pk": 155,
         "fields": {
-            "name": "HP Omen 16-wf0032ci 9E694EA",
+            "name": "HP Omen 16-wf0032ci",
             "descriptions": "veniam nisi alias cum voluptatem eum distinctio quis esse fugiat mollitia cumque facilis molestias quia reprehenderit eaque quaerat incidunt saepe atque delectus voluptatum corporis quibusdam laborum aliquam hic minus ad sit magnam labore tenetur iusto aperiam itaque illum voluptas facere quam sequi vero vel enim unde blanditiis ipsam consequatur aspernatur",
             "image_item": "",
             "company": "Hp",
@@ -1702,15 +1729,15 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:32:13.569Z",
-            "release": "2024-04-23T00:00:00Z",
-            "url": "hp-omen-16-wf0032ci-9e694ea"
+            "release": "2023-04-23T00:00:00Z",
+            "url": "hp-omen-16-wf0032ci"
         }
     },
     {
         "model": "catalog.product",
         "pk": 156,
         "fields": {
-            "name": "HP Spectre x360 16-f1028nn 79S16EA",
+            "name": "HP Spectre x360 16-f1028nn",
             "descriptions": "velit dicta veritatis odit molestiae nostrum deserunt fuga ipsum sapiente autem nisi sit similique eaque explicabo dolorum soluta mollitia necessitatibus quasi temporibus eveniet laborum iusto earum culpa odio exercitationem suscipit ab molestias ipsam esse consequatur provident reiciendis distinctio dolore vitae eos eligendi illum hic architecto porro nihil possimus incidunt quibusdam",
             "image_item": "",
             "company": "Hp",
@@ -1723,14 +1750,14 @@
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:32:08.498Z",
             "release": "2024-04-23T00:00:00Z",
-            "url": "hp-spectre-x360-16-f1028nn-79s16ea"
+            "url": "hp-spectre-x360-16-f1028nn"
         }
     },
     {
         "model": "catalog.product",
         "pk": 157,
         "fields": {
-            "name": "ASUS ROG Flow GV601VI-NL055W 90NR0G01-M002V0",
+            "name": "ASUS ROG Flow GV601VI-NL055W",
             "descriptions": "quisquam praesentium qui eveniet harum iure natus perspiciatis dolores quaerat odio sapiente nostrum voluptas assumenda placeat aperiam numquam ipsum culpa tempore doloribus ex mollitia dicta at quia atque deleniti repudiandae temporibus ducimus molestiae error dolorem laborum cum corporis accusantium inventore fuga obcaecati aut sequi aliquid consequatur doloremque dolorum ipsam a",
             "image_item": "",
             "company": "Asus",
@@ -1742,15 +1769,15 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:32:02.642Z",
-            "release": "2024-04-23T00:00:00Z",
-            "url": "asus-rog-flow-gv601vi-nl055w-90nr0g01-m002v0"
+            "release": "2023-04-23T00:00:00Z",
+            "url": "asus-rog-flow-gv601vi-nl055w"
         }
     },
     {
         "model": "catalog.product",
         "pk": 158,
         "fields": {
-            "name": "MSI Pulse 17 AI C1VGKG-023RU 9S7-17T311-023",
+            "name": "MSI Pulse 17 AI C1VGKG-023RU",
             "descriptions": "voluptatibus consequuntur repellat minus maxime libero molestias aliquid delectus fuga atque dolorum doloremque voluptate ut omnis nam quaerat sit illum obcaecati nihil earum officia expedita beatae eligendi aperiam velit saepe harum perferendis accusantium voluptatum soluta illo dolor temporibus hic impedit porro exercitationem blanditiis explicabo repudiandae sed odit sint magnam praesentium",
             "image_item": "",
             "company": "MSI",
@@ -1763,14 +1790,14 @@
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:31:57.210Z",
             "release": "2024-04-23T00:00:00Z",
-            "url": "msi-pulse-17-ai-c1vgkg-023ru-9s7-17t311-023"
+            "url": "msi-pulse-17-ai-c1vgkg-023ru"
         }
     },
     {
         "model": "catalog.product",
         "pk": 159,
         "fields": {
-            "name": "MSI Vector 16 HX A14VGG-283RU 9S7-15M242-283",
+            "name": "MSI Vector 16 HX A14VGG-283RU",
             "descriptions": "sapiente ad eum consectetur qui consequatur atque molestias laborum nisi magni repudiandae tenetur nobis dolores et impedit reiciendis labore iusto explicabo debitis amet fuga doloribus quis maxime ducimus quisquam adipisci neque natus asperiores a numquam quod quasi illo earum iste omnis quam unde id laudantium libero saepe eius enim aliquam",
             "image_item": "",
             "company": "MSI",
@@ -1782,15 +1809,15 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:31:45.744Z",
-            "release": "2024-04-23T00:00:00Z",
-            "url": "msi-vector-16-hx-a14vgg-283ru-9s7-15m242-283"
+            "release": "2023-04-23T00:00:00Z",
+            "url": "msi-vector-16-hx-a14vgg-283ru"
         }
     },
     {
         "model": "catalog.product",
         "pk": 160,
         "fields": {
-            "name": "MSI Raider GE77HX 12UHS-232RU 9S7-17K514-232",
+            "name": "MSI Raider GE77HX 12UHS-232RU",
             "descriptions": "tempora voluptate aliquid esse incidunt perferendis iste quasi non unde magnam ipsam a facilis quas doloribus molestiae eaque ducimus qui ad ut repellendus placeat reiciendis recusandae illo eligendi odit omnis iure dolores blanditiis possimus accusantium voluptatibus aliquam amet impedit cum asperiores explicabo dolor mollitia nobis sit nesciunt quod dignissimos odio",
             "image_item": "",
             "company": "MSI",
@@ -1802,15 +1829,15 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:31:37.040Z",
-            "release": "2024-04-23T00:00:00Z",
-            "url": "msi-raider-ge77hx-12uhs-232ru-9s7-17k514-232"
+            "release": "2023-04-23T00:00:00Z",
+            "url": "msi-raider-ge77hx-12uhs-232ru"
         }
     },
     {
         "model": "catalog.product",
         "pk": 161,
         "fields": {
-            "name": "Lenovo ThinkPad X1 Carbon G10 21CCS9Q201",
+            "name": "Lenovo ThinkPad X1 Carbon G10",
             "descriptions": "unde aut iure sit maiores illum facilis delectus quia architecto eveniet veniam repellat voluptas quos mollitia minima et sint perferendis maxime quod error voluptates explicabo harum provident ullam quam veritatis cum iusto impedit hic dolorem ea ipsa vero incidunt necessitatibus qui enim soluta laborum sequi animi iste minus nam rem",
             "image_item": "",
             "company": "Lenovo",
@@ -1823,14 +1850,14 @@
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:31:26.594Z",
             "release": "2024-04-23T00:00:00Z",
-            "url": "lenovo-thinkpad-x1-carbon-g10-21ccs9q201"
+            "url": "lenovo-thinkpad-x1-carbon-g10"
         }
     },
     {
         "model": "catalog.product",
         "pk": 162,
         "fields": {
-            "name": "MSI Summit E16 AI Studio A1VETG-017RU 9S7-159621-017",
+            "name": "MSI Summit E16 AI Studio A1VETG-017RU",
             "descriptions": "eius molestiae rem harum maxime dolor maiores aperiam eaque iste cum quas accusamus doloribus veniam consequuntur autem delectus quis ab sed esse amet eligendi perspiciatis temporibus nisi illum libero mollitia atque voluptatem commodi reiciendis aliquam quos quae tenetur sit dolores aut quisquam deleniti ipsum explicabo ut deserunt placeat numquam sequi",
             "image_item": "",
             "company": "MSI",
@@ -1842,15 +1869,15 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:31:19.858Z",
-            "release": "2024-04-23T00:00:00Z",
-            "url": "msi-summit-e16-ai-studio-a1vetg-017ru-9s7-159621-017"
+            "release": "2023-04-23T00:00:00Z",
+            "url": "msi-summit-e16-ai-studio-a1vetg-017ru"
         }
     },
     {
         "model": "catalog.product",
         "pk": 163,
         "fields": {
-            "name": "MSI Prestige 16 AI Studio B1VEG-080RU 9S7-15A211-080",
+            "name": "MSI Prestige 16 AI Studio B1VEG-080RU",
             "descriptions": "nostrum placeat enim tenetur ipsam provident porro officia modi qui tempora temporibus magni molestias harum laborum aspernatur quia aut quos possimus quibusdam ipsum eveniet dignissimos cum sapiente hic iusto dicta nesciunt veniam voluptas eum repellat quaerat ut id consequuntur doloremque explicabo quas non aliquid quasi at ex soluta sit architecto",
             "image_item": "",
             "company": "MSI",
@@ -1862,15 +1889,15 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:31:12.816Z",
-            "release": "2024-04-23T00:00:00Z",
-            "url": "msi-prestige-16-ai-studio-b1veg-080ru-9s7-15a211-080"
+            "release": "2023-04-23T00:00:00Z",
+            "url": "msi-prestige-16-ai-studio-b1veg-080ru"
         }
     },
     {
         "model": "catalog.product",
         "pk": 164,
         "fields": {
-            "name": "Samsung Galaxy Book 3 Pro NP944 NP944XFG-KC1IT",
+            "name": "Samsung Galaxy Book 3 Pro NP944",
             "descriptions": "adipisci sit rem architecto minus quia enim itaque harum debitis odio at aut reiciendis mollitia labore quas delectus sunt neque quae deleniti perspiciatis accusamus voluptas laudantium magni magnam vel tempore dignissimos deserunt tempora tenetur veniam doloribus eveniet rerum fuga esse facere illo ex vitae voluptatem odit quod commodi ipsum vero",
             "image_item": "",
             "company": "Samsung",
@@ -1883,14 +1910,14 @@
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:31:05.541Z",
             "release": "2024-04-23T00:00:00Z",
-            "url": "samsung-galaxy-book-3-pro-np944-np944xfg-kc1it"
+            "url": "samsung-galaxy-book-3-pro-np944-np944xfg"
         }
     },
     {
         "model": "catalog.product",
         "pk": 165,
         "fields": {
-            "name": "Apple MacBook Air A2681 Z15S0000P",
+            "name": "Apple MacBook Air A2681",
             "descriptions": "at voluptatum provident saepe nostrum praesentium eos fugiat consequatur quia iste ad labore fugit minus qui ea itaque est mollitia expedita exercitationem dicta eaque autem dolor hic error cumque commodi voluptas harum quisquam doloremque esse architecto quaerat iusto quae quod eligendi veritatis ex quo consequuntur quis totam omnis corrupti soluta",
             "image_item": "",
             "company": "Apple",
@@ -1903,14 +1930,14 @@
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:30:59.595Z",
             "release": "2024-04-23T00:00:00Z",
-            "url": "apple-macbook-air-a2681-z15s0000p"
+            "url": "apple-macbook-air-a2681"
         }
     },
     {
         "model": "catalog.product",
         "pk": 166,
         "fields": {
-            "name": "ASUS Vivobook Pro 16X OLED K6604JV-MX112W 90NB1102-M00540",
+            "name": "ASUS Vivobook Pro 16X OLED K6604JV-MX112W",
             "descriptions": "minus hic soluta quos aperiam quisquam earum voluptatum nihil iure placeat sunt itaque voluptatem alias saepe accusantium aliquid qui reiciendis rem temporibus asperiores omnis aut aspernatur labore commodi suscipit pariatur explicabo ea rerum accusamus autem amet et vitae aliquam nobis obcaecati eum facilis adipisci perferendis laborum repellat fuga debitis fugiat",
             "image_item": "",
             "company": "Asus",
@@ -1922,15 +1949,15 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:30:50.610Z",
-            "release": "2024-04-23T00:00:00Z",
-            "url": "asus-vivobook-pro-16x-oled-k6604jv-mx112w-90nb1102-m00540"
+            "release": "2023-04-23T00:00:00Z",
+            "url": "asus-vivobook-pro-16x-oled-k6604jv-mx112w"
         }
     },
     {
         "model": "catalog.product",
         "pk": 167,
         "fields": {
-            "name": "Lenovo Legion Slim 5 16IRH8 82YA009RRK",
+            "name": "Lenovo Legion Slim 5 16IRH8",
             "descriptions": "tempore earum laborum eos nobis qui repellendus obcaecati enim dolor voluptatem quae id perspiciatis atque iusto neque sed culpa ipsam ad vero quod impedit adipisci doloribus distinctio incidunt omnis aliquam nisi debitis expedita natus placeat deserunt a illum nostrum iure voluptate voluptatibus ex ratione quaerat voluptates facere laudantium veritatis voluptatum",
             "image_item": "",
             "company": "Lenovo",
@@ -1942,15 +1969,15 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:30:34.509Z",
-            "release": "2024-04-23T00:00:00Z",
-            "url": "lenovo-legion-slim-5-16irh8-82ya009rrk"
+            "release": "2023-04-23T00:00:00Z",
+            "url": "lenovo-legion-slim-5-16irh8"
         }
     },
     {
         "model": "catalog.product",
         "pk": 168,
         "fields": {
-            "name": "ASUS ExpertBook B9 B9403CVA-KM0499X 90NX05W1-M00NJ0",
+            "name": "ASUS ExpertBook B9 B9403CVA-KM0499X",
             "descriptions": "provident minima id itaque similique labore quaerat ullam sunt a fugiat voluptate delectus eligendi ipsam deleniti consequatur maiores iste suscipit soluta tempora inventore dolorem sint accusamus cum vero molestiae totam autem porro odio distinctio sequi praesentium quam atque veritatis assumenda cumque quidem hic nostrum quasi magnam odit voluptatem ab reiciendis",
             "image_item": "",
             "company": "Asus",
@@ -1962,15 +1989,15 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:30:28.161Z",
-            "release": "2024-04-23T00:00:00Z",
-            "url": "asus-expertbook-b9-b9403cva-km0499x-90nx05w1-m00nj0"
+            "release": "2023-04-23T00:00:00Z",
+            "url": "asus-expertbook-b9-b9403cva-km0499x"
         }
     },
     {
         "model": "catalog.product",
         "pk": 169,
         "fields": {
-            "name": "MSI Sword 17 HX B14VGKG-048XRU 9S7-17T214-048",
+            "name": "MSI Sword 17 HX B14VGKG-048XRU",
             "descriptions": "vero itaque voluptatem unde blanditiis omnis quisquam alias atque molestias ipsam iste maiores odit tempore quidem ducimus officia perspiciatis ex placeat quod doloribus enim magnam autem consequuntur dolor quasi quo facilis amet libero at accusamus est aperiam officiis accusantium vitae eligendi modi nulla laborum illum voluptas error sit exercitationem sunt",
             "image_item": "",
             "company": "MSI",
@@ -1982,15 +2009,15 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:30:22.042Z",
-            "release": "2024-04-23T00:00:00Z",
-            "url": "msi-sword-17-hx-b14vgkg-048xru-9s7-17t214-048"
+            "release": "2023-04-23T00:00:00Z",
+            "url": "msi-sword-17-hx-b14vgkg-048xru"
         }
     },
     {
         "model": "catalog.product",
         "pk": 170,
         "fields": {
-            "name": "ASUS TUF Gaming A15 FA507UI-HQ059 90NR0I65-M00330",
+            "name": "ASUS TUF Gaming A15 FA507UI-HQ059",
             "descriptions": "expedita perspiciatis neque optio maxime minus quos esse fugit doloremque velit magnam voluptatum ratione consequatur repellendus quae sed amet quas molestias hic quisquam repellat numquam facilis a ea eius soluta voluptatem voluptate dignissimos assumenda veritatis aliquid culpa incidunt perferendis libero accusantium beatae ut consequuntur eos reprehenderit dolorem quasi aperiam laudantium",
             "image_item": "",
             "company": "Asus",
@@ -2002,15 +2029,15 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:30:15.462Z",
-            "release": "2024-04-23T00:00:00Z",
-            "url": "asus-tuf-gaming-a15-fa507ui-hq059-90nr0i65-m00330"
+            "release": "2023-04-23T00:00:00Z",
+            "url": "asus-tuf-gaming-a15-fa507ui-hq059"
         }
     },
     {
         "model": "catalog.product",
         "pk": 171,
         "fields": {
-            "name": "Lenovo Legion Slim 5 16APH8 82Y9000BRK",
+            "name": "Lenovo Legion Slim 5 16APH8 ",
             "descriptions": "numquam itaque exercitationem unde quasi voluptate tenetur accusamus quia voluptatem repellat obcaecati perferendis nostrum veniam dolor qui aut alias cum atque molestias ea est libero cumque inventore sit quod expedita porro commodi praesentium voluptates impedit amet recusandae similique vero rem maxime quibusdam in neque placeat quidem facere provident sequi quisquam",
             "image_item": "",
             "company": "Lenovo",
@@ -2023,14 +2050,14 @@
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:30:08.113Z",
             "release": "2024-04-23T00:00:00Z",
-            "url": "lenovo-legion-slim-5-16aph8-82y9000brk"
+            "url": "lenovo-legion-slim-5-16aph8"
         }
     },
     {
         "model": "catalog.product",
         "pk": 172,
         "fields": {
-            "name": "Lenovo LOQ 15IRH8 82XV00KCRK",
+            "name": "Lenovo LOQ 15IRH8",
             "descriptions": "quidem amet expedita reprehenderit placeat sint saepe totam nisi fugit necessitatibus soluta quibusdam repellat sapiente vel blanditiis tenetur porro deserunt est vitae eius minus maiores magnam dolorem ratione laboriosam odio distinctio neque quia officia molestias laborum rem quasi modi suscipit nobis asperiores quam tempora sit maxime nostrum praesentium ut earum",
             "image_item": "",
             "company": "Lenovo",
@@ -2042,8 +2069,8 @@
             "discontinued": 0,
             "created_at": "2024-04-23T17:57:05.539Z",
             "created_up": "2024-04-29T22:30:00.438Z",
-            "release": "2024-04-23T00:00:00Z",
-            "url": "lenovo-loq-15irh8-82xv00kcrk"
+            "release": "2023-04-23T00:00:00Z",
+            "url": "lenovo-loq-15irh8"
         }
     },
     {

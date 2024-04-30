@@ -66,12 +66,13 @@ def product(request, product_id):
     path_list = ['catalog']
     obj = get_object_or_404(Product, url=product_id)
     path_list.extend([obj.category.url, obj.company.url, obj.url])
-    
+    company_logo = obj.company.image
     data = {
         'title': 'Electronic Shop',
         'cat_selected': 2,
         'path_list': path_list,
         'item': obj,
+        'company_logo': company_logo
     }
     return render(request, 'catalog/product.html', data)
 

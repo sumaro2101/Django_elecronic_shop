@@ -11,6 +11,7 @@ class Category(models.Model):
 
     category = models.CharField(max_length=50, verbose_name='Категория', primary_key=True, db_column='category')
     descriptions = models.TextField(verbose_name='Описание', null=True, blank=True)
+    image = models.ImageField(upload_to='category', null=True, blank=True, verbose_name='изображение')
     url = models.SlugField(verbose_name='URL', unique=True, max_length=200)
     
     def __str__(self) -> str:
@@ -20,6 +21,7 @@ class Category(models.Model):
     class Meta:
         verbose_name = 'катерогии'
         verbose_name_plural = 'Категории'
+        ordering = ['pk']
     
     def get_absolute_url(self):
         return reverse("companies", kwargs={"cats_id": self.url})
@@ -43,6 +45,7 @@ class Companies(models.Model):
     
     category = models.ManyToManyField(Category, verbose_name='Категории компании')
     company = models.CharField(max_length=100, primary_key=True, verbose_name='Компания', db_column='company')
+    image = models.ImageField(upload_to='company', null=True, blank=True, verbose_name='изображение')
     country = models.CharField(max_length=50, null=True, blank=True, verbose_name='Страна')
     adress = models.CharField(max_length=200, null=True, blank=True, verbose_name='Адресс')
     url = models.SlugField(max_length=200, unique=True)

@@ -81,44 +81,70 @@ class ParseSite:
             print('Готово')
     
     
-urls = ['https://www.citilink.ru/product/noutbuk-igrovoi-msi-titan-18-hx-a14vig-211ru-9s7-182221-211-18-ips-int-2000998/',
-        'https://www.citilink.ru/product/noutbuk-msi-creator-16-ai-studio-a1vig-060ru-core-ultra-9-185h-64gb-ss-2001036/',
-        'https://www.citilink.ru/product/noutbuk-igrovoi-asus-rog-zephyrus-duo-16-gx650py-nm085w-90nr0bi1-m004x-1942669/',
-        'https://www.citilink.ru/product/noutbuk-msi-stealth-16-ai-studio-a1vig-062ru-ul9-185h-32gb-ssd2tb-rtx4-2001141/',
-        'https://www.citilink.ru/product/noutbuk-igrovoi-msi-creatorpro-x17-hx-a13vks-267ru-9s7-17q231-267-17-3-1931858/',
-        'https://www.citilink.ru/product/noutbuk-igrovoi-asus-rog-strix-scar-18-g834jyr-r6080w-90nr0ip2-m00400-2000013/',
-        'https://www.citilink.ru/product/noutbuk-igrovoi-msi-creator-z17-hx-studio-a14vgt-267ru-9s7-17n212-267-2001043/',
-        'https://www.citilink.ru/product/noutbuk-igrovoi-samsung-galaxy-book-3-ultra-np960-np960xfh-xa1in-16-20-1988328/',
-        'https://www.citilink.ru/product/noutbuk-igrovoi-asus-zenbook-pro-16x-oled-ux7602vi-my073x-90nb10k1-m00-1973232/',
-        'https://www.citilink.ru/product/noutbuk-lenovo-thinkpad-x1-carbon-gen-10-21cb0068rt-14-ips-intel-core-2001231/',
-        'https://www.citilink.ru/product/noutbuk-dell-xps-15-9530-i7-13700h-16gb-ssd1tb-rtx4060-8gb-15-6-oled-t-2011669/',
-        'https://www.citilink.ru/product/noutbuk-dell-xps-13-9320-i7-1360p-32gb-ssd1tb-13-4-oled-touch-fhd-w11p-2011663/',
-        'https://www.citilink.ru/product/noutbuk-igrovoi-hp-omen-16-wf0032ci-9e694ea-16-1-ips-intel-core-i7-137-2005335/',
-        'https://www.citilink.ru/product/noutbuk-hp-spectre-x360-16-f1028nn-79s16ea-16-transformer-ips-intel-co-1986118/',
-        'https://www.citilink.ru/product/noutbuk-igrovoi-asus-rog-flow-gv601vi-nl055w-90nr0g01-m002v0-16-2023-t-2000071/',
-        'https://www.citilink.ru/product/noutbuk-msi-pulse-17-ai-c1vgkg-ul9-185h-16gb-ssd1tb-rtx4070-8gb-17-ips-2001128/',
-        'https://www.citilink.ru/product/noutbuk-igrovoi-msi-vector-16-hx-a14vgg-283ru-9s7-15m242-283-16-ips-in-2000990/',
-        'https://www.citilink.ru/product/noutbuk-igrovoi-msi-raider-ge77hx-12uhs-232ru-9s7-17k514-232-17-3-ips-1833340/',
-        'https://www.citilink.ru/product/noutbuk-lenovo-thinkpad-x1-carbon-g10-21ccs9q201-14-2023-ips-intel-cor-1877153/',
-        'https://www.citilink.ru/product/noutbuk-igrovoi-msi-summit-e16-ai-studio-a1vetg-017ru-9s7-159621-017-1-2001135/',
-        'https://www.citilink.ru/product/noutbuk-igrovoi-msi-prestige-16-ai-studio-b1veg-080ru-9s7-15a211-080-1-2001053/',
-        'https://www.citilink.ru/product/noutbuk-samsung-galaxy-book-3-pro-np944-np944xfg-kc1it-14-2023-amoled-1982456/',
-        'https://www.citilink.ru/product/noutbuk-apple-macbook-air-a2681-m2-8-core-16gb-ssd512gb-8-core-gpu-13-2016322/',
-        'https://www.citilink.ru/product/noutbuk-igrovoi-asus-vivobook-pro-16x-oled-k6604jv-mx112w-90nb1102-m00-1929247/',
-        'https://www.citilink.ru/product/noutbuk-lenovo-legion-slim-5-16irh8-i7-13700h-16gb-ssd1tb-rtx4070-8gb-1996061/',
-        'https://www.citilink.ru/product/noutbuk-asus-expertbook-b9-b9403cva-km0499x-90nx05w1-m00nj0-14-2023-ol-2000062/',
-        'https://www.citilink.ru/product/noutbuk-msi-sword-17-hx-b14vgkg-i9-14900hx-16gb-ssd1tb-rtx4070-8gb-17-2000993/',
-        'https://www.citilink.ru/product/noutbuk-igrovoi-asus-tuf-gaming-a15-fa507ui-hq059-90nr0i65-m00330-15-6-2000065/',
-        'https://www.citilink.ru/product/noutbuk-lenovo-legion-slim-5-16aph8-ryzen-7-7840hs-16gb-ssd1tb-rtx4070-1995965/',
-        'https://www.citilink.ru/product/noutbuk-igrovoi-lenovo-loq-15irh8-82xv00kcrk-15-6-2023-ips-intel-core-2001270/'
-            
+urls = ['https://www.citilink.ru/product/smartfon-honor-90-lite-5g-8-256gb-polunochnyi-chernyi-1982551/',
+        'https://www.citilink.ru/product/smartfon-honor-x9a-5g-8-256gb-izumrudnyi-zelenyi-1969115/',
+        'https://www.citilink.ru/product/smartfon-honor-x7a-4-128gb-sinii-okean-1911904/',
+        'https://www.citilink.ru/product/smartfon-honor-x8a-6-128gb-nebesno-goluboi-1911907/',
+        'https://www.citilink.ru/product/smartfon-honor-x7b-8-128gb-chernyi-1998157/',
+        'https://www.citilink.ru/product/smartfon-honor-70-8-128gb-5109ajac-chernyi-1864246/',
+        'https://www.citilink.ru/product/smartfon-honor-90-lite-5g-8-256gb-polunochnyi-chernyi-1982551/',
+        'https://www.citilink.ru/product/smartfon-honor-x6a-4-128gb-polunochnyi-chernyi-1977230/',
+        'https://www.citilink.ru/product/smartfon-honor-x6a-6-128gb-nebesno-serebristyi-1977234/',
+        'https://www.citilink.ru/product/smartfon-honor-x5-plus-4-64gb-polunochnyi-chernyi-1977228/',
+        'https://www.citilink.ru/product/smartfon-huawei-nova-y72-8-128gb-mga-lx3-chernyi-2002840/',
+        'https://www.citilink.ru/product/smartfon-huawei-nova-12ii-ctr-l81-128gb-8gb-zelenyi-3g-4g-6-8-1080x238-2015336/',
+        'https://www.citilink.ru/product/smartfon-huawei-nova-y61-4-128gb-eve-lx9n-sinii-2011648/',
+        'https://www.citilink.ru/product/smartfon-huawei-nova-11i-8-128gb-mao-lx9n-myatnyi-zelenyi-1936633/',
+        'https://www.citilink.ru/product/smartfon-huawei-nova-y91-8-128gb-stg-lx1-lunnoe-serebro-1936630/',
+        'https://www.citilink.ru/product/smartfon-huawei-nova-10-8-128gb-chernyi-1892208/',
+        'https://www.citilink.ru/product/smartfon-huawei-p60-8-256gb-lna-lx9-zelenyi-1970381/',
+        'https://www.citilink.ru/product/smartfon-infinix-note-30-8-256gb-x6833b-chernyi-1927929/',
+        'https://www.citilink.ru/product/smartfon-infinix-note-30-pro-8-256gb-x678b-chernyi-1927932/',
+        'https://www.citilink.ru/product/smartfon-infinix-note-30-8-128gb-x6833b-chernyi-1926549/',
+        'https://www.citilink.ru/product/smartfon-infinix-hot-40i-8-128gb-x6528b-chernyi-1993924/',
+        'https://www.citilink.ru/product/smartfon-infinix-hot-40-8-256gb-x6836-chernyi-1993928/',
+        'https://www.citilink.ru/product/smartfon-infinix-note-30i-8-256gb-x6716-chernyi-1926453/',
+        'https://www.citilink.ru/product/smartfon-infinix-note-30i-8-128gb-x6716-chernyi-1931566/',
+        'https://www.citilink.ru/product/smartfon-infinix-smart-8-3-64gb-x6525-chernyi-1993225/',
+        'https://www.citilink.ru/product/smartfon-infinix-smart-8-4-128gb-x6525-chernyi-1993221/',
+        'https://www.citilink.ru/product/smartfon-infinix-smart-8-plus-4-128gb-x6526-belyi-1998563/',
+        'https://www.citilink.ru/product/smartfon-infinix-zero-30-8-256gb-x6731b-zolotoi-1993926/',
+        'https://www.citilink.ru/product/smartfon-infinix-note-12-vip-nfc-8-256gb-x672-seryi-1744225/',
+        'https://www.citilink.ru/product/smartfon-infinix-smart-7-hd-2-64gb-x6516-chernyi-1914531/',
+        'https://www.citilink.ru/product/smartfon-infinix-hot-20s-8-128gb-x6827-belyi-1896279/',
         ]
 
-a = (ParseSite(urls, 'html'))
-a.save_to_json()
-
-
-# b = BeautifulSoup(requests.get(url).text, 'html.parser')
-# parse = b.find('script', type="application/ld+json")
-
-# print(json.loads(parse.text)['description'])
+# a = (ParseSite(urls, 'html'))
+# a.save_to_json()
+to_save = []
+for url in urls:
+    b = BeautifulSoup(requests.get(url).text, 'html.parser')
+    parse = b.find('script', type="application/ld+json")
+    try:
+        discount = float(''.join(b.find('span', class_='e1ys5m360 e106ikdt0 app-catalog-em023l e1gjr6xo0').text.split(' ')[-1]).replace('%', ''))
+    except:
+        discount = 0.0
+    load = json.loads(parse.text)
+    filtred_site = {
+                    "model": "catalog.product",
+                "fields": {
+                    "name": ' '.join(load['name'].split(',')[0].split(' ')[1:]),
+                    "descriptions": load['description'].text if load['description'] is not None else lorem.words(50),
+                    "image_item": "",
+                    "company": load['brand'].title(),
+                    "category": 'Компьютеры',
+                    "price": int(load['offers']['price']),
+                    "discount": discount,
+                    "quantity": 0,
+                    "discontinued": 0,
+                    "created_at": "2024-04-23T17:57:05.539Z",
+                    "created_up": "2024-04-23T17:57:05.539Z",
+                    "release": "2024-04-23T00:00:00Z"
+                }
+                }
+    to_save.append(filtred_site)
+    print(url.split('//')[1].split('/')[2])
+    
+with open('parse_result.json', 'w', encoding='utf-8') as file:
+            json.dump(to_save, file, ensure_ascii=False, indent=2)
+            print('Готово')

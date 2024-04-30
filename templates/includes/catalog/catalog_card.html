@@ -8,7 +8,11 @@
             <div class="category-body-card">
                 <div class="category-body-content">
                     <div class="category-body-image">
-                        <picture></picture>
+                        {% if catalog.image %}
+                        <img src="{{ catalog.image.url }}" class="category-image" alt="{{ catalog.category }}">
+                        {% else %}
+                        <img src="{% static 'images/image not found.jpeg' %}" class="category-image" alt="{{ catalog.category }}">
+                        {% endif %}
                     </div>
                     <span class="category-body-title">{{ catalog }}</span>
                 </div>

@@ -42,10 +42,15 @@
             </button>
         </div>
         <div class="card-style-brand">
-            <h5>Характиристики {{ item.name }}</h5>
-            <p>ядер - 6x(3.46 ГГц), 6 ГБ, 1 SIM, Super Retina XDR, 2556x1179, камера 48+12 Мп, NFC, 5G, GPS, 3349 мА*ч </p>
+            ядер - 6x(3.46 ГГц), 6 ГБ, 1 SIM, Super Retina XDR, 2556x1179, камера 48+12 Мп, NFC, 5G, GPS, 3349 мА*ч 
         </div>
-        <a href="" class="card-style-brand-img"></a>
+        <a href="" class="card-style-brand-img-a" >
+          {% if company_logo %}
+          <img src="{{ company_logo.url }}" class="card-style-brand-img" alt="{{ item.name }}">
+          {% else %}
+          <img src="{% static 'images/image not found.jpeg' %}" class="card-style-brand-img" alt="{{ item.name }}">
+          {% endif %}
+        </a>
         <div class="card-style-buy">
           <div class="card-style-buy-block">
             <div class="card-style-buy-price">

@@ -80,21 +80,23 @@
   height: 84px;
   overflow: hidden;
   padding-right: 100px;
-  margin-left: 32px;
 }
 .card-style-brand-img {
+  aspect-ratio: auto;
+  height: auto;
+  max-height: 35px;
+  max-width: 90px;
+  width: auto;
+}
+.card-style-brand-img-a {
   height: 35px;
   justify-self: right;
   grid-area: spec-brand;
-  cursor: pointer;
-  background-color: transparent;
-  text-decoration: none;
 }
 .card-style-buy {
   margin-bottom: 16px;
   min-height: 124px;
   grid-area: buy;
-  margin-left: 32px;
   align-content: center;
 }
 .card-style-buy-block {
@@ -151,7 +153,6 @@
   display: flex;
   flex-flow: row wrap;
   grid-area: add-sales;
-  margin-left: 32px;
 }
 
 .card-style-image {
@@ -190,7 +191,14 @@
   text-align: center;
   width: 100%;
 }
-
+.category-image {
+  line-height: 150px;
+  text-align: center;
+  max-height: 100%;
+  max-width: 100%;
+  opacity: 1;
+  transition: opacity .3s ease-in;
+}
 .category-body-title {
   align-items: center;
   display: flex;

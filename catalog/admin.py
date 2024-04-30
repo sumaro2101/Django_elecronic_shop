@@ -4,7 +4,7 @@ from .models import Category, Product, Companies, SubCategory, TopFilters, Filte
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ('category', 'descriptions', 'url')
+    list_display = ('category', 'image', 'descriptions', 'url')
     search_fields = 'category',
     
 @admin.register(SubCategory)
@@ -14,7 +14,7 @@ class SubCategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Companies)
 class CompaniesAdmin(admin.ModelAdmin):
-    list_display = ('company', 'country', 'adress')
+    list_display = ('company', 'image', 'country', 'adress')
     search_fields = 'company',
 
 @admin.register(Product)
