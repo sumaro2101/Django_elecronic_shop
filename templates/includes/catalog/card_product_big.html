@@ -1,0 +1,33 @@
+{% load static %}
+{% load tags_filter %}
+
+
+<div class="card card-style mt-2 pt-2">
+    {% if item.image_item %}
+    <img src="{{ item.image_item.url }}" class="rounded float-start" style="width: 160px; height: 160px" alt="{{ item.name }}">
+    {% else %}
+    <img src="{% static 'images/image not found.jpeg' %}" class="rounded float-start" style="width: 160px; height: 160px" alt="{{ item.name }}">
+    {% endif %}
+    <a href="{{ item.get_absolute_url }}" class="card-body link-underline link-underline-opacity-0">
+        <h6 class="card-title" style="font-size: 15px;">{{item.name}}</h6>
+        <p>{{ item.descriptions|truncatewords:18 }}</p>
+        {% if item.is_new %}<span class="badge text-bg-secondary ms-2">NEW</span>{% endif %}{% if item.is_sale %}<span class="badge ms-2" style="background-color: rgb(0, 173, 181);">SALE</span>{% endif %}
+    </a>
+    <div class="card-style-main-block">
+        <div class="card-style-price">
+            <div class="card-style-price-wrap" >
+                {% if item.is_sale %}
+                    <span>{{ item.price|discount:item.discount }} ₽</span><br>
+                    <span class="text-secondary text-decoration-line-through">{{ item.price|round_dicimal }} ₽</span>
+                    {% if item.is_sale %}
+                    <div class="position-absolute badge text-center text-black" style="right: 15.5px; top: 60px; width: 50px; background-color: rgb(0, 173, 181);">{{item.discount}}%</div>
+                    {% endif %}
+                {% else %}
+                    <span>{{ item.price|round_dicimal }} ₽</span>
+                {% endif %}
+            </div>
+        </div>
+            
+        <a href="{% url 'product' item.url %}" class="btn text-white card-style-button">Подробнее</a>
+    </div>
+</div>

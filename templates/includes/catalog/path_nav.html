@@ -1,0 +1,23 @@
+{% load static %}
+{% load tags_filter %}
+
+<div class="rounded p-1" style="background-color: rgb(238, 238, 238);">
+    <nav class="navbar navbar-expand-lg pb-0 lh-1 border-bottom border-secondary" 
+    style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" 
+    aria-label="breadcrumb">
+        <ol class="breadcrumb container-fluid justify-content-start mb-2">
+            <li class="breadcrumb-item nav-item" aria-current="page"><a class="link-underline-dark link-dark link-opacity-50-hover" href="{% url 'home_page' %}">EL_COM</a></li>
+            {% for url_ in path_list %}
+                {% if forloop.last %}
+                    <li class="breadcrumb-item nav-item active" aria-current="page">{{ url_ }}</li>
+                {% elif url_ == 'catalog' %}
+                    <li class="breadcrumb-item nav-item" aria-current="page"><a class="link-underline-dark link-dark link-opacity-50-hover" href="{% url 'catalog' %}">{{ url_ }}</a></li>
+                {% elif url_ == item.company.url %}
+                    <li class="breadcrumb-item nav-item" aria-current="page"><a class="link-underline-dark link-dark link-opacity-50-hover" href="{% url 'companies' item.category.url %}?filter=all&comp={{ url_ }}">{{ url_ }}</a></li>
+                {% else %}
+                    <li class="breadcrumb-item nav-item" aria-current="page"><a class="link-underline-dark link-dark link-opacity-50-hover" href="{% url 'companies' url_ %}?filter=all">{{ url_ }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ol>
+      </nav>
+</div>

@@ -1,0 +1,2146 @@
+[
+    {
+        "model": "sites.site",
+        "pk": 1,
+        "fields": {
+            "domain": "example.com",
+            "name": "example.com"
+        }
+    },
+    {
+        "model": "home.homepage",
+        "pk": 1,
+        "fields": {
+            "title": "Товары со скидками",
+            "url": "sale",
+            "button": "Еще предложения"
+        }
+    },
+    {
+        "model": "home.homepage",
+        "pk": 2,
+        "fields": {
+            "title": "Мы рекомендуем",
+            "url": "best",
+            "button": "Еще предложения"
+        }
+    },
+    {
+        "model": "home.footer",
+        "pk": 1,
+        "fields": {
+            "name_company": "EL_COM",
+            "policy": "Политика конфидециальности",
+            "url_policy": "policy"
+        }
+    },
+    {
+        "model": "home.footer",
+        "pk": 2,
+        "fields": {
+            "name_company": "EL_COM",
+            "policy": "Политика конфидециальности",
+            "url_policy": "policy"
+        }
+    },
+    {
+        "model": "home.footerblocks",
+        "pk": 1,
+        "fields": {
+            "footer": 2,
+            "block": "О нас",
+            "url": "about"
+        }
+    },
+    {
+        "model": "home.footerblocks",
+        "pk": 2,
+        "fields": {
+            "footer": 2,
+            "block": "Команда",
+            "url": "command"
+        }
+    },
+    {
+        "model": "home.footerblocks",
+        "pk": 3,
+        "fields": {
+            "footer": 2,
+            "block": "Правила",
+            "url": "ruls"
+        }
+    },
+    {
+        "model": "home.navright",
+        "pk": 1,
+        "fields": {
+            "title": "Новинки",
+            "end_lines": "New"
+        }
+    },
+    {
+        "model": "home.navleft",
+        "pk": 1,
+        "fields": {
+            "title": "Каталог товаров"
+        }
+    },
+    {
+        "model": "home.navmainhome",
+        "pk": 1,
+        "fields": {
+            "name": "El_COM",
+            "title": "Магазин электронных товаров для вас!",
+            "mask_search": "Продукт",
+            "button": "Поиск"
+        }
+    },
+    {
+        "model": "home.navlist",
+        "pk": 1,
+        "fields": {
+            "nav_main": 1,
+            "category": "Главная",
+            "url": "home_page"
+        }
+    },
+    {
+        "model": "home.navlist",
+        "pk": 2,
+        "fields": {
+            "nav_main": 1,
+            "category": "Каталог",
+            "url": "catalog"
+        }
+    },
+    {
+        "model": "home.navlist",
+        "pk": 3,
+        "fields": {
+            "nav_main": 1,
+            "category": "Контакты",
+            "url": "contact"
+        }
+    },
+    {
+        "model": "home.navlist",
+        "pk": 4,
+        "fields": {
+            "nav_main": 1,
+            "category": "Личный кабинет",
+            "url": "user"
+        }
+    },
+    {
+        "model": "home.navlist",
+        "pk": 5,
+        "fields": {
+            "nav_main": 1,
+            "category": "Вход",
+            "url": "auth"
+        }
+    },
+    {
+        "model": "home.contact",
+        "pk": 1,
+        "fields": {
+            "title": "Связь с нами",
+            "text_to_form": "В каких случаях необходимо писать заявку?",
+            "text_title_form": "Если вам все таки необходимо написать нам письмо форма заявки снизу"
+        }
+    },
+    {
+        "model": "home.statementlist",
+        "pk": 1,
+        "fields": {
+            "contact": 1,
+            "statement": "Технические проблемы"
+        }
+    },
+    {
+        "model": "home.statementlist",
+        "pk": 2,
+        "fields": {
+            "contact": 1,
+            "statement": "Гарантия"
+        }
+    },
+    {
+        "model": "home.statementlist",
+        "pk": 3,
+        "fields": {
+            "contact": 1,
+            "statement": "Общие вопросы"
+        }
+    },
+    {
+        "model": "home.statementlist",
+        "pk": 4,
+        "fields": {
+            "contact": 1,
+            "statement": "Доставка"
+        }
+    },
+    {
+        "model": "home.statementlist",
+        "pk": 5,
+        "fields": {
+            "contact": 1,
+            "statement": "Возврат"
+        }
+    },
+    {
+        "model": "home.formcontact",
+        "pk": 1,
+        "fields": {
+            "name": "Имя",
+            "first_name": "Максим",
+            "email": "Эмеил",
+            "email_fill": "example@gmail.com",
+            "tel": "Номер телефона",
+            "tel_fill": "+7(000)000-00-00",
+            "question": "Ваш вопрос",
+            "ruls": "Правила обработки информации",
+            "button": "Отправить заявку"
+        }
+    },
+    {
+        "model": "home.statementform",
+        "pk": 1,
+        "fields": {
+            "form": 1,
+            "statement_form": "Вид заявки"
+        }
+    },
+    {
+        "model": "home.statementform",
+        "pk": 2,
+        "fields": {
+            "form": 1,
+            "statement_form": "Технические проблемы"
+        }
+    },
+    {
+        "model": "home.statementform",
+        "pk": 3,
+        "fields": {
+            "form": 1,
+            "statement_form": "Гарантия"
+        }
+    },
+    {
+        "model": "home.statementform",
+        "pk": 4,
+        "fields": {
+            "form": 1,
+            "statement_form": "Общие вопросы"
+        }
+    },
+    {
+        "model": "home.statementform",
+        "pk": 5,
+        "fields": {
+            "form": 1,
+            "statement_form": "Доставка"
+        }
+    },
+    {
+        "model": "home.statementform",
+        "pk": 6,
+        "fields": {
+            "form": 1,
+            "statement_form": "Возврат"
+        }
+    },
+    {
+        "model": "home.informationcontact",
+        "pk": 1,
+        "fields": {
+            "title": "Наши контакты:",
+            "email": "Эмеил:",
+            "email_value": "elshopcompany_id@gmail.com",
+            "tel": "Телефон:",
+            "tel_value": "+7 (499) 922-89-74",
+            "fax": "Факс:",
+            "fax_value": "+7 (499) 922-89-74"
+        }
+    },
+    {
+        "model": "catalog.category",
+        "pk": "Прочее",
+        "fields": {
+            "descriptions": "",
+            "image": "category/headphones.png",
+            "url": "other"
+        }
+    },
+    {
+        "model": "catalog.category",
+        "pk": "Планшеты",
+        "fields": {
+            "descriptions": "",
+            "image": "category/planshets.png",
+            "url": "tablets"
+        }
+    },
+    {
+        "model": "catalog.category",
+        "pk": "Телефоны",
+        "fields": {
+            "descriptions": "",
+            "image": "category/phone.png",
+            "url": "phones"
+        }
+    },
+    {
+        "model": "catalog.category",
+        "pk": "Компьютеры",
+        "fields": {
+            "descriptions": "",
+            "image": "category/noutbooks.png",
+            "url": "computers"
+        }
+    },
+    {
+        "model": "catalog.subcategory",
+        "pk": 1,
+        "fields": {
+            "category": "Прочее",
+            "sub_category": "Кабели",
+            "url": "cables"
+        }
+    },
+    {
+        "model": "catalog.subcategory",
+        "pk": 2,
+        "fields": {
+            "category": "Прочее",
+            "sub_category": "Карты Памяти",
+            "url": "memorycards"
+        }
+    },
+    {
+        "model": "catalog.subcategory",
+        "pk": 3,
+        "fields": {
+            "category": "Прочее",
+            "sub_category": "Пленки Стекла",
+            "url": "glasses"
+        }
+    },
+    {
+        "model": "catalog.subcategory",
+        "pk": 4,
+        "fields": {
+            "category": "Прочее",
+            "sub_category": "Чехлы",
+            "url": "cases"
+        }
+    },
+    {
+        "model": "catalog.subcategory",
+        "pk": 5,
+        "fields": {
+            "category": "Прочее",
+            "sub_category": "Наушники",
+            "url": "headphones"
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Apple",
+        "fields": {
+            "image": "company/Apple_logo_black.svg.png",
+            "country": null,
+            "adress": null,
+            "url": "apple",
+            "category": [
+                "Планшеты",
+                "Телефоны",
+                "Компьютеры"
+            ]
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Asus",
+        "fields": {
+            "image": "company/1024px-AsusTek_logo.svg.png",
+            "country": null,
+            "adress": null,
+            "url": "asus",
+            "category": [
+                "Телефоны",
+                "Компьютеры"
+            ]
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Dell",
+        "fields": {
+            "image": "company/Dell_logo_2016.svg.png",
+            "country": null,
+            "adress": null,
+            "url": "dell",
+            "category": [
+                "Компьютеры"
+            ]
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Honor",
+        "fields": {
+            "image": "company/Huawei_Honor_Logo.svg.png",
+            "country": null,
+            "adress": null,
+            "url": "honor",
+            "category": [
+                "Планшеты",
+                "Телефоны"
+            ]
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Hp",
+        "fields": {
+            "image": "company/HP_New_Logo_2D.svg.png",
+            "country": null,
+            "adress": null,
+            "url": "hp",
+            "category": [
+                "Компьютеры"
+            ]
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Huawei",
+        "fields": {
+            "image": "company/unnamed.png",
+            "country": null,
+            "adress": null,
+            "url": "huawei",
+            "category": [
+                "Планшеты",
+                "Телефоны"
+            ]
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Infinix",
+        "fields": {
+            "image": "company/Infinix_logo.svg.png",
+            "country": null,
+            "adress": null,
+            "url": "infinix",
+            "category": [
+                "Телефоны"
+            ]
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Lenovo",
+        "fields": {
+            "image": "company/Branding_lenovo-logo_lenovologoposred_low_res.png",
+            "country": null,
+            "adress": null,
+            "url": "lenovo",
+            "category": [
+                "Планшеты",
+                "Телефоны",
+                "Компьютеры"
+            ]
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "MSI",
+        "fields": {
+            "image": "company/rog-republic-of-gamers-logo-84B39C08CE-seeklogo.com_8HaKDb0.png",
+            "country": null,
+            "adress": null,
+            "url": "msi",
+            "category": [
+                "Компьютеры"
+            ]
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Poco",
+        "fields": {
+            "image": "company/POCO_logo.svg.png",
+            "country": null,
+            "adress": null,
+            "url": "poco",
+            "category": [
+                "Телефоны"
+            ]
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "ROG",
+        "fields": {
+            "image": "company/rog-republic-of-gamers-logo-84B39C08CE-seeklogo.com.png",
+            "country": null,
+            "adress": null,
+            "url": "rog",
+            "category": [
+                "Компьютеры"
+            ]
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Realme",
+        "fields": {
+            "image": "company/Realme_logo.png",
+            "country": null,
+            "adress": null,
+            "url": "realme",
+            "category": [
+                "Телефоны"
+            ]
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Samsung",
+        "fields": {
+            "image": "company/Samsung_Logo.svg.png",
+            "country": null,
+            "adress": null,
+            "url": "samsung",
+            "category": [
+                "Планшеты",
+                "Телефоны",
+                "Компьютеры"
+            ]
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Xiaomi",
+        "fields": {
+            "image": "company/Xiaomi_logo_2021-.svg.png",
+            "country": null,
+            "adress": null,
+            "url": "xiaomi",
+            "category": [
+                "Планшеты",
+                "Телефоны"
+            ]
+        }
+    },
+    {
+        "model": "catalog.companies",
+        "pk": "Все товары",
+        "fields": {
+            "image": "",
+            "country": null,
+            "adress": null,
+            "url": "all",
+            "category": [
+                "Планшеты",
+                "Телефоны",
+                "Компьютеры"
+            ]
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 1,
+        "fields": {
+            "name": "Macbook 16 pro",
+            "descriptions": "MacBook Pro вырывается вперед с чипами M3, M3 Pro и M3 Max. Созданные по 3-нанометровой технологии они представляют собой самые совершенные чипы, когда-либо созданные для персональных компьютеров. И каждый из них приносит больше профессиональной производительности и возможностей. Впервые в MacBook Pro реализована аппаратно-ускоренная трассировка лучей.",
+            "image_item": "",
+            "company": "Apple",
+            "category": "Компьютеры",
+            "price": "456000.00",
+            "discount": 0.0,
+            "quantity": 3,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:47:32.295Z",
+            "release": "2024-02-23T00:00:00Z",
+            "url": "macbook-16-pro"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 2,
+        "fields": {
+            "name": "ROG Zephyrus M16",
+            "descriptions": "Ноутбук ASUS ROG Zephyrus M16 GU604VI-N4034 обеспечивает высокую вычислительную производительность для игр и работы в требовательных программах. Процессор Intel Core i9-13900H в сочетании с 32 ГБ оперативной памяти стандарта DDR5 и видеокартой GeForce RTX 4070 от NVIDIA гарантирует быстродействие системы. Накопитель SSD на 1000 ГБ с интерфейсом M.2 PCIe ускоряет обработку задач.\r\nВ ноутбуке установлен экран диагональю 16 дюймов. Панель IPS с разрешением 2560x1600 пикселей отображает реалистичную картинку. Благодаря цветовому охвату DCI-P3 100% и поддержке стандарта VESA DisplayHDR 1000 оттенки воспроизводятся с высокой точностью. Частота обновления 240 Гц предотвращает эффект размытия динамичного изображения. Клавиатура с подсветкой RGB создает комфортные условия для погружения в игру. Система охлаждения с вентиляторами Arc Flow и жидкометаллическим термоинтерфейсом Thermal Grizzly поддерживает низкую температуру нагрева ASUS ROG Zephyrus M16.",
+            "image_item": "",
+            "company": "ROG",
+            "category": "Компьютеры",
+            "price": "224000.00",
+            "discount": 17.0,
+            "quantity": 5,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:47:45.600Z",
+            "release": "2024-02-23T00:00:00Z",
+            "url": "rog-zephyrus-m16"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 3,
+        "fields": {
+            "name": "AirPods 2 pro",
+            "descriptions": "Наушники TWS Apple AirPods Pro 2 обладают силиконовыми амбушюрами, которые обеспечивают плотное прилегание к ушному каналу. Спрятанный в пластиковом корпусе микрофон служит для приема вызовов. Защита по стандарту IPX4 исключает риск негативного воздействия брызг.\r\nНаушники TWS Apple AirPods Pro 2 оборудованы динамическими излучателями, которые гарантируют воспроизведение громкого звука. Закрытое акустическое исполнение полностью изолирует пользователя от внешнего шума. При синхронизации используется интерфейс Bluetooth 5.3. Функция Talk Through заглушает посторонние звуки, позволяя разговаривать в общественных местах и слушать музыку. Доступ к возможностям открывается через сенсорные элементы. Время автономной работы от одного заряда составляет 6 ч.",
+            "image_item": "",
+            "company": "Apple",
+            "category": "Прочее",
+            "price": "34000.00",
+            "discount": 3.0,
+            "quantity": 20,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:47:52.249Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "airpods-2-pro"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 5,
+        "fields": {
+            "name": "IPhone 16 Pro Max",
+            "descriptions": "Аппаратной основой Apple iPhone 16 Pro Max стал 3-нанометровый чипсет A17 Pro с 6-ядерным GPU и поддержкой трассировки лучей. Чип выдает высочайшую производительность в играх. Также имеется 16-ядерный Neural Engine, который обрабатывает 35 миллионов операций в секунду.\r\nКорпус смартфона изготовлен из титана 5-го класса (такой, например, используется в космическом ровере NASA). Титан прочнее, легче и долговечнее, чем алюминий и сталь. У iPhone 16 Pro Max нет физического переключателя для перехода в бесшумный режим. На его месте расположена программируемая кнопка, которая реагирует на силу нажатия. С ее помощью можно, например, включить камеру или фонарик.\r\nУ iPhone 16 Pro Max 6,7-дюймовый OLED-экран с разрешением 2796 × 1290 пикселей, кадровой частотой 120 Гц и пиковой яркостью 2000 нит.\r\nОсновная камера состоит из трех сенсоров. Главный на 48 Мп. Пользователь может выбрать фокусное расстояние — 24, 28 или 35 мм. Также у смартфона ширик и телевик с 5-кратным приближением без потери качества на 12 Мп.\r\niPhone 15 Pro Max получил порты USB-C с поддержкой USB 3 и скоростью передачи данных до 10 Гбит/с. Операционная система — iOS 17.",
+            "image_item": "",
+            "company": "Apple",
+            "category": "Телефоны",
+            "price": "160000.00",
+            "discount": 20.0,
+            "quantity": 15,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:48:00.714Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "iphone-16-pro-max"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 6,
+        "fields": {
+            "name": "MSI",
+            "descriptions": "Ноутбук MSI Vector GP77 13VG-060XRU предлагает мощный вычислительный потенциал, высокое качество изображения и звука, стабильное охлаждение для погружения в мир виртуальной реальности. Благодаря процессору Intel Core i7, видеокарте GeForce RTX 4070 и 16 ГБ ОЗУ он способен демонстрировать высокую производительность системы. Эффективное охлаждение с использованием тепловых трубок и вентиляторов поддерживает низкую температуру нагрева.\r\nНа экране 17.3 дюйма с панелью IPS QHD выводится реалистичное изображение. Частота 240 Гц помогает предотвратить искажения динамичной картинки. Для удобства игры в разное время суток установлена эргономичная клавиатура с полноразмерной раскладкой и подсветкой символов ARGB. Акустическая система воспроизводит четкий насыщенный звук. Коммуникационные возможности представлены портами USB, видеовыходами HDMI и mini DisplayPort, разъемами аудио, коннектором LAN, технологиями Wi-Fi и Bluetooth. Литий-ионный аккумулятор гарантирует продолжительную автономность MSI Vector GP77. Также отмечается поддержка аккумулятором функции ускоренной зарядки.",
+            "image_item": "",
+            "company": "MSI",
+            "category": "Компьютеры",
+            "price": "223000.00",
+            "discount": 0.0,
+            "quantity": 6,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:48:07.606Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "msi"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 7,
+        "fields": {
+            "name": "Lenovo Legion 8 Pro",
+            "descriptions": "Ноутбук Lenovo Legion 8 Pro 16ACH6H сделает каждое изображение реалистичнее и контрастнее. В этом ему помогает дискретная видеокарта GeForce RTX 3060. Экран диагональю 16 дюймов может похвастаться способностью к быстрой смене кадров при динамичном сюжете. Система вентиляции Legion Coldfront 3.0 продлит время автономной работы, гарантируя своевременный отвод тепла.\r\nНоутбук Lenovo Legion 8 Pro 16ACH6H оборудован клавиатурой Legion TrueStrike. Ее характерная черта заключается в высокой отзывчивости на едва уловимые касания. Акустическое сопровождение Nahimic воспроизводит спецэффекты и заполняет пространство объемным звучанием. Процессор AMD Ryzen 7 5800H с 8-ядерной архитектурой исключает малейшие промедления при одновременном запуске требовательных приложений.",
+            "image_item": "",
+            "company": "Lenovo",
+            "category": "Компьютеры",
+            "price": "180000.00",
+            "discount": 0.0,
+            "quantity": 14,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:47:27.090Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "lenovo-legion-8-pro"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 8,
+        "fields": {
+            "name": "Samsung s24",
+            "descriptions": "Смартфон Samsung Galaxy S24 оборудован 3-модульной камерой с 30-кратным цифровым зумом. Он приближает удаленные элементы и объекты без потери четкости. Настройка резкости производится с помощью функции автофокуса. Дисплей диагональю 6.2 дюймов сконструирован на основе матрицы Dynamic AMOLED 2X. Она меняет частоту обновления, ориентируясь на динамику контента.\r\nСмартфон Samsung Galaxy S24 оснащен 10-ядерным процессором и 8 ГБ оперативной памяти. Вычислительная мощность исключает промедления при загрузке и навигации между приложениями. Гарантом насыщенного звучания выступают встроенные стереодинамики. Хранение данных осуществляется во встроенной памяти объемом 256 ГБ. Энергия аккумулятора рассчитана на 78-часовое прослушивание композиций.",
+            "image_item": "",
+            "company": "Samsung",
+            "category": "Телефоны",
+            "price": "90000.00",
+            "discount": 0.0,
+            "quantity": 30,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:47:18.720Z",
+            "release": "2024-02-23T00:00:00Z",
+            "url": "samsung-s24"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 9,
+        "fields": {
+            "name": "Poco X6 Pro",
+            "descriptions": "Смартфон POCO X6 Pro 5G в пластиковом корпусе оборудован 6.67-дюймовым дисплеем с частотой обновления 120 Гц. Она гарантирует своевременную смену кадров при отображении динамичных сцен. AMOLED-матрица обеспечивает трансляцию насыщенного черного цвета без бликов и расширяет углы обзора. Покрытие Corning Gorilla Glass 5 предупреждает образование сколов и царапин. Хранение файлов производится во встроенной памяти объемом 512 ГБ.\r\nСмартфон POCO X6 Pro 5G оснащен 8-ядерным процессором и 12 ГБ оперативной памяти. Аппаратное оснащение не допускает задержек при запуске требовательных приложений и навигации между окнами. Основная 3-модульная камера поддерживает оптическую стабилизацию, которая исключает риск появления размытых пикселей. С двойной светодиодной вспышкой повышается четкость кадров в условиях недостаточного освещения. Энергии аккумулятора достаточного для 50-часового прослушивания треков.",
+            "image_item": "",
+            "company": "Poco",
+            "category": "Телефоны",
+            "price": "40000.00",
+            "discount": 0.0,
+            "quantity": 43,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:47:10.339Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "poco-x6-pro"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 10,
+        "fields": {
+            "name": "MAC",
+            "descriptions": "Apple Mac Pro M2 Ultra — сочетает в себе невероятную производительность, широкие возможности подключения, обеспечивая легкий доступ ко всему, что вам нужно, и превращая любое пространство в студию. M2 Ultra обеспечивает мощность для решения задач практически любого масштаба. Независимо от того, запускаете ли вы несколько приложений, сортируете и редактируете тысячи фотографий, записываете и микшируете музыку профессионального качества или открываете экзопланету, молниеносный M2 Ultra поддержит вас.",
+            "image_item": "",
+            "company": "Apple",
+            "category": "Компьютеры",
+            "price": "760000.00",
+            "discount": 0.0,
+            "quantity": 2,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:46:59.780Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "mac"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 11,
+        "fields": {
+            "name": "Xiaomi Redmi",
+            "descriptions": "Смартфон Xiaomi Redmi Note 13 Pro+ обладает 8-ядерным процессором и 12 ГБ оперативной памяти. Аппаратное оснащение гарантирует запуск и навигацию между приложениями без промедлений. Частота обновления 6.67-дюймового дисплея составляет 120 Гц. Пользователи отметят своевременную смену кадров при трансляции динамичных сцен. AMOLED-матрица способствует отображению насыщенных цветов и глубокого черного оттенка без бликов.\r\nСмартфон Xiaomi Redmi Note 13 Pro+ оснащен 3-модульной камерой с электронной стабилизацией, не допускающей смазывание кадра. С макросъемкой возможно создание снимка с небольшого расстояния. Двойная светодиодная вспышка усиливает яркость в условиях недостаточного освещения. Хранение файлов производится во встроенной памяти объемом 512 ГБ. Технология Dolby Atmos обеспечивает воспроизведение объемного звука.",
+            "image_item": "",
+            "company": "Xiaomi",
+            "category": "Телефоны",
+            "price": "55000.00",
+            "discount": 10.0,
+            "quantity": 55,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:46:44.036Z",
+            "release": "2023-02-23T00:00:00Z",
+            "url": "xiaomi-redmi"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 12,
+        "fields": {
+            "name": "ROG strix",
+            "descriptions": "Ноутбук ASUS ROG Strix G614JI-N4148 оборудован дискретной видеокартой GeForce RTX 4070, которая обеспечивает мгновенную смену кадров во время напряженных игровых сессий. Раскрытие пластиковой крышки стандартное. Экран диагональю 16 дюймов сконструирован по IPS-технологии. Она гарантирует охват широкой палитры цветов и трансляцию контрастных изображений.\r\nНоутбук ASUS ROG Strix G614JI-N4148 работает под управлением 14-ядерного процессора Intel Core i7-13650HX и 16 ГБ оперативной памяти. Аппаратное оснащение справляется с быстрым запуском приложений и позволяет серфить между окнами без малейших промедлений. Для подключения дополнительного монитора и увеличения продуктивности предусмотрен HDMI-выход. RGB-подсветка исключает погрешности ввода при недостаточном внешнем освещении.",
+            "image_item": "",
+            "company": "ROG",
+            "category": "Компьютеры",
+            "price": "180000.00",
+            "discount": 3.0,
+            "quantity": 9,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:46:35.403Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "rog-strix"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 13,
+        "fields": {
+            "name": "Asus Zenbook 14",
+            "descriptions": "Ноутбук ASUS ZenBook 14 UM3402YA-KP602 работает на основе 8-ядерного AMD Ryzen 7 7730U и 16 ГБ оперативной памяти. Вычислительная мощность обеспечивает быструю навигацию между требовательными программами и обработку файлов большого объема. Алюминиевая крышка раскрывается на 180 градусов, позволяя комфортно просматривать и демонстрировать материалы. Сканер отпечатка пальцев защищает данные от несанкционированного доступа.\r\nНоутбук ASUS ZenBook 14 UM3402YA-KP602 оборудован 14-дюймовым экраном с матовым покрытием, которое предупреждает искажение цветов. Разрешение 2560x1600 пикселей выступает гарантом четкости мельчайших элементов. Энергия аккумулятора рассчитана на 22 ч автономного использования функционала. Интерфейс Bluetooth 5.3 помогает с подключением периферии. На хранение файлов отведен 1 ТБ.",
+            "image_item": "",
+            "company": "Asus",
+            "category": "Компьютеры",
+            "price": "90000.00",
+            "discount": 9.0,
+            "quantity": 17,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:46:24.993Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "asus-zenbook-14"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 14,
+        "fields": {
+            "name": "IPhone 16",
+            "descriptions": "Смартфон Apple iPhone 16 привлекает внимание безрамочным дисплеем 6.1\r\nРазрешение 2556x1179 dpi сохраняет четкость и насыщенность картинки, точную передачу цвета при любом освещении. 6-ядерный процессор Apple A16 Bionic с ОЗУ 6 ГБ гарантирует высокий уровень производительности.\r\n2 тыловые камеры 48 +12 Мп позволяют делать эффектные фото и видео с углом обзора 120° и 4K-разрешением.",
+            "image_item": "",
+            "company": "Apple",
+            "category": "Телефоны",
+            "price": "120000.00",
+            "discount": 20.0,
+            "quantity": 34,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:46:17.371Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "iphone-16"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 15,
+        "fields": {
+            "name": "IPhone 16 Plus",
+            "descriptions": "iPhone 16 Plus получил корпус со скругленными краями и матовым покрытием. У смартфона 6,7-дюймовый OLED-дисплей с пиковой яркостью 2000 нит. Вместо челки в верхней части дисплея овальный разрез Dynamic Island.\r\nТыльная камера двойная, с диагональным расположением датчиков. Главный сенсор 48-мегапиксельный, ширик 12-мегапиксельный с возможностью съемки с 2-кратным приближением без потери качества. Фронтальная камера 12-мегапиксельная. iPhone 15 Plus умеет снимать видео в 4K при 60 fps. Есть специальный кинематографический режим съемки.\r\nАппаратная основа унаследована от iPhone 15 Pro и iPhone 14 Pro Max. Это чипсет A16 Bionic. Энергоэффективность в сравнении с iPhone 15 выросла. Объем оперативной памяти равен 6 ГБ.\r\nЕмкость батареи iPhone 15 Plus составляет 4912 мАч. Apple гарантирует беспроблемную работу в течение дня. Еще одно важное нововведение — порт USB-C, который заменил Lightning.\r\niPhone 15 Plus умеет связываться со спутником и посылать сигнал SOS. Внутри чип U2, повышающий точность геолокации. Apple также оснастила смартфон шумодавом последнего поколения, который работает при разговорах.",
+            "image_item": "",
+            "company": "Apple",
+            "category": "Телефоны",
+            "price": "140000.00",
+            "discount": 20.0,
+            "quantity": 24,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:46:09.739Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "iphone-16-plus"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 16,
+        "fields": {
+            "name": "IPhone 16 Pro",
+            "descriptions": "Аппаратной основой Apple iPhone 16 Pro стал 3-нанометровый чипсет A17 Pro с 6-ядерным GPU и поддержкой трассировки лучей. Чип выдает высочайшую производительность в играх. Также имеется 16-ядерный Neural Engine, который обрабатывает 35 миллионов операций в секунду.\r\nКорпус смартфона изготовлен из титана 5-го класса (такой, например, используется в космическом ровере NASA). Титан прочнее, легче и долговечнее, чем алюминий и сталь. У iPhone 15 Pro нет физического переключателя для перехода в бесшумный режим. На его месте расположена программируемая кнопка, которая реагирует на силу нажатия. С ее помощью можно, например, включить камеру или фонарик.\r\nУ iPhone 16 Pro 6,1-дюймовый OLED-дисплей с разрешением 2556 × 1179 пикселей, кадровой частотой 120 Гц и пиковой яркостью 2000 нит.\r\nОсновная камера состоит из трех сенсоров. Главный на 48 Мп. Пользователь может выбрать фокусное расстояние — 24, 28 или 35 мм. Также у смартфона ширик и телевик с 3-кратным оптическим зумом на 12 Мп.\r\niPhone 16 Pro получил порт USB-C с поддержкой USB 3 и скоростью передачи данных до 10 Гбит/с. Операционная система — iOS 17.",
+            "image_item": "",
+            "company": "Apple",
+            "category": "Телефоны",
+            "price": "130000.00",
+            "discount": 20.0,
+            "quantity": 39,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:46:03.261Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "iphone-16-pro"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 50,
+        "fields": {
+            "name": "Huawei nova 12i 8/256Gb",
+            "descriptions": "expedita magni id tenetur tempore quae similique neque adipisci rem alias aliquid modi iusto omnis molestiae ullam eos itaque praesentium voluptates voluptas sit doloribus laboriosam corporis illum quasi reprehenderit voluptatibus quibusdam porro earum et inventore illo beatae ipsum soluta nulla excepturi maxime harum dolore aut unde est incidunt ab corrupti",
+            "image_item": "",
+            "company": "Huawei",
+            "category": "Телефоны",
+            "price": "21990.00",
+            "discount": 9.0,
+            "quantity": 0,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:45:56.899Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "huawei-nova-12i-8256gb"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 51,
+        "fields": {
+            "name": "REALME C53 6/128Gb",
+            "descriptions": "cupiditate aliquam pariatur rerum ut reiciendis architecto molestiae inventore exercitationem ab provident a ipsam deleniti saepe quasi perferendis ad hic eum sed itaque amet accusantium animi et sapiente voluptatem nihil enim magnam in libero laboriosam dolor soluta voluptatum quae cum repudiandae sequi eligendi ea ratione porro earum sit sint incidunt",
+            "image_item": "",
+            "company": "Realme",
+            "category": "Телефоны",
+            "price": "11990.00",
+            "discount": 8.0,
+            "quantity": 0,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:45:51.037Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "realme-c53-6128gb"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 52,
+        "fields": {
+            "name": "Samsung Galaxy A15 8/256Gb",
+            "descriptions": "temporibus minima molestiae tenetur culpa eum delectus perferendis corrupti quae ratione numquam obcaecati vitae quisquam tempore distinctio doloremque nobis beatae dolore dicta sapiente dolorem soluta quas consequuntur alias veniam natus dignissimos fugit sit odit quos saepe doloribus aspernatur officiis quis iste libero excepturi deserunt fuga repudiandae expedita dolores id vel",
+            "image_item": "",
+            "company": "Samsung",
+            "category": "Телефоны",
+            "price": "24090.00",
+            "discount": 10.0,
+            "quantity": 0,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:45:43.830Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "samsung-galaxy-a15-8256gb"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 53,
+        "fields": {
+            "name": "Xiaomi Poco X5 5G 8/256Gb",
+            "descriptions": "ullam obcaecati aut quos officiis quidem earum ipsa repellat architecto nostrum illum cumque eveniet quaerat harum consequuntur ipsam quisquam hic deserunt placeat cupiditate asperiores ratione ab numquam natus sed voluptatum perspiciatis in aspernatur velit tenetur dolores veniam delectus nihil aperiam ad fugit suscipit sint iste temporibus possimus illo saepe soluta",
+            "image_item": "",
+            "company": "Xiaomi",
+            "category": "Телефоны",
+            "price": "18990.00",
+            "discount": 0.0,
+            "quantity": 0,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:45:36.641Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "xiaomi-poco-x5-5g-8256gb"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 54,
+        "fields": {
+            "name": "Xiaomi Redmi A2+ 3/64Gb",
+            "descriptions": "consequuntur cumque hic consectetur quae asperiores et aliquam voluptas recusandae perferendis nostrum fuga doloribus ipsa enim nulla minima vero voluptatibus molestias voluptate blanditiis necessitatibus sed rerum nisi suscipit dolorem a quos ea ad reprehenderit non deserunt sit quaerat quas officia autem unde vel sapiente incidunt atque error inventore quidem quam",
+            "image_item": "",
+            "company": "Xiaomi",
+            "category": "Телефоны",
+            "price": "5990.00",
+            "discount": 8.0,
+            "quantity": 0,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:45:31.254Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "xiaomi-redmi-a2-364gb"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 55,
+        "fields": {
+            "name": "Samsung Galaxy A54 5G 6/128Gb",
+            "descriptions": "sapiente nesciunt eveniet iste magni non numquam exercitationem sequi corporis tempora sint quae excepturi aut fugiat architecto assumenda sit eum voluptatum dolores ducimus ratione dolore consectetur earum minus quod consequatur commodi veritatis doloremque ipsum possimus molestias labore culpa delectus quaerat facere iusto soluta esse asperiores saepe reprehenderit enim officia eligendi",
+            "image_item": "",
+            "company": "Samsung",
+            "category": "Телефоны",
+            "price": "35990.00",
+            "discount": 10.0,
+            "quantity": 0,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:45:25.302Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "samsung-galaxy-a54-5g-6128gb"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 56,
+        "fields": {
+            "name": "Honor X9a 5G 6/128Gb",
+            "descriptions": "recusandae consectetur nisi at a ratione culpa saepe placeat tempora inventore ea asperiores excepturi ex nulla delectus tenetur accusamus repudiandae aperiam molestiae sed eligendi non natus voluptatem reiciendis sunt quae illo ipsam distinctio molestias similique minus consequuntur perspiciatis labore officiis minima quo ducimus nobis ipsa repellat doloribus dolorum facere aut",
+            "image_item": "",
+            "company": "Honor",
+            "category": "Телефоны",
+            "price": "29990.00",
+            "discount": 33.0,
+            "quantity": 0,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:45:19.396Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "honor-x9a-5g-6128gb"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 57,
+        "fields": {
+            "name": "Samsung Galaxy S22 8/256Gb",
+            "descriptions": "mollitia exercitationem nobis consequatur sequi quod ea odio ullam tenetur nam quas soluta temporibus maiores facilis omnis debitis repudiandae fuga eum ratione a molestias minima ut fugiat perferendis inventore quasi maxime molestiae recusandae ab alias iste quibusdam non corrupti incidunt aliquid veritatis facere eos nemo quo quam vitae magnam tempore",
+            "image_item": "",
+            "company": "Samsung",
+            "category": "Телефоны",
+            "price": "72190.00",
+            "discount": 10.0,
+            "quantity": 0,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:45:09.838Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "samsung-galaxy-s22-8256gb"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 58,
+        "fields": {
+            "name": "Apple iPhone 14 128Gb",
+            "descriptions": "ratione minima illo ipsam quia modi ex totam non eos quo reiciendis dicta incidunt minus dolore voluptas eaque repudiandae tempore est aut quae nostrum rem quasi error tenetur numquam possimus eius veritatis corporis libero ab quaerat pariatur maxime aperiam doloribus neque similique saepe iste vitae molestiae eum repellat voluptatem illum",
+            "image_item": "",
+            "company": "Apple",
+            "category": "Телефоны",
+            "price": "78390.00",
+            "discount": 0.0,
+            "quantity": 0,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:45:03.625Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "apple-iphone-14-128gb"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 59,
+        "fields": {
+            "name": "Apple iPhone 15 Pro Max 1Tb",
+            "descriptions": "itaque animi deserunt dolorum illum ex ea qui corrupti possimus assumenda consequuntur consequatur repellat repellendus error vel quia minus nemo modi aspernatur at dolorem similique veniam distinctio suscipit tenetur necessitatibus alias illo sed impedit sequi dolor non cum perferendis labore quidem molestiae quam asperiores doloribus quod fugit tempore sapiente ullam",
+            "image_item": "",
+            "company": "Apple",
+            "category": "Телефоны",
+            "price": "214590.00",
+            "discount": 0.0,
+            "quantity": 0,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:44:47.613Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "apple-iphone-15-pro-max-1tb"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 60,
+        "fields": {
+            "name": "Samsung Galaxy S24 Ultra 5G 12/1Tb",
+            "descriptions": "praesentium dolore quos numquam voluptatem voluptas quibusdam animi non blanditiis aliquam obcaecati molestiae ipsa sed quam necessitatibus sunt dolor quas suscipit ratione in quisquam inventore laboriosam vero ea expedita nulla odio molestias repellendus quasi debitis architecto nisi ipsum totam nesciunt nam ut impedit voluptatibus ducimus aspernatur est unde placeat iure",
+            "image_item": "",
+            "company": "Samsung",
+            "category": "Телефоны",
+            "price": "211090.00",
+            "discount": 10.0,
+            "quantity": 0,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:44:18.430Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "samsung-galaxy-s24-ultra-5g-121tb"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 61,
+        "fields": {
+            "name": "Samsung Galaxy Z Fold 5 5G 12/512Gb",
+            "descriptions": "iste assumenda aspernatur maxime illo sed vel id quae labore accusantium nulla ipsum odit eveniet hic ipsam aliquam architecto sunt tempora impedit molestiae iusto saepe enim odio ad aliquid eos repellendus modi rerum inventore quia nobis obcaecati repellat deleniti eius eligendi cumque quam consequatur perspiciatis cum non numquam ab quisquam",
+            "image_item": "",
+            "company": "Samsung",
+            "category": "Телефоны",
+            "price": "204890.00",
+            "discount": 10.0,
+            "quantity": 0,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:44:10.252Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "samsung-galaxy-z-fold-5-5g-12512gb"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 62,
+        "fields": {
+            "name": "Honor Magic V2 16/512Gb",
+            "descriptions": "consequuntur cum maiores commodi eveniet explicabo beatae quasi facere repudiandae possimus excepturi adipisci quos neque fugit ab vero eius rerum libero voluptatibus dolorem delectus ipsam culpa voluptates quas aspernatur autem pariatur similique odio nobis eos impedit laborum quae quo atque ducimus voluptas eum debitis ullam molestiae voluptate nemo temporibus veritatis",
+            "image_item": "",
+            "company": "Honor",
+            "category": "Телефоны",
+            "price": "179990.00",
+            "discount": 11.0,
+            "quantity": 0,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:44:03.646Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "honor-magic-v2-16512gb"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 63,
+        "fields": {
+            "name": "Xiaomi 14 Ultra 16/512Gb",
+            "descriptions": "est porro ratione aliquid optio corporis officia omnis tenetur eveniet nostrum numquam sapiente qui maiores earum at maxime saepe distinctio ipsa assumenda eaque aperiam vero delectus quae laborum repellat unde aut molestias accusantium amet iste quod praesentium similique provident necessitatibus consectetur perspiciatis nisi inventore sit deleniti autem dolor ullam quos",
+            "image_item": "",
+            "company": "Xiaomi",
+            "category": "Телефоны",
+            "price": "149990.00",
+            "discount": 8.0,
+            "quantity": 0,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:43:56.927Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "xiaomi-14-ultra-16512gb"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 64,
+        "fields": {
+            "name": "ASUS ROG Phone 7 pro 5G 16/512Gb",
+            "descriptions": "incidunt quibusdam perferendis est sapiente sunt provident cupiditate beatae dolorem ratione molestiae deserunt ut voluptas necessitatibus odio quo magnam esse a similique dolore autem nulla quam rem reiciendis at corporis itaque mollitia eveniet repellat excepturi repudiandae omnis aliquam accusantium hic dolores dicta fugit odit tempore doloribus repellendus ad nisi nostrum",
+            "image_item": "",
+            "company": "Asus",
+            "category": "Телефоны",
+            "price": "149990.00",
+            "discount": 10.0,
+            "quantity": 0,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:43:51.377Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "asus-rog-phone-7-pro-5g-16512gb"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 65,
+        "fields": {
+            "name": "Huawei Mate X3 12/512Gb",
+            "descriptions": "maxime alias dolores in suscipit ipsum similique ab exercitationem veniam ad quidem expedita fugiat autem necessitatibus accusantium obcaecati dolor unde nostrum quo porro ut sunt hic eos quod ducimus minima consectetur at ex nisi eum perferendis libero officia laborum voluptatem aspernatur ratione eaque corporis facere repellat tempore adipisci debitis dicta",
+            "image_item": "",
+            "company": "Huawei",
+            "category": "Телефоны",
+            "price": "169990.00",
+            "discount": 24.0,
+            "quantity": 0,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:43:45.229Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "huawei-mate-x3-12512gb"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 66,
+        "fields": {
+            "name": "Samsung Galaxy S24+ 5G 12/512Gb",
+            "descriptions": "quos molestiae ab minus modi eius porro totam quam vero ipsum accusantium enim ratione sapiente suscipit labore nam blanditiis odio saepe maiores cum animi et qui unde aut quas voluptate ex beatae ad inventore deleniti eveniet earum nostrum sunt dolorem soluta repellendus asperiores dolorum dignissimos consequatur sed nemo harum similique",
+            "image_item": "",
+            "company": "Samsung",
+            "category": "Телефоны",
+            "price": "138890.00",
+            "discount": 10.0,
+            "quantity": 0,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:43:35.887Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "samsung-galaxy-s24-5g-12512gb"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 67,
+        "fields": {
+            "name": "Samsung Galaxy Z Flip 5 5G 8/512Gb",
+            "descriptions": "dolor ratione voluptas perferendis alias reiciendis officiis fugit vel unde possimus illo facilis doloremque odio esse non at dolore consectetur deleniti delectus aliquid est quos enim beatae ullam animi illum dolorum consequatur officia voluptatibus corrupti repudiandae quisquam eum ab iusto aliquam optio tempora atque provident veniam id cumque vitae cum",
+            "image_item": "",
+            "company": "Samsung",
+            "category": "Телефоны",
+            "price": "121490.00",
+            "discount": 10.0,
+            "quantity": 7,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:44:38.666Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "samsung-galaxy-z-flip-5-5g-8512gb"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 68,
+        "fields": {
+            "name": "ASUS ROG Phone 6D Ultimate 16/512Gb",
+            "descriptions": "natus impedit nobis cumque veniam ut magni maiores id adipisci sunt obcaecati ullam perferendis commodi repellat autem inventore recusandae saepe aliquid eligendi vel repudiandae a quas deserunt accusantium similique dicta quos cum magnam placeat officia fuga pariatur deleniti ipsum iste esse aliquam qui et labore enim quasi quidem quaerat temporibus",
+            "image_item": "",
+            "company": "Asus",
+            "category": "Телефоны",
+            "price": "100520.00",
+            "discount": 5.0,
+            "quantity": 8,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-27T13:44:31.996Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "asus-rog-phone-6d-ultimate-16512gb"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 71,
+        "fields": {
+            "name": "Huawei MatePad BTK-W09 11.5",
+            "descriptions": "voluptatum reprehenderit eos alias incidunt est temporibus iusto voluptates deserunt ratione voluptate nostrum vitae explicabo inventore numquam nobis qui maxime iure consequuntur amet cupiditate hic voluptatibus saepe atque minus et voluptas perspiciatis id suscipit consequatur nulla ut ex deleniti voluptatem ducimus cumque sint architecto nemo obcaecati dignissimos aspernatur laborum quos",
+            "image_item": "",
+            "company": "Huawei",
+            "category": "Планшеты",
+            "price": "28990.00",
+            "discount": 14.0,
+            "quantity": 32,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-28T21:05:55.565Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "huawei-matepad-btk-w09-115"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 72,
+        "fields": {
+            "name": "Samsung Galaxy Tab A9+ SM-X216B 11",
+            "descriptions": "perspiciatis aspernatur voluptates aut repellendus velit dolorem culpa eos possimus temporibus omnis consectetur ab maiores ducimus sint vel perferendis saepe quia vero nam laboriosam fugiat eveniet deleniti incidunt iste in beatae aliquam tempora ea nihil reprehenderit cum nesciunt molestiae quae ipsa expedita veritatis tempore accusantium esse soluta autem dolores natus",
+            "image_item": "",
+            "company": "Samsung",
+            "category": "Планшеты",
+            "price": "37090.00",
+            "discount": 0.0,
+            "quantity": 43,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-28T21:05:42.513Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "samsung-galaxy-tab-a9-sm-x216b-11"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 73,
+        "fields": {
+            "name": "Samsung Galaxy Tab S9+ SM-X816B со стилусом 12.4",
+            "descriptions": "autem laboriosam nemo facere laborum at aliquid quae reiciendis quisquam fugit cupiditate minima quaerat natus itaque qui animi ratione ab ipsa aut explicabo consequatur placeat quasi enim quam repudiandae error nulla quas quod consequuntur labore vel quibusdam molestias commodi odit similique nesciunt ex nostrum voluptatem porro amet distinctio id atque",
+            "image_item": "",
+            "company": "Samsung",
+            "category": "Планшеты",
+            "price": "131990.00",
+            "discount": 0.0,
+            "quantity": 6,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-28T21:05:32.317Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "samsung-galaxy-tab-s9-sm-x816b-so-stilusom-124"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 74,
+        "fields": {
+            "name": "Apple iPad 2022 64Gb Wi-Fi A2696 10.9",
+            "descriptions": "temporibus tempora iste accusantium esse porro perferendis amet eligendi nostrum a eius quidem ratione molestiae alias ullam sed repellat voluptatibus pariatur quos asperiores consequuntur rerum consectetur debitis enim mollitia doloribus cum blanditiis itaque incidunt vero reiciendis maxime quo quae fugiat explicabo eos necessitatibus eveniet deleniti tempore qui unde ab commodi",
+            "image_item": "",
+            "company": "Apple",
+            "category": "Планшеты",
+            "price": "57090.00",
+            "discount": 0.0,
+            "quantity": 33,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-28T21:05:19.235Z",
+            "release": "2022-04-23T00:00:00Z",
+            "url": "apple-ipad-2022-64gb-wi-fi-a2696-109"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 75,
+        "fields": {
+            "name": "Apple iPad 2022 256Gb Wi-Fi A2696 10.9",
+            "descriptions": "unde saepe hic adipisci odit iusto iure fuga commodi aliquam expedita labore ipsam similique quos quis praesentium nemo ullam quaerat provident sint incidunt nisi vero rem non quasi illo modi deserunt tempora debitis voluptas ut magni dolorum itaque deleniti veritatis eius voluptates necessitatibus quia optio neque aperiam enim doloremque culpa",
+            "image_item": "",
+            "company": "Apple",
+            "category": "Планшеты",
+            "price": "84790.00",
+            "discount": 0.0,
+            "quantity": 13,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-28T21:05:03.691Z",
+            "release": "2022-04-23T00:00:00Z",
+            "url": "apple-ipad-2022-256gb-wi-fi-a2696-109"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 76,
+        "fields": {
+            "name": "Xiaomi Redmi Pad SE 11\"",
+            "descriptions": "vel totam ut asperiores in dolorum voluptas suscipit magni dignissimos nihil molestias placeat dolore reprehenderit eveniet voluptatibus minima natus voluptatum ab assumenda odio sequi obcaecati harum iure unde consequatur rerum impedit illo excepturi eligendi ea repellat voluptatem nam blanditiis commodi modi laudantium ex neque sed quo libero eum alias autem",
+            "image_item": "",
+            "company": "Xiaomi",
+            "category": "Планшеты",
+            "price": "19990.00",
+            "discount": 5.0,
+            "quantity": 44,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-28T21:04:50.618Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "xiaomi-redmi-pad-se-11"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 77,
+        "fields": {
+            "name": "Apple iPad 2021 64Gb Wi-Fi A2602 10.2",
+            "descriptions": "amet doloribus cum ea rem eligendi mollitia impedit itaque repudiandae et officiis consectetur nihil veniam iusto ipsa beatae illo dolore facere repellendus exercitationem laborum ab accusantium voluptate dicta saepe distinctio quod sunt quasi sint eaque iure sequi labore suscipit fugit nisi quisquam nesciunt ullam delectus officia quas accusamus expedita quo",
+            "image_item": "",
+            "company": "Apple",
+            "category": "Планшеты",
+            "price": "37990.00",
+            "discount": 5.0,
+            "quantity": 23,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-28T21:04:40.256Z",
+            "release": "2021-04-23T00:00:00Z",
+            "url": "apple-ipad-2021-64gb-wi-fi-a2602-102"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 78,
+        "fields": {
+            "name": "Lenovo Tab M10 Plus TB125FU 10.61",
+            "descriptions": "qui placeat quas harum et nisi expedita nam laborum itaque doloribus esse modi numquam adipisci nemo voluptate tempora minus enim eveniet soluta dolor delectus hic quia corporis molestiae ea iusto facilis fugiat autem maiores aliquid saepe iste sit sapiente eum voluptatem nihil rem dicta ut debitis unde obcaecati distinctio eius",
+            "image_item": "",
+            "company": "Lenovo",
+            "category": "Планшеты",
+            "price": "18790.00",
+            "discount": 0.0,
+            "quantity": 2,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-28T21:04:30.007Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "lenovo-tab-m10-plus-tb125fu-1061"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 79,
+        "fields": {
+            "name": "Xiaomi Pad 6 23043RP34G 11",
+            "descriptions": "hic minus tenetur modi nulla ullam incidunt itaque accusantium cum ipsam pariatur nostrum cumque quod perspiciatis temporibus illo expedita qui nesciunt perferendis a autem assumenda voluptatum quaerat iste omnis velit iure sit nobis rem est optio alias inventore deserunt labore suscipit facilis in quam saepe magnam commodi placeat quo veniam",
+            "image_item": "",
+            "company": "Xiaomi",
+            "category": "Планшеты",
+            "price": "39990.00",
+            "discount": 13.0,
+            "quantity": 32,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-28T21:04:20.154Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "xiaomi-pad-6-23043rp34g-11"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 80,
+        "fields": {
+            "name": "Honor Pad 9 HEY2-W09 12.1",
+            "descriptions": "odit omnis incidunt consequuntur officiis nisi magnam repudiandae quas accusamus cumque placeat quasi sapiente nesciunt est unde consectetur sint aspernatur dolorem nulla nemo autem id nostrum at quia modi impedit vero nobis cum fugit qui facilis quod mollitia numquam quo tempora hic suscipit commodi perspiciatis repellat ducimus quis itaque quisquam",
+            "image_item": "",
+            "company": "Honor",
+            "category": "Планшеты",
+            "price": "32990.00",
+            "discount": 9.0,
+            "quantity": 31,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-28T21:04:11.194Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "honor-pad-9-hey2-w09-121"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 81,
+        "fields": {
+            "name": "Honor Pad X9 Eileen-L09D 11.5",
+            "descriptions": "dignissimos cupiditate amet corporis nulla reprehenderit obcaecati molestiae vitae illum veritatis placeat voluptatum labore commodi mollitia facere ipsum necessitatibus reiciendis maiores nihil nisi magni quod at deserunt illo ut distinctio eveniet soluta sapiente culpa pariatur quaerat minus ullam expedita non ducimus odio saepe molestias fuga inventore perspiciatis aspernatur dolor unde",
+            "image_item": "",
+            "company": "Honor",
+            "category": "Планшеты",
+            "price": "27990.00",
+            "discount": 18.0,
+            "quantity": 32,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-28T21:03:51.947Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "honor-pad-x9-eileen-l09d-115"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 82,
+        "fields": {
+            "name": "Samsung Galaxy Tab S9 Ultra SM-X916B со стилусом 14.6",
+            "descriptions": "sed eligendi possimus animi a cumque pariatur ad asperiores nam porro nostrum quaerat dolor dolorem perferendis maiores accusantium quasi perspiciatis voluptates aliquid beatae fugiat id nobis quisquam ipsa ex aliquam doloremque deserunt blanditiis corrupti nulla vero eius molestiae sit quas earum aut praesentium reprehenderit enim ullam similique magnam non ea",
+            "image_item": "",
+            "company": "Samsung",
+            "category": "Планшеты",
+            "price": "170990.00",
+            "discount": 0.0,
+            "quantity": 12,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-28T21:03:41.888Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "samsung-galaxy-tab-s9-ultra-sm-x916b-so-stilusom-146"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 143,
+        "fields": {
+            "name": "MSI Titan 18 HX A14VIG-211RU",
+            "descriptions": "tenetur asperiores libero recusandae inventore vel dolorem dolore explicabo sed provident neque vero dicta reiciendis at corrupti incidunt ipsa consequuntur sequi reprehenderit laborum enim consectetur atque autem possimus esse quod voluptatibus est earum fuga illo eum repellendus delectus accusamus deleniti eaque voluptates labore nemo quam odio expedita soluta error ipsam",
+            "image_item": "",
+            "company": "MSI",
+            "category": "Компьютеры",
+            "price": "602990.00",
+            "discount": 0.0,
+            "quantity": 1,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:33:20.815Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "msi-titan-18-hx-a14vig-211ru"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 144,
+        "fields": {
+            "name": "MSI Creator 16 AI Studio A1VIG-060RU",
+            "descriptions": "saepe dicta possimus incidunt ex accusantium consectetur voluptatem quasi culpa ad rem nihil repellat deleniti corrupti exercitationem quam nam veniam doloribus molestiae eligendi officia facere vel esse placeat fuga assumenda dolor mollitia excepturi fugit cumque voluptatum totam soluta iusto doloremque accusamus ipsa perspiciatis adipisci architecto natus cupiditate quia hic ratione",
+            "image_item": "",
+            "company": "MSI",
+            "category": "Компьютеры",
+            "price": "553640.00",
+            "discount": 10.0,
+            "quantity": 1,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:33:15.395Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "msi-creator-16-ai-studio-a1vig-060ru"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 145,
+        "fields": {
+            "name": "ASUS ROG Zephyrus Duo 16 GX650PY-NM085W",
+            "descriptions": "deserunt tempore quis voluptate quibusdam officiis fugit nisi ratione tenetur laboriosam magnam harum inventore vitae maiores architecto voluptates necessitatibus doloribus voluptatem nostrum dicta non explicabo quas nemo veniam eaque provident mollitia voluptas aliquid corporis cumque facere sunt natus ut repellendus dolores nobis deleniti rerum quod sint aut minus similique sapiente",
+            "image_item": "",
+            "company": "Asus",
+            "category": "Компьютеры",
+            "price": "569990.00",
+            "discount": 19.0,
+            "quantity": 1,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:33:10.300Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "asus-rog-zephyrus-duo-16-gx650py-nm085w"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 146,
+        "fields": {
+            "name": "MSI Stealth 16 AI Studio A1VIG-062RU",
+            "descriptions": "earum numquam veniam ipsam vero rerum dolorum corporis nobis facere a magnam voluptatibus ducimus ex nemo et assumenda nostrum exercitationem reiciendis animi dicta modi id voluptate ea unde quidem adipisci doloribus fuga officia aperiam nulla expedita accusamus sed quasi ipsa voluptatem cum saepe nam sunt soluta eaque minima in tempore",
+            "image_item": "",
+            "company": "MSI",
+            "category": "Компьютеры",
+            "price": "433990.00",
+            "discount": 0.0,
+            "quantity": 1,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:33:05.185Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "msi-stealth-16-ai-studio-a1vig-062ru"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 147,
+        "fields": {
+            "name": "MSI CreatorPro X17 HX A13VKS-267RU",
+            "descriptions": "maxime quam temporibus voluptate neque modi nisi sint quas at odit ipsum sit rerum velit dolorum porro perspiciatis hic voluptatem blanditiis consectetur expedita quis voluptates consequuntur assumenda quia quisquam aliquam quos dolorem saepe excepturi quibusdam harum unde sequi sapiente eum delectus aliquid minima dicta amet natus tenetur laborum magnam dolore",
+            "image_item": "",
+            "company": "MSI",
+            "category": "Компьютеры",
+            "price": "415990.00",
+            "discount": 0.0,
+            "quantity": 1,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:32:59.473Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "msi-creatorpro-x17-hx-a13vks-267ru"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 148,
+        "fields": {
+            "name": "ASUS ROG Strix Scar 18 G834JYR-R6080W",
+            "descriptions": "fugiat eaque temporibus cumque inventore ratione blanditiis dicta at sunt nemo qui praesentium similique porro id culpa architecto ut eius tenetur cum modi maxime itaque esse aspernatur error obcaecati excepturi ducimus sed nisi nesciunt molestiae consequatur possimus doloremque expedita aut exercitationem ipsum iure molestias veritatis quia repudiandae optio incidunt delectus",
+            "image_item": "",
+            "company": "Asus",
+            "category": "Компьютеры",
+            "price": "413990.00",
+            "discount": 0.0,
+            "quantity": 1,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:32:53.457Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "asus-rog-strix-scar-18-g834jyr-r6080w"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 149,
+        "fields": {
+            "name": "MSI Creator Z17 HX Studio A14VGT-267RU",
+            "descriptions": "cumque qui repellat possimus sequi magnam incidunt quibusdam illum animi necessitatibus dolore amet tenetur aperiam in tempora esse reiciendis labore ipsum provident architecto nemo perferendis minima facere vel doloribus non obcaecati porro modi deserunt voluptatem maiores expedita autem a maxime consequuntur distinctio illo nam totam eum repudiandae aut sunt laboriosam",
+            "image_item": "",
+            "company": "MSI",
+            "category": "Компьютеры",
+            "price": "412990.00",
+            "discount": 0.0,
+            "quantity": 1,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:32:47.841Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "msi-creator-z17-hx-studio-a14vgt-267ru"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 150,
+        "fields": {
+            "name": "Samsung Galaxy Book 3 Ultra NP960 NP960XFH-XA1IN",
+            "descriptions": "obcaecati repudiandae delectus fuga dicta maxime animi molestiae accusamus deleniti commodi voluptate quibusdam excepturi laborum rerum alias optio deserunt inventore in sint voluptates a harum est quis perferendis at amet maiores repellendus magnam sit saepe dolorum doloremque aperiam expedita vel doloribus illum cumque incidunt quod facere vero necessitatibus provident voluptatem",
+            "image_item": "",
+            "company": "Samsung",
+            "category": "Компьютеры",
+            "price": "369990.00",
+            "discount": 0.0,
+            "quantity": 1,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:32:42.027Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "samsung-galaxy-book-3-ultra-np960-np960xfh-xa1in"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 151,
+        "fields": {
+            "name": "ASUS Zenbook Pro 16X OLED UX7602VI-MY073X",
+            "descriptions": "recusandae tempora exercitationem dolorem sed distinctio perferendis dolore pariatur quos molestiae quod animi veniam impedit nemo laboriosam sequi modi quae et sunt assumenda voluptatum natus aspernatur soluta adipisci a fuga ab illum nihil nulla at velit labore fugiat cupiditate dicta voluptas placeat ipsa quis incidunt vel hic amet quo minus",
+            "image_item": "",
+            "company": "Asus",
+            "category": "Компьютеры",
+            "price": "335990.00",
+            "discount": 0.0,
+            "quantity": 1,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:32:35.082Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "asus-zenbook-pro-16x-oled-ux7602vi-my073x"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 152,
+        "fields": {
+            "name": "Lenovo ThinkPad X1 Carbon Gen 10 21CB0068RT",
+            "descriptions": "sunt distinctio in nemo iure magni est repellendus earum velit necessitatibus eaque corporis iusto laudantium nisi atque vitae eum quo consequatur mollitia voluptatem deserunt natus molestiae adipisci dolorem quia assumenda explicabo dolorum non labore incidunt possimus voluptas delectus officiis consequuntur laboriosam odit et quibusdam debitis illo rerum corrupti recusandae dolore",
+            "image_item": "",
+            "company": "Lenovo",
+            "category": "Компьютеры",
+            "price": "334410.00",
+            "discount": 0.0,
+            "quantity": 1,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:32:30.477Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "lenovo-thinkpad-x1-carbon-gen-10-21cb0068rt"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 153,
+        "fields": {
+            "name": "DELL XPS 15 9530 9530-4160",
+            "descriptions": "suscipit fuga omnis neque natus laudantium blanditiis ratione quidem nesciunt deserunt ex maiores necessitatibus harum obcaecati quos illo veritatis veniam expedita eius aliquam a ipsum non excepturi magnam ullam dolore quo ipsam nobis quaerat doloribus perferendis velit sunt dolorem beatae odio animi laboriosam voluptates porro explicabo placeat sit accusamus doloremque",
+            "image_item": "",
+            "company": "Dell",
+            "category": "Компьютеры",
+            "price": "371840.00",
+            "discount": 11.0,
+            "quantity": 1,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:32:25.426Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "dell-xps-15-9530-9530-4160"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 154,
+        "fields": {
+            "name": "DELL XPS 13 9320 9320-4317",
+            "descriptions": "error sequi possimus quam nam hic soluta deleniti laudantium est temporibus esse enim fuga nihil quae minus corrupti veniam nobis doloremque adipisci exercitationem fugiat quibusdam rem ipsum inventore suscipit ducimus cupiditate rerum unde sint beatae tempore eveniet facilis libero eum saepe mollitia impedit ex corporis ullam iure itaque magni quo",
+            "image_item": "",
+            "company": "Dell",
+            "category": "Компьютеры",
+            "price": "298410.00",
+            "discount": 0.0,
+            "quantity": 1,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:32:19.379Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "dell-xps-13-9320-9320-4317"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 155,
+        "fields": {
+            "name": "HP Omen 16-wf0032ci",
+            "descriptions": "veniam nisi alias cum voluptatem eum distinctio quis esse fugiat mollitia cumque facilis molestias quia reprehenderit eaque quaerat incidunt saepe atque delectus voluptatum corporis quibusdam laborum aliquam hic minus ad sit magnam labore tenetur iusto aperiam itaque illum voluptas facere quam sequi vero vel enim unde blanditiis ipsam consequatur aspernatur",
+            "image_item": "",
+            "company": "Hp",
+            "category": "Компьютеры",
+            "price": "289990.00",
+            "discount": 0.0,
+            "quantity": 2,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:32:13.569Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "hp-omen-16-wf0032ci"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 156,
+        "fields": {
+            "name": "HP Spectre x360 16-f1028nn",
+            "descriptions": "velit dicta veritatis odit molestiae nostrum deserunt fuga ipsum sapiente autem nisi sit similique eaque explicabo dolorum soluta mollitia necessitatibus quasi temporibus eveniet laborum iusto earum culpa odio exercitationem suscipit ab molestias ipsam esse consequatur provident reiciendis distinctio dolore vitae eos eligendi illum hic architecto porro nihil possimus incidunt quibusdam",
+            "image_item": "",
+            "company": "Hp",
+            "category": "Компьютеры",
+            "price": "285990.00",
+            "discount": 0.0,
+            "quantity": 2,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:32:08.498Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "hp-spectre-x360-16-f1028nn"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 157,
+        "fields": {
+            "name": "ASUS ROG Flow GV601VI-NL055W",
+            "descriptions": "quisquam praesentium qui eveniet harum iure natus perspiciatis dolores quaerat odio sapiente nostrum voluptas assumenda placeat aperiam numquam ipsum culpa tempore doloribus ex mollitia dicta at quia atque deleniti repudiandae temporibus ducimus molestiae error dolorem laborum cum corporis accusantium inventore fuga obcaecati aut sequi aliquid consequatur doloremque dolorum ipsam a",
+            "image_item": "",
+            "company": "Asus",
+            "category": "Компьютеры",
+            "price": "325990.00",
+            "discount": 15.0,
+            "quantity": 1,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:32:02.642Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "asus-rog-flow-gv601vi-nl055w"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 158,
+        "fields": {
+            "name": "MSI Pulse 17 AI C1VGKG-023RU",
+            "descriptions": "voluptatibus consequuntur repellat minus maxime libero molestias aliquid delectus fuga atque dolorum doloremque voluptate ut omnis nam quaerat sit illum obcaecati nihil earum officia expedita beatae eligendi aperiam velit saepe harum perferendis accusantium voluptatum soluta illo dolor temporibus hic impedit porro exercitationem blanditiis explicabo repudiandae sed odit sint magnam praesentium",
+            "image_item": "",
+            "company": "MSI",
+            "category": "Компьютеры",
+            "price": "272810.00",
+            "discount": 8.0,
+            "quantity": 1,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:31:57.210Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "msi-pulse-17-ai-c1vgkg-023ru"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 159,
+        "fields": {
+            "name": "MSI Vector 16 HX A14VGG-283RU",
+            "descriptions": "sapiente ad eum consectetur qui consequatur atque molestias laborum nisi magni repudiandae tenetur nobis dolores et impedit reiciendis labore iusto explicabo debitis amet fuga doloribus quis maxime ducimus quisquam adipisci neque natus asperiores a numquam quod quasi illo earum iste omnis quam unde id laudantium libero saepe eius enim aliquam",
+            "image_item": "",
+            "company": "MSI",
+            "category": "Компьютеры",
+            "price": "244990.00",
+            "discount": 0.0,
+            "quantity": 2,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:31:45.744Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "msi-vector-16-hx-a14vgg-283ru"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 160,
+        "fields": {
+            "name": "MSI Raider GE77HX 12UHS-232RU",
+            "descriptions": "tempora voluptate aliquid esse incidunt perferendis iste quasi non unde magnam ipsam a facilis quas doloribus molestiae eaque ducimus qui ad ut repellendus placeat reiciendis recusandae illo eligendi odit omnis iure dolores blanditiis possimus accusantium voluptatibus aliquam amet impedit cum asperiores explicabo dolor mollitia nobis sit nesciunt quod dignissimos odio",
+            "image_item": "",
+            "company": "MSI",
+            "category": "Компьютеры",
+            "price": "245990.00",
+            "discount": 0.0,
+            "quantity": 3,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:31:37.040Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "msi-raider-ge77hx-12uhs-232ru"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 161,
+        "fields": {
+            "name": "Lenovo ThinkPad X1 Carbon G10",
+            "descriptions": "unde aut iure sit maiores illum facilis delectus quia architecto eveniet veniam repellat voluptas quos mollitia minima et sint perferendis maxime quod error voluptates explicabo harum provident ullam quam veritatis cum iusto impedit hic dolorem ea ipsa vero incidunt necessitatibus qui enim soluta laborum sequi animi iste minus nam rem",
+            "image_item": "",
+            "company": "Lenovo",
+            "category": "Компьютеры",
+            "price": "233990.00",
+            "discount": 0.0,
+            "quantity": 1,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:31:26.594Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "lenovo-thinkpad-x1-carbon-g10"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 162,
+        "fields": {
+            "name": "MSI Summit E16 AI Studio A1VETG-017RU",
+            "descriptions": "eius molestiae rem harum maxime dolor maiores aperiam eaque iste cum quas accusamus doloribus veniam consequuntur autem delectus quis ab sed esse amet eligendi perspiciatis temporibus nisi illum libero mollitia atque voluptatem commodi reiciendis aliquam quos quae tenetur sit dolores aut quisquam deleniti ipsum explicabo ut deserunt placeat numquam sequi",
+            "image_item": "",
+            "company": "MSI",
+            "category": "Компьютеры",
+            "price": "220990.00",
+            "discount": 0.0,
+            "quantity": 2,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:31:19.858Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "msi-summit-e16-ai-studio-a1vetg-017ru"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 163,
+        "fields": {
+            "name": "MSI Prestige 16 AI Studio B1VEG-080RU",
+            "descriptions": "nostrum placeat enim tenetur ipsam provident porro officia modi qui tempora temporibus magni molestias harum laborum aspernatur quia aut quos possimus quibusdam ipsum eveniet dignissimos cum sapiente hic iusto dicta nesciunt veniam voluptas eum repellat quaerat ut id consequuntur doloremque explicabo quas non aliquid quasi at ex soluta sit architecto",
+            "image_item": "",
+            "company": "MSI",
+            "category": "Компьютеры",
+            "price": "240990.00",
+            "discount": 10.0,
+            "quantity": 2,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:31:12.816Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "msi-prestige-16-ai-studio-b1veg-080ru"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 164,
+        "fields": {
+            "name": "Samsung Galaxy Book 3 Pro NP944",
+            "descriptions": "adipisci sit rem architecto minus quia enim itaque harum debitis odio at aut reiciendis mollitia labore quas delectus sunt neque quae deleniti perspiciatis accusamus voluptas laudantium magni magnam vel tempore dignissimos deserunt tempora tenetur veniam doloribus eveniet rerum fuga esse facere illo ex vitae voluptatem odit quod commodi ipsum vero",
+            "image_item": "",
+            "company": "Samsung",
+            "category": "Компьютеры",
+            "price": "213990.00",
+            "discount": 0.0,
+            "quantity": 3,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:31:05.541Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "samsung-galaxy-book-3-pro-np944-np944xfg"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 165,
+        "fields": {
+            "name": "Apple MacBook Air A2681",
+            "descriptions": "at voluptatum provident saepe nostrum praesentium eos fugiat consequatur quia iste ad labore fugit minus qui ea itaque est mollitia expedita exercitationem dicta eaque autem dolor hic error cumque commodi voluptas harum quisquam doloremque esse architecto quaerat iusto quae quod eligendi veritatis ex quo consequuntur quis totam omnis corrupti soluta",
+            "image_item": "",
+            "company": "Apple",
+            "category": "Компьютеры",
+            "price": "211990.00",
+            "discount": 0.0,
+            "quantity": 6,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:30:59.595Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "apple-macbook-air-a2681"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 166,
+        "fields": {
+            "name": "ASUS Vivobook Pro 16X OLED K6604JV-MX112W",
+            "descriptions": "minus hic soluta quos aperiam quisquam earum voluptatum nihil iure placeat sunt itaque voluptatem alias saepe accusantium aliquid qui reiciendis rem temporibus asperiores omnis aut aspernatur labore commodi suscipit pariatur explicabo ea rerum accusamus autem amet et vitae aliquam nobis obcaecati eum facilis adipisci perferendis laborum repellat fuga debitis fugiat",
+            "image_item": "",
+            "company": "Asus",
+            "category": "Компьютеры",
+            "price": "205990.00",
+            "discount": 0.0,
+            "quantity": 3,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:30:50.610Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "asus-vivobook-pro-16x-oled-k6604jv-mx112w"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 167,
+        "fields": {
+            "name": "Lenovo Legion Slim 5 16IRH8",
+            "descriptions": "tempore earum laborum eos nobis qui repellendus obcaecati enim dolor voluptatem quae id perspiciatis atque iusto neque sed culpa ipsam ad vero quod impedit adipisci doloribus distinctio incidunt omnis aliquam nisi debitis expedita natus placeat deserunt a illum nostrum iure voluptate voluptatibus ex ratione quaerat voluptates facere laudantium veritatis voluptatum",
+            "image_item": "",
+            "company": "Lenovo",
+            "category": "Компьютеры",
+            "price": "203990.00",
+            "discount": 0.0,
+            "quantity": 4,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:30:34.509Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "lenovo-legion-slim-5-16irh8"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 168,
+        "fields": {
+            "name": "ASUS ExpertBook B9 B9403CVA-KM0499X",
+            "descriptions": "provident minima id itaque similique labore quaerat ullam sunt a fugiat voluptate delectus eligendi ipsam deleniti consequatur maiores iste suscipit soluta tempora inventore dolorem sint accusamus cum vero molestiae totam autem porro odio distinctio sequi praesentium quam atque veritatis assumenda cumque quidem hic nostrum quasi magnam odit voluptatem ab reiciendis",
+            "image_item": "",
+            "company": "Asus",
+            "category": "Компьютеры",
+            "price": "201990.00",
+            "discount": 0.0,
+            "quantity": 2,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:30:28.161Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "asus-expertbook-b9-b9403cva-km0499x"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 169,
+        "fields": {
+            "name": "MSI Sword 17 HX B14VGKG-048XRU",
+            "descriptions": "vero itaque voluptatem unde blanditiis omnis quisquam alias atque molestias ipsam iste maiores odit tempore quidem ducimus officia perspiciatis ex placeat quod doloribus enim magnam autem consequuntur dolor quasi quo facilis amet libero at accusamus est aperiam officiis accusantium vitae eligendi modi nulla laborum illum voluptas error sit exercitationem sunt",
+            "image_item": "",
+            "company": "MSI",
+            "category": "Компьютеры",
+            "price": "199990.00",
+            "discount": 0.0,
+            "quantity": 3,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:30:22.042Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "msi-sword-17-hx-b14vgkg-048xru"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 170,
+        "fields": {
+            "name": "ASUS TUF Gaming A15 FA507UI-HQ059",
+            "descriptions": "expedita perspiciatis neque optio maxime minus quos esse fugit doloremque velit magnam voluptatum ratione consequatur repellendus quae sed amet quas molestias hic quisquam repellat numquam facilis a ea eius soluta voluptatem voluptate dignissimos assumenda veritatis aliquid culpa incidunt perferendis libero accusantium beatae ut consequuntur eos reprehenderit dolorem quasi aperiam laudantium",
+            "image_item": "",
+            "company": "Asus",
+            "category": "Компьютеры",
+            "price": "193990.00",
+            "discount": 0.0,
+            "quantity": 2,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:30:15.462Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "asus-tuf-gaming-a15-fa507ui-hq059"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 171,
+        "fields": {
+            "name": "Lenovo Legion Slim 5 16APH8 ",
+            "descriptions": "numquam itaque exercitationem unde quasi voluptate tenetur accusamus quia voluptatem repellat obcaecati perferendis nostrum veniam dolor qui aut alias cum atque molestias ea est libero cumque inventore sit quod expedita porro commodi praesentium voluptates impedit amet recusandae similique vero rem maxime quibusdam in neque placeat quidem facere provident sequi quisquam",
+            "image_item": "",
+            "company": "Lenovo",
+            "category": "Компьютеры",
+            "price": "189990.00",
+            "discount": 0.0,
+            "quantity": 10,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:30:08.113Z",
+            "release": "2024-04-23T00:00:00Z",
+            "url": "lenovo-legion-slim-5-16aph8"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 172,
+        "fields": {
+            "name": "Lenovo LOQ 15IRH8",
+            "descriptions": "quidem amet expedita reprehenderit placeat sint saepe totam nisi fugit necessitatibus soluta quibusdam repellat sapiente vel blanditiis tenetur porro deserunt est vitae eius minus maiores magnam dolorem ratione laboriosam odio distinctio neque quia officia molestias laborum rem quasi modi suscipit nobis asperiores quam tempora sit maxime nostrum praesentium ut earum",
+            "image_item": "",
+            "company": "Lenovo",
+            "category": "Компьютеры",
+            "price": "169490.00",
+            "discount": 0.0,
+            "quantity": 3,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-04-23T17:57:05.539Z",
+            "created_up": "2024-04-29T22:30:00.438Z",
+            "release": "2023-04-23T00:00:00Z",
+            "url": "lenovo-loq-15irh8"
+        }
+    },
+    {
+        "model": "catalog.topfilters",
+        "pk": 1,
+        "fields": {
+            "type_filter": "Сортировка:"
+        }
+    },
+    {
+        "model": "catalog.filters",
+        "pk": 2,
+        "fields": {
+            "type_filter": 1,
+            "name_filter": "Дешевые",
+            "url": "price"
+        }
+    },
+    {
+        "model": "catalog.filters",
+        "pk": 3,
+        "fields": {
+            "type_filter": 1,
+            "name_filter": "Дорогие",
+            "url": "-price"
+        }
+    },
+    {
+        "model": "catalog.filters",
+        "pk": 4,
+        "fields": {
+            "type_filter": 1,
+            "name_filter": "Новые",
+            "url": "is_new"
+        }
+    },
+    {
+        "model": "catalog.filters",
+        "pk": 5,
+        "fields": {
+            "type_filter": 1,
+            "name_filter": "По скидке",
+            "url": "-discount"
+        }
+    },
+    {
+        "model": "catalog.filters",
+        "pk": 10,
+        "fields": {
+            "type_filter": 1,
+            "name_filter": "Все",
+            "url": "all"
+        }
+    },
+    {
+        "model": "catalog.filters",
+        "pk": 11,
+        "fields": {
+            "type_filter": 1,
+            "name_filter": "По наличию",
+            "url": "-quantity"
+        }
+    },
+    {
+        "model": "catalog.filters",
+        "pk": 12,
+        "fields": {
+            "type_filter": 1,
+            "name_filter": "По компаниям",
+            "url": "company"
+        }
+    }
+]

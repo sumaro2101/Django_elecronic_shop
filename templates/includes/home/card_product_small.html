@@ -1,0 +1,27 @@
+{% load static %}
+{% load tags_filter %}
+
+
+<a href="{{ item.get_absolute_url }}" class="card col-1 m-1 pt-2 link-underline link-underline-opacity-0" style="width: 12rem; background-color: rgb(238, 238, 238); border-radius: 8px;
+box-shadow: 0 1px 2px 0 rgba(0,0,0,.16);">
+    {% if item.is_sale %}
+    <div class="position-absolute badge text-center text-black" style="left: -0.7px; width: 50px; background-color: rgb(0, 173, 181);">{{item.discount}}%</div>
+    {% endif %}
+    {% if item.image_item  %}
+    <img src="{{ item.image_item.url }}" class="card-img-top" alt="{{ item.name }}">
+    {% else %}
+    <img src="{% static 'images/image not found.jpeg' %}" class="card-img-top" alt="{{ item.name }}">
+    {% endif %}
+    <div class="card-body d-flex flex-column justify-content-between">
+        <h6 class="card-title" style="font-size: 15px;">{{item.name}}</h6>
+        <div>
+        {% if item.is_sale %}
+            <span>{{ item.price|discount:item.discount }} ₽</span><br>
+            <span class="text-secondary text-decoration-line-through">{{ item.price|round_dicimal }} ₽</span>
+        {% else %}
+            <span>{{ item.price|round_dicimal }} ₽</span>
+        {% endif %}
+        </div>
+        <button type="button" class="btn text-white" style="background-color: rgb(57, 62, 70);">Подробнее</button>
+    </div>
+</a>
