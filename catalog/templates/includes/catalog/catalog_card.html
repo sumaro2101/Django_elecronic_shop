@@ -24,7 +24,7 @@
                         {% if catalog.category == 'Прочее' %}
                             {% for subcategory in list_subcategories %}
                                 <li class="category-body-card-back-item ">
-                                    <a href="{% url 'catalog' %}" class="category-body-card-back-item link-underline link-underline-opacity-0 text-black">
+                                    <a href="{% url 'catalog:catalog' %}" class="category-body-card-back-item link-underline link-underline-opacity-0 text-black">
                                         {{ subcategory.sub_category }}
                                     </a>
                                 </li>

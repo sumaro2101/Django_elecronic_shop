@@ -4,7 +4,7 @@ import catalog.models as models_catalog
 
 register = template.Library()
 
-@register.inclusion_tag('includes/nav_bar.html')
+@register.inclusion_tag('base/nav_bar.html')
 def show_nav_bar(cat_selected=1):
     
     list_ = models_home.NavList.objects.get_queryset()
@@ -23,7 +23,7 @@ def show_nav_bar(cat_selected=1):
         'cat_selected': cat_selected,
         }
     
-@register.inclusion_tag('includes/left_bar.html')
+@register.inclusion_tag('base/left_bar.html')
 def show_left_bar():
     
     try:
@@ -35,7 +35,7 @@ def show_left_bar():
         'title_nav': title_nav.title,
         }
     
-@register.inclusion_tag('includes/list_catalog.html')
+@register.inclusion_tag('base/list_catalog.html')
 def show_left_list_bar():
     
     list_categories = models_catalog.Category.objects.get_queryset()[::-1]
@@ -49,7 +49,7 @@ def show_left_list_bar():
         'list_subcategories': list_subcategories,
         }
     
-@register.inclusion_tag('includes/right_bar.html')
+@register.inclusion_tag('base/right_bar.html')
 def show_right_bar():
     
     try:
@@ -61,7 +61,7 @@ def show_right_bar():
         'title_nav': title_nav.title,
         }
 
-@register.inclusion_tag('includes/list_new_items.html')
+@register.inclusion_tag('base/list_new_items.html')
 def show_right_list_bar():
     
     list_new_items = models_catalog.Product.objects.get_queryset()
@@ -76,27 +76,7 @@ def show_right_list_bar():
         'end_lines': end_lines.end_lines
         }
 
-
-@register.inclusion_tag('includes/nav_bar.html')
-def show_nav_bar(cat_selected=1):
-    
-    list_ = models_home.NavList.objects.get_queryset()
-    try:
-        text = models_home.NavMainHome.objects.get(pk=1)
-    except Exception:
-        return 
-    
-    return {
-        'nav_list': list_,
-        'name': text.name,
-        'title': text.title,
-        'mask_search': text.mask_search,
-        'button': text.button,
-        'nav_list': list_,
-        'cat_selected': cat_selected,
-        }
-    
-@register.inclusion_tag('includes/footer.html')
+@register.inclusion_tag('base/footer.html')
 def show_footer():
     
     footer_block = models_home.FooterBlocks.objects.get_queryset()

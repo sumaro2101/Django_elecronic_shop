@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 class HomePage(models.Model):
     title = models.CharField(max_length=50, verbose_name='Оглавление блока')
@@ -87,6 +88,16 @@ class NavList(models.Model):
         verbose_name = 'Пунк'
         verbose_name_plural = 'Пункты Навигации'
         ordering = ['pk']
+        
+    
+    def get_absolute_url(self):
+        
+        if self.url == 'catalog':
+            name = f'catalog:{self.url}'
+        else:
+            name = f'home:{self.url}'
+            
+        return reverse(name)
     
     
 class Contact(models.Model):

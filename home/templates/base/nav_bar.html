@@ -3,7 +3,7 @@
 
     <div class="container-fluid">
 
-      <a class="navbar-brand" href="{% url 'home_page' %}">{{ name }}</a>
+      <a class="navbar-brand" href="{% url 'home:home_page' %}">{{ name }}</a>
       
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,7 +25,7 @@
               {% if item.url == 'user' %} style="left: 87%;" 
               {% elif item.url == 'auth' %} style="left: 95%;" 
               {% endif %} 
-              aria-current="page" href="{% url item.url %}">{{ item.category }}
+              aria-current="page" href="{{ item.get_absolute_url }}">{{ item.category }}
             </a>
 
           </li>

@@ -24,7 +24,7 @@ class Category(models.Model):
         ordering = ['pk']
     
     def get_absolute_url(self):
-        return reverse("companies", kwargs={"cats_id": self.url})
+        return reverse("catalog:companies", kwargs={"cats_id": self.url})
     
         
 class SubCategory(models.Model):
@@ -82,7 +82,7 @@ class Product(models.Model):
         return self.release >= timezone.now() - datetime.timedelta(days=180)
     
     def get_absolute_url(self):
-        return reverse("product", kwargs={"product_id": self.url})
+        return reverse("catalog:product", kwargs={"product_id": self.url})
     
     def __str__(self) -> str:
         return f'{self.category}: {self.name}'
