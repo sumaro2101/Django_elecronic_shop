@@ -6,15 +6,15 @@
         {% for type in filter_type %}
             <div class="dropdown me-2">
                 <span>{{ type.type_filter }}</span> 
-                <a href="#{{ type }}" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="{{ type }}">{{ filters|filter_get_elem_type:actual_type }}</a>
+                <a href="#{{ type }}" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="{{ type }}">{{ filters|filter_get_elem_type:actual_filter }}</a>
                 <ul id="{{ type }}" class="dropdown-menu">
                     {% for filter_ in filters|filter_query_type:type %}
-                        {% if actual_company %}
+                        {% if company != 'all' %}
                             {% if filter_.url != 'company' %}
-                                <li><a class="dropdown-item {% if actual_order == filter_.url or actual_type == filter_.url %} disabled {% endif %}" href="?filter={{ filter_.url }}{% if actual_company %}&comp={{ actual_company }}{% endif %}">{{ filter_ }}</a></li>
+                                <li><a class="dropdown-item {% if actual_filter == filter_.url %} disabled {% endif %}" href="?filter={{ filter_.url }}&comp={{ company }}">{{ filter_ }}</a></li>
                             {% endif %}
                         {% else %}
-                            <li><a class="dropdown-item {% if actual_order == filter_.url or actual_type == filter_.url %} disabled {% endif %}" href="?filter={{ filter_.url }}{% if actual_company %}&comp={{ actual_company }}{% endif %}">{{ filter_ }}</a></li>
+                            <li><a class="dropdown-item {% if actual_filter == filter_.url %} disabled {% endif %}" href="?filter={{ filter_.url }}&comp={{ company }}">{{ filter_ }}</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>

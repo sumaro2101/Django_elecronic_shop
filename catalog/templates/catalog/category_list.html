@@ -5,12 +5,12 @@
 
 {% block content %}
 {% include 'includes/catalog/path_nav.html' %}
-{% filter_options actual_company actual_type actual_order %}
+{% filter_options actual_company actual_filter %}
 <div class="card m-0 p-2">      
     
     <div class="card-body p-0">
 
-    {% for item in list_obj %}
+    {% for item in products %}
         {% include 'includes/catalog/card_product_big.html' %}
     {% endfor %}
     {% include 'includes/catalog/paginate.html' %}
