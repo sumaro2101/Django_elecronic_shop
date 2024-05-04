@@ -1,0 +1,17 @@
+{% extends "base/index.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class='card m-0 p-2'>
+    <div class='card-body p-0'>
+        <h3>Техно-Новости</h3>
+        {% for post in posts %}
+        {% include "includes/news/post_prew.html" %}
+        {% endfor %}
+        {% include 'includes/catalog/paginate.html' %}
+    </div>
+    
+</div>
+
+{% endblock content %}

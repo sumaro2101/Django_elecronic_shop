@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     #apps
     'home.apps.HomeConfig',
     'catalog.apps.CatalogConfig',
+    'news.apps.NewsConfig',
 ]
 
 MIDDLEWARE = [

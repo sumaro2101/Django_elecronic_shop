@@ -6,8 +6,8 @@ from . import views
 app_name = HomeConfig.name
 
 urlpatterns = [
-    path('', views.home_page, name='home_page'),
-    path('contact/', views.contact, name='contact'),
-    path('user/', views.user, name='user'),
-    path('auth/', views.auth, name='auth'),
+    path('', views.HomePageView.as_view(), name='home_page'),
+    path('contact/', views.ContactView.as_view(), name='contact'),
+    path('user/', views.UserView.as_view(), name='user'),
+    path('auth/', views.AuthView.as_view(), name='auth'),
 ]

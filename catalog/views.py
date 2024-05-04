@@ -1,10 +1,7 @@
 from typing import Any
 from django.db.models.base import Model as Model
 from django.db.models.query import QuerySet
-from django.http import HttpRequest, HttpResponse
-from django.shortcuts import get_object_or_404, render
-from .models import Product, Category, Companies
-from django.core.paginator import Paginator
+from .models import Product
 
 from django.views.generic import ListView, TemplateView, DetailView
 # Create your views here.
