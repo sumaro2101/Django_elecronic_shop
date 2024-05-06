@@ -4,7 +4,7 @@
     <form action="{% url 'news:post' post.slug %}" method="post">
         {% csrf_token %}
         <div class="form-error">{{ form.non_field_errors }}</div>
-        {{ form.text }}
+        <textarea name="text" class="form-control" style="resize: none;" id="id_text" cols="40" rows="10" placeholder="Введите ваше сообщение" required></textarea>
         <div class="form-error">{{ form.description.errors }}</div>
         <p><button class="btn border mt-2" type="submit">Опубликовать</button></p>
     </form>

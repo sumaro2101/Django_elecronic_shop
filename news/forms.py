@@ -9,8 +9,8 @@ class AddPostForm(forms.ModelForm):
         fields = ['title', 'image', 'description']
         
         widgets = {
-            'title': forms.TextInput(attrs={'class': 'form-control'}),
-            'description': forms.Textarea(attrs={'class': 'form-control'}),
+            'title': forms.TextInput(),
+            'description': forms.Textarea(),
         }
     
 class AddCommentForm(forms.ModelForm):
@@ -21,5 +21,5 @@ class AddCommentForm(forms.ModelForm):
         fields = ['text']
         
         widgets = {
-            'text': forms.Textarea(attrs={'class': 'form-control ', 'style': 'resize:none', 'required': True, 'placeholder': 'Введите ваше сообщение'}),
+            'text': forms.Textarea(),
         }

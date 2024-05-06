@@ -32,7 +32,7 @@ class Posts(models.Model):
     image = models.ImageField(upload_to='posts/%Y/%m/%d/', blank=True, null=True, verbose_name='картинка')
     description = models.TextField(verbose_name='описание')
     slug = models.SlugField(unique=True, max_length=200)
-    views = models.IntegerField(verbose_name='просмотры', default=0)
+    views = models.PositiveIntegerField(verbose_name='просмотры', default=0, editable=False)
     likes = models.IntegerField(verbose_name='лайки', default=0)
     time_published = models.DateTimeField(auto_now_add=True, verbose_name='дата публикации')
     time_edit = models.DateTimeField(blank=True, null=True, verbose_name='дата измененения')

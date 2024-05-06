@@ -29,7 +29,7 @@ class PostDetailView(ModelFormMixin, DetailView):
     def get_object(self, queryset=None):
         obj = super().get_object(queryset)
         obj.views += 1
-        obj.save()
+        obj.save(update_fields=['views'])
         return obj
 
     def get_context_data(self, *, object_list=None, **kwargs):
