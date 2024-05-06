@@ -20,10 +20,10 @@
               {% if item.pk == cat_selected %} active 
               {% endif %} 
               {% if item.url == 'user' %} position-absolute top-50 translate-middle 
-              {% elif item.url == 'auth' %} position-absolute top-50 translate-middle 
+              {% elif item.url == 'login' %} position-absolute top-50 translate-middle 
               {% endif %}" 
-              {% if item.url == 'user' %} style="left: 87%;" 
-              {% elif item.url == 'auth' %} style="left: 95%;" 
+              {% if item.url == 'user' %} style="left: 89%;" 
+              {% elif item.url == 'login' %} style="left: 95%;" 
               {% endif %} 
               aria-current="page" href="{{ item.get_absolute_url }}">{{ item.category }}
             </a>

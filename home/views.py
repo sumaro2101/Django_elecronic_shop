@@ -33,13 +33,3 @@ class ContactView(TemplateView):
                 
         return get_method
 
-class UserView(TemplateView):
-    template_name = 'home/user.html'
-    
-    extra_context = {'title': 'Electronic Shop', 'cat_selected': 4}
-
-
-class AuthView(TemplateView):
-    template_name = 'home/auth.html'
-    
-    extra_context = {'title': 'Electronic Shop', 'cat_selected': 5}

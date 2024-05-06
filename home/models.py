@@ -96,6 +96,10 @@ class NavList(models.Model):
             name = f'catalog:{self.url}'
         elif self.url == 'posts':
             name = f'news:{self.url}'
+        elif self.url == 'login':
+            name = f'users:{self.url}'
+        elif self.url == 'user':
+            name = f'users:{self.url}'
         else:
             name = f'home:{self.url}'
             
