@@ -245,3 +245,28 @@
 .category-body-card:hover>.category-body-card-back {
   opacity: 1;
 }
+
+.posts-comment-image-link {
+  border-radius: 3px;
+  display: inline-block;
+  flex-shrink: 0;
+  margin: 0 8px 0 0;
+  max-width: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.posts-comment-body {
+  font-size: .9375rem;
+  line-height: 1.375rem;
+  margin-top: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  word-break: break-word;
+}
+.posts-comment-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 12px;
+  contain-intrinsic-size: 1px 32px;
+}

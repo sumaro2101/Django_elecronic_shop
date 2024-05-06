@@ -1,7 +1,8 @@
 {% load static %}
-{% if post.is_published %}
-<div class="card bg-body-tertiary mt-4 p-2" style="border-radius: 8px; box-shadow: 0 1px 2px 0 rgba(0,0,0,.16);" >
-
+<div class="ms-1">
+    <a class="icon-link text-black link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="{% url 'news:posts' %}"><svg class="bi" aria-hidden="true"><use xlink:href="#arrow-left"></use></svg>Назад</a>
+</div>
+<div class="card bg-body-tertiary mt-2 p-2" style="border-radius: 8px; box-shadow: 0 1px 2px 0 rgba(0,0,0,.16);" >
 <div>
     <span style="display: flex;">
         <span>
@@ -13,17 +14,17 @@
                         {% else %}
                         <img src="{% static 'images/image not found.jpeg' %}" style="border-radius: 3px; display: block; overflow: hidden; height: 24px; width: 24px;" alt="{{ comment.description }}">
                         {% endif %}
-                    </div>
+                    </div>   
                 </a>
-                <h2 style="white-space: nowrap; font-size: .8125rem; font-weight: 700; line-height: 25px;" >{{ post.name_user }}</h2>
+                <h2 style="white-space: nowrap; font-size: .8125rem; font-weight: 700; line-height: 25px;">{{ post.name_user }}</h2>
             </div>
             <div style="display: flex;"> 
                 <a href="{% url 'news:post' post.slug %}" class="link-underline link-underline-opacity-0 text-black" style="margin-right: 8px">
                     <div style="font-size: .8125rem; font-weight: 500; line-height: .9375rem;">
                         {% if post.is_edit %}
-                        Было Изменено: {{ post.time_edit }}
+                        {{ post.text_to_edit }} {{ post.time_edit }}
                         {% else %}
-                        Опубликованно: {{ post.time_published }}
+                        {{ post.text_to_post }} {{ post.time_published }}
                         {% endif %}
                     </div>
                 </a>
@@ -32,6 +33,10 @@
                     <span style="margin-left: 2px; font-size: .8125rem; font-weight: 700; line-height: 1;">{{ post.views }}</span>
                 </span>
             </div>
+        </span> 
+        <span class="d-flex position-absolute" style="top: 10px; right: 10px;">
+            <a href="{% url 'news:updatepost' post.slug %}" class="btn border me-1" style="font-size: 12px; box-shadow: 0 1px 2px 0 rgba(0,0,0,.16);">Изменить</ф>
+            <a href="{% url 'news:deletepost' post.slug %}" class="btn border" style="font-size: 12px; box-shadow: 0 1px 2px 0 rgba(0,0,0,.16);">Удалить</a>
         </span>
     </span>
 </div>
@@ -40,14 +45,14 @@
 </div>
 <div style="max-height: none; padding: 8px 0; position: relative;">
     <div style="font-size: 1rem; line-height: 1.56; overflow-wrap: break-word;">
-        <a href="{% url 'news:post' post.slug %}" style="margin: 0; text-align: center;">
+        <figure style="margin: 0;">
             {% if post.image %}
             <img src="{{ post.image.url }}" style="cursor: pointer; max-width: 100%; height: auto; vertical-align: middle; overflow: hidden;" alt="{{ post.title }}">
             {% else %}
             <img src="{% static 'images/image not found.jpeg' %}" style="cursor: pointer; max-width: 100%; height: auto; vertical-align: middle;" alt="{{ post.title }}">
             {% endif %}
-        </a>
-        <p style="margin-top: 12px; font-size: 1rem; line-height: 1.56;">{{ post.description|linebreaks|truncatewords:50 }}</p>
+        </figure>
+        <p style="margin-top: 12px; font-size: 1rem; line-height: 1.56;">{{ post.description|linebreaks }}</p>
         </div>
 </div>
 <div style="padding-top: 8px; border-top: 1px solid transparent; display: flex; justify-content: flex-start; width: 100%;">
@@ -59,4 +64,3 @@
     </div>
 </div>
 </div>
-{% endif %}

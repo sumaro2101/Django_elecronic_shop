@@ -1,0 +1,14 @@
+{% extends "base/index.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class='card m-0 p-2'>
+    <div class='card-body p-0'>
+        {% include "includes/news/post_main.html" %}
+        {% include 'includes/news/comment_form.html' %}
+        {% include 'includes/news/comments_post.html' %}
+    </div>
+</div>
+
+{% endblock content %}
