@@ -30,7 +30,7 @@
                                             </div>
                                         </a>
                                         <span class="d-flex" style="align-items: baseline; flex-direction: row;">
-                                            <div style="margin: 0 5px 0 0; line-height: .9375rem; font-size: .8125rem; font-weight: 700;">{{ comment.user_name }}</div>
+                                            <div style="margin: 0 5px 0 0; line-height: .9375rem; font-size: .8125rem; font-weight: 700;">{{ comment.user_name.get_username }}</div>
                                             {% if not comment.is_edit %}
                                             <div style="font-size: .75rem; line-height: .6875rem;">{{ comment.time_published }}</div>
                                             {% else %}

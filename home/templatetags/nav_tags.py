@@ -1,36 +1,30 @@
 from django import template
 import home.models as models_home
 import catalog.models as models_catalog
+from django.utils import timezone
+from datetime import timedelta
 
 register = template.Library()
 
-@register.inclusion_tag('base/nav_bar.html')
-def show_nav_bar(cat_selected=1):
-    
-    list_ = models_home.NavList.objects.get_queryset()
-    try:
-        text = models_home.NavMainHome.objects.get(pk=1)
-    except Exception:
-        return 
-    
+@register.inclusion_tag('base/nav_bar.html', takes_context=True)
+def show_nav_bar(context ,base_model , cat_selected=1):
+
+    text = base_model
+
     return {
-        'nav_list': list_.order_by('pk'),
-        'name': text.name,
-        'title': text.title,
-        'mask_search': text.mask_search,
-        'button': text.button,
-        'nav_list': list_,
+        'nav_items': text.nav_list.get_queryset(),
+        'title': text.nav_bar.title,
+        'mask_search': text.nav_bar.mask_search,
+        'button': text.nav_bar.button,
         'cat_selected': cat_selected,
+        'user': context.request.user
         }
     
 @register.inclusion_tag('base/left_bar.html')
-def show_left_bar():
+def show_left_bar(base_model):
     
-    try:
-        title_nav = models_home.NavLeft.objects.get(pk=1)
-    except Exception:
-        return 
-    
+    title_nav = base_model.nav_left.title
+
     return {
         'title_nav': title_nav.title,
         }
@@ -38,8 +32,9 @@ def show_left_bar():
 @register.inclusion_tag('base/list_catalog.html')
 def show_left_list_bar():
     
-    list_categories = models_catalog.Category.objects.get_queryset()[::-1]
-    list_companies = models_catalog.Companies.objects.get_queryset()
+    list_categories = models_catalog.Category.objects.values('category', 'url')[::-1]
+    
+    list_companies = models_catalog.Companies.objects.values('category', 'company', 'url')
     list_subcategories = models_catalog.SubCategory.objects.get_queryset()
     
     
@@ -50,45 +45,29 @@ def show_left_list_bar():
         }
     
 @register.inclusion_tag('base/right_bar.html')
-def show_right_bar():
+def show_right_bar(base_model, product):
     
-    try:
-        title_nav = models_home.NavRight.objects.get(pk=1)
-    except Exception:
-        return 
+    title_nav = base_model.nav_right.title
+    list_new_items = product.values('name', 'release', 'url')
+    end_lines = base_model.nav_right.end_lines
     
     return {
-        'title_nav': title_nav.title,
+        'title_nav': title_nav,
+        'time': timezone.now() - timedelta(180),
+        'new_items': list_new_items,
+        'end_lines': end_lines,
         }
 
-@register.inclusion_tag('base/list_new_items.html')
-def show_right_list_bar():
-    
-    list_new_items = models_catalog.Product.objects.get_queryset()
-    try:
-        end_lines = models_home.NavRight.objects.get(pk=1)
-    except Exception:
-        return
-    
-    
-    return {
-        'new_items': list_new_items,
-        'end_lines': end_lines.end_lines
-        }
 
 @register.inclusion_tag('base/footer.html')
-def show_footer():
+def show_footer(base_model):
     
-    footer_block = models_home.FooterBlocks.objects.get_queryset()
-    try:
-        footer_items = models_home.Footer.objects.get(pk=1)
-    except Exception:
-        return
-    
+    footer_items = base_model.footer
     
     return {
         'company_name': footer_items.name_company,
-        'block': footer_block,
+        'block': footer_items.footerblocks_set.all(),
         'policy': footer_items.policy,
         'url_policy': footer_items.url_policy,
         }
+    

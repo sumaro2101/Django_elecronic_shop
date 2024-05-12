@@ -1,7 +1,9 @@
 from django.http import HttpRequest
 from django.http.response import HttpResponse as HttpResponse
 import json
+from django.shortcuts import render
 from django.views.generic import TemplateView
+from . models import BasePageModel
 # Create your views here.
 
 
@@ -32,4 +34,13 @@ class ContactView(TemplateView):
                 json.dump(message, file, ensure_ascii=False, indent=2)
                 
         return get_method
+
+class TestView(TemplateView):
+    
+    template_name = 'base/view_test.html'
+    base_view = BasePageModel.objects.select_related('nav_bar', 'nav_left', 'nav_right', 'footer').get(pk=1)
+    extra_context = {'item_view': base_view.nav_left.title,
+                     'nav_list': base_view.nav_list.get_queryset(),
+                     'footer_block': base_view.footer_block.get_queryset()}
+    
 

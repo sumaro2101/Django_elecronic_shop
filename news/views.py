@@ -7,7 +7,7 @@ from news.models import Posts, PostComment
 from .forms import AddPostForm, AddCommentForm
 from pytils.translit import slugify
 from django.utils import timezone
-
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 # Create your views here.
 
 
@@ -47,27 +47,27 @@ class PostDetailView(ModelFormMixin, DetailView):
             model = self.model.objects.get(slug=kwargs['slug_id'])
             comment_form = comment_form.save(commit=False)
             comment_form.post = model
-            comment_form.user_name = 'admin'
+            comment_form.user_name = self.request.user
             comment_form.save()
             model.comment_count += 1
             model.save()
             
             return redirect('news:post', comment_form.post.slug)
 
-    
-class AddPostCreateView(CreateView):
+ 
+class AddPostCreateView(LoginRequiredMixin ,CreateView):
     model = Posts
     form_class = AddPostForm
     template_name = 'news/posts_form.html'
     extra_context = {'title': 'Electronic Shop', 'cat_selected': 6}
     
     def form_valid(self, form):
-        form.instance.name_user = 'admin'
+        form.instance.name_user = self.request.user
         form.instance.slug = f'{slugify(form.instance.name_user)}-{slugify(form.instance.title)}'
         return super().form_valid(form)
     
-    
-class UpdatePostView(UpdateView):
+  
+class UpdatePostView(LoginRequiredMixin ,UpdateView):
     model = Posts
     context_object_name = 'post'
     form_class = AddPostForm
@@ -80,8 +80,9 @@ class UpdatePostView(UpdateView):
         form.instance.time_edit = timezone.now()
         form.instance.slug = f'{slugify(form.instance.name_user)}-{slugify(form.instance.title)}'
         return super().form_valid(form)
-    
-class DeletePostView(DeleteView):
+   
+
+class DeletePostView(LoginRequiredMixin ,DeleteView):
     model = Posts
     context_object_name = 'post'
     slug_url_kwarg = 'slug_id'

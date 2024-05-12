@@ -1,6 +1,6 @@
 {% load static %}
-{% load nav_tags %}
 
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,21 +17,14 @@
     </style>
 </head>
 <body>
-  {% with base_model=base_model %}
-    {% show_nav_bar base_model cat_selected %}
-    <div class="container" style="min-height: 100vh;">  
-        <div class="row mt-5">
-          {% show_left_bar base_model %}
-          <div class="card col-8 bg-body-tertiary rounded-2 p-0">
-            {% block content %}
-            {% endblock content %}
-          </div>
-          {% show_right_bar base_model product %}
-          </div>
-        </div>
-    </div>
-    {% show_footer base_model %}
-    {% endwith %}
+    {{ base_model }}
+    {% for i in base_model.nav_list.get_queryset %}
+    {{i.category}}
+    {% endfor %}
+    {% for i in footer_block %}
+    {{i.block}}
+    {% endfor %}
+
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 </body>

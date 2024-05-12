@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-4_^=c%twn#_vo#vwzy7vj52g1o%h#9lb+^0h$cu5tjjbgqn8=k
 DEBUG = True
 
 ALLOWED_HOSTS = []
+INTERNAL_IPS = ['127.0.0.1',]
 SITE_ID = 1
 
 
@@ -41,6 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.redirects',
     'django.contrib.sites',
+    
+    #django_toolbar
+    'debug_toolbar',
     
     #django_extensions
     'django_extensions',
@@ -61,6 +65,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.redirects.middleware.RedirectFallbackMiddleware',
+    
+    #django_debug_toolbar
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -78,6 +85,10 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                
+                #context_processors custom
+                'home.context_processors.get_base_model',
+                'home.context_processors.get_product',
             ],
         },
     },
@@ -149,4 +160,8 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 AUTH_USER_MODEL = 'users.User'
+
+LOGIN_URL = 'users:login'
+LOGOUT_REDIRECT_URL = 'home:home_page'

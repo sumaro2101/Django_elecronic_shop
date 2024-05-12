@@ -23,6 +23,7 @@ pytils = "^0.4.1"
 
 [tool.poetry.group.dev.dependencies]
 ipython = "^8.23.0"
+django-debug-toolbar = "^4.3.0"
 
 [build-system]
 requires = ["poetry-core"]

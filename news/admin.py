@@ -12,7 +12,7 @@ class PostsAdmin(admin.ModelAdmin):
     
 @admin.register(PostComment)
 class PostCommentAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'post', 'user_name', 'image', 'text', 'time_published', 'time_edit', 'is_edit', 'text_to_edit', 'text_to_post', 'likes')
+    list_display = ('pk', 'post', 'user_name', 'image', 'text', 'time_published', 'time_edit', 'is_edit', 'likes')
     search_fields = ('post', 'user_name', 'time_published')
     list_filter = 'is_edit',
     

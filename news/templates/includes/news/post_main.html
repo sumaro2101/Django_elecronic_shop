@@ -16,7 +16,7 @@
                         {% endif %}
                     </div>   
                 </a>
-                <h2 style="white-space: nowrap; font-size: .8125rem; font-weight: 700; line-height: 25px;">{{ post.name_user }}</h2>
+                <h2 style="white-space: nowrap; font-size: .8125rem; font-weight: 700; line-height: 25px;">{{ post.name_user.get_username }}</h2>
             </div>
             <div style="display: flex;"> 
                 <a href="{% url 'news:post' post.slug %}" class="link-underline link-underline-opacity-0 text-black" style="margin-right: 8px">

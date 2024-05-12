@@ -26,3 +26,6 @@ urlpatterns = [
     path('', include('users.urls', namespace='users')),
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+if settings.DEBUG:
+    urlpatterns += [path('__debug/', include('debug_toolbar.urls'))]

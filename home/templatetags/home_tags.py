@@ -4,36 +4,25 @@ import catalog.models as models_catalog
 
 register = template.Library()
 
-@register.inclusion_tag('includes/home/products_sale.html')
-def show_sale_products():
-    
-    list_items = models_catalog.Product.objects.get_queryset()
+@register.simple_tag()
+def product_tag():
+    return models_catalog.Product.objects.select_related('company', 'category').all()
 
-    try:
-        text = models_home.HomePage.objects.get(pk=1) 
-    except Exception:
-        return 
+
+@register.inclusion_tag('includes/home/products_sale.html')
+def show_sale_products(product):
+    
+    list_items = product.filter(discount__ne=0.0).values('name', 'image_item', 'price', 'discount', 'url')
     
     return {
-        'sale_title': text.title,
-        'url': text.url,
-        'button': text.button,
-        'list_sale': list_items.filter(discount__ne=0.0)[:8],
+        'list_sale': list_items,
         }
      
 @register.inclusion_tag('includes/home/products_best.html')
-def show_best_products():
+def show_best_products(product):
     
-    list_items = models_catalog.Product.objects.get_queryset()
-
-    try:
-        text = models_home.HomePage.objects.get(pk=2) 
-    except Exception:
-        return 
+    list_items = product.values('name', 'image_item', 'price', 'discount', 'url')
     
     return {
-        'sale_title': text.title,
-        'url': text.url,
-        'button': text.button,
-        'list_sale': list_items[:12],
+        'list_sale': list_items,
         }

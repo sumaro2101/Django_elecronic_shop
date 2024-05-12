@@ -1,0 +1,9 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+<h3 class="text-center">Вы действительно хотите выйти?</h3>
+<form class="d-flex justify-content-center" action="{% url 'users:logout' %}" method="post">
+    <button type="submit">Подтвердить</button>
+</form>
+{% endblock content %}

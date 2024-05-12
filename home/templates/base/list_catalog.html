@@ -21,12 +21,12 @@
 
                 {% else %}
 
-                    {% for company in companies|filter_query:category.category %}
+                    {% for company in companies %}
                         {% if company.url == 'all' %}
                             <a class="btn p-0 d-flex flex-column text-start" role="button" href="{% url 'catalog:companies' category.url %}?filter=all" role="button" style="font-size: small;">
                                 {{ company.company }}
                             </a>
-                        {% else %}
+                        {% elif company.category == category.category %}
                             <a class="btn p-0 d-flex flex-column text-start" role="button" href="{% url 'catalog:companies' category.url %}?filter=all&comp={{ company.url }}" role="button" style="font-size: small;">
                                 {{ company.company }}
                             </a>

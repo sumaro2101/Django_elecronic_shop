@@ -1,18 +1,18 @@
 from django.db import models
 from django.urls import reverse
+from django.contrib.auth import get_user_model
 
 # Create your models here.
 
 class PostComment(models.Model):
     post = models.ForeignKey('Posts', verbose_name='имя поста', on_delete=models.CASCADE)
-    user_name = models.CharField(max_length=100, verbose_name='имя пользователя')
+    user_name = models.ForeignKey(get_user_model(), related_name='postcomment', on_delete=models.SET_NULL, blank=True, null=True, verbose_name='имя пользователя')
     image = models.ImageField(upload_to='post_users/%Y/%m/%d/', blank=True, null=True, verbose_name='картинка')
     text = models.TextField(verbose_name='описание', blank=True, null=True)
     time_published = models.DateTimeField(auto_now_add=True, verbose_name='дата публикации')
     time_edit = models.DateTimeField(auto_now=True, verbose_name='дата измененения')
     is_edit = models.BooleanField(default=False)
     text_to_edit = models.CharField(max_length=50, default='Изменено:')
-    text_to_post = models.TextField(verbose_name='текст поста')
     likes = models.IntegerField(verbose_name='лайки', default=0)
     is_published = models.BooleanField(default=True)
     
@@ -27,7 +27,7 @@ class PostComment(models.Model):
 
 class Posts(models.Model):
     title = models.CharField(max_length=200, verbose_name='название поста')
-    name_user = models.CharField(max_length=100, verbose_name='Имя пользователя')
+    name_user = models.ForeignKey(get_user_model(), related_name='posts', on_delete=models.SET_NULL, blank=True, null=True, verbose_name='имя пользователя')
     image_user = models.ImageField(upload_to='post_users/%Y/%m/%d/', blank=True, null=True, verbose_name='картинка пользователя')
     image = models.ImageField(upload_to='posts/%Y/%m/%d/', blank=True, null=True, verbose_name='картинка')
     description = models.TextField(verbose_name='описание')

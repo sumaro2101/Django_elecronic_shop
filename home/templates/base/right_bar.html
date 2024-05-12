@@ -5,7 +5,7 @@
 
     <a href="{% url 'catalog:catalog' %}" class="text-white text-center my-2 link-underline link-underline-opacity-0">{{ title_nav }}</a>
     <div class="card-body bg-body-tertiary d-flex flex-column">
-        {% show_right_list_bar %}
+        {% include 'base/list_new_items.html' %}
     </div>
     
 </div>
