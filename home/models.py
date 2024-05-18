@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 class BasePageModel(models.Model):
 
@@ -97,6 +98,9 @@ class NavList(models.Model):
     
     def __str__(self) -> str:
         return self.category
+    
+    def get_absolute_url(self):
+        return reverse(self.url)
     
     class Meta:
         verbose_name = 'Пунк'

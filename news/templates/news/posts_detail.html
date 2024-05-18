@@ -6,7 +6,9 @@
 <div class='card m-0 p-2'>
     <div class='card-body p-0'>
         {% include "includes/news/post_main.html" %}
+        {% if user.is_authenticated %}
         {% include 'includes/news/comment_form.html' %}
+        {% endif %}
         {% include 'includes/news/comments_post.html' %}
     </div>
 </div>

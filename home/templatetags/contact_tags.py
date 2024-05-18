@@ -4,16 +4,18 @@ import home.models as models
 
 register = template.Library()
 
+@register.simple_tag()
+def get_contact_form():
+    contact = models.Contact.objects.prefetch_related('statment_list', 'form_list')
+    return contact.select_related('form_contact', 'info_contact').get(pk=2)
+
+
 @register.inclusion_tag('includes/contact/statement_list.html')
-def show_statemen_list():
+def show_statemen_list(contact):
     
-    list_ = models.StatementList.objects.get_queryset()
-    try:
-        text = models.Contact.objects.get(pk=1)
-    except Exception:
-        return 
-    
-    
+    text = contact
+    list_ = text.statment_list.all()
+   
     return {
         'statement': list_,
         'text': text.text_to_form,
@@ -22,34 +24,30 @@ def show_statemen_list():
 
   
 @register.inclusion_tag('includes/contact/statement_form.html')
-def show_statemen_form():
-    try:
-        model = models.FormContact.objects.get(pk=1)
-    except Exception:
-        return
-    list_options = models.StatementForm.objects.get_queryset()
+def show_statemen_form(contact):
     
+    model = contact
+    form_contact = model.form_contact
+    list_options = model.form_list.all()
     
     return {
-        'name': model.name,
-        'name_example': model.first_name,
-        'email': model.email,
-        'mask_email': model.email_fill,
-        'statement': list_options.first().statement_form,
-        'type_statement': list_options.first().statement_form,
-        'options': list_options.exclude(pk=1),
-        'tel': model.tel,
-        'mask_tel': model.tel_fill,
-        'question': model.question,
-        'ruls': model.ruls,
-        'button_': model.button,        
+        'name': form_contact.name,
+        'name_example': form_contact.first_name,
+        'email': form_contact.email,
+        'mask_email': form_contact.email_fill,
+        'options': list_options,
+        'tel': form_contact.tel,
+        'mask_tel': form_contact.tel_fill,
+        'question': form_contact.question,
+        'ruls': form_contact.ruls,
+        'button_': form_contact.button,        
         }
     
     
 @register.inclusion_tag('includes/contact/contacts.html')
-def show_contacts():
+def show_contacts(contact):
     try:
-        list_ = models.InformationContact.objects.get(pk=1)
+        list_ = contact.info_contact
     except Exception:
         return
     

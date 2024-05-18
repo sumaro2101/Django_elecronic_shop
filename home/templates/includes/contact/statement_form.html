@@ -13,9 +13,9 @@
     </div>
 
     <div class="col-md-4">
-        <label for="validationCustom04" class="form-label">{{ statement }}</label>
+        <label for="validationCustom04" class="form-label">Причина</label>
         <select name="statement" class="form-select mb-3" id="validationCustom04" required>
-        <option selected disabled value="">{{ type_statement }}</option>
+        <option selected disabled value="">Причина</option>
         {% for option in options %}
         <option value="{{ forloop.counter }}">{{ option.statement_form }}</option>
         {% endfor %}

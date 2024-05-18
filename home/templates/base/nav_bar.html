@@ -15,25 +15,25 @@
           {% if item.url == 'users:user' %}
             {% if user.is_authenticated %}
             <li>
-              <a class="nav-link {% if item.pk == cat_selected %} active {% endif %} position-absolute top-50 translate-middle" style="left: 89%;"  aria-current="page" href="{% url item.url %}">{{ item.category }}</a>
+              <a class="nav-link {% if item.pk == cat_selected %} active {% endif %} position-absolute top-50 translate-middle" style="left: 89%;"  aria-current="page" href="{{ item.get_absolute_url }}">{{ item.category }}</a>
             </li>
             {% endif %}
           {% elif item.url == 'users:login' %}
             {% if not user.is_authenticated %}
             <li>
-              <a class="nav-link {% if item.pk == cat_selected %} active {% endif %} position-absolute top-50 translate-middle" style="left: 95%;" aria-current="page" href="{% url item.url %}">{{ item.category }}</a>
+              <a class="nav-link {% if item.pk == cat_selected %} active {% endif %} position-absolute top-50 translate-middle" style="left: 95%;" aria-current="page" href="{{ item.get_absolute_url }}">{{ item.category }}</a>
             </li>
             {% endif %}
           {% elif item.url == 'users:logout' %}
             {% if user.is_authenticated %}
-              <form method="post" action="{% url item.url %}">
+              <form method="post" action="{{ item.get_absolute_url }}">
                 {% csrf_token %}
                 <button class="nav-link position-absolute top-50 translate-middle" style="left: 95%;" type="submit">{{ item.category }}</button>
               </form>
             {% endif %}
           {% else %}
             <li>
-              <a class="nav-link {% if item.pk == cat_selected %} active {% endif %}" aria-current="page" href="{% url item.url %}">{{ item.category }}</a>
+              <a class="nav-link {% if item.pk == cat_selected %} active {% endif %}" aria-current="page" href="{{ item.get_absolute_url }}">{{ item.category }}</a>
             </li>
           {% endif %}
           {% endfor %}
