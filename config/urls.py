@@ -20,7 +20,12 @@ from django.conf import settings
 from django.urls import path, include
 
 urlpatterns = [
-    path('', include('home.urls'), name='home'),
-    path('', include('catalog.urls'), name='catalog'),
+    path('', include('home.urls', namespace='home')),
+    path('', include('catalog.urls', namespace='catalog')),
+    path('', include('news.urls', namespace='news')),
+    path('', include('users.urls', namespace='users')),
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+if settings.DEBUG:
+    urlpatterns += [path('__debug/', include('debug_toolbar.urls'))]

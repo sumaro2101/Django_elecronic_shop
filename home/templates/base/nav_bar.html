@@ -1,0 +1,51 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg sticky-top" style="background-color: rgb(238, 238, 238);">
+
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="/">EL_COM</a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          {% for item in nav_items %}
+          {% if item.url == 'users:user' %}
+            {% if user.is_authenticated %}
+            <li>
+              <a class="nav-link {% if item.pk == cat_selected %} active {% endif %} position-absolute top-50 translate-middle" style="left: 89%;"  aria-current="page" href="{{ item.get_absolute_url }}">{{ item.category }}</a>
+            </li>
+            {% endif %}
+          {% elif item.url == 'users:login' %}
+            {% if not user.is_authenticated %}
+            <li>
+              <a class="nav-link {% if item.pk == cat_selected %} active {% endif %} position-absolute top-50 translate-middle" style="left: 95%;" aria-current="page" href="{{ item.get_absolute_url }}">{{ item.category }}</a>
+            </li>
+            {% endif %}
+          {% elif item.url == 'users:logout' %}
+            {% if user.is_authenticated %}
+              <form method="post" action="{{ item.get_absolute_url }}">
+                {% csrf_token %}
+                <button class="nav-link position-absolute top-50 translate-middle" style="left: 95%;" type="submit">{{ item.category }}</button>
+              </form>
+            {% endif %}
+          {% else %}
+            <li>
+              <a class="nav-link {% if item.pk == cat_selected %} active {% endif %}" aria-current="page" href="{{ item.get_absolute_url }}">{{ item.category }}</a>
+            </li>
+          {% endif %}
+          {% endfor %}
+          <span class="navbar-text position-absolute top-50 start-50 translate-middle">{{ title }}</span>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-2">
+        <form role="search" class="d-flex offset-8 col-4">
+            <input class="form-control me-2" type="search" placeholder="{{ mask_search }}" aria-label="Search">
+            <button class="btn status-button" style="border-color: rgb(0, 173, 181);" type="submit">{{ button }}</button>
+        </form>
+  </div>

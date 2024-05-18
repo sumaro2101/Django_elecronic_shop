@@ -1,8 +1,0 @@
-{% load static %}
-{% load nav_tags %}
-
-{% for item in new_items|dictsort:"name" %}
-    {% if item.is_new %}
-        <a class="mb-2 link-underline link-underline-opacity-0 link-dark" style="font-size: small; "href="{{ item.get_absolute_url }}">{{ item.name }} <span class="badge text-bg-secondary">{{ end_lines }}</span></h1></a>
-    {% endif %}
-{% endfor %}

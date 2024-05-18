@@ -1,6 +1,8 @@
 from django import template
 from decimal import Decimal, getcontext
 from django.shortcuts import redirect
+from django.utils.http import urlencode
+
 register = template.Library()
 
 @register.filter
@@ -43,5 +45,9 @@ def filter_get_elem_type(value, arg):
 def filter_redirect(value):
     return redirect(value, permanent=True)
     
-    
+@register.simple_tag(takes_context=True)
+def add_params(context, **kwargs):
+    query = context['request'].GET.dict()
+    query.update(kwargs)
+    return urlencode(query)
 

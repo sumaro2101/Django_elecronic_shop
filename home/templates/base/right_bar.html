@@ -1,0 +1,11 @@
+{% load static %}
+{% load nav_tags %}
+
+<div class="card col-2 rounded-2 ms-2 p-0" style="width: 16%; background-color: rgb(61, 61, 61);">
+
+    <a href="{% url 'catalog:catalog' %}" class="text-white text-center my-2 link-underline link-underline-opacity-0">{{ title_nav }}</a>
+    <div class="card-body bg-body-tertiary d-flex flex-column">
+        {% include 'base/list_new_items.html' %}
+    </div>
+    
+</div>

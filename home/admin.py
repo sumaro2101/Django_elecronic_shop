@@ -3,7 +3,7 @@ from .models import (Contact, FormContact, StatementList,
                      StatementForm, InformationContact, 
                      NavMainHome, NavList, NavLeft, 
                      NavRight, Footer, FooterBlocks,
-                     HomePage)
+                     HomePage, BasePageModel)
 # Register your models here.
 @admin.register(NavRight)
 class NavRightAdmin(admin.ModelAdmin):
@@ -52,4 +52,9 @@ class FooterBlocksAdmin(admin.ModelAdmin):
 @admin.register(HomePage)
 class HomePageAdmin(admin.ModelAdmin):
     list_display = ('title', 'url', 'button')
+    
+    
+@admin.register(BasePageModel)
+class BasePageAdmin(admin.ModelAdmin):
+    list_display = ('nav_bar', 'nav_left', 'nav_right', 'footer')
     

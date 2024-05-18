@@ -1,80 +1,106 @@
-from django.shortcuts import get_object_or_404, render
-from .models import Product, Category, Companies
-from django.core.paginator import Paginator
+from typing import Any
+from django.db.models.base import Model as Model
+from django.db.models.query import QuerySet
+from .models import Product
+
+from django.views.generic import ListView, TemplateView, DetailView
 # Create your views here.
 
 # print(Product.objects.get_queryset()[::-1][:5][::-1])
 
-
-def catalog(request):
+class CatalogTemplateView(TemplateView):
+    template_name = 'catalog/catalog.html'
     path_list = ['catalog']
-    data = {
+    
+    def get_context_data(self, **kwargs) -> dict[str, Any]:
+        
+        extra_context = {
         'title': 'Electronic Shop',
         'cat_selected': 2,
-        'path_list': path_list,
-    }
-    print(request.GET)
-    return render(request, 'catalog/catalog.html', data)
-
-
-def catalog_companies(request, cats_id):
-    path_list = ['catalog']
-    obj = get_object_or_404(Category, url=cats_id)
-    path_list.append(cats_id)
-         
-    requests = request.GET.get('comp')
-    
-    if requests:
-        company = get_object_or_404(Companies, url=requests)
-        path_list.append(requests) 
-        filtered_list = Product.objects.filter(category=obj) & Product.objects.filter(company=company)
-    else:
-        company = 'all'
-        filtered_list = Product.objects.filter(category=obj)
+        'path_list': self.path_list,
+        }
         
-    actual_type = request.GET.get('filter')
+        context = super().get_context_data(**kwargs)
+        context.update(extra_context)
+        return context
+    
+
+class CatalogCompaniesListView(ListView):
+    
+    queryset = Product.objects.get_queryset()
+    context_object_name = 'products'
+    template_name = 'catalog/category_list.html'
+    
+    cat_selected = 2
+    title = 'Electronic Shop'
+    
+    paginate_by = 10
+    
+    
+    def get_queryset(self, *args, **kwargs) -> QuerySet[Any]:
+        queryset = super().get_queryset(*args, **kwargs)
+        self.path_list = ['catalog']
         
-    if actual_type == 'is_new':
-        filtered_list = [item for item in filtered_list if item.is_new()]
-    elif actual_type == 'all':
-        pass
-    elif not actual_type:
-        actual_type = 'all'
-    else:
-        filtered_list = filtered_list.order_by(actual_type)
+        self.obj = queryset.filter(category__url=self.kwargs['cats_id'])
+        self.path_list.append(self.kwargs['cats_id'])
         
-    paginator = Paginator(filtered_list, 10)
-    
-    page = request.GET.get('page')
-    if not page:
-        page = 1
-     
-    data = {
-        'title': 'Electronic Shop',
-        'cat_selected': 2,
-        'path_list': path_list,
-        'list_obj': paginator.get_page(page),
-        'actual_type': actual_type,
-        'cats_id': cats_id,
-        'actual_company': requests,
-    }
-    
-    return render(request, 'catalog/catalog_list.html', data)
-
-
-def product(request, product_id):
-    path_list = ['catalog']
-    obj = get_object_or_404(Product, url=product_id)
-    path_list.extend([obj.category.url, obj.company.url, obj.url])
-    company_logo = obj.company.image
-    data = {
-        'title': 'Electronic Shop',
-        'cat_selected': 2,
-        'path_list': path_list,
-        'item': obj,
-        'company_logo': company_logo
-    }
-    return render(request, 'catalog/product.html', data)
+        self.company = self.request.GET.get('comp', 'all')
+        self.actual_filter = self.request.GET.get('filter', 'all')
+        
+        if self.company == 'all':
+            pass
+        else:
+            self.path_list.append(self.company)
+            self.obj = self.obj.filter(company__url=self.company)
+        
+        if self.actual_filter == 'all':
+            pass
+        elif self.actual_filter == 'is_new':
+            self.obj = [item for item in self.obj if item.is_new()]
+        else:
+            self.obj = self.obj.order_by(self.actual_filter)
+        
+        return self.obj
 
     
+    def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
+        context = super().get_context_data(**kwargs)
+        context['title'] = self.title
+        context['actual_company'] = self.company
+        context['actual_filter'] = self.actual_filter
+        context['cat_selected'] = self.cat_selected
+        context['path_list'] = self.path_list
+        
+        return context
+        
+ 
+class ProductDetailView(DetailView):
     
+    model = Product
+    slug_field = 'url'
+    slug_url_kwarg = 'product_id'
+    context_object_name = 'item'
+    
+    title = 'Electronic Shop'
+    cat_selected = 2
+    
+    
+    def get_object(self, queryset=None):
+        self.path_list = ['catalog']
+        
+        obj = super().get_object(queryset)
+        self.path_list.extend([obj.category.url, obj.company.url, obj.url])
+        self.company_logo = obj.company.image
+        
+        return obj
+    
+    
+    def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
+        context = super().get_context_data(**kwargs)
+        context['title'] = self.title
+        context['cat_selected'] = self.cat_selected
+        context['path_list'] = self.path_list
+        context['company_logo'] = self.company_logo
+        
+        return context
+        

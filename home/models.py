@@ -1,4 +1,20 @@
 from django.db import models
+from django.urls import reverse
+
+class BasePageModel(models.Model):
+
+    nav_bar = models.ForeignKey("home.NavMainHome", on_delete=models.CASCADE)
+    nav_list = models.ManyToManyField("home.NavList")
+    nav_left = models.ForeignKey("home.NavLeft", on_delete=models.CASCADE)
+    nav_right = models.ForeignKey("home.NavRight", on_delete=models.CASCADE)
+    footer = models.ForeignKey("home.Footer", on_delete=models.CASCADE)
+    footer_block = models.ManyToManyField("home.FooterBlocks")
+    
+    
+    class Meta:
+        verbose_name = 'База'
+        verbose_name_plural = 'База'
+
 
 class HomePage(models.Model):
     title = models.CharField(max_length=50, verbose_name='Оглавление блока')
@@ -10,7 +26,7 @@ class HomePage(models.Model):
     
     class Meta:
         verbose_name = 'страница'
-        verbose_name_plural = 'Доманшняя страница'
+        verbose_name_plural = 'Домашняя страница'
 
 
 class Footer(models.Model):
@@ -78,24 +94,31 @@ class NavMainHome(models.Model):
 class NavList(models.Model):
     nav_main = models.ForeignKey(NavMainHome, verbose_name='Поле Навигации', on_delete=models.CASCADE)
     category = models.CharField(max_length=50, verbose_name='Кнопки шапки навигации')
-    url = models.SlugField(max_length=200, unique=True)
+    url = models.CharField(max_length=200, unique=True)
     
     def __str__(self) -> str:
         return self.category
+    
+    def get_absolute_url(self):
+        return reverse(self.url)
     
     class Meta:
         verbose_name = 'Пунк'
         verbose_name_plural = 'Пункты Навигации'
         ordering = ['pk']
-    
-    
+        
+       
 class Contact(models.Model):
     
     title = models.CharField(max_length=20, verbose_name='Шапка Страницы')
     text_to_form = models.CharField(max_length=200, verbose_name='Заглавление к пунктам')
     text_title_form = models.CharField(max_length=200, verbose_name='Текст перед формой')
+    statment_list = models.ManyToManyField("home.StatementList")
+    form_contact = models.ForeignKey("home.FormContact", on_delete=models.CASCADE)
+    form_list = models.ManyToManyField("home.StatementForm")
+    info_contact = models.ForeignKey("home.InformationContact", on_delete=models.CASCADE)
     
-    def __str__(self) -> str:
+    def __str__(self) -> str:   
         return self.title
     
     class Meta:
@@ -104,7 +127,6 @@ class Contact(models.Model):
         
         
 class StatementList(models.Model):
-    contact = models.ForeignKey(Contact, verbose_name='Пункты причин заявления', on_delete=models.CASCADE)
     statement = models.CharField(max_length=100)
     
     def __str__(self) -> str:
@@ -137,7 +159,6 @@ class FormContact(models.Model):
     
 class StatementForm(models.Model):
     
-    form = models.ForeignKey(FormContact, verbose_name='Пункты причин для формы', on_delete=models.CASCADE)
     statement_form = models.CharField(max_length=100)
     
     def __str__(self) -> str:

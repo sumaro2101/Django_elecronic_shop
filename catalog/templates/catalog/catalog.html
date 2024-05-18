@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% load static %}
+{% load catalog_tag %}
+
+{% block content %}
+{% include 'includes/catalog/path_nav.html' %}
+<div class="card m-0 p-2">      
+    
+    <div class="card-body p-0">
+        {% catalog_blocks %}
+    </div>
+</div>
+{% endblock content %}
