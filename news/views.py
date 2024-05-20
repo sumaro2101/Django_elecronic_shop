@@ -7,7 +7,7 @@ from news.models import Posts, PostComment
 from .forms import AddPostForm, AddCommentForm
 from pytils.translit import slugify
 from django.utils import timezone
-from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin ,UserPassesTestMixin
 # Create your views here.
 
 
@@ -67,7 +67,7 @@ class AddPostCreateView(LoginRequiredMixin ,CreateView):
         return super().form_valid(form)
     
   
-class UpdatePostView(LoginRequiredMixin ,UpdateView):
+class UpdatePostView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Posts
     context_object_name = 'post'
     form_class = AddPostForm
@@ -80,7 +80,11 @@ class UpdatePostView(LoginRequiredMixin ,UpdateView):
         form.instance.time_edit = timezone.now()
         form.instance.slug = f'{slugify(form.instance.name_user)}-{slugify(form.instance.title)}'
         return super().form_valid(form)
-   
+
+    def test_func(self) -> bool | None:
+        obj = self.get_object()
+        return self.request == obj.name_user
+
 
 class DeletePostView(LoginRequiredMixin ,DeleteView):
     model = Posts

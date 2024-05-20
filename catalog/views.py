@@ -1,13 +1,55 @@
 from typing import Any
 from django.db.models.base import Model as Model
 from django.db.models.query import QuerySet
-from .models import Product
+from django.contrib.auth import mixins
+from django.forms import BaseModelForm
+from django.urls import reverse_lazy
+from django.views.generic import (ListView, TemplateView, DetailView,
+                                  CreateView, UpdateView, DeleteView)
 
-from django.views.generic import ListView, TemplateView, DetailView
+from .models import Product
+from .forms import ProductForm
+from pytils.translit import slugify
 # Create your views here.
 
-# print(Product.objects.get_queryset()[::-1][:5][::-1])
+class ProductCreateView(mixins.PermissionRequiredMixin, mixins.LoginRequiredMixin, CreateView):
+    form_class = ProductForm
+    model = Product
+    permission_required = 'catalog.add_product'
+    
+    def form_valid(self, form):
+        self.url = slugify(form.instance.name)
+        form.instance.url = self.url
+        return super().form_valid(form)
 
+    def get_success_url(self) -> str:
+        return reverse_lazy('catalog:product', kwargs={'product_id': self.url})
+        
+
+class ProductUpdateView(mixins.PermissionRequiredMixin, mixins.LoginRequiredMixin, UpdateView):
+    form_class = ProductForm
+    model = Product
+    permission_required = 'catalog.update_product'
+    slug_url_kwarg = 'product_id'
+    slug_field = 'url'
+    context_object_name = 'product_edit'
+    
+    def form_valid(self, form):
+        form.instance.url = slugify(form.instance.name)
+        return super().form_valid(form)
+
+
+class ProductDeleteView(mixins.PermissionRequiredMixin, mixins.LoginRequiredMixin, DeleteView):
+    model = Product
+    permission_required = 'catalog.delete_product'
+    slug_field = 'url'
+    slug_url_kwarg = 'product_id'
+    context_object_name = 'product_delete'
+    
+    def get_success_url(self) -> str:
+        return reverse_lazy('catalog:catalog')
+    
+    
 class CatalogTemplateView(TemplateView):
     template_name = 'catalog/catalog.html'
     path_list = ['catalog']

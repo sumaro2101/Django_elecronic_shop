@@ -15,7 +15,7 @@
           {% if item.url == 'users:user' %}
             {% if user.is_authenticated %}
             <li>
-              <a class="nav-link {% if item.pk == cat_selected %} active {% endif %} position-absolute top-50 translate-middle" style="left: 89%;"  aria-current="page" href="{{ item.get_absolute_url }}">{{ item.category }}</a>
+              <a class="nav-link {% if item.pk == cat_selected %} active {% endif %} position-absolute top-50 translate-middle" style="left: 89%;"  aria-current="page" href="{% url 'users:user' user.username %}">{{ item.category }}</a>
             </li>
             {% endif %}
           {% elif item.url == 'users:login' %}

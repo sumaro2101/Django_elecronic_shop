@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Category, Product, Companies, SubCategory, TopFilters, Filters
+from .models import Category, Product, Companies, SubCategory, TopFilters, Filters, OsVersions
 # Register your models here.
 
 @admin.register(Category)
@@ -32,3 +32,10 @@ class TopFiltersAdmin(admin.ModelAdmin):
 @admin.register(Filters)
 class FiltersAdmin(admin.ModelAdmin):
     list_display = ('type_filter', 'name_filter', 'url')
+    
+@admin.register(OsVersions)
+class OsVersionsAdmin(admin.ModelAdmin):
+    list_display = ('product', 'os_number', 'os_name', 'actual_os')
+    list_filter = 'actual_os',
+    search_fields = ('product', 'os_name')
+    

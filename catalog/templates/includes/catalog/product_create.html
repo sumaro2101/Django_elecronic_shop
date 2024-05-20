@@ -1,0 +1,75 @@
+
+<form action="{% if product_edit %}{% else %}{% url 'catalog:create' %}{% endif %}" enctype="multipart/form-data" method="post">
+    
+    {% csrf_token %}
+    <div class="form-error">{{ form.non_field_errors }}</div>
+    <p>
+        <label class="form-label" for="id_name">Имя товара*</label>
+        <input class="form-control form-control-sm" type="text" name="name" maxlength="100" {% if product_edit %}value="{{ product_edit.name }}"{% endif %} required="" id="id_name">
+        <div class="form-error">{{ form.name.errors }}</div>
+    </p>
+    <p>
+        <label class="form-label" for="id_descriptions">Описание*</label>
+        <textarea class="form-control form-control-sm" name="descriptions" cols="40" rows="10" id="id_descriptions">{% if product_edit %}{{ product_edit.descriptions }}{% endif %}</textarea>
+        <div class="form-error">{{ form.descriptions.errors }}</div>
+    </p>
+    <p>
+        <label class="form-label" for="id_image_item">Изображение</label>
+        {% if product_edit.image_item %}
+            <div class="form-check form-switch">
+                <span>На данный момент:</span>
+                <a href="{{ product_edit.image_item.url }}">
+                    {{ product_edit.image_item.url }}
+                </a>
+                <input class="form-check-input" type="checkbox" name="image-clear" id="image-clear_id">
+                <label class="form-check-label" for="image-clear_id">Очистить</label>
+                <br>
+                <span>Изменить:</span>
+            </div>
+            {% endif %}
+        <input class="form-control form-control-sm" type="file" name="image_item" accept="image/*" id="id_image_item">
+        <div class="form-error">{{ form.image_item.errors }}</div>
+    </p>
+    <p>
+        <label class="form-label" for="id_company">Компания:*</label>
+        <select class="form-select form-select-sm" name="company" id="id_company" required>
+            {% if product_edit %}
+                <option selected>{{ product_edit.company.name }}</option>
+            {% endif %}
+            {% for company in form.company %}
+                {{ company }}
+            {% endfor %}
+        </select>
+        <div class="form-error">{{ form.company.errors }}</div>
+    </p>
+    <p>
+        <label class="form-label" for="id_category">Категория:*</label>
+        <select class="form-select form-select-sm" name="category" id="id_category" required>
+            {% if product_edit %}
+                <option selected>{{ product_edit.category.name }}</option>
+            {% endif %}
+            {% for category in form.category %}
+                {{ category }}
+            {% endfor %}    
+            
+        </select>
+        <div class="form-error">{{ form.category.errors }}</div>
+    </p>
+    <p>
+        <label class="form-label" for="id_discount">Скидка в %</label>
+        <input class="form-control form-control-sm" type="number" name="discount" {% if product_edit %}value="{{ product_edit.discount|floatformat:0 }}"{% else %}value="0"{% endif %}  step="any" required="" id="id_discount">
+        <div class="form-error">{{ form.discount.errors }}</div>
+    </p>
+    <p>
+        <label class="form-label" for="id_price">Цена*</label>
+        <input class="form-control form-control-sm" type="number" name="price" {% if product_edit %}value="{{ product_edit.price|floatformat:0 }}"{% endif %} step="0.01" required="" id="id_price">
+        <div class="form-error">{{ form.price.errors }}</div>
+    </p>
+    <p>
+        <label class="form-label" for="id_quantity">Количество*</label>
+        <input class="form-control form-control-sm" type="number" name="quantity" {% if product_edit %}value="{{ product_edit.quantity }}"{% endif %} required="" id="id_quantity">
+        <div class="form-error">{{ form.quantity.errors }}</div>
+    </p>
+    <button type="submit" class="btn btn-secondary">{% if product_edit %}Изменить{% else %}Добавить{% endif %}</button>
+    <a href="{{ request.META.HTTP_REFERER }}" class="btn border" style="box-shadow: 0 1px 2px 0 rgba(0,0,0,.16);">Отменить</a>
+</form>
