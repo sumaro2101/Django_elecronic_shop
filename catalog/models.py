@@ -112,6 +112,7 @@ class OsVersions(models.Model):
         return self.os_name
   
     
+    
 class TopFilters(models.Model):
     type_filter = models.CharField(max_length=50, unique=True, verbose_name='тип фильтров')
     

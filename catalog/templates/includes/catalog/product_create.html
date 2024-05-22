@@ -1,6 +1,7 @@
+{% load crispy_forms_tags %}
 
 <form action="{% if product_edit %}{% else %}{% url 'catalog:create' %}{% endif %}" enctype="multipart/form-data" method="post">
-    
+    <h4>Товар</h4>
     {% csrf_token %}
     <div class="form-error">{{ form.non_field_errors }}</div>
     <p>
@@ -70,6 +71,31 @@
         <input class="form-control form-control-sm" type="number" name="quantity" {% if product_edit %}value="{{ product_edit.quantity }}"{% endif %} required="" id="id_quantity">
         <div class="form-error">{{ form.quantity.errors }}</div>
     </p>
-    <button type="submit" class="btn btn-secondary">{% if product_edit %}Изменить{% else %}Добавить{% endif %}</button>
-    <a href="{{ request.META.HTTP_REFERER }}" class="btn border" style="box-shadow: 0 1px 2px 0 rgba(0,0,0,.16);">Отменить</a>
+    <div class="card p-2 my-3">
+        <h4>Версии OS для товара</h4>
+        {{ os_versions.management_form }}
+        {{ os_versions.non_form_errors }}
+        {% for form in os_versions %}
+        {{ form.id }}
+        <div class="card-body">
+            {{ form.os_number.errors }}
+            {{ form.os_number.label_tag }}
+            {{ form.os_number }}
+            {{ form.os_name.errors }}
+            {{ form.os_name.label_tag }}
+            {{ form.os_name }}
+            {{ form.actual_os.errors }}
+            {{ form.actual_os.label_tag }}
+            {{ form.actual_os }}
+        </div>
+        {% if not forloop.last %}
+        <hr>
+        {% endif %}
+        {% endfor %}
+        <div>
+            <button type="submit" class="btn btn-secondary">{% if product_edit %}Изменить{% else %}Добавить{% endif %}</button>
+            <a {% if not product_edit %}href="{{ request.META.HTTP_REFERER }}"{% else %}href="{% url 'catalog:product' product_edit.url %}"{% endif %}class="btn border" style="box-shadow: 0 1px 2px 0 rgba(0,0,0,.16);">Отменить</a>
+        </div>
+    </div>
+   
 </form>

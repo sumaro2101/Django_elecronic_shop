@@ -49,6 +49,10 @@ INSTALLED_APPS = [
     #django_extensions
     'django_extensions',
     
+    #crispy_forms
+    'crispy_forms',
+    'crispy_bootstrap5',
+    
     #apps
     'home.apps.HomeConfig',
     'catalog.apps.CatalogConfig',
@@ -97,6 +101,10 @@ TEMPLATES = [
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
 )
+
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
