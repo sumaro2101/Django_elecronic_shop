@@ -34,7 +34,7 @@
                 </span>
             </div>
         </span> 
-        {% if user.is_authenticated %}
+        {% if user.is_authenticated and post.user_name == user %}
         <span class="d-flex position-absolute" style="top: 10px; right: 10px;">
             <a href="{% url 'news:updatepost' post.slug %}" class="btn border me-1" style="font-size: 12px; box-shadow: 0 1px 2px 0 rgba(0,0,0,.16);">Изменить</ф>
             <a href="{% url 'news:deletepost' post.slug %}" class="btn border" style="font-size: 12px; box-shadow: 0 1px 2px 0 rgba(0,0,0,.16);">Удалить</a>

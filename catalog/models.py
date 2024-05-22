@@ -94,7 +94,23 @@ class Product(models.Model):
             models.CheckConstraint(check=models.Q(price__gte=0, quantity__gte=0, discount__gte=0), name='price_quantity_gte_discount__gte-0'),
         ]
         ordering = ['-created_at']
+        
+        
+class OsVersions(models.Model):
 
+    product = models.ForeignKey("catalog.Product", verbose_name='товар', on_delete=models.CASCADE)
+    os_number = models.SlugField(verbose_name='номер версии')
+    os_name = models.CharField(verbose_name='название версии', max_length=256)
+    actual_os = models.BooleanField(verbose_name='признак актуальности')
+    
+
+    class Meta:
+        verbose_name = 'версия'
+        verbose_name_plural = 'версии'
+
+    def __str__(self):
+        return self.os_name
+  
     
     
 class TopFilters(models.Model):
