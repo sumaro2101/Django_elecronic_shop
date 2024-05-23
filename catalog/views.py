@@ -13,10 +13,9 @@ from .forms import ProductForm, OsVersionsForm, OsVersionsFormSet
 from pytils.translit import slugify
 # Create your views here.
 
-class ProductCreateView(mixins.PermissionRequiredMixin, mixins.LoginRequiredMixin, CreateView):
+class ProductCreateView(mixins.LoginRequiredMixin, CreateView):
     form_class = ProductForm
     model = Product
-    permission_required = 'catalog.add_product'
     
     def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
         context = super(ProductCreateView, self).get_context_data(**kwargs)
@@ -34,10 +33,10 @@ class ProductCreateView(mixins.PermissionRequiredMixin, mixins.LoginRequiredMixi
         context = self.get_context_data()
         os_versions = context['os_versions']
         with transaction.atomic():
-            url = slugify(form.instance.name)
-            form.instance.url = url
-            self.object = form.save()
             if os_versions.is_valid():
+                url = slugify(form.instance.name)
+                form.instance.url = url
+                self.object = form.save()
                 os_versions.instance = self.object
                 os_versions.save()
             else:
@@ -71,10 +70,10 @@ class ProductUpdateView(mixins.PermissionRequiredMixin, mixins.LoginRequiredMixi
         context = self.get_context_data()
         os_versions = context['os_versions']
         with transaction.atomic():
-            url = slugify(form.instance.name)
-            form.instance.url = url
-            self.object = form.save()
             if os_versions.is_valid():
+                url = slugify(form.instance.name)
+                form.instance.url = url
+                self.object = form.save()
                 os_versions.instance = self.object
                 os_versions.save()
             else:
@@ -166,8 +165,8 @@ class CatalogCompaniesListView(ListView):
  
 class ProductDetailView(DetailView):
     
-    queryset = OsVersions.objects.select_related('product__company', 'product__category').filter(actual_os=True)
-    slug_field = 'product__url'
+    queryset = Product.objects.select_related('company', 'category')
+    slug_field = 'url'
     slug_url_kwarg = 'product_id'
     context_object_name = 'item'
     template_name = 'catalog/product_detail.html'
@@ -178,19 +177,10 @@ class ProductDetailView(DetailView):
     
     def get_object(self, queryset=queryset):
         self.path_list = ['catalog']
-        try:
-            obj = super().get_object(queryset)
-            self.version = {'os_number': obj.os_number,
-                            'os_name': obj.os_name,
-                            'actual_os': obj.actual_os}
-            obj = obj.product
-        except:
-            self.slug_field = 'url'
-            self.version = False
-            slug = self.kwargs.get(self.slug_url_kwarg)
-            slug_field = self.get_slug_field()
-            obj = Product.objects.select_related('company', 'category').get(**{slug_field: slug})
-            
+        
+        obj = super().get_object(queryset)
+        
+        self.version = obj.osversions_set.filter(actual_os=True)
         self.path_list.extend([obj.category.url, obj.company.url, obj.url])
         self.company_logo = obj.company.image
         
@@ -203,7 +193,7 @@ class ProductDetailView(DetailView):
         context['cat_selected'] = self.cat_selected
         context['path_list'] = self.path_list
         context['company_logo'] = self.company_logo
-        context['version'] = self.version
+        context['version'] = self.version[0] if self.version.exists() else None
         
         return context
         

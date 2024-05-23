@@ -35,7 +35,7 @@ class FiltersAdmin(admin.ModelAdmin):
     
 @admin.register(OsVersions)
 class OsVersionsAdmin(admin.ModelAdmin):
-    list_display = ('product', 'os_number', 'os_name', 'actual_os')
+    list_display = ('product_version', 'os_number', 'os_name', 'actual_os')
     list_filter = 'actual_os',
-    search_fields = ('product', 'os_name')
+    search_fields = ('product_version', 'os_name')
     

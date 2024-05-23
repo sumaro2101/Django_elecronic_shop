@@ -18,11 +18,6 @@
               <p style="line-height: .9375rem; font-size: .8125rem; font-weight: 700;">Имя пользователя: <strong>{{ current_user.username }}</strong></p>
               <p style="font-size: .80rem; line-height: .6875rem;">Дата регистрации: {{ current_user.date_joined }}</p>
             </div>
-            {% if perms.catalog.add_poduct %}
-            <div>
-              <a href="{% url 'catalog:create' %}" class="btn btn-secondary">Добавить товар</a>
-            </div>
-            {% endif %}
           </div>
         </div>
         <div style="font-size: .80rem; line-height: 1.250rem; grid-area:stat;">Эмеил: {% if current_user.email_user %}{{ current_user.email_user }}{% else %} не указан{% endif %}</div>

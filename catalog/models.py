@@ -98,7 +98,7 @@ class Product(models.Model):
         
 class OsVersions(models.Model):
 
-    product = models.ForeignKey("catalog.Product", verbose_name='товар', on_delete=models.CASCADE)
+    product_version = models.ForeignKey("catalog.Product", verbose_name='товар', on_delete=models.CASCADE)
     os_number = models.SlugField(verbose_name='номер версии')
     os_name = models.CharField(verbose_name='название версии', max_length=256)
     actual_os = models.BooleanField(verbose_name='признак актуальности')

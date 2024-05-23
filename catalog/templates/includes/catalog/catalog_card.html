@@ -2,8 +2,15 @@
 {% load tags_filter %}
 
 <div>
-    <h3>Каталог товаров</h3>
-    <div class="category-body">
+    <div class="d-flex justify-content-between">
+        <h3>Каталог товаров</h3>
+        {% if user.is_authenticated %}
+                <div>
+                  <a href="{% url 'catalog:create' %}" class="btn btn-secondary">Добавить товар</a>
+                </div>
+        {% endif %}
+    </div>
+    <div class="category-body mt-2">
         {% for catalog in categories %}
             <div class="category-body-card">
                 <div class="category-body-content">
