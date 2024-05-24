@@ -2714,7 +2714,7 @@
         "model": "catalog.osversions",
         "pk": 18,
         "fields": {
-            "product": 14,
+            "product_version": 14,
             "os_number": "15",
             "os_name": "IOS",
             "actual_os": false
@@ -2724,7 +2724,7 @@
         "model": "catalog.osversions",
         "pk": 19,
         "fields": {
-            "product": 16,
+            "product_version": 16,
             "os_number": "15",
             "os_name": "IOS",
             "actual_os": false
@@ -2734,7 +2734,7 @@
         "model": "catalog.osversions",
         "pk": 20,
         "fields": {
-            "product": 5,
+            "product_version": 5,
             "os_number": "15",
             "os_name": "IOS",
             "actual_os": false
@@ -2744,7 +2744,7 @@
         "model": "catalog.osversions",
         "pk": 21,
         "fields": {
-            "product": 15,
+            "product_version": 15,
             "os_number": "15",
             "os_name": "IOS",
             "actual_os": false
@@ -2754,7 +2754,7 @@
         "model": "catalog.osversions",
         "pk": 22,
         "fields": {
-            "product": 14,
+            "product_version": 14,
             "os_number": "16",
             "os_name": "IOS",
             "actual_os": true
@@ -2764,7 +2764,7 @@
         "model": "catalog.osversions",
         "pk": 23,
         "fields": {
-            "product": 16,
+            "product_version": 16,
             "os_number": "16",
             "os_name": "IOS",
             "actual_os": true
@@ -2774,7 +2774,7 @@
         "model": "catalog.osversions",
         "pk": 24,
         "fields": {
-            "product": 5,
+            "product_version": 5,
             "os_number": "16",
             "os_name": "IOS",
             "actual_os": true
@@ -2784,7 +2784,7 @@
         "model": "catalog.osversions",
         "pk": 25,
         "fields": {
-            "product": 15,
+            "product_version": 15,
             "os_number": "16",
             "os_name": "IOS",
             "actual_os": true
@@ -2794,7 +2794,7 @@
         "model": "catalog.osversions",
         "pk": 26,
         "fields": {
-            "product": 71,
+            "product_version": 71,
             "os_number": "10",
             "os_name": "Android",
             "actual_os": false
@@ -2804,7 +2804,7 @@
         "model": "catalog.osversions",
         "pk": 27,
         "fields": {
-            "product": 72,
+            "product_version": 72,
             "os_number": "10",
             "os_name": "Android",
             "actual_os": false
@@ -2814,7 +2814,7 @@
         "model": "catalog.osversions",
         "pk": 28,
         "fields": {
-            "product": 73,
+            "product_version": 73,
             "os_number": "10",
             "os_name": "Android",
             "actual_os": false
@@ -2824,7 +2824,7 @@
         "model": "catalog.osversions",
         "pk": 31,
         "fields": {
-            "product": 76,
+            "product_version": 76,
             "os_number": "10",
             "os_name": "Android",
             "actual_os": false
@@ -2834,7 +2834,7 @@
         "model": "catalog.osversions",
         "pk": 33,
         "fields": {
-            "product": 78,
+            "product_version": 78,
             "os_number": "10",
             "os_name": "Android",
             "actual_os": false
@@ -2844,7 +2844,7 @@
         "model": "catalog.osversions",
         "pk": 34,
         "fields": {
-            "product": 79,
+            "product_version": 79,
             "os_number": "10",
             "os_name": "Android",
             "actual_os": false
@@ -2854,7 +2854,7 @@
         "model": "catalog.osversions",
         "pk": 35,
         "fields": {
-            "product": 80,
+            "product_version": 80,
             "os_number": "10",
             "os_name": "Android",
             "actual_os": false
@@ -2864,7 +2864,7 @@
         "model": "catalog.osversions",
         "pk": 36,
         "fields": {
-            "product": 81,
+            "product_version": 81,
             "os_number": "10",
             "os_name": "Android",
             "actual_os": false
@@ -2874,7 +2874,7 @@
         "model": "catalog.osversions",
         "pk": 37,
         "fields": {
-            "product": 82,
+            "product_version": 82,
             "os_number": "10",
             "os_name": "Android",
             "actual_os": false
