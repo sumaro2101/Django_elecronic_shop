@@ -53,6 +53,11 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
     
+    #phonenumber_field
+    'phonenumber_field',
+    #countries
+    'django_countries',
+    
     #apps
     'home.apps.HomeConfig',
     'catalog.apps.CatalogConfig',
@@ -154,6 +159,7 @@ USE_I18N = True
 
 USE_TZ = True
 
+PHONENUMBER_DEFAULT_REGION = 'RU'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
@@ -170,6 +176,11 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'users.User'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'users.authentication.EmailAuthBackend',
+]
 
 LOGIN_URL = 'users:login'
 LOGOUT_REDIRECT_URL = 'home:home_page'

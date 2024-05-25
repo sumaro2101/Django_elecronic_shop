@@ -25,7 +25,7 @@ class ProductCreateView(mixins.LoginRequiredMixin, CreateView):
             context['os_versions'] = OsVersionsFormSet(instance=self.object)
             
         context['title'] = 'Electronic Shop'
-        context['cat_selected'] = 4
+        context['cat_selected'] = 2
         return context
     
     

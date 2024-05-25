@@ -21,6 +21,10 @@ asyncio = "^3.4.3"
 pytils = "^0.4.1"
 django-crispy-forms = "^2.1"
 crispy-bootstrap5 = "^2024.2"
+django-phonenumber-field = "^7.3.0"
+phonenumbers = "^8.13.37"
+django-countries = "^7.6.1"
+babel = "^2.15.0"
 
 
 [tool.poetry.group.dev.dependencies]
