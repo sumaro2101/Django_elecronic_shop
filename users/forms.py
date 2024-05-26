@@ -1,9 +1,10 @@
 
-from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
+from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, UserChangeForm
 from django.contrib.auth import get_user_model
 from django import forms
 
 from phonenumber_field.widgets import PhoneNumberPrefixWidget
+from phonenumber_field.formfields import PhoneNumberField
 from django_countries.widgets import CountrySelectWidget
 
 
@@ -56,3 +57,21 @@ class RegisterUserForm(UserCreationForm):
         
         return phone
     
+    
+class UserUpdateForm(UserChangeForm):
+    username = forms.CharField(disabled=True)
+    email = forms.EmailField(disabled=True)
+    phone = PhoneNumberField(disabled=True, required=False)
+    image = forms.ImageField(required=False)
+    
+    class Meta:
+        model = get_user_model()
+        fields = ['username', 'image', 'email', 'phone', 'country', 'first_name', 'last_name',]
+        labels = {
+            'first_name': 'Имя',
+            'last_name': 'Фамилия',
+        }
+        widgets = {
+            'country': CountrySelectWidget()
+        }
+        

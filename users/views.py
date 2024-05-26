@@ -1,15 +1,16 @@
 from django.db.models.base import Model as Model
+from django.forms import BaseModelForm
 from django.urls import reverse_lazy
-from django.views.generic import TemplateView, DetailView, CreateView
+from django.views.generic import TemplateView, DetailView, CreateView, UpdateView
 from django.contrib.auth import get_user_model, mixins
 from django.contrib.auth.views import LoginView
 
 from users.mixins import RequiredNotAuthenticatedMixin
-from .forms import UserLoginForm, RegisterUserForm
+from .forms import UserLoginForm, RegisterUserForm, UserUpdateForm
 
 # Create your views here.
 
-class UserDetailView(mixins.LoginRequiredMixin, DetailView):
+class UserDetailView(DetailView):
     model = get_user_model()
     slug_url_kwarg = 'username'
     slug_field = 'username'
@@ -19,8 +20,6 @@ class UserDetailView(mixins.LoginRequiredMixin, DetailView):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Electronic Shop'
         context['cat_selected'] = 4
-        if context['current_user'] != self.request.user:
-            context['current_user'] = self.request.user
         return context
     
 
@@ -44,3 +43,25 @@ class RegisterUser(RequiredNotAuthenticatedMixin, CreateView):
     template_name = 'users/register.html'
     success_url = reverse_lazy('users:done')
     extra_context = {'title': 'Electronic Shop', 'cat_selected': 5}
+
+
+class UpdateProfileUser(mixins.LoginRequiredMixin, mixins.UserPassesTestMixin, UpdateView):
+    model = get_user_model()
+    form_class = UserUpdateForm
+    context_object_name = 'user_edit'
+    slug_field = 'username'
+    slug_url_kwarg = 'username'
+    template_name = 'users/change_profile.html'
+    extra_context = {'title': 'Electronic Shop', 'cat_selected': 4}
+    
+    def form_valid(self, form):
+        print(self.request.POST)
+        return super().form_valid(form)
+    
+    def test_func(self) -> bool | None:
+        obj = self.get_object()
+        return self.request.user == obj or self.request.user.is_staff
+    
+    def get_success_url(self) -> str:
+        return reverse_lazy('users:user', kwargs={'username': self.kwargs.get('username')})
+    

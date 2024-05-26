@@ -4,6 +4,7 @@ from django.contrib.auth.base_user import BaseUserManager
 from django.contrib.auth.hashers import make_password
 from django.apps.registry import apps
 
+from django.urls import reverse
 from phonenumber_field.modelfields import PhoneNumberField
 from django_countries.fields import CountryField
 # Create your models here.
@@ -55,3 +56,6 @@ class User(AbstractUser):
         verbose_name = 'пользователь'
         verbose_name_plural = 'пользователи'
         
+    def get_absolute_url(self):
+        return reverse("users:user", kwargs={"username": self.username})
+    
