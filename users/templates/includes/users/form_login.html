@@ -22,7 +22,7 @@
         </div>
     </form>
     <div class="d-flex justify-content-center">
-        <a class="me-4 link-underline-dark text-black" href="">Забыли пароль?</a>
+        <a class="me-4 link-underline-dark text-black" href="{% url 'users:password_reset' %}">Забыли пароль?</a>
         <a class="link-underline-dark text-black" href="{% url 'users:reg' %}">Регистрация!</a>
     </div>
 </div>

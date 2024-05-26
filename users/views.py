@@ -1,9 +1,10 @@
 from django.db.models.base import Model as Model
-from django.forms import BaseModelForm
 from django.urls import reverse_lazy
 from django.views.generic import TemplateView, DetailView, CreateView, UpdateView
 from django.contrib.auth import get_user_model, mixins
-from django.contrib.auth.views import LoginView, PasswordChangeView, PasswordChangeDoneView
+from django.contrib.auth.views import (LoginView, PasswordChangeView, PasswordChangeDoneView,
+                                       PasswordResetView, PasswordResetDoneView, PasswordResetConfirmView,
+                                       PasswordResetCompleteView)
 
 from users.mixins import RequiredNotAuthenticatedMixin
 from .forms import UserChangePasswordForm, UserLoginForm, RegisterUserForm, UserUpdateForm
@@ -73,4 +74,24 @@ class UserChangePassword(mixins.LoginRequiredMixin, PasswordChangeView):
     
 class UserChangePasswordDone(mixins.LoginRequiredMixin, PasswordChangeDoneView):
     template_name = 'passwords/password_change_done.html'
+    
+
+class UserResetPassword(PasswordResetView):
+    template_name = 'passwords/password_reset_form.html'
+    email_template_name = 'passwords/password_reset_email.html'
+    success_url = reverse_lazy('users:password_reset_done')
+    
+    
+    
+class UserResetPasswordDone(PasswordResetDoneView):
+    template_name = 'passwords/password_reset_done.html'
+    
+    
+class UserResetPasswordConfirm(PasswordResetConfirmView):
+    template_name = 'passwords/password_reset_confirm.html'
+    success_url = reverse_lazy("users:password_reset_complete")
+ 
+    
+class UserResetPasswordComplete(PasswordResetCompleteView):
+    template_name = 'passwords/password_reset_complete.html'
     
