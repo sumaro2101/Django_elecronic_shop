@@ -1,5 +1,5 @@
 
-from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, UserChangeForm
+from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, UserChangeForm, PasswordChangeForm
 from django.contrib.auth import get_user_model
 from django import forms
 
@@ -74,4 +74,9 @@ class UserUpdateForm(UserChangeForm):
         widgets = {
             'country': CountrySelectWidget()
         }
+        
+class UserChangePasswordForm(PasswordChangeForm):
+    old_password = forms.CharField()
+    new_password1 = forms.CharField()
+    new_password2 = forms.CharField()
         

@@ -13,4 +13,6 @@ urlpatterns = [
     path('regisration/done/', views.DoneTemplateView.as_view(), name='done'),
     path('user/<slug:username>/', views.UserDetailView.as_view(), name='user'),
     path('user/<slug:username>/update/', views.UpdateProfileUser.as_view(), name='update'),
+    path('password_change/', views.UserChangePassword.as_view(), name='password_change'),
+    path('password_change_done/', views.UserChangePasswordDone.as_view(), name='password_change_done'),
 ]

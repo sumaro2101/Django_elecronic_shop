@@ -3,10 +3,10 @@ from django.forms import BaseModelForm
 from django.urls import reverse_lazy
 from django.views.generic import TemplateView, DetailView, CreateView, UpdateView
 from django.contrib.auth import get_user_model, mixins
-from django.contrib.auth.views import LoginView
+from django.contrib.auth.views import LoginView, PasswordChangeView, PasswordChangeDoneView
 
 from users.mixins import RequiredNotAuthenticatedMixin
-from .forms import UserLoginForm, RegisterUserForm, UserUpdateForm
+from .forms import UserChangePasswordForm, UserLoginForm, RegisterUserForm, UserUpdateForm
 
 # Create your views here.
 
@@ -64,4 +64,13 @@ class UpdateProfileUser(mixins.LoginRequiredMixin, mixins.UserPassesTestMixin, U
     
     def get_success_url(self) -> str:
         return reverse_lazy('users:user', kwargs={'username': self.kwargs.get('username')})
+    
+class UserChangePassword(mixins.LoginRequiredMixin, PasswordChangeView):
+    form_class = UserChangePasswordForm
+    template_name = 'passwords/password_change_form.html'
+    success_url = reverse_lazy("users:password_change_done")
+
+    
+class UserChangePasswordDone(mixins.LoginRequiredMixin, PasswordChangeDoneView):
+    template_name = 'passwords/password_change_done.html'
     

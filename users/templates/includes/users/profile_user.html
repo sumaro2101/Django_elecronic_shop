@@ -32,7 +32,9 @@
         <div style="font-size: .80rem; line-height: 1.250rem; grid-area:buy;">Страна: {% if current_user.country %}{{ current_user.country }}{% else %} не указан{% endif %}</div>
         <div style="font-size: .80rem; line-height: 1.250rem; grid-area:wrap;">Имя: {% if current_user.get_short_name %}{{ current_user.get_short_name }}{% else %} не указан{% endif %}</div>
         <div style="font-size: .80rem; line-height: 1.250rem; grid-area:add-sales">Фамилия: {% if current_user.last_name %}{{ current_user.last_name }}{% else %} не указан{% endif %}</div>
-
+        {% if request.user == current_user %}
+        <a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover mt-4" style="font-size: .80rem; line-height: 1.250rem; grid-area:free" href="{% url 'users:password_change' %}">Изменить пароль</a>
+        {% endif %}
     </div>
     
 
