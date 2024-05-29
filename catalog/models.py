@@ -4,6 +4,7 @@ from django.db import models
 from django.db.models import Lookup, Field
 from django.urls import reverse
 from django.utils import timezone
+from django.contrib.auth import get_user_model
 # Create your models here.  
 
     
@@ -59,7 +60,7 @@ class Companies(models.Model):
   
 
 class Product(models.Model):
-    
+    owner = models.ForeignKey(get_user_model(), verbose_name='владелец', null=True ,on_delete=models.SET_NULL)
     name = models.CharField(max_length=100, verbose_name='Товар')
     descriptions = models.TextField(verbose_name='Описание', null=True, blank=True)
     image_item = models.ImageField(upload_to='products', verbose_name='Изображение', null=True, blank=True)

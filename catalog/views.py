@@ -34,6 +34,7 @@ class ProductCreateView(mixins.LoginRequiredMixin, CreateView):
         os_versions = context['os_versions']
         with transaction.atomic():
             if os_versions.is_valid():
+                form.instance.owner = self.request.user
                 url = slugify(form.instance.name)
                 form.instance.url = url
                 self.object = form.save()

@@ -19,7 +19,7 @@ class CompaniesAdmin(admin.ModelAdmin):
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('name', 'descriptions', 'image_item', 'category', 'url' ,'price', 'discount', 'quantity', 'discontinued', 'created_at', 'created_up', 'release')
+    list_display = ('owner' ,'name', 'descriptions', 'image_item', 'category', 'url' ,'price', 'discount', 'quantity', 'discontinued', 'created_at', 'created_up', 'release')
     list_filter = 'discontinued',
     search_fields = ('name', 'discount', 'created_at')
     
