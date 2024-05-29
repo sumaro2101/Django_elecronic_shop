@@ -1,10 +1,10 @@
-[ 
+[
     {
         "model": "sites.site",
         "pk": 1,
         "fields": {
-            "domain": "example.com",
-            "name": "example.com"
+            "domain": "127.0.0.1:8000",
+            "name": "EL_COM"
         }
     },
     {
@@ -594,6 +594,7 @@
         "model": "catalog.product",
         "pk": 1,
         "fields": {
+            "owner": null,
             "name": "Macbook 16 pro",
             "descriptions": "MacBook Pro вырывается вперед с чипами M3, M3 Pro и M3 Max. Созданные по 3-нанометровой технологии они представляют собой самые совершенные чипы, когда-либо созданные для персональных компьютеров. И каждый из них приносит больше профессиональной производительности и возможностей. Впервые в MacBook Pro реализована аппаратно-ускоренная трассировка лучей.",
             "image_item": "",
@@ -614,6 +615,7 @@
         "model": "catalog.product",
         "pk": 2,
         "fields": {
+            "owner": null,
             "name": "ROG Zephyrus M16",
             "descriptions": "Ноутбук ASUS ROG Zephyrus M16 GU604VI-N4034 обеспечивает высокую вычислительную производительность для игр и работы в требовательных программах. Процессор Intel Core i9-13900H в сочетании с 32 ГБ оперативной памяти стандарта DDR5 и видеокартой GeForce RTX 4070 от NVIDIA гарантирует быстродействие системы. Накопитель SSD на 1000 ГБ с интерфейсом M.2 PCIe ускоряет обработку задач.\r\nВ ноутбуке установлен экран диагональю 16 дюймов. Панель IPS с разрешением 2560x1600 пикселей отображает реалистичную картинку. Благодаря цветовому охвату DCI-P3 100% и поддержке стандарта VESA DisplayHDR 1000 оттенки воспроизводятся с высокой точностью. Частота обновления 240 Гц предотвращает эффект размытия динамичного изображения. Клавиатура с подсветкой RGB создает комфортные условия для погружения в игру. Система охлаждения с вентиляторами Arc Flow и жидкометаллическим термоинтерфейсом Thermal Grizzly поддерживает низкую температуру нагрева ASUS ROG Zephyrus M16.",
             "image_item": "",
@@ -634,6 +636,7 @@
         "model": "catalog.product",
         "pk": 3,
         "fields": {
+            "owner": null,
             "name": "AirPods 2 pro",
             "descriptions": "Наушники TWS Apple AirPods Pro 2 обладают силиконовыми амбушюрами, которые обеспечивают плотное прилегание к ушному каналу. Спрятанный в пластиковом корпусе микрофон служит для приема вызовов. Защита по стандарту IPX4 исключает риск негативного воздействия брызг.\r\nНаушники TWS Apple AirPods Pro 2 оборудованы динамическими излучателями, которые гарантируют воспроизведение громкого звука. Закрытое акустическое исполнение полностью изолирует пользователя от внешнего шума. При синхронизации используется интерфейс Bluetooth 5.3. Функция Talk Through заглушает посторонние звуки, позволяя разговаривать в общественных местах и слушать музыку. Доступ к возможностям открывается через сенсорные элементы. Время автономной работы от одного заряда составляет 6 ч.",
             "image_item": "",
@@ -654,6 +657,7 @@
         "model": "catalog.product",
         "pk": 5,
         "fields": {
+            "owner": null,
             "name": "IPhone 16 Pro Max",
             "descriptions": "Аппаратной основой Apple iPhone 16 Pro Max стал 3-нанометровый чипсет A17 Pro с 6-ядерным GPU и поддержкой трассировки лучей. Чип выдает высочайшую производительность в играх. Также имеется 16-ядерный Neural Engine, который обрабатывает 35 миллионов операций в секунду.\r\nКорпус смартфона изготовлен из титана 5-го класса (такой, например, используется в космическом ровере NASA). Титан прочнее, легче и долговечнее, чем алюминий и сталь. У iPhone 16 Pro Max нет физического переключателя для перехода в бесшумный режим. На его месте расположена программируемая кнопка, которая реагирует на силу нажатия. С ее помощью можно, например, включить камеру или фонарик.\r\nУ iPhone 16 Pro Max 6,7-дюймовый OLED-экран с разрешением 2796 × 1290 пикселей, кадровой частотой 120 Гц и пиковой яркостью 2000 нит.\r\nОсновная камера состоит из трех сенсоров. Главный на 48 Мп. Пользователь может выбрать фокусное расстояние — 24, 28 или 35 мм. Также у смартфона ширик и телевик с 5-кратным приближением без потери качества на 12 Мп.\r\niPhone 15 Pro Max получил порты USB-C с поддержкой USB 3 и скоростью передачи данных до 10 Гбит/с. Операционная система — iOS 17.",
             "image_item": "",
@@ -674,6 +678,7 @@
         "model": "catalog.product",
         "pk": 6,
         "fields": {
+            "owner": null,
             "name": "MSI",
             "descriptions": "Ноутбук MSI Vector GP77 13VG-060XRU предлагает мощный вычислительный потенциал, высокое качество изображения и звука, стабильное охлаждение для погружения в мир виртуальной реальности. Благодаря процессору Intel Core i7, видеокарте GeForce RTX 4070 и 16 ГБ ОЗУ он способен демонстрировать высокую производительность системы. Эффективное охлаждение с использованием тепловых трубок и вентиляторов поддерживает низкую температуру нагрева.\r\nНа экране 17.3 дюйма с панелью IPS QHD выводится реалистичное изображение. Частота 240 Гц помогает предотвратить искажения динамичной картинки. Для удобства игры в разное время суток установлена эргономичная клавиатура с полноразмерной раскладкой и подсветкой символов ARGB. Акустическая система воспроизводит четкий насыщенный звук. Коммуникационные возможности представлены портами USB, видеовыходами HDMI и mini DisplayPort, разъемами аудио, коннектором LAN, технологиями Wi-Fi и Bluetooth. Литий-ионный аккумулятор гарантирует продолжительную автономность MSI Vector GP77. Также отмечается поддержка аккумулятором функции ускоренной зарядки.",
             "image_item": "",
@@ -694,6 +699,7 @@
         "model": "catalog.product",
         "pk": 7,
         "fields": {
+            "owner": null,
             "name": "Lenovo Legion 8 Pro",
             "descriptions": "Ноутбук Lenovo Legion 8 Pro 16ACH6H сделает каждое изображение реалистичнее и контрастнее. В этом ему помогает дискретная видеокарта GeForce RTX 3060. Экран диагональю 16 дюймов может похвастаться способностью к быстрой смене кадров при динамичном сюжете. Система вентиляции Legion Coldfront 3.0 продлит время автономной работы, гарантируя своевременный отвод тепла.\r\nНоутбук Lenovo Legion 8 Pro 16ACH6H оборудован клавиатурой Legion TrueStrike. Ее характерная черта заключается в высокой отзывчивости на едва уловимые касания. Акустическое сопровождение Nahimic воспроизводит спецэффекты и заполняет пространство объемным звучанием. Процессор AMD Ryzen 7 5800H с 8-ядерной архитектурой исключает малейшие промедления при одновременном запуске требовательных приложений.",
             "image_item": "",
@@ -714,6 +720,7 @@
         "model": "catalog.product",
         "pk": 8,
         "fields": {
+            "owner": null,
             "name": "Samsung s24",
             "descriptions": "Смартфон Samsung Galaxy S24 оборудован 3-модульной камерой с 30-кратным цифровым зумом. Он приближает удаленные элементы и объекты без потери четкости. Настройка резкости производится с помощью функции автофокуса. Дисплей диагональю 6.2 дюймов сконструирован на основе матрицы Dynamic AMOLED 2X. Она меняет частоту обновления, ориентируясь на динамику контента.\r\nСмартфон Samsung Galaxy S24 оснащен 10-ядерным процессором и 8 ГБ оперативной памяти. Вычислительная мощность исключает промедления при загрузке и навигации между приложениями. Гарантом насыщенного звучания выступают встроенные стереодинамики. Хранение данных осуществляется во встроенной памяти объемом 256 ГБ. Энергия аккумулятора рассчитана на 78-часовое прослушивание композиций.",
             "image_item": "",
@@ -734,6 +741,7 @@
         "model": "catalog.product",
         "pk": 9,
         "fields": {
+            "owner": null,
             "name": "Poco X6 Pro",
             "descriptions": "Смартфон POCO X6 Pro 5G в пластиковом корпусе оборудован 6.67-дюймовым дисплеем с частотой обновления 120 Гц. Она гарантирует своевременную смену кадров при отображении динамичных сцен. AMOLED-матрица обеспечивает трансляцию насыщенного черного цвета без бликов и расширяет углы обзора. Покрытие Corning Gorilla Glass 5 предупреждает образование сколов и царапин. Хранение файлов производится во встроенной памяти объемом 512 ГБ.\r\nСмартфон POCO X6 Pro 5G оснащен 8-ядерным процессором и 12 ГБ оперативной памяти. Аппаратное оснащение не допускает задержек при запуске требовательных приложений и навигации между окнами. Основная 3-модульная камера поддерживает оптическую стабилизацию, которая исключает риск появления размытых пикселей. С двойной светодиодной вспышкой повышается четкость кадров в условиях недостаточного освещения. Энергии аккумулятора достаточного для 50-часового прослушивания треков.",
             "image_item": "",
@@ -754,6 +762,7 @@
         "model": "catalog.product",
         "pk": 10,
         "fields": {
+            "owner": null,
             "name": "MAC",
             "descriptions": "Apple Mac Pro M2 Ultra — сочетает в себе невероятную производительность, широкие возможности подключения, обеспечивая легкий доступ ко всему, что вам нужно, и превращая любое пространство в студию. M2 Ultra обеспечивает мощность для решения задач практически любого масштаба. Независимо от того, запускаете ли вы несколько приложений, сортируете и редактируете тысячи фотографий, записываете и микшируете музыку профессионального качества или открываете экзопланету, молниеносный M2 Ultra поддержит вас.",
             "image_item": "",
@@ -774,6 +783,7 @@
         "model": "catalog.product",
         "pk": 11,
         "fields": {
+            "owner": null,
             "name": "Xiaomi Redmi",
             "descriptions": "Смартфон Xiaomi Redmi Note 13 Pro+ обладает 8-ядерным процессором и 12 ГБ оперативной памяти. Аппаратное оснащение гарантирует запуск и навигацию между приложениями без промедлений. Частота обновления 6.67-дюймового дисплея составляет 120 Гц. Пользователи отметят своевременную смену кадров при трансляции динамичных сцен. AMOLED-матрица способствует отображению насыщенных цветов и глубокого черного оттенка без бликов.\r\nСмартфон Xiaomi Redmi Note 13 Pro+ оснащен 3-модульной камерой с электронной стабилизацией, не допускающей смазывание кадра. С макросъемкой возможно создание снимка с небольшого расстояния. Двойная светодиодная вспышка усиливает яркость в условиях недостаточного освещения. Хранение файлов производится во встроенной памяти объемом 512 ГБ. Технология Dolby Atmos обеспечивает воспроизведение объемного звука.",
             "image_item": "",
@@ -794,6 +804,7 @@
         "model": "catalog.product",
         "pk": 12,
         "fields": {
+            "owner": null,
             "name": "ROG strix",
             "descriptions": "Ноутбук ASUS ROG Strix G614JI-N4148 оборудован дискретной видеокартой GeForce RTX 4070, которая обеспечивает мгновенную смену кадров во время напряженных игровых сессий. Раскрытие пластиковой крышки стандартное. Экран диагональю 16 дюймов сконструирован по IPS-технологии. Она гарантирует охват широкой палитры цветов и трансляцию контрастных изображений.\r\nНоутбук ASUS ROG Strix G614JI-N4148 работает под управлением 14-ядерного процессора Intel Core i7-13650HX и 16 ГБ оперативной памяти. Аппаратное оснащение справляется с быстрым запуском приложений и позволяет серфить между окнами без малейших промедлений. Для подключения дополнительного монитора и увеличения продуктивности предусмотрен HDMI-выход. RGB-подсветка исключает погрешности ввода при недостаточном внешнем освещении.",
             "image_item": "",
@@ -814,6 +825,7 @@
         "model": "catalog.product",
         "pk": 13,
         "fields": {
+            "owner": null,
             "name": "Asus Zenbook 14",
             "descriptions": "Ноутбук ASUS ZenBook 14 UM3402YA-KP602 работает на основе 8-ядерного AMD Ryzen 7 7730U и 16 ГБ оперативной памяти. Вычислительная мощность обеспечивает быструю навигацию между требовательными программами и обработку файлов большого объема. Алюминиевая крышка раскрывается на 180 градусов, позволяя комфортно просматривать и демонстрировать материалы. Сканер отпечатка пальцев защищает данные от несанкционированного доступа.\r\nНоутбук ASUS ZenBook 14 UM3402YA-KP602 оборудован 14-дюймовым экраном с матовым покрытием, которое предупреждает искажение цветов. Разрешение 2560x1600 пикселей выступает гарантом четкости мельчайших элементов. Энергия аккумулятора рассчитана на 22 ч автономного использования функционала. Интерфейс Bluetooth 5.3 помогает с подключением периферии. На хранение файлов отведен 1 ТБ.",
             "image_item": "",
@@ -834,6 +846,7 @@
         "model": "catalog.product",
         "pk": 14,
         "fields": {
+            "owner": null,
             "name": "IPhone 16",
             "descriptions": "Смартфон Apple iPhone 16 привлекает внимание безрамочным дисплеем 6.1\r\nРазрешение 2556x1179 dpi сохраняет четкость и насыщенность картинки, точную передачу цвета при любом освещении. 6-ядерный процессор Apple A16 Bionic с ОЗУ 6 ГБ гарантирует высокий уровень производительности.\r\n2 тыловые камеры 48 +12 Мп позволяют делать эффектные фото и видео с углом обзора 120° и 4K-разрешением.",
             "image_item": "",
@@ -854,6 +867,7 @@
         "model": "catalog.product",
         "pk": 15,
         "fields": {
+            "owner": null,
             "name": "IPhone 16 Plus",
             "descriptions": "iPhone 16 Plus получил корпус со скругленными краями и матовым покрытием. У смартфона 6,7-дюймовый OLED-дисплей с пиковой яркостью 2000 нит. Вместо челки в верхней части дисплея овальный разрез Dynamic Island.\r\nТыльная камера двойная, с диагональным расположением датчиков. Главный сенсор 48-мегапиксельный, ширик 12-мегапиксельный с возможностью съемки с 2-кратным приближением без потери качества. Фронтальная камера 12-мегапиксельная. iPhone 15 Plus умеет снимать видео в 4K при 60 fps. Есть специальный кинематографический режим съемки.\r\nАппаратная основа унаследована от iPhone 15 Pro и iPhone 14 Pro Max. Это чипсет A16 Bionic. Энергоэффективность в сравнении с iPhone 15 выросла. Объем оперативной памяти равен 6 ГБ.\r\nЕмкость батареи iPhone 15 Plus составляет 4912 мАч. Apple гарантирует беспроблемную работу в течение дня. Еще одно важное нововведение — порт USB-C, который заменил Lightning.\r\niPhone 15 Plus умеет связываться со спутником и посылать сигнал SOS. Внутри чип U2, повышающий точность геолокации. Apple также оснастила смартфон шумодавом последнего поколения, который работает при разговорах.",
             "image_item": "",
@@ -874,6 +888,7 @@
         "model": "catalog.product",
         "pk": 16,
         "fields": {
+            "owner": null,
             "name": "IPhone 16 Pro",
             "descriptions": "Аппаратной основой Apple iPhone 16 Pro стал 3-нанометровый чипсет A17 Pro с 6-ядерным GPU и поддержкой трассировки лучей. Чип выдает высочайшую производительность в играх. Также имеется 16-ядерный Neural Engine, который обрабатывает 35 миллионов операций в секунду.\r\nКорпус смартфона изготовлен из титана 5-го класса (такой, например, используется в космическом ровере NASA). Титан прочнее, легче и долговечнее, чем алюминий и сталь. У iPhone 15 Pro нет физического переключателя для перехода в бесшумный режим. На его месте расположена программируемая кнопка, которая реагирует на силу нажатия. С ее помощью можно, например, включить камеру или фонарик.\r\nУ iPhone 16 Pro 6,1-дюймовый OLED-дисплей с разрешением 2556 × 1179 пикселей, кадровой частотой 120 Гц и пиковой яркостью 2000 нит.\r\nОсновная камера состоит из трех сенсоров. Главный на 48 Мп. Пользователь может выбрать фокусное расстояние — 24, 28 или 35 мм. Также у смартфона ширик и телевик с 3-кратным оптическим зумом на 12 Мп.\r\niPhone 16 Pro получил порт USB-C с поддержкой USB 3 и скоростью передачи данных до 10 Гбит/с. Операционная система — iOS 17.",
             "image_item": "",
@@ -894,6 +909,7 @@
         "model": "catalog.product",
         "pk": 50,
         "fields": {
+            "owner": null,
             "name": "Huawei nova 12i 8/256Gb",
             "descriptions": "expedita magni id tenetur tempore quae similique neque adipisci rem alias aliquid modi iusto omnis molestiae ullam eos itaque praesentium voluptates voluptas sit doloribus laboriosam corporis illum quasi reprehenderit voluptatibus quibusdam porro earum et inventore illo beatae ipsum soluta nulla excepturi maxime harum dolore aut unde est incidunt ab corrupti",
             "image_item": "",
@@ -914,6 +930,7 @@
         "model": "catalog.product",
         "pk": 51,
         "fields": {
+            "owner": null,
             "name": "REALME C53 6/128Gb",
             "descriptions": "cupiditate aliquam pariatur rerum ut reiciendis architecto molestiae inventore exercitationem ab provident a ipsam deleniti saepe quasi perferendis ad hic eum sed itaque amet accusantium animi et sapiente voluptatem nihil enim magnam in libero laboriosam dolor soluta voluptatum quae cum repudiandae sequi eligendi ea ratione porro earum sit sint incidunt",
             "image_item": "",
@@ -934,6 +951,7 @@
         "model": "catalog.product",
         "pk": 52,
         "fields": {
+            "owner": null,
             "name": "Samsung Galaxy A15 8/256Gb",
             "descriptions": "temporibus minima molestiae tenetur culpa eum delectus perferendis corrupti quae ratione numquam obcaecati vitae quisquam tempore distinctio doloremque nobis beatae dolore dicta sapiente dolorem soluta quas consequuntur alias veniam natus dignissimos fugit sit odit quos saepe doloribus aspernatur officiis quis iste libero excepturi deserunt fuga repudiandae expedita dolores id vel",
             "image_item": "",
@@ -954,6 +972,7 @@
         "model": "catalog.product",
         "pk": 53,
         "fields": {
+            "owner": null,
             "name": "Xiaomi Poco X5 5G 8/256Gb",
             "descriptions": "ullam obcaecati aut quos officiis quidem earum ipsa repellat architecto nostrum illum cumque eveniet quaerat harum consequuntur ipsam quisquam hic deserunt placeat cupiditate asperiores ratione ab numquam natus sed voluptatum perspiciatis in aspernatur velit tenetur dolores veniam delectus nihil aperiam ad fugit suscipit sint iste temporibus possimus illo saepe soluta",
             "image_item": "",
@@ -974,6 +993,7 @@
         "model": "catalog.product",
         "pk": 54,
         "fields": {
+            "owner": null,
             "name": "Xiaomi Redmi A2+ 3/64Gb",
             "descriptions": "consequuntur cumque hic consectetur quae asperiores et aliquam voluptas recusandae perferendis nostrum fuga doloribus ipsa enim nulla minima vero voluptatibus molestias voluptate blanditiis necessitatibus sed rerum nisi suscipit dolorem a quos ea ad reprehenderit non deserunt sit quaerat quas officia autem unde vel sapiente incidunt atque error inventore quidem quam",
             "image_item": "",
@@ -994,6 +1014,7 @@
         "model": "catalog.product",
         "pk": 55,
         "fields": {
+            "owner": null,
             "name": "Samsung Galaxy A54 5G 6/128Gb",
             "descriptions": "sapiente nesciunt eveniet iste magni non numquam exercitationem sequi corporis tempora sint quae excepturi aut fugiat architecto assumenda sit eum voluptatum dolores ducimus ratione dolore consectetur earum minus quod consequatur commodi veritatis doloremque ipsum possimus molestias labore culpa delectus quaerat facere iusto soluta esse asperiores saepe reprehenderit enim officia eligendi",
             "image_item": "",
@@ -1014,6 +1035,7 @@
         "model": "catalog.product",
         "pk": 56,
         "fields": {
+            "owner": null,
             "name": "Honor X9a 5G 6/128Gb",
             "descriptions": "recusandae consectetur nisi at a ratione culpa saepe placeat tempora inventore ea asperiores excepturi ex nulla delectus tenetur accusamus repudiandae aperiam molestiae sed eligendi non natus voluptatem reiciendis sunt quae illo ipsam distinctio molestias similique minus consequuntur perspiciatis labore officiis minima quo ducimus nobis ipsa repellat doloribus dolorum facere aut",
             "image_item": "",
@@ -1034,6 +1056,7 @@
         "model": "catalog.product",
         "pk": 57,
         "fields": {
+            "owner": null,
             "name": "Samsung Galaxy S22 8/256Gb",
             "descriptions": "mollitia exercitationem nobis consequatur sequi quod ea odio ullam tenetur nam quas soluta temporibus maiores facilis omnis debitis repudiandae fuga eum ratione a molestias minima ut fugiat perferendis inventore quasi maxime molestiae recusandae ab alias iste quibusdam non corrupti incidunt aliquid veritatis facere eos nemo quo quam vitae magnam tempore",
             "image_item": "",
@@ -1054,6 +1077,7 @@
         "model": "catalog.product",
         "pk": 58,
         "fields": {
+            "owner": null,
             "name": "Apple iPhone 14 128Gb",
             "descriptions": "ratione minima illo ipsam quia modi ex totam non eos quo reiciendis dicta incidunt minus dolore voluptas eaque repudiandae tempore est aut quae nostrum rem quasi error tenetur numquam possimus eius veritatis corporis libero ab quaerat pariatur maxime aperiam doloribus neque similique saepe iste vitae molestiae eum repellat voluptatem illum",
             "image_item": "",
@@ -1074,6 +1098,7 @@
         "model": "catalog.product",
         "pk": 59,
         "fields": {
+            "owner": null,
             "name": "Apple iPhone 15 Pro Max 1Tb",
             "descriptions": "itaque animi deserunt dolorum illum ex ea qui corrupti possimus assumenda consequuntur consequatur repellat repellendus error vel quia minus nemo modi aspernatur at dolorem similique veniam distinctio suscipit tenetur necessitatibus alias illo sed impedit sequi dolor non cum perferendis labore quidem molestiae quam asperiores doloribus quod fugit tempore sapiente ullam",
             "image_item": "",
@@ -1094,6 +1119,7 @@
         "model": "catalog.product",
         "pk": 60,
         "fields": {
+            "owner": null,
             "name": "Samsung Galaxy S24 Ultra 5G 12/1Tb",
             "descriptions": "praesentium dolore quos numquam voluptatem voluptas quibusdam animi non blanditiis aliquam obcaecati molestiae ipsa sed quam necessitatibus sunt dolor quas suscipit ratione in quisquam inventore laboriosam vero ea expedita nulla odio molestias repellendus quasi debitis architecto nisi ipsum totam nesciunt nam ut impedit voluptatibus ducimus aspernatur est unde placeat iure",
             "image_item": "",
@@ -1114,6 +1140,7 @@
         "model": "catalog.product",
         "pk": 61,
         "fields": {
+            "owner": null,
             "name": "Samsung Galaxy Z Fold 5 5G 12/512Gb",
             "descriptions": "iste assumenda aspernatur maxime illo sed vel id quae labore accusantium nulla ipsum odit eveniet hic ipsam aliquam architecto sunt tempora impedit molestiae iusto saepe enim odio ad aliquid eos repellendus modi rerum inventore quia nobis obcaecati repellat deleniti eius eligendi cumque quam consequatur perspiciatis cum non numquam ab quisquam",
             "image_item": "",
@@ -1134,6 +1161,7 @@
         "model": "catalog.product",
         "pk": 62,
         "fields": {
+            "owner": null,
             "name": "Honor Magic V2 16/512Gb",
             "descriptions": "consequuntur cum maiores commodi eveniet explicabo beatae quasi facere repudiandae possimus excepturi adipisci quos neque fugit ab vero eius rerum libero voluptatibus dolorem delectus ipsam culpa voluptates quas aspernatur autem pariatur similique odio nobis eos impedit laborum quae quo atque ducimus voluptas eum debitis ullam molestiae voluptate nemo temporibus veritatis",
             "image_item": "",
@@ -1154,6 +1182,7 @@
         "model": "catalog.product",
         "pk": 63,
         "fields": {
+            "owner": null,
             "name": "Xiaomi 14 Ultra 16/512Gb",
             "descriptions": "est porro ratione aliquid optio corporis officia omnis tenetur eveniet nostrum numquam sapiente qui maiores earum at maxime saepe distinctio ipsa assumenda eaque aperiam vero delectus quae laborum repellat unde aut molestias accusantium amet iste quod praesentium similique provident necessitatibus consectetur perspiciatis nisi inventore sit deleniti autem dolor ullam quos",
             "image_item": "",
@@ -1174,6 +1203,7 @@
         "model": "catalog.product",
         "pk": 64,
         "fields": {
+            "owner": null,
             "name": "ASUS ROG Phone 7 pro 5G 16/512Gb",
             "descriptions": "incidunt quibusdam perferendis est sapiente sunt provident cupiditate beatae dolorem ratione molestiae deserunt ut voluptas necessitatibus odio quo magnam esse a similique dolore autem nulla quam rem reiciendis at corporis itaque mollitia eveniet repellat excepturi repudiandae omnis aliquam accusantium hic dolores dicta fugit odit tempore doloribus repellendus ad nisi nostrum",
             "image_item": "",
@@ -1194,6 +1224,7 @@
         "model": "catalog.product",
         "pk": 65,
         "fields": {
+            "owner": null,
             "name": "Huawei Mate X3 12/512Gb",
             "descriptions": "maxime alias dolores in suscipit ipsum similique ab exercitationem veniam ad quidem expedita fugiat autem necessitatibus accusantium obcaecati dolor unde nostrum quo porro ut sunt hic eos quod ducimus minima consectetur at ex nisi eum perferendis libero officia laborum voluptatem aspernatur ratione eaque corporis facere repellat tempore adipisci debitis dicta",
             "image_item": "",
@@ -1214,6 +1245,7 @@
         "model": "catalog.product",
         "pk": 66,
         "fields": {
+            "owner": null,
             "name": "Samsung Galaxy S24+ 5G 12/512Gb",
             "descriptions": "quos molestiae ab minus modi eius porro totam quam vero ipsum accusantium enim ratione sapiente suscipit labore nam blanditiis odio saepe maiores cum animi et qui unde aut quas voluptate ex beatae ad inventore deleniti eveniet earum nostrum sunt dolorem soluta repellendus asperiores dolorum dignissimos consequatur sed nemo harum similique",
             "image_item": "",
@@ -1234,6 +1266,7 @@
         "model": "catalog.product",
         "pk": 67,
         "fields": {
+            "owner": null,
             "name": "Samsung Galaxy Z Flip 5 5G 8/512Gb",
             "descriptions": "dolor ratione voluptas perferendis alias reiciendis officiis fugit vel unde possimus illo facilis doloremque odio esse non at dolore consectetur deleniti delectus aliquid est quos enim beatae ullam animi illum dolorum consequatur officia voluptatibus corrupti repudiandae quisquam eum ab iusto aliquam optio tempora atque provident veniam id cumque vitae cum",
             "image_item": "",
@@ -1254,6 +1287,7 @@
         "model": "catalog.product",
         "pk": 68,
         "fields": {
+            "owner": null,
             "name": "ASUS ROG Phone 6D Ultimate 16/512Gb",
             "descriptions": "natus impedit nobis cumque veniam ut magni maiores id adipisci sunt obcaecati ullam perferendis commodi repellat autem inventore recusandae saepe aliquid eligendi vel repudiandae a quas deserunt accusantium similique dicta quos cum magnam placeat officia fuga pariatur deleniti ipsum iste esse aliquam qui et labore enim quasi quidem quaerat temporibus",
             "image_item": "",
@@ -1274,6 +1308,7 @@
         "model": "catalog.product",
         "pk": 71,
         "fields": {
+            "owner": null,
             "name": "Huawei MatePad BTK-W09 11.5",
             "descriptions": "voluptatum reprehenderit eos alias incidunt est temporibus iusto voluptates deserunt ratione voluptate nostrum vitae explicabo inventore numquam nobis qui maxime iure consequuntur amet cupiditate hic voluptatibus saepe atque minus et voluptas perspiciatis id suscipit consequatur nulla ut ex deleniti voluptatem ducimus cumque sint architecto nemo obcaecati dignissimos aspernatur laborum quos",
             "image_item": "",
@@ -1294,6 +1329,7 @@
         "model": "catalog.product",
         "pk": 72,
         "fields": {
+            "owner": null,
             "name": "Samsung Galaxy Tab A9+ SM-X216B 11",
             "descriptions": "perspiciatis aspernatur voluptates aut repellendus velit dolorem culpa eos possimus temporibus omnis consectetur ab maiores ducimus sint vel perferendis saepe quia vero nam laboriosam fugiat eveniet deleniti incidunt iste in beatae aliquam tempora ea nihil reprehenderit cum nesciunt molestiae quae ipsa expedita veritatis tempore accusantium esse soluta autem dolores natus",
             "image_item": "",
@@ -1314,6 +1350,7 @@
         "model": "catalog.product",
         "pk": 73,
         "fields": {
+            "owner": null,
             "name": "Samsung Galaxy Tab S9+ SM-X816B со стилусом 12.4",
             "descriptions": "autem laboriosam nemo facere laborum at aliquid quae reiciendis quisquam fugit cupiditate minima quaerat natus itaque qui animi ratione ab ipsa aut explicabo consequatur placeat quasi enim quam repudiandae error nulla quas quod consequuntur labore vel quibusdam molestias commodi odit similique nesciunt ex nostrum voluptatem porro amet distinctio id atque",
             "image_item": "",
@@ -1334,6 +1371,7 @@
         "model": "catalog.product",
         "pk": 74,
         "fields": {
+            "owner": null,
             "name": "Apple iPad 2022 64Gb Wi-Fi A2696 10.9",
             "descriptions": "temporibus tempora iste accusantium esse porro perferendis amet eligendi nostrum a eius quidem ratione molestiae alias ullam sed repellat voluptatibus pariatur quos asperiores consequuntur rerum consectetur debitis enim mollitia doloribus cum blanditiis itaque incidunt vero reiciendis maxime quo quae fugiat explicabo eos necessitatibus eveniet deleniti tempore qui unde ab commodi",
             "image_item": "",
@@ -1354,6 +1392,7 @@
         "model": "catalog.product",
         "pk": 75,
         "fields": {
+            "owner": null,
             "name": "Apple iPad 2022 256Gb Wi-Fi A2696 10.9",
             "descriptions": "unde saepe hic adipisci odit iusto iure fuga commodi aliquam expedita labore ipsam similique quos quis praesentium nemo ullam quaerat provident sint incidunt nisi vero rem non quasi illo modi deserunt tempora debitis voluptas ut magni dolorum itaque deleniti veritatis eius voluptates necessitatibus quia optio neque aperiam enim doloremque culpa",
             "image_item": "",
@@ -1374,6 +1413,7 @@
         "model": "catalog.product",
         "pk": 76,
         "fields": {
+            "owner": null,
             "name": "Xiaomi Redmi Pad SE 11\"",
             "descriptions": "vel totam ut asperiores in dolorum voluptas suscipit magni dignissimos nihil molestias placeat dolore reprehenderit eveniet voluptatibus minima natus voluptatum ab assumenda odio sequi obcaecati harum iure unde consequatur rerum impedit illo excepturi eligendi ea repellat voluptatem nam blanditiis commodi modi laudantium ex neque sed quo libero eum alias autem",
             "image_item": "",
@@ -1394,6 +1434,7 @@
         "model": "catalog.product",
         "pk": 77,
         "fields": {
+            "owner": null,
             "name": "Apple iPad 2021 64Gb Wi-Fi A2602 10.2",
             "descriptions": "amet doloribus cum ea rem eligendi mollitia impedit itaque repudiandae et officiis consectetur nihil veniam iusto ipsa beatae illo dolore facere repellendus exercitationem laborum ab accusantium voluptate dicta saepe distinctio quod sunt quasi sint eaque iure sequi labore suscipit fugit nisi quisquam nesciunt ullam delectus officia quas accusamus expedita quo",
             "image_item": "",
@@ -1414,6 +1455,7 @@
         "model": "catalog.product",
         "pk": 78,
         "fields": {
+            "owner": null,
             "name": "Lenovo Tab M10 Plus TB125FU 10.61",
             "descriptions": "qui placeat quas harum et nisi expedita nam laborum itaque doloribus esse modi numquam adipisci nemo voluptate tempora minus enim eveniet soluta dolor delectus hic quia corporis molestiae ea iusto facilis fugiat autem maiores aliquid saepe iste sit sapiente eum voluptatem nihil rem dicta ut debitis unde obcaecati distinctio eius",
             "image_item": "",
@@ -1434,6 +1476,7 @@
         "model": "catalog.product",
         "pk": 79,
         "fields": {
+            "owner": null,
             "name": "Xiaomi Pad 6 23043RP34G 11",
             "descriptions": "hic minus tenetur modi nulla ullam incidunt itaque accusantium cum ipsam pariatur nostrum cumque quod perspiciatis temporibus illo expedita qui nesciunt perferendis a autem assumenda voluptatum quaerat iste omnis velit iure sit nobis rem est optio alias inventore deserunt labore suscipit facilis in quam saepe magnam commodi placeat quo veniam",
             "image_item": "",
@@ -1454,6 +1497,7 @@
         "model": "catalog.product",
         "pk": 80,
         "fields": {
+            "owner": null,
             "name": "Honor Pad 9 HEY2-W09 12.1",
             "descriptions": "odit omnis incidunt consequuntur officiis nisi magnam repudiandae quas accusamus cumque placeat quasi sapiente nesciunt est unde consectetur sint aspernatur dolorem nulla nemo autem id nostrum at quia modi impedit vero nobis cum fugit qui facilis quod mollitia numquam quo tempora hic suscipit commodi perspiciatis repellat ducimus quis itaque quisquam",
             "image_item": "",
@@ -1474,6 +1518,7 @@
         "model": "catalog.product",
         "pk": 81,
         "fields": {
+            "owner": null,
             "name": "Honor Pad X9 Eileen-L09D 11.5",
             "descriptions": "dignissimos cupiditate amet corporis nulla reprehenderit obcaecati molestiae vitae illum veritatis placeat voluptatum labore commodi mollitia facere ipsum necessitatibus reiciendis maiores nihil nisi magni quod at deserunt illo ut distinctio eveniet soluta sapiente culpa pariatur quaerat minus ullam expedita non ducimus odio saepe molestias fuga inventore perspiciatis aspernatur dolor unde",
             "image_item": "",
@@ -1494,6 +1539,7 @@
         "model": "catalog.product",
         "pk": 82,
         "fields": {
+            "owner": null,
             "name": "Samsung Galaxy Tab S9 Ultra SM-X916B со стилусом 14.6",
             "descriptions": "sed eligendi possimus animi a cumque pariatur ad asperiores nam porro nostrum quaerat dolor dolorem perferendis maiores accusantium quasi perspiciatis voluptates aliquid beatae fugiat id nobis quisquam ipsa ex aliquam doloremque deserunt blanditiis corrupti nulla vero eius molestiae sit quas earum aut praesentium reprehenderit enim ullam similique magnam non ea",
             "image_item": "",
@@ -1514,6 +1560,7 @@
         "model": "catalog.product",
         "pk": 143,
         "fields": {
+            "owner": null,
             "name": "MSI Titan 18 HX A14VIG-211RU",
             "descriptions": "tenetur asperiores libero recusandae inventore vel dolorem dolore explicabo sed provident neque vero dicta reiciendis at corrupti incidunt ipsa consequuntur sequi reprehenderit laborum enim consectetur atque autem possimus esse quod voluptatibus est earum fuga illo eum repellendus delectus accusamus deleniti eaque voluptates labore nemo quam odio expedita soluta error ipsam",
             "image_item": "",
@@ -1534,6 +1581,7 @@
         "model": "catalog.product",
         "pk": 144,
         "fields": {
+            "owner": null,
             "name": "MSI Creator 16 AI Studio A1VIG-060RU",
             "descriptions": "saepe dicta possimus incidunt ex accusantium consectetur voluptatem quasi culpa ad rem nihil repellat deleniti corrupti exercitationem quam nam veniam doloribus molestiae eligendi officia facere vel esse placeat fuga assumenda dolor mollitia excepturi fugit cumque voluptatum totam soluta iusto doloremque accusamus ipsa perspiciatis adipisci architecto natus cupiditate quia hic ratione",
             "image_item": "",
@@ -1554,6 +1602,7 @@
         "model": "catalog.product",
         "pk": 145,
         "fields": {
+            "owner": null,
             "name": "ASUS ROG Zephyrus Duo 16 GX650PY-NM085W",
             "descriptions": "deserunt tempore quis voluptate quibusdam officiis fugit nisi ratione tenetur laboriosam magnam harum inventore vitae maiores architecto voluptates necessitatibus doloribus voluptatem nostrum dicta non explicabo quas nemo veniam eaque provident mollitia voluptas aliquid corporis cumque facere sunt natus ut repellendus dolores nobis deleniti rerum quod sint aut minus similique sapiente",
             "image_item": "",
@@ -1574,6 +1623,7 @@
         "model": "catalog.product",
         "pk": 146,
         "fields": {
+            "owner": null,
             "name": "MSI Stealth 16 AI Studio A1VIG-062RU",
             "descriptions": "earum numquam veniam ipsam vero rerum dolorum corporis nobis facere a magnam voluptatibus ducimus ex nemo et assumenda nostrum exercitationem reiciendis animi dicta modi id voluptate ea unde quidem adipisci doloribus fuga officia aperiam nulla expedita accusamus sed quasi ipsa voluptatem cum saepe nam sunt soluta eaque minima in tempore",
             "image_item": "",
@@ -1594,6 +1644,7 @@
         "model": "catalog.product",
         "pk": 147,
         "fields": {
+            "owner": null,
             "name": "MSI CreatorPro X17 HX A13VKS-267RU",
             "descriptions": "maxime quam temporibus voluptate neque modi nisi sint quas at odit ipsum sit rerum velit dolorum porro perspiciatis hic voluptatem blanditiis consectetur expedita quis voluptates consequuntur assumenda quia quisquam aliquam quos dolorem saepe excepturi quibusdam harum unde sequi sapiente eum delectus aliquid minima dicta amet natus tenetur laborum magnam dolore",
             "image_item": "",
@@ -1614,6 +1665,7 @@
         "model": "catalog.product",
         "pk": 148,
         "fields": {
+            "owner": null,
             "name": "ASUS ROG Strix Scar 18 G834JYR-R6080W",
             "descriptions": "fugiat eaque temporibus cumque inventore ratione blanditiis dicta at sunt nemo qui praesentium similique porro id culpa architecto ut eius tenetur cum modi maxime itaque esse aspernatur error obcaecati excepturi ducimus sed nisi nesciunt molestiae consequatur possimus doloremque expedita aut exercitationem ipsum iure molestias veritatis quia repudiandae optio incidunt delectus",
             "image_item": "",
@@ -1634,6 +1686,7 @@
         "model": "catalog.product",
         "pk": 149,
         "fields": {
+            "owner": null,
             "name": "MSI Creator Z17 HX Studio A14VGT-267RU",
             "descriptions": "cumque qui repellat possimus sequi magnam incidunt quibusdam illum animi necessitatibus dolore amet tenetur aperiam in tempora esse reiciendis labore ipsum provident architecto nemo perferendis minima facere vel doloribus non obcaecati porro modi deserunt voluptatem maiores expedita autem a maxime consequuntur distinctio illo nam totam eum repudiandae aut sunt laboriosam",
             "image_item": "",
@@ -1654,6 +1707,7 @@
         "model": "catalog.product",
         "pk": 150,
         "fields": {
+            "owner": null,
             "name": "Samsung Galaxy Book 3 Ultra NP960 NP960XFH-XA1IN",
             "descriptions": "obcaecati repudiandae delectus fuga dicta maxime animi molestiae accusamus deleniti commodi voluptate quibusdam excepturi laborum rerum alias optio deserunt inventore in sint voluptates a harum est quis perferendis at amet maiores repellendus magnam sit saepe dolorum doloremque aperiam expedita vel doloribus illum cumque incidunt quod facere vero necessitatibus provident voluptatem",
             "image_item": "",
@@ -1674,6 +1728,7 @@
         "model": "catalog.product",
         "pk": 151,
         "fields": {
+            "owner": null,
             "name": "ASUS Zenbook Pro 16X OLED UX7602VI-MY073X",
             "descriptions": "recusandae tempora exercitationem dolorem sed distinctio perferendis dolore pariatur quos molestiae quod animi veniam impedit nemo laboriosam sequi modi quae et sunt assumenda voluptatum natus aspernatur soluta adipisci a fuga ab illum nihil nulla at velit labore fugiat cupiditate dicta voluptas placeat ipsa quis incidunt vel hic amet quo minus",
             "image_item": "",
@@ -1694,6 +1749,7 @@
         "model": "catalog.product",
         "pk": 152,
         "fields": {
+            "owner": null,
             "name": "Lenovo ThinkPad X1 Carbon Gen 10 21CB0068RT",
             "descriptions": "sunt distinctio in nemo iure magni est repellendus earum velit necessitatibus eaque corporis iusto laudantium nisi atque vitae eum quo consequatur mollitia voluptatem deserunt natus molestiae adipisci dolorem quia assumenda explicabo dolorum non labore incidunt possimus voluptas delectus officiis consequuntur laboriosam odit et quibusdam debitis illo rerum corrupti recusandae dolore",
             "image_item": "",
@@ -1714,6 +1770,7 @@
         "model": "catalog.product",
         "pk": 153,
         "fields": {
+            "owner": null,
             "name": "DELL XPS 15 9530 9530-4160",
             "descriptions": "suscipit fuga omnis neque natus laudantium blanditiis ratione quidem nesciunt deserunt ex maiores necessitatibus harum obcaecati quos illo veritatis veniam expedita eius aliquam a ipsum non excepturi magnam ullam dolore quo ipsam nobis quaerat doloribus perferendis velit sunt dolorem beatae odio animi laboriosam voluptates porro explicabo placeat sit accusamus doloremque",
             "image_item": "",
@@ -1734,6 +1791,7 @@
         "model": "catalog.product",
         "pk": 154,
         "fields": {
+            "owner": null,
             "name": "DELL XPS 13 9320 9320-4317",
             "descriptions": "error sequi possimus quam nam hic soluta deleniti laudantium est temporibus esse enim fuga nihil quae minus corrupti veniam nobis doloremque adipisci exercitationem fugiat quibusdam rem ipsum inventore suscipit ducimus cupiditate rerum unde sint beatae tempore eveniet facilis libero eum saepe mollitia impedit ex corporis ullam iure itaque magni quo",
             "image_item": "",
@@ -1754,6 +1812,7 @@
         "model": "catalog.product",
         "pk": 155,
         "fields": {
+            "owner": null,
             "name": "HP Omen 16-wf0032ci",
             "descriptions": "veniam nisi alias cum voluptatem eum distinctio quis esse fugiat mollitia cumque facilis molestias quia reprehenderit eaque quaerat incidunt saepe atque delectus voluptatum corporis quibusdam laborum aliquam hic minus ad sit magnam labore tenetur iusto aperiam itaque illum voluptas facere quam sequi vero vel enim unde blanditiis ipsam consequatur aspernatur",
             "image_item": "",
@@ -1774,6 +1833,7 @@
         "model": "catalog.product",
         "pk": 156,
         "fields": {
+            "owner": null,
             "name": "HP Spectre x360 16-f1028nn",
             "descriptions": "velit dicta veritatis odit molestiae nostrum deserunt fuga ipsum sapiente autem nisi sit similique eaque explicabo dolorum soluta mollitia necessitatibus quasi temporibus eveniet laborum iusto earum culpa odio exercitationem suscipit ab molestias ipsam esse consequatur provident reiciendis distinctio dolore vitae eos eligendi illum hic architecto porro nihil possimus incidunt quibusdam",
             "image_item": "",
@@ -1794,6 +1854,7 @@
         "model": "catalog.product",
         "pk": 157,
         "fields": {
+            "owner": null,
             "name": "ASUS ROG Flow GV601VI-NL055W",
             "descriptions": "quisquam praesentium qui eveniet harum iure natus perspiciatis dolores quaerat odio sapiente nostrum voluptas assumenda placeat aperiam numquam ipsum culpa tempore doloribus ex mollitia dicta at quia atque deleniti repudiandae temporibus ducimus molestiae error dolorem laborum cum corporis accusantium inventore fuga obcaecati aut sequi aliquid consequatur doloremque dolorum ipsam a",
             "image_item": "",
@@ -1814,6 +1875,7 @@
         "model": "catalog.product",
         "pk": 158,
         "fields": {
+            "owner": null,
             "name": "MSI Pulse 17 AI C1VGKG-023RU",
             "descriptions": "voluptatibus consequuntur repellat minus maxime libero molestias aliquid delectus fuga atque dolorum doloremque voluptate ut omnis nam quaerat sit illum obcaecati nihil earum officia expedita beatae eligendi aperiam velit saepe harum perferendis accusantium voluptatum soluta illo dolor temporibus hic impedit porro exercitationem blanditiis explicabo repudiandae sed odit sint magnam praesentium",
             "image_item": "",
@@ -1834,6 +1896,7 @@
         "model": "catalog.product",
         "pk": 159,
         "fields": {
+            "owner": null,
             "name": "MSI Vector 16 HX A14VGG-283RU",
             "descriptions": "sapiente ad eum consectetur qui consequatur atque molestias laborum nisi magni repudiandae tenetur nobis dolores et impedit reiciendis labore iusto explicabo debitis amet fuga doloribus quis maxime ducimus quisquam adipisci neque natus asperiores a numquam quod quasi illo earum iste omnis quam unde id laudantium libero saepe eius enim aliquam",
             "image_item": "",
@@ -1854,6 +1917,7 @@
         "model": "catalog.product",
         "pk": 160,
         "fields": {
+            "owner": null,
             "name": "MSI Raider GE77HX 12UHS-232RU",
             "descriptions": "tempora voluptate aliquid esse incidunt perferendis iste quasi non unde magnam ipsam a facilis quas doloribus molestiae eaque ducimus qui ad ut repellendus placeat reiciendis recusandae illo eligendi odit omnis iure dolores blanditiis possimus accusantium voluptatibus aliquam amet impedit cum asperiores explicabo dolor mollitia nobis sit nesciunt quod dignissimos odio",
             "image_item": "",
@@ -1874,6 +1938,7 @@
         "model": "catalog.product",
         "pk": 161,
         "fields": {
+            "owner": null,
             "name": "Lenovo ThinkPad X1 Carbon G10",
             "descriptions": "unde aut iure sit maiores illum facilis delectus quia architecto eveniet veniam repellat voluptas quos mollitia minima et sint perferendis maxime quod error voluptates explicabo harum provident ullam quam veritatis cum iusto impedit hic dolorem ea ipsa vero incidunt necessitatibus qui enim soluta laborum sequi animi iste minus nam rem",
             "image_item": "",
@@ -1894,6 +1959,7 @@
         "model": "catalog.product",
         "pk": 162,
         "fields": {
+            "owner": null,
             "name": "MSI Summit E16 AI Studio A1VETG-017RU",
             "descriptions": "eius molestiae rem harum maxime dolor maiores aperiam eaque iste cum quas accusamus doloribus veniam consequuntur autem delectus quis ab sed esse amet eligendi perspiciatis temporibus nisi illum libero mollitia atque voluptatem commodi reiciendis aliquam quos quae tenetur sit dolores aut quisquam deleniti ipsum explicabo ut deserunt placeat numquam sequi",
             "image_item": "",
@@ -1914,6 +1980,7 @@
         "model": "catalog.product",
         "pk": 163,
         "fields": {
+            "owner": null,
             "name": "MSI Prestige 16 AI Studio B1VEG-080RU",
             "descriptions": "nostrum placeat enim tenetur ipsam provident porro officia modi qui tempora temporibus magni molestias harum laborum aspernatur quia aut quos possimus quibusdam ipsum eveniet dignissimos cum sapiente hic iusto dicta nesciunt veniam voluptas eum repellat quaerat ut id consequuntur doloremque explicabo quas non aliquid quasi at ex soluta sit architecto",
             "image_item": "",
@@ -1934,6 +2001,7 @@
         "model": "catalog.product",
         "pk": 164,
         "fields": {
+            "owner": null,
             "name": "Samsung Galaxy Book 3 Pro NP944",
             "descriptions": "adipisci sit rem architecto minus quia enim itaque harum debitis odio at aut reiciendis mollitia labore quas delectus sunt neque quae deleniti perspiciatis accusamus voluptas laudantium magni magnam vel tempore dignissimos deserunt tempora tenetur veniam doloribus eveniet rerum fuga esse facere illo ex vitae voluptatem odit quod commodi ipsum vero",
             "image_item": "",
@@ -1954,6 +2022,7 @@
         "model": "catalog.product",
         "pk": 165,
         "fields": {
+            "owner": null,
             "name": "Apple MacBook Air A2681",
             "descriptions": "at voluptatum provident saepe nostrum praesentium eos fugiat consequatur quia iste ad labore fugit minus qui ea itaque est mollitia expedita exercitationem dicta eaque autem dolor hic error cumque commodi voluptas harum quisquam doloremque esse architecto quaerat iusto quae quod eligendi veritatis ex quo consequuntur quis totam omnis corrupti soluta",
             "image_item": "",
@@ -1974,6 +2043,7 @@
         "model": "catalog.product",
         "pk": 166,
         "fields": {
+            "owner": null,
             "name": "ASUS Vivobook Pro 16X OLED K6604JV-MX112W",
             "descriptions": "minus hic soluta quos aperiam quisquam earum voluptatum nihil iure placeat sunt itaque voluptatem alias saepe accusantium aliquid qui reiciendis rem temporibus asperiores omnis aut aspernatur labore commodi suscipit pariatur explicabo ea rerum accusamus autem amet et vitae aliquam nobis obcaecati eum facilis adipisci perferendis laborum repellat fuga debitis fugiat",
             "image_item": "",
@@ -1994,6 +2064,7 @@
         "model": "catalog.product",
         "pk": 167,
         "fields": {
+            "owner": null,
             "name": "Lenovo Legion Slim 5 16IRH8",
             "descriptions": "tempore earum laborum eos nobis qui repellendus obcaecati enim dolor voluptatem quae id perspiciatis atque iusto neque sed culpa ipsam ad vero quod impedit adipisci doloribus distinctio incidunt omnis aliquam nisi debitis expedita natus placeat deserunt a illum nostrum iure voluptate voluptatibus ex ratione quaerat voluptates facere laudantium veritatis voluptatum",
             "image_item": "",
@@ -2014,6 +2085,7 @@
         "model": "catalog.product",
         "pk": 168,
         "fields": {
+            "owner": null,
             "name": "ASUS ExpertBook B9 B9403CVA-KM0499X",
             "descriptions": "provident minima id itaque similique labore quaerat ullam sunt a fugiat voluptate delectus eligendi ipsam deleniti consequatur maiores iste suscipit soluta tempora inventore dolorem sint accusamus cum vero molestiae totam autem porro odio distinctio sequi praesentium quam atque veritatis assumenda cumque quidem hic nostrum quasi magnam odit voluptatem ab reiciendis",
             "image_item": "",
@@ -2034,6 +2106,7 @@
         "model": "catalog.product",
         "pk": 169,
         "fields": {
+            "owner": null,
             "name": "MSI Sword 17 HX B14VGKG-048XRU",
             "descriptions": "vero itaque voluptatem unde blanditiis omnis quisquam alias atque molestias ipsam iste maiores odit tempore quidem ducimus officia perspiciatis ex placeat quod doloribus enim magnam autem consequuntur dolor quasi quo facilis amet libero at accusamus est aperiam officiis accusantium vitae eligendi modi nulla laborum illum voluptas error sit exercitationem sunt",
             "image_item": "",
@@ -2054,6 +2127,7 @@
         "model": "catalog.product",
         "pk": 170,
         "fields": {
+            "owner": null,
             "name": "ASUS TUF Gaming A15 FA507UI-HQ059",
             "descriptions": "expedita perspiciatis neque optio maxime minus quos esse fugit doloremque velit magnam voluptatum ratione consequatur repellendus quae sed amet quas molestias hic quisquam repellat numquam facilis a ea eius soluta voluptatem voluptate dignissimos assumenda veritatis aliquid culpa incidunt perferendis libero accusantium beatae ut consequuntur eos reprehenderit dolorem quasi aperiam laudantium",
             "image_item": "",
@@ -2074,6 +2148,7 @@
         "model": "catalog.product",
         "pk": 171,
         "fields": {
+            "owner": null,
             "name": "Lenovo Legion Slim 5 16APH8 ",
             "descriptions": "numquam itaque exercitationem unde quasi voluptate tenetur accusamus quia voluptatem repellat obcaecati perferendis nostrum veniam dolor qui aut alias cum atque molestias ea est libero cumque inventore sit quod expedita porro commodi praesentium voluptates impedit amet recusandae similique vero rem maxime quibusdam in neque placeat quidem facere provident sequi quisquam",
             "image_item": "",
@@ -2094,6 +2169,7 @@
         "model": "catalog.product",
         "pk": 172,
         "fields": {
+            "owner": null,
             "name": "Lenovo LOQ 15IRH8",
             "descriptions": "quidem amet expedita reprehenderit placeat sint saepe totam nisi fugit necessitatibus soluta quibusdam repellat sapiente vel blanditiis tenetur porro deserunt est vitae eius minus maiores magnam dolorem ratione laboriosam odio distinctio neque quia officia molestias laborum rem quasi modi suscipit nobis asperiores quam tempora sit maxime nostrum praesentium ut earum",
             "image_item": "",
@@ -2114,6 +2190,7 @@
         "model": "catalog.product",
         "pk": 173,
         "fields": {
+            "owner": null,
             "name": "Honor 90 Lite 5G 8/256Gb",
             "descriptions": "Смартфон Honor 90 Lite 5G оптимально подходит для голосовой и текстовой связи, доступа к интернету, работы и развлечений. Сканер отпечатка пальца позволяет легко разблокировать устройство и защищает от постороннего доступа.  диагональ экрана: 6.7; разрешение: 2388x1080; оперативная память: 8 Гб; внутренний накопитель: 256 Гб; емкость аккумулятора: 4500 мАч.  Качественный экран IPS-дисплей передает насыщенные цвета и обеспечивает широкие углы обзора. Высокая частота обновления экрана делает динамичные сцены четкими и снижает нагрузку на зрение. Плотность пикселей составляет 391 PPI, что дает возможность рассмотреть мельчайшие детали на изображении. Производительная система Большой объем оперативной памяти позволяет работать с несколькими приложениями одновременно без ущерба производительности. Мощный 8-ядерный процессор MediaTek Dimensity 6020 позволяет справиться с задачами любой сложности. Смартфон поддерживает все современные приложения и игры. Длительная работа без подзарядки Встроенный литий-полимерный аккумулятор способен поддерживать работу устройства на протяжении 31 часа в режиме разговора. При помощи кабеля Type-C пользователь может легко подзарядить смартфон в любом месте.",
             "image_item": "",
@@ -2134,6 +2211,7 @@
         "model": "catalog.product",
         "pk": 174,
         "fields": {
+            "owner": null,
             "name": "Honor X9a 5G 8/256Gb",
             "descriptions": "Honor X9a 5G &mdash; среднебюджетный смартфон с достойными техническими и эксплуатационными характеристиками, высококачественным дисплеем и красивым дизайном. Яркий AMOLED-дисплей Модель оснащена антибликовым экраном с AMOLED-матрицей, обеспечивающей глубокий чёрный цвет, высокую контрастность, широкий угол обзора, равномерную подсветку и низкое энергопотребление. Его разрешение составляет 1080х2400 рх. Тонкая рамка дисплея не мешает просмотру мультимедиа или чтению документов/книг. Лицевая поверхность дисплея выполнена из прочной стеклянной пластины, устойчивой к потёртостям и царапинам. Достоинства камер Модель имеет три камеры: основную 64 Мп, f/1/8, широкоугольную 5 Мп, f/2.2 и макро 2 Мп, f/2.4. Такое оснащение позволяет устройству делать красивые, детализированные фотографии, а также работать в различных эффектах. Основная камера оснащена сверхбыстрым фазовым автофокусом. Производительность Установленного 8-ядерного процессора Qualcomm Snapdragon 695 и 8 Гб оперативной памяти достаточно для стабильной работы &mdash; даже в режиме многозадачности. При необходимости ОЗУ можно увеличить до 13 Гб благодаря реализованной фирменной технологии HONOR RAM Turbo. Встроенной памяти объемом 256 Гб хватит для хранения файлов и мультимедиа. Автономность Модель получила аккумуляторную батарею ёмкостью 5100 мАч, которая обеспечивает автономную работу без подзаряда в течение 26 часов в режиме чтения, 25 часов в видео-режиме и 10 часов в режиме 3D-игр.",
             "image_item": "",
@@ -2154,6 +2232,7 @@
         "model": "catalog.product",
         "pk": 175,
         "fields": {
+            "owner": null,
             "name": "Honor X7a 4/128Gb",
             "descriptions": "Смартфон HONOR X7a отличается стильным корпусом и привлекает внимание элегантными расцветками. Диагональ IPS-экрана составляет 6,74 дюйма. Производительную работу обеспечивают процессор MediaTek Helio G37 и 4 ГБ оперативной памяти, а для фотографий, игр, приложений и любых других файлом предусмотрено 128 ГБ постоянной памяти с возможностью дополнительного расширения картами microSD. Основная квадро камера 50+5+2+2 Мп с автофокусом и вспышкой предлагает все нужное для реализации творческих задумок и документирования окружающего мира, а впереди в аккуратном каплевидном вырезе расположена камера 8 Мп для селфи и видеосвязи. Аккумулятор емкостью 5330 мА·ч в сочетании с экономичными комплектующими обеспечивает длительное время работы без подзарядки.",
             "image_item": "",
@@ -2174,6 +2253,7 @@
         "model": "catalog.product",
         "pk": 176,
         "fields": {
+            "owner": null,
             "name": "Honor X8a 6/128Gb",
             "descriptions": "HONOR X8a – доступный смартфон серии HONOR X с узнаваемым дизайном, впечатляющими характеристиками экрана и улучшенными возможностями фотосъемки. HONOR X8a привлекает внимание изящным корпусом с толщиной всего 7,48 мм и весом 179 г, внутри которого инженерам удалось разместить батарею повышенной емкости 4500 мА·ч для эффективной работы смартфона в течение всего дня. Экран HONOR FullView с диагональю 6,7 дюйма обладает одним из лучших в классе показателей полезной площади 93,6% и позволяет комфортно просматривать контент. Собственная технология калибровки экрана HONOR обеспечивает правильную цветовую температуру и реалистичную цветопередачу. Тройная камера с основным сенсором 100 Мп обладает самым высоким разрешением среди смартфонов серии X, что обеспечивает еще больше возможностей для фотосъемки. Режим суперразрешения улучшает качество снимков и видео, до двух раз повышая детализацию картинки.",
             "image_item": "",
@@ -2194,6 +2274,7 @@
         "model": "catalog.product",
         "pk": 177,
         "fields": {
+            "owner": null,
             "name": "Honor X7b 8/128Gb",
             "descriptions": "Смартфон Honor X7b имеет большой экран, при помощи которого будет комфортно смотреть видео, общаться в соцсетях, заниматься сёрфингом в интернете и решать другие задачи. Сбалансированный процессор обеспечит достойную производительность, а камера с тремя объективами &ndash; качественные снимки в любой ситуации. Качественный экран Экран разрешением 2412x1080 пикселей обеспечивает высокую плотность пикселей, а технология IPS имеет хорошую контрастность и передаёт 16,7 миллионов цветов. Частота обновления 90 Гц обеспечивает плавность смены кадров и снижает нагрузку на зрение. Сбалансированное оснащение Восьмиядерный процессор Qualcomm Snapdragon 680 разработан для смартфонов среднего сегмента и поддерживает все приложения, необходимые для повседневного использования. Оперативная память объёмом 8 Гб позволяет открывать большое количество вкладок в браузере и работать в нескольких приложениях без вылетов. Детализированные фотографии Тыловая камера состоит из трёх модулей. Основной объектив разрешением 108 Мп отвечает за высокое качество снимков. Сверхширокоугольная камера на 5 Мп помогает захватить в кадр большое количество объектов, а макрообъектив на 2 Мп позволяет снимать мелкие объекты. Для улучшения качества съёмки используется искусственный интеллект.",
             "image_item": "",
@@ -2214,6 +2295,7 @@
         "model": "catalog.product",
         "pk": 178,
         "fields": {
+            "owner": null,
             "name": "Honor 70 8/128Gb",
             "descriptions": "Смартфон с эффектным дизайном и впечатляющими характеристиками. Безрамочный изогнутый OLED-экран с диагональю 6,67 дюйма обладает высоким разрешением, точной цветопередачей и высокой частотой обновления 120 Гц. 8-ядерный процессор Snapdragon 778G Plus в сочетании с 8 ГБ оперативной и 128 ГБ постоянной памяти обеспечивает высокую производительность для игр и любых приложений. Тройная камера с сенсорами 54+50+2 Мп с высочайшим качеством съемки помогает воплощать в жизнь любые творческие задумки. Кроме того, смартфон HONOR 70 получил емкий аккумулятор 4800 мАч, поддерживает быструю зарядку 66 Вт, экосистемные технологии HONOR Share и «Мультиэкран».",
             "image_item": "",
@@ -2234,6 +2316,7 @@
         "model": "catalog.product",
         "pk": 180,
         "fields": {
+            "owner": null,
             "name": "Honor X6a 4/128Gb",
             "descriptions": "Смартфон Honor X6a обладает оптимальными характеристиками для своего класса. В нем установлен аккумулятор емкостью 5200 мАч, который функционирует около суток в активном режиме и поддерживает быструю зарядку 22,5 Вт. Экран с частотой обновления 90 Гц обеспечивает отзывчивость интерфейса и плавность работы системы при выполнении динамичных действий. Съемка выполняется с помощью блока из 3 камер с высоким разрешением, что позволяет получать профессиональные фото на любом расстоянии и при любом освещении. Широкий функционал Биометрическая аутентификация по лицу и отпечатку пальца гарантирует безопасное хранение данных пользователя и дает возможность мгновенной разблокировки без ввода сложных паролей. Чип NFC помогает проводить оплату в одно касание в кафе, ресторанах, магазинах и супермаркетах. Датчик освещенности выполняет регулировку яркости экрана под уровень окружающего света, тем самым обеспечивая комфорт просмотра. Датчик приближения блокирует дисплей при близости руки и лица, предотвращая случайные срабатывания тачскрина во время телефонных разговоров. Акселерометр производит поворот изображения в соответствии с пространственным положением смартфона.",
             "image_item": "",
@@ -2254,6 +2337,7 @@
         "model": "catalog.product",
         "pk": 181,
         "fields": {
+            "owner": null,
             "name": "Honor X6a 6/128Gb",
             "descriptions": "Honor X6a &mdash; смартфон для веб-серфинга, выполнения стандартных задач, общения в соцсетях и запуска видеороликов в высоком качестве. Поддержка съемных SD-накопителей объемом до 256 гигабайт позволит увеличить внутреннюю память устройства. Характеристики  2 SIM-карты. Сканер лица и отпечатка пальца. Wi-Fi 5 и Bluetooth 5.3. Поддержка NFC. LCD-матрица экрана разрешением 1612х720 и с частотой 90 Гц. Чипсет MediaTek Helio G36 частотой до 2,2 ГГц. 6 Гб оперативной памяти. 128 Гб внутренней памяти. 50+2+2 Мп основная камера. 5 Мп фронтальная камера. Батарея на 5200 мАч.  Высокий уровень защиты Смартфон оборудован высокоточным сканером отпечатка пальца для защиты личных данных от посторонних. Также есть функция распознавания лица, которая позволяет быстро войти в систему без ввода графического пароля. Поддержка связи Модуль Wi-Fi 5 обеспечивает широкополосное беспроводное подключение к интернету с минимальными задержками. Адаптер Bluetooth 5.3 пригодится для высокоскоростного подключения дополнительных устройств к смартфону. Емкий аккумулятор Смартфон оснащен батареей на 5200 мАч для длительной работы без подзарядок. Поддержка технологии Quick Charge позволяет быстро зарядить телефон перед выходом на учебу или работу. Оплата покупок смартфоном Встроенный модуль NFC предназначен для оплаты покупок в магазине без использования физической банковской карты. Пользователю потребуется активировать модуль в настройках и ввести данные карты.",
             "image_item": "",
@@ -2274,6 +2358,7 @@
         "model": "catalog.product",
         "pk": 182,
         "fields": {
+            "owner": null,
             "name": "Honor X5 Plus 4/64Gb",
             "descriptions": "Смартфон Honor X5 Plus станет не только средством связи, но и универсальным помощником в повседневной жизни. Он работает под управлением ОС Android 13 с фирменной оболочкой MagicOS 7.1, обеспечивающей интуитивно понятный интерфейс и надежную защиту конфиденциальных данных. Пластиковый корпус не царапается и не скалывается при падениях на твердые поверхности, гарантируя длительное сохранение первоначального внешнего вида. Качественный дисплей В смартфоне установлена LCD-матрица с разрешением 1612&times;720, которая демонстрирует четкое изображение с точной цветопередачей. Благодаря большим углам обзора картинка не выцветает при взгляде на экран с любой стороны. Частота обновления 90 Гц способствует плавной последовательности кадров при воспроизведении анимации. Функциональная камера Съемка выполняется с помощью двойной камеры 50 Мп. Она позволяет делать детализированные фото при любых условиях освещения. Функция распознавания улыбки позволяет автоматически делать снимки, когда человек улыбается. Портретный режим помогает сфокусироваться на объекте, делая фон размытым. Цифровой зум 10&times; дает возможность увеличения масштаба без смены объектива.",
             "image_item": "",
@@ -2294,6 +2379,7 @@
         "model": "catalog.product",
         "pk": 183,
         "fields": {
+            "owner": null,
             "name": "Huawei nova Y72 8/128Gb",
             "descriptions": "Смартфон Huawei nova Y72 оснащен ярким большим экраном, который транслирует качественное изображение. Гаджет работает на базе мощного процессора в сочетании с объемной оперативной памятью, что гарантирует высокую производительность. Блок камер обеспечивает профессиональную съемку. Для селфи и видеозвонков предусмотрен фронтальный сенсор. Емкий аккумулятор с поддержкой технологии быстрой зарядки &mdash; для продолжительной автономной работы. Наличие модуля NFC позволит осуществлять бесконтактные платежи, а система навигации определить местоположение на незнакомой местности. Большой экран диагональю 6,75 дюймов транслирует яркую и детализированную картинку. Технология LCD HD+ делает изображение четким и насыщенным во время просмотра видео или фотографий. Производительность и память Модель работает на восьмиядерном процессоре, который гарантирует быстрый отклик на команды и запуск программ. Оперативная память 8 ГБ отвечает за быстродействие. Емкости встроенного хранилища в 128 ГБ достаточно для большого количества приложений, мультимедийных файлов и другой важной информации. Съемка профессионального уровня Основная камера с модулем 50 МП позволяет получить яркие и четкие фото при любом уровне освещения. Цифровой зум и режим автофокусировки позволяют записывать видеоролики в формате Full HD. Фронтальная камера 8 МП для выразительных и детализированных селфи. Мощная аккумуляторная батарея Гаджет оснащен аккумуляторной батареей энергоемкостью 6000 мАч, которая обеспечит 31 ч автономной работы в режиме воспроизведения видео. Функция быстрой зарядки восстановит ресурс аккумулятора за считаные минуты.",
             "image_item": "",
@@ -2314,6 +2400,7 @@
         "model": "catalog.product",
         "pk": 184,
         "fields": {
+            "owner": null,
             "name": "Huawei nova 12i 8/128Gb",
             "descriptions": "",
             "image_item": "",
@@ -2334,6 +2421,7 @@
         "model": "catalog.product",
         "pk": 185,
         "fields": {
+            "owner": null,
             "name": "Huawei nova Y61 4/128Gb",
             "descriptions": "",
             "image_item": "",
@@ -2354,6 +2442,7 @@
         "model": "catalog.product",
         "pk": 186,
         "fields": {
+            "owner": null,
             "name": "Huawei nova 11i 8/128Gb",
             "descriptions": "Вдохновляйтесь с HUAWEI nova 11i. Мощная батарея емкостью 5000 мА*ч, максимальная громкость 88 дБ, 6,8-дюймовый безрамочный экран HUAWEI FullView, память 128 ГБ, фото в высоком разрешении 48 МП.Толщина всех рамок смартфона, кроме нижней, составляет всего 1 мм. Разрешение дисплея &mdash; 2388x1080 пикселей, частота обновления &mdash; 90 Гц. Вверху по центру панели врезан модуль 16-мегапиксельной селфи-камеры.<br /> За производительность смартфона отвечает процессор Qualcomm Snapdragon 680, работающий при поддержке 8 ГБ оперативной памяти. Объём внутреннего накопителя составляет 128 ГБ. На задней панели размещён двойной блок основной камеры с 48-мегапиксельным главным сенсором и модулем для размытия фона на 2 Мп. Завершают список характеристик аккумулятор на 5000 мАч с поддержкой 40-ваттной быстрой зарядки, а также модули Wi-Fi и Bluetooth 5.0 (SBC, AAC)",
             "image_item": "",
@@ -2374,6 +2463,7 @@
         "model": "catalog.product",
         "pk": 187,
         "fields": {
+            "owner": null,
             "name": "Huawei nova Y91 8/128Gb",
             "descriptions": "Huawei nova Y91 оснащен большим 6,95-дюймовым сенсорным IPS-экраном с разрешением 2376 &times; 1080 точек (Full HD+), частотой обновления 90 Гц и частотой дискретизации касаний в 270 Гц. В вырезе в верхней части экрана находится 8-Мп камера с диафрагмой f/2.0. На задней панели смартфона размещена 50-мегапиксельная камера с диафрагмой F1.8, которую дополняет 2-мегапиксельный датчик измерения глубины (F2.4). Смартфон базируется на восьмиядерном процессоре Qualcomm Snapdragon 680 с графическим ускорителем Adreno 610. Объём оперативной памяти составляет 8 Гбайт, ёмкость флеш-накопителя &mdash; 128 или 256 Гбайт. Аккумулятор ёмкостью 7000 мА&middot;ч поддерживает быструю зарядку Huawei SuperCharge мощностью 22,5 Вт. Спецификации устройства также включают адаптеры беспроводной связи Bluetooth 5.0, Wi-Fi 802.11 a/b/g/n/ac и порт USB-C.",
             "image_item": "",
@@ -2394,6 +2484,7 @@
         "model": "catalog.product",
         "pk": 188,
         "fields": {
+            "owner": null,
             "name": "Huawei nova 10 8/128Gb",
             "descriptions": "На всех смартфонах и планшетах HUAWEI предустановлен магазин приложений AppGallery, где доступны более 95% популярных приложений в России. Также для скачивания доступы все Google-сервисы, в том числе и YouTube. При скачивании Google-приложений из AppGallery необходимо дать разрешение на установку Gbox для корректной работы сервисов.Смартфон Huawei nova 10 оснащен большим OLED-дисплеем с узкими рамками. Края закруглены &mdash; благодаря этому телефон удобно держать в одной руке. Фронтальная сверхширокоугольная селфи-камера с разрешением 60 Мп имеет угол обзора в 100&deg; и позволяет снимать профессиональные видео в популярных форматах Full HD и 4K. Установлен несъемный аккумулятор емкостью 4000 мАч. Полного заряда хватит на целый день активного использования смартфона. Особенности модели  операционная система Windows; быстрая зарядка 66 Вт с поддержкой технологии SuperCharge; бесконтактная оплата NFC; сканер отпечатка пальца.  Экран 6,67-дюймовый дисплей 120 Гц с поддержкой HDR10 имеет соотношение сторон 20:9 и разрешение FHD+ (2400x1080 пикселей). Отличается высокой четкостью изображения при солнечном свете и пониженным энергопотреблением. Имеет хороший запас по яркости. Сенсор отзывчивый &mdash; с частотой 300 Гц &mdash; мгновенно реагирует на касания, что важно во время игр. Технические характеристики Восьмиядерный процессор Snapdragon 778G с тактовой частотой 2400 МГц работает в паре с графическим ускорителем Adreno 642L. Не перегревается под нагрузкой и вытягивает большинство современных игр на высоких настройках. Быстродействие системы обеспечивает 8 Гб оперативной памяти. Для хранения фото и видео выделено 128 Гб внутренней памяти. Камера Основной 50-мегапиксельный объектив поддерживает оптическую стабилизацию и автоматическую фокусировку. Подходит для съемки в дневное и ночное время. Качество фотографий получается достойным, с хорошей детализацией. Дополнительно предусмотрены 8-мегапиксельная сверхширокоугольная камера для макросъемки с расстояния двух сантиметров и стандартный датчик глубины 2 Мп. Светодиодная вспышка будет полезна в темное время суток или при плохом освещении.",
             "image_item": "",
@@ -2414,6 +2505,7 @@
         "model": "catalog.product",
         "pk": 189,
         "fields": {
+            "owner": null,
             "name": "Huawei P60 8/256Gb",
             "descriptions": "",
             "image_item": "",
@@ -2434,6 +2526,7 @@
         "model": "catalog.product",
         "pk": 190,
         "fields": {
+            "owner": null,
             "name": "INFINIX Note 30 8/256Gb",
             "descriptions": "",
             "image_item": "",
@@ -2454,6 +2547,7 @@
         "model": "catalog.product",
         "pk": 191,
         "fields": {
+            "owner": null,
             "name": "INFINIX Note 30 Pro 8/256Gb",
             "descriptions": "Гарантия и работоспособность товара распространяются только на аппараты, активированные на территории ТС ЕАЭС.",
             "image_item": "",
@@ -2474,6 +2568,7 @@
         "model": "catalog.product",
         "pk": 192,
         "fields": {
+            "owner": null,
             "name": "INFINIX Note 30 8/128Gb",
             "descriptions": "Гарантия и работоспособность товара распространяются только на аппараты, активированные на территории ТС ЕАЭС.",
             "image_item": "",
@@ -2494,6 +2589,7 @@
         "model": "catalog.product",
         "pk": 193,
         "fields": {
+            "owner": null,
             "name": "INFINIX Hot 40i 8/128Gb",
             "descriptions": "Смартфон INFINIX HOT 40i получил 6,56-дюймовый экран с IPS-матрицей, который поддерживает разрешение HD+, отличается реалистичной цветопередачей и обладает приличным запасом яркости 480 нит. Благодаря увеличенной частоте обновления 90 Гц прокрутка страниц будет максимально плавной, без рывков или подергиваний. Модель имеет торцевой сканер отпечатка пальца и поддерживает разблокировку по лицу. Дисплей защищен ударопрочным стеклом с олеофобным покрытием, на котором не остаются жирные следы, а корпус изготовлен по стандарту IP53, поэтому не боится брызг воды и пыли. Несъемный литий-ионный аккумулятор емкостью 5000 мАч позволит активно пользоваться телефоном на протяжении целого дня. А если батарея полностью разрядится, то с помощью быстрой 18-ваттной зарядки её можно &laquo;оживить&raquo; буквально за один час. Особенности  слот для microSD; цифровой компас; системы навигации ГЛОНАСС/GPS; стандарт Wi-Fi 5.  Смартфон работает на базе восьмиядерного процессора Unisoc t606 и графического ускорителя Mali-G57. Производительности &laquo;железа&raquo; хватит для игр и выполнения любых повседневных задач. Быстродействие обеспечивают 8 Гб ОЗУ, поэтому зависать или тормозить телефон точно не будет. Для хранения мультимедийных файлов выделено 128 гигабайт постоянной памяти. Если этого окажется мало, можно установить microSD-карту объемом до 2 Тб. Камера 50 Мп Основной объектив позволяет снимать четкие фотографии в помещении и на улице в любое время суток. Вспомогательная функция Super Night использует продвинутые алгоритмы ИИ, чтобы при недостаточном освещении каждый кадр выглядел максимально естественно. Видеосъемка доступна в Full HD-качестве. Причем можно выбирать разные режимы: документы, таймлапс, профессиональное, панорама и др.",
             "image_item": "",
@@ -2514,6 +2610,7 @@
         "model": "catalog.product",
         "pk": 194,
         "fields": {
+            "owner": null,
             "name": "INFINIX Hot 40 8/256Gb",
             "descriptions": "INFINIX HOT 40 &mdash; современный многофункциональный ноутбук с тройной камерой, мощным процессором в прочном, ударозащитном корпусе. При использовании в режиме просмотра видео способен автономно работать до 30 часов. Преимущества  8 ГБ оперативной памяти. 256 ГБ основной памяти. Слот для внешнего накопителя до 1 ТБ. Разблокировка по распознаванию лица и отпечатку пальцев. Модули GPS и A-GPS. Поддержка Wi-Fi и Bluetooth.  Функциональные особенности INFINIX HOT 40 получил большой сенсорный экран 6.78 дюймов с высоким разрешением 2460x1080 пикселей и комфортным соотношением сторон 20.5:9. Производительность обеспечивает 8-ядерный процессор MediaTek Helio G88 с частотой процессора 2200 МГц и мощным техпроцессом. Корпус выполнен в виде моноблока, изготовлен из высококачественного пластика, экран покрыт стеклом Panda MN2282.5D с олеофобным покрытием. О камере Смартфон INFINIX HOT 40 получил основную систему камера с тремя объективами &mdash; широкоугольный на 50 Мп с диафрагмой F/1.6, макрообъектив 2 Мп и дополнительный объектив 0.08 Мп. Для съемки в темное время суток предусмотрено сразу четыре вспышки. Есть автофокусировка и 10-кратный цифровой зум. С помощью камер можно выполнять замедленную съемку, делать видео в режиме таймлапс.",
             "image_item": "",
@@ -2534,6 +2631,7 @@
         "model": "catalog.product",
         "pk": 195,
         "fields": {
+            "owner": null,
             "name": "INFINIX Note 30i 8/256Gb",
             "descriptions": "Смартфон INFINIX NOTE 30i обеспечивает стабильную связь и широкие возможности для работы и развлечений. Большой объем встроенной памяти позволяет хранить много изображений, видео и прочих файлов. Характеристики  диагональ экрана: 6.66; разрешение: 2400x1080; оперативная память: 8 Гб; SSD-накопитель: 256 Гб; поддержка сетей: 2G/3G/4G (LTE); основная камера: 64 Мп; емкость аккумулятора: 5000 mAh.  Высокая производительность Благодаря мощному 8-ядерному процессору Mediatek Helio G85 и большому объему оперативной памяти смартфон легко справляется с задачами любой сложности. Он подходит для запуска современных игр и работы с ресурсоемкими приложениями. Яркий экран AMOLED-дисплей большого размера позволяет насладиться яркой картинкой с насыщенными цветами. Такой экран отображает расширенную цветовую гамму, что делает изображение максимально реалистичным. Широкие углы обзора позволяют просматривать картинку из любого положения. Долгое время автономной работы Энергоемкий аккумулятор позволяет использовать смартфон в режиме разговора до 44.1 ч. Разъем Type-C дает возможность легко зарядить устройство в любом месте. Функция быстрой зарядки существенно ускоряет процесс восполнения энергии.",
             "image_item": "",
@@ -2554,6 +2652,7 @@
         "model": "catalog.product",
         "pk": 196,
         "fields": {
+            "owner": null,
             "name": "INFINIX Note 30i 8/128Gb",
             "descriptions": "Смартфон INFINIX NOTE 30i был представлен в 2023 году. Он станет верным помощником современного пользователя, которому важен хороший экран, стабильная работа приложений и возможность снимать детализированные фотографии. Качественный экран Экран AMOLED FHD+ порадует высокой детализацией изображения, отличной контрастностью и точной цветопередачей. Диагональ 6,66 дюймов обеспечивает удобную работу с текстом и комфортный просмотр медиафайлов. Современный процессор Восьмиядерный процессор Mediatek Helio G85 без труда справится с программами для решения повседневных задач. Графический ускоритель ARM Mali-G52 MC2 помогает при рендеринге изображения, позволяя смотреть видео без задержек и играть в игры на средних и высоких настройках. Снимки в высоком разрешении Основная камера имеет разрешение 64 Мп и состоит из нескольких модулей, которые подключаются в различных условиях и обеспечивают высокое качество фото и видео. Фронтальная камера совмещает функцию разблокировки по лицу, альтернатива &ndash; сканер отпечатка пальца. Большой объём памяти Оперативная память объёмом 8 Гб поможет при работе в режиме многозадачности и запуске тяжёлых приложений. Встроенная память имеет объём 128 Гб, её можно расширить установкой карты памяти microSD размером до 1 ТБ.",
             "image_item": "",
@@ -2574,6 +2673,7 @@
         "model": "catalog.product",
         "pk": 197,
         "fields": {
+            "owner": null,
             "name": "INFINIX Smart 8 3/64Gb",
             "descriptions": "Смартфон INFINIX SMART 8 работает на базе восьмиядерного процессора, который в сочетании с оперативной памятью позволяет решать простые ежедневные задачи. Устройство также получило экран с частотой обновления 90 Гц, на котором транслируется качественная картинка. Смарт-панель в области фронтальной камеры отображает информацию о входящих вызовах и другие системные уведомления. Модель поддерживает установку двух SIM-карт формата nano. Удобный и быстрый доступ возможен за счет сканера отпечатка пальца и технологии разблокировки по лицу. Четкое и яркое изображение Модель оснащена экраном на основе IPS-матрицы с диагональю 6.56, который транслирует детализированное изображение с естественной цветопередачей. Частота обновления 90 Гц обеспечивает плавность работы в разных сценариях использования. Пиковая яркость в 500 нит гарантирует четкость картинки на экране при любом уровне освещения. Умный сканер Предусмотрена возможность быстро сканировать сразу несколько страниц документа, изменять свою подпись и сохранять их в формате PDF, а также делиться всего в два касания. Достойная производительность Модель получила 8-ядерный процессор, который демонстрирует достойную производительность в решении ежедневных задач, обеспечивая плавную работу интерфейса. За быстродействие отвечает ОЗУ 3 ГБ. Объема встроенной памяти в 64 ГБ достаточно для хранения важной информации и быстрого запуска приложений, но если делать много фотографий и снимать видео, то лучше обзавестись картой памяти Micro SD объемом до 2 ТБ. Сохранить важные моменты Двойная основная камера 13 Мп с кольцевой вспышкой позволит запечатлеть значимые моменты жизни. Для съемки селфи предусмотрена фронтальная камера 8 Мп и LED-вспышка. Специальный режим обеспечит красивый эффект боке и четкие очертания лица, что позволит делать атмосферные портреты. Впечатляющая автономность Смартфон INFINIX SMART 8 получил внушительную аккумуляторную батарею энергоемкостью 5000 мАч. Зарядка осуществляется через порт Type-C. Режим Марафонская выносливость обеспечит сутки автономной работы гаджета в режиме ожидания или до двух часов разговоров на 5% заряда аккумулятора.",
             "image_item": "",
@@ -2594,6 +2694,7 @@
         "model": "catalog.product",
         "pk": 198,
         "fields": {
+            "owner": null,
             "name": "INFINIX Smart 8 4/128Gb",
             "descriptions": "Смартфон INFINIX SMART 8 &mdash; доступный гаджет с емкой батареей и поддержкой двух nano SIM-карт. Технология Link-Booming обеспечивает стабильность и высокое качество связи. Устройство оснащено безрамочным экраном с интерактивным вырезом под фронтальную камеру, на который выводится информация о входящих вызовах и состоянии аккумулятора. Для быстрой разблокировки предусмотрена технология распознавания лица и сканер отпечатков пальцев. Устройство защищено от попадания внутрь пыли и влаги по стандарту IP53. Дисплей и звук Дисплей диагональю 6.56 на базе IPS-матрицы с разрешением HD+ отображает детализированную картинку с естественной цветопередачей. Отличается широкими углами обзора. За счет частоты обновления 90 Гц динамичные сцены воспроизводятся плавно. Пиковая яркость 500 кд/м&sup2; обеспечивает комфортное использование смартфона даже при ярком солнце. Гаджет воспроизводит громкий и насыщенный звук. Технология DTS дает возможность увеличить громкость до 200%. Производительность и память Восьмиядерный процессор обеспечивает высокую производительность при выполнении ежедневных задач. За быстродействие отвечает ОЗУ 4 ГБ. Для хранения файлов и приложений предусмотрено 128 ГБ встроенной памяти. Этот показатель можно увеличить посредством установки карты памяти формата microSD емкостью до 2 ТБ. Возможности съемки Основная широкоугольная камера 13 Мп с датчиком глубины позволяет делать фото высокого качества с эффектом боке в портретном режиме. Светодиодная вспышка &mdash; для равномерной подсветки объектов в кадре. Для красивых селфи предусмотрен фронтальный сенсор 8 Мп. Гаджет способен записывать видеоролики в форматах Full HD и Ultra HD 4K. Автономность Смартфон INFINIX SMART 8 имеет аккумулятор 5 000 мАч, который обеспечит автономную работу устройства на протяжении суток. Зарядка осуществляется через порт USB Type-C. Режим &laquo;Марафонская выносливость&raquo; позволяет гаджету работать еще 2 часа при 5% заряда батареи.",
             "image_item": "",
@@ -2614,6 +2715,7 @@
         "model": "catalog.product",
         "pk": 199,
         "fields": {
+            "owner": null,
             "name": "INFINIX Smart 8 Plus 4/128Gb",
             "descriptions": "",
             "image_item": "",
@@ -2634,6 +2736,7 @@
         "model": "catalog.product",
         "pk": 200,
         "fields": {
+            "owner": null,
             "name": "INFINIX Zero 30 8/256Gb",
             "descriptions": "Смартфон INFINIX ZERO 30 имеет 6,78-дюймовый дисплей с максимальной частотой обновления 120 Гц, разрешением FHD+ (2400x1080 пикселей) и пиковой яркостью в 950 нит, который воспроизводит четкую картинку и остается хорошо читаемым даже под прямыми солнечными лучами. В режиме защиты зрения можно длительное время просматривать ленту в соцсетях, искать информацию в веб-браузере или читать электронную книгу без вреда для глаз. Производительность обеспечивает восьмиядерный процессор Helio G99, который работает в связке с графическим ускорителем Mali G57. С такой аппаратной &laquo;начинкой&raquo; устройство без проблем справится с запуском требовательных приложений. Благодаря 8 Гб ОЗУ телефон не будет зависать или тормозить в процессе работы, а 256 гигабайт постоянной памяти хватит для хранения большого количества мультимедийных файлов. За счет емкого аккумулятора можно непрерывно смотреть фильмы в интернете в течение 18 часов, а также слушать любимую музыку/радио на протяжении суток. Особенности  поддержка стандарта IP54; универсальный разъем Type-C для подключения наушников и зарядки батареи; сканер отпечатка пальца; есть разблокировка по лицу.  Беспроводные интерфейсы представлены модулем Wi-Fi пятого поколения, NFC и Bluetooth-адаптером. Дополнительно присутствуют системы навигации ГЛОНАСС, GPS и др. Три камеры На основной широкоугольный объектив с разрешением 108 Мп можно делать качественные фотографии при естественном освещении и снимать видео в Full HD качестве. Дополнительно присутствуют макрообъектив для съемки крупным планом и 13-мегапиксельная сверхширокоугольная оптика, на которую можно запечатлеть красивые пейзажи и городские улицы.",
             "image_item": "",
@@ -2654,6 +2757,7 @@
         "model": "catalog.product",
         "pk": 201,
         "fields": {
+            "owner": null,
             "name": "INFINIX Note 12 VIP NFC 8/256Gb",
             "descriptions": "INFINIX Note 12 VIP &mdash; современный смартфон с высокопроизводительным процессором. Оснащен дисплеем Super Light AMOLED с частотой обновления 120 Гц и игровым процессором Helio G96. Кинематографическая камера 108 Мп позволяет получать фото и видео в ультракачественном формате. Преимущества  ОС Android 12. Оперативная память 8 Гб. Встроенная память &mdash; 256 Гб. Поддержка нескольких голосовых помощников. Возможность установки карты памяти до 2 ТБ. Аккумулятор емкостью 4500 мАч. Поддержка Wi-Fi и Bluetooth последних версий. Сканер отпечатка пальца. Модуль NFC.  Производительность и функциональность Смартфон INFINIX Note 12 VIP оснащен большим, безрамочным экраном с разрешением 2400&times;1080 пикселей. Дисплей способен передавать все цвета и оттенки с высокой точностью, картинка получается максимально реалистичной и естественной. Мощный 8-ядерный процессор Mediatek Helio G96 отвечает за быстродействие гаджета &mdash; высокая скорость отклика гарантирует, что смартфон не &laquo;затупит&raquo; и не зависнет во время игры или при большом количестве открытых вкладок браузера. Способы подключения Смартфон поддерживает все стандартные интерфейсы. Выход mini-USB отвечает за соединение с зарядным проводом и компьютером. С помощью Wi-Fi можно подключаться к беспроводной сети и выходить в интернет без ограничения скорости и лимита. Модуль Bluetooth отвечает за связь с периферийными устройствами &mdash; беспроводными наушниками, музыкальными колонками или другими смартфонами. Камера с большим потенциалом Устройство оснащено сразу тремя камерами. Основная &mdash; с разрешением 108 Мп &mdash; поддерживает режим автофокусировки: снимает плавно и четко даже объекты в движении. Запись видео возможна в формате 2К.",
             "image_item": "",
@@ -2674,6 +2778,7 @@
         "model": "catalog.product",
         "pk": 202,
         "fields": {
+            "owner": null,
             "name": "INFINIX Smart 7 HD 2/64Gb",
             "descriptions": "Гарантия и работоспособность товара распространяются только на аппараты, активированные на территории ТС ЕАЭС.",
             "image_item": "",
@@ -2694,6 +2799,7 @@
         "model": "catalog.product",
         "pk": 203,
         "fields": {
+            "owner": null,
             "name": "INFINIX Hot 20S 8/128Gb",
             "descriptions": "",
             "image_item": "",
@@ -2708,6 +2814,27 @@
             "created_up": "2024-04-30T21:25:10.926Z",
             "release": "2023-04-23T00:00:00Z",
             "url": "infinix-hot-20s-8128gb"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 204,
+        "fields": {
+            "owner": 1,
+            "name": "fdafdfa",
+            "descriptions": "fdsafd",
+            "image_item": "",
+            "company": "Honor",
+            "category": "Телефоны",
+            "price": "41234.00",
+            "discount": 0.0,
+            "quantity": 43,
+            "name_button": "Подробнее",
+            "discontinued": 0,
+            "created_at": "2024-05-29T21:53:55.386Z",
+            "created_up": "2024-05-29T21:53:55.390Z",
+            "release": "2024-05-29T21:53:55.386Z",
+            "url": "fdafdfa"
         }
     },
     {
@@ -2999,16 +3126,32 @@
         }
     },
     {
+        "model": "news.postcomment",
+        "pk": 25,
+        "fields": {
+            "post": 25,
+            "user_name": 1,
+            "image": "",
+            "text": "Да интересно",
+            "time_published": "2024-05-26T18:00:42.945Z",
+            "time_edit": "2024-05-26T18:00:42.945Z",
+            "is_edit": false,
+            "text_to_edit": "Изменено:",
+            "likes": 0,
+            "is_published": true
+        }
+    },
+    {
         "model": "news.posts",
         "pk": 24,
         "fields": {
             "title": "Автономное копирование данных в новый телефон на Android!",
-            "name_user": null,
+            "name_user": 1,
             "image_user": "",
             "image": "posts/2024/05/06/d996b943cb2333c67d76504540884ab1.jpg",
             "description": "Сегодня я расскажу, как можно перенести данные из одного телефона на Android в другой без подключения к интернет.\r\n\r\nС помощью этого метода удастся перенести:\r\n\r\n• Контакты с фотографиями и привязкой к рингтонам\r\n• Историю звонков\r\n• СМС и ММС\r\n• Все приложения\r\n• Настройки рабочих столов (при условии, что вы пользуетесь GoLauncher EX)\r\n• Пользовательские рингтоны\r\n• Фотографии\r\n• Музыку\r\n\r\nНе удастся перенести:\r\n\r\n• Настройки и данные большинства программ\r\n\r\n\r\nНам понадобятся следующие программы: App Backup & Restore, Go Backup, Go Launcher EX, Go Contacts EX, a href=«play.google.com/store/apps/details?id=ru.smithson.ringtoneKeeper»>Хранитель звонков.\r\n\r\n1. Сохраняем контакты: Запускаем GoContacts. Меню-Сохранить-Экспорт на SD-карту.\r\n\r\n2. Сохраняем привязку рингтонов: Запускаем Хранитель звонков. Нажимаем «Сохранить».\r\n\r\n3. Сохраняем СМС, ММС, историю звонков, настройки Go Launcer: Запускаем Go Backup. Отказываемся от перехода на версию Pro-New Backup-убираем галку с «Contacts»-Start Backup.\r\n\r\n4. Сохраняем программы: Запускаем App Backup & Restore. Меню-Un/Chek All-Убираем галки с тех программ, которые не нужны-Backup Selected Apps.\r\n\r\n5. Копируем с карты памяти и внутреннего накопителя (если он есть) следующее:\r\nApp_Backup_Restore — Папка с сохранёнными программами.\r\nDCIM\\Camera — Папка с фотографиями\r\nPictures — Обработанные картинки (например из Instagrsm)\r\nGoBackup — данные GoBackup\r\nMedia — пользовательские рингтоны и другие системные звуки\r\nru.smithson.ringtoneKeeper — данные Хранителя звонков\r\nMusic — музыка (у вас эта папка может называться по другому)\r\ncontact<дата и время>.vcf — контакты\r\nПапки с именами программ, которые Вы хотите перенести (есть шанс, что программы смогут восстановить свои данные из этих папок).\r\n\r\n6. Записываем все эти папки и файлы на SD-карту или внутренний накопитель нового телефона. Папку Camera лучше переименовать (например в OLD), чтобы фотографии со старого телефона не смешивались с фотографиями с нового телефона и не было путаницы. Эту папку нужно записать в папку DCIM.\r\n\r\n7. На новом телефоне устанавливаем App Backup & Restore. Если есть интернет, можно установить эту программу из маркета, если в новом телефоне есть какой-нибудь файлменеджер, можно установить программу из файла mobi.infolife.appbackup-6-1.0.5.apk, лежащего в папке App_Backup_Restore. Если файлменеджера нет, иногда он есть внутри офисных пакетов (например QuickOffice). В крайнем случае можно передать этот файл по Bluetooth со старого телефона на новый и тут же установить его.\r\n\r\n8. Запускаем App Backup & Restore. Нажимаем сверху кнопку «Archived»-Меню-Un/Chek All-Restore Selected Apps. Для каждой программы придётся нажать кнопки «Установить» и «Готово».\r\n\r\n9. Запускаем GoLauncher EX.\r\n\r\n10. Из него запускаем GoBackup. Restore-Got It-Щёлкаем в дату-Убираем галку «Contacts»-Restore.\r\n\r\n11. Запускаем GoContact. Меню-Сохранить-Импорт с SD-карты.\r\n\r\n12. Запускаем Хранитель звонков. Нажимаем «Восстановить».\r\n\r\nКонечно, это всё не идеально и не очень удобно, но позволяет перенести данные в новый телефон менее, чем за полчаса.\r\n\r\np.s. Я не использую GoBackup для переноса контактов, так как он ен переносит фото и для переноса программ, так как он не может перенести сам себя.\r\n\r\np.p.s. Возможно существует программа, корректно переносящая и приложения, и смс, и контакты (может быть даже с привязкой к рингтонам), но я такую пока не нашёл.\r\n\r\np.p.p.s. Если у обоих телефонов есть root, становится возможным переносить и данные программ с помощью того же GoBackup или TitaniumBackup.",
             "slug": "admin-avtonomnoe-kopirovanie-dannyih-v-novyij-telefon-na-android",
-            "views": 159,
+            "views": 161,
             "likes": 0,
             "time_published": "2024-05-05T18:49:36.872Z",
             "time_edit": "2024-05-06T06:12:30Z",
@@ -3024,20 +3167,107 @@
         "pk": 25,
         "fields": {
             "title": "С 2016 года во всех новых телефонах и планшетах ASUS будет предустановлен AdBlock Plus 1 мин",
-            "name_user": null,
+            "name_user": 4,
             "image_user": "",
             "image": "posts/2024/05/06/6569615010254bc93bbfb873510cf2da.png",
             "description": "Недавно стало известно, что ASUS заключила сделку с Adblock Plus. Предметом сделки стала интеграция блокировщика в браузеры на планшетах и телефонах тайваньской компании, который будет включен по умолчанию. Об этом заявил в интервью изданию Motherboard сооснователь и генеральный директор Adblock Plus Тил Фэйда (ориг. Till Faida).\r\n\r\nКак отмечает Motherboard, у браузера компании ASUS относительно небольшая пользовательская база (порядка 15 миллионов), но подобное соглашение потенциально имеет важное значение. Если другие производители устройств последуют этому примеру, то подобная инициатива может быстро набрать обороты, что встряхнет рекламный и медиа сектор.\r\n\r\nAdblock Plus — один из наиболее известных блокировщиков рекламы — недавно обновил свою политику допустимой рекламы, которая дает людям возможность разрешить показ некоторых объявлений в своих браузерах.\r\n\r\nБлокировка рекламы является предметом споров на протяжении долгого времени. Исключением не стал и нынешний год. Не утихают дебаты на тему того, что отключение показа рекламы более предпочтительно, нежели плата за предоставляемый контент.\r\n\r\nКак сказал Фэйда: «Мы очень рады быть в одной команде с ASUS, первой из крупных компаний, которая решила интегрировать блокировку рекламы в свои мобильные устройств. Это еще один вызов для индустрии рекламы, и он становиться все громче с каждым днем.»\r\n\r\nВ свете неумолкающих дискуссий о том, как взымать плату за онлайн контент, будет интересно посмотреть, сколько компаний присоединятся к ASUS, если таковые буду вообще.",
             "slug": "admin-s-2016-goda-vo-vseh-novyih-telefonah-i-planshetah-asus-budet-predustanovlen-adblock-plus-1-min",
-            "views": 34,
+            "views": 40,
             "likes": 0,
             "time_published": "2024-05-06T06:16:18.693Z",
             "time_edit": null,
             "is_edit": false,
             "text_to_edit": "Изменено:",
-            "comment_count": 1,
+            "comment_count": 2,
             "is_published": true,
             "name_button": "Посмотреть"
+        }
+    },
+    {
+        "model": "news.posts",
+        "pk": 26,
+        "fields": {
+            "title": "r32432412",
+            "name_user": 5,
+            "image_user": "",
+            "image": "",
+            "description": "43214",
+            "slug": "root-r32432412",
+            "views": 8,
+            "likes": 0,
+            "time_published": "2024-05-26T12:50:39.718Z",
+            "time_edit": null,
+            "is_edit": false,
+            "text_to_edit": "Изменено:",
+            "comment_count": 0,
+            "is_published": true,
+            "name_button": "Посмотреть"
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$720000$mqM66mMVxF6q19JIPjooIF$BFhlMUkZfhRAIC6s+Scso9CeuBWXyt3ctrLIYhMJHJo=",
+            "last_login": "2024-05-29T22:18:51.043Z",
+            "is_superuser": false,
+            "username": "alex",
+            "first_name": "Матвей",
+            "last_name": "Павлов",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-05-25T18:04:46.049Z",
+            "image": "users/IMG_5601.jpeg",
+            "email": "yukiu217@gmail.com",
+            "is_verify_email": true,
+            "phone": "+79136241051",
+            "country": "RU",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 4,
+        "fields": {
+            "password": "pbkdf2_sha256$720000$rTFZmP5YzaqKSSPu7ptfdT$r4hsSbPIm4MzKMEH/1sSjy+Gzo2Rz7ZpDuL4nFtmcQg=",
+            "last_login": "2024-05-25T19:34:37.737Z",
+            "is_superuser": false,
+            "username": "yuku",
+            "first_name": "Чел",
+            "last_name": "Чел",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-05-25T19:33:11.551Z",
+            "image": "users/IMG_5351.jpeg",
+            "email": "yukiu217@gmaiil.com",
+            "is_verify_email": false,
+            "phone": "+79136251051",
+            "country": "DE",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 5,
+        "fields": {
+            "password": "pbkdf2_sha256$720000$8FYC0upenoj52xqQads2nS$g3y+6I4Os4T1hwDKEEJYFmm73DMfESUEFyeqmAI7S2E=",
+            "last_login": "2024-05-29T21:54:07.059Z",
+            "is_superuser": true,
+            "username": "root",
+            "first_name": "",
+            "last_name": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-05-25T21:02:10Z",
+            "image": "users/HP_New_Logo_2D.svg.png",
+            "email": "root@gmail.com",
+            "is_verify_email": true,
+            "phone": "+79136241041",
+            "country": "AQ",
+            "groups": [],
+            "user_permissions": []
         }
     }
 ]
