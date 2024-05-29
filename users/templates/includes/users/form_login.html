@@ -11,8 +11,8 @@
             <div class="form-error">{{ form.non_field_errors }}</div>
             {% endif %}
 
-            <label class="form-label" for="id_username">Имя пользователя или Эмеил</label>
-            <input class="form-control" autofocus="true" {% if form.username.value %}value="{{ form.username.value }}"{% endif %} type="text" placeholder="Введите Имя или Эмеил" name="username" id="id_username" maxlength="150" required>
+            <label class="form-label" for="id_username">Эмеил</label>
+            <input class="form-control" autofocus="true" {% if form.username.value %}value="{{ form.username.value }}"{% endif %} type="text" placeholder="Введите Эмеил" name="username" id="id_username" maxlength="150" required>
             <div class="form-error">{{ form.username.error }}</div>
 
             <label class="form-label mt-3" for="id_password">{{ form.password.label }}</label>
@@ -22,7 +22,7 @@
         </div>
     </form>
     <div class="d-flex justify-content-center">
-        <a class="me-4 link-underline-dark text-black" href="{% url 'users:password_reset' %}">Забыли пароль?</a>
+        <a class="me-4 link-underline-dark text-black" href="{% url 'users:password_way' %}">Забыли пароль?</a>
         <a class="link-underline-dark text-black" href="{% url 'users:reg' %}">Регистрация!</a>
     </div>
 </div>

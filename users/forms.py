@@ -1,7 +1,9 @@
-
+from typing import Any
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, UserChangeForm, PasswordChangeForm
 from django.contrib.auth import get_user_model
 from django import forms
+from django.template import loader
+from django.core.mail import EmailMultiAlternatives
 
 from phonenumber_field.widgets import PhoneNumberPrefixWidget
 from phonenumber_field.formfields import PhoneNumberField
@@ -57,6 +59,22 @@ class RegisterUserForm(UserCreationForm):
         
         return phone
     
+    def send_mail(
+        self,
+        subject_template_name,
+        email_template_name,
+        context,
+        from_email,
+        to_email
+    ):
+        subject = loader.render_to_string(subject_template_name, context)
+        subject = "".join(subject.splitlines())
+        body = loader.render_to_string(email_template_name, context)
+
+        email_message = EmailMultiAlternatives(subject, body, from_email, [to_email])
+        email_message.send()
+    
+    
     
 class UserUpdateForm(UserChangeForm):
     username = forms.CharField(disabled=True)
@@ -80,3 +98,4 @@ class UserChangePasswordForm(PasswordChangeForm):
     new_password1 = forms.CharField()
     new_password2 = forms.CharField()
         
+    

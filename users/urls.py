@@ -13,11 +13,14 @@ urlpatterns = [
     
     #registration
     path('regisration/', views.RegisterUser.as_view(), name='reg'),
-    path('regisration/done/', views.DoneTemplateView.as_view(), name='done'),
+    path('regisration/done/', views.UserRegistrationDode.as_view(), name='done'),
     
     #user
     path('user/<slug:username>/', views.UserDetailView.as_view(), name='user'),
     path('user/<slug:username>/update/', views.UpdateProfileUser.as_view(), name='update'),
+    
+    #password_gate
+    path('password_way/', views.UserChoiceWayView.as_view(), name='password_way'),
     
     #password_change
     path('password_change/', views.UserChangePassword.as_view(), name='password_change'),
@@ -28,4 +31,6 @@ urlpatterns = [
     path('password_reset/done/', views.UserResetPasswordDone.as_view(), name='password_reset_done'),
     path('password_reset/complete/', views.UserResetPasswordComplete.as_view(), name='password_reset_complete'),
     path('password_reset/<uidb64>/<token>/', views.UserResetPasswordConfirm.as_view(), name='password_reset_confirm'),
+    path('password_temporary/', views.UserPasswordTemporary.as_view(), name='verify_temporary'),
+    path('password_temporary_done/<uidb64>/<token>/', views.UserPasswordTemporaryDone.as_view(), name='verify_temporary_done'),
 ]

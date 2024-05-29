@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
+from .config_parse import yandex_mail
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +27,7 @@ SECRET_KEY = 'django-insecure-4_^=c%twn#_vo#vwzy7vj52g1o%h#9lb+^0h$cu5tjjbgqn8=k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1',]
 INTERNAL_IPS = ['127.0.0.1',]
 SITE_ID = 1
 
@@ -178,11 +179,24 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'users.User'
 
 AUTHENTICATION_BACKENDS = [
-    'django.contrib.auth.backends.ModelBackend',
     'users.authentication.EmailAuthBackend',
+    'django.contrib.auth.backends.ModelBackend',
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+YANDEX_MAIL = yandex_mail()
+EMAIL_HOST = YANDEX_MAIL.get('host')
+EMAIL_PORT = YANDEX_MAIL.get('port')
+EMAIL_HOST_USER = YANDEX_MAIL.get('hostuser')
+EMAIL_HOST_PASSWORD = os.environ.get('PASSWORD_HOST_YANDEX')
+EMAIL_USE_SSL = True if YANDEX_MAIL.get('connecttype') == 'SSL' else False
+EMAIL_USE_TLS = True if YANDEX_MAIL.get('connecttype') == 'TLS' else False
+
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+SERVER_EMAIL = EMAIL_HOST_USER
+EMAIL_ADMIN = EMAIL_HOST_USER
 
 LOGIN_URL = 'users:login'
 LOGOUT_REDIRECT_URL = 'home:home_page'

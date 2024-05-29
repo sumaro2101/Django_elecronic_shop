@@ -32,7 +32,7 @@
                 <div class="form-error">{{ form.phone.errors }}</div>
     
                 <div class="form-floating mt-2">
-                    <select class="form-select form-select-sm" name="country" required id="id_country">
+                    <select class="form-select form-select-sm" name="country" id="id_country">
                         <option value selected>{% if form.country.value %}{{form.country.value}}{% else %}Выберете страну{% endif %}</option>
                         {% get_countries as countries %}
                         {% for country in countries %}

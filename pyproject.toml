@@ -25,6 +25,7 @@ django-phonenumber-field = "^7.3.0"
 phonenumbers = "^8.13.37"
 django-countries = "^7.6.1"
 babel = "^2.15.0"
+urllib3 = "^2.2.1"
 
 
 [tool.poetry.group.dev.dependencies]
