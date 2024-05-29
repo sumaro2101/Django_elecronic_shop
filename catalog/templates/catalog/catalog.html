@@ -7,7 +7,7 @@
 <div class="card m-0 p-2">      
     
     <div class="card-body p-0">
-        {% catalog_blocks %}
+        {% catalog_blocks request.user %}
     </div>
 </div>
 {% endblock content %}

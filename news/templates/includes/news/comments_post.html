@@ -20,10 +20,10 @@
                             <header class="d-flex align-items-center flex-wrap-nowrap mb-2" style="height: 24px; margin: -4px; padding: 4px;">
                                 <div class="d-flex" style="margin: 0 4px 0 0; max-width: 100%;">
                                     <span class="d-flex align-items-center" style="max-width: 100%;">
-                                        <a href="#" class="posts-comment-image-link me-2">
+                                        <a href="{{ comment.user_name.get_absolute_url }}" class="posts-comment-image-link me-2">
                                             <div style="height: 100%; width: 100%;">
-                                                {% if comment.image %}
-                                                <img src="{{ comment.image.url }}" style="border-radius: 3px; display: block; overflow: hidden; height: 24px; width: 24px;" alt="{{ comment.description }}">
+                                                {% if comment.user_name.image %}
+                                                <img src="{{ comment.user_name.image.url }}" style="border-radius: 3px; display: block; overflow: hidden; height: 24px; width: 24px;" alt="{{ comment.description }}">
                                                 {% else %}
                                                 <img src="{% static 'images/image not found.jpeg' %}" style="border-radius: 3px; display: block; overflow: hidden; height: 24px; width: 24px;" alt="{{ comment.description }}">
                                                 {% endif %}

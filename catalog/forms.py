@@ -1,6 +1,6 @@
 from django import forms
 from django.forms import BaseModelFormSet, ValidationError, inlineformset_factory
-from .models import Product, OsVersions
+from .models import Product, OsVersions, Companies
 from .invalid_words_form import invalid_words, is_invalid_word
 
 class ProductForm(forms.ModelForm):
@@ -12,21 +12,34 @@ class ProductForm(forms.ModelForm):
     def clean_name(self):
         name = self.cleaned_data.get('name')
         for word in name.split(' '):
-            print(word)
             if word.lower() in invalid_words or is_invalid_word(word):
                 raise forms.ValidationError('Имеются не допустимые слова')
         
         return name
-    
+        
     def clean_descriptions(self):
         descriptions = self.cleaned_data.get('descriptions')
         
         for word in descriptions.split(' '):
-            print(word)
             if word.lower() in invalid_words or is_invalid_word(word):
                 raise forms.ValidationError('Имеются не допустимые слова')
 
         return descriptions
+    
+    
+    def clean(self):
+        
+        if any(self.errors):
+            return 
+        
+        category = self.cleaned_data.get('category')
+        company = self.cleaned_data.get('company')
+        check_company = Companies.objects.prefetch_related('category').all()
+        
+        if check_company.get(company=company).category.filter(category=category).exists():
+            pass
+        else:
+            self.add_error('company', f'К сожалению по этой категории компания {company} еще не представлена')
   
   
 class OsVersionsForm(forms.ModelForm):
@@ -37,7 +50,7 @@ class OsVersionsForm(forms.ModelForm):
     
     class Meta:
         model = OsVersions
-        fields = ('product', 'os_number', 'os_name', 'actual_os')
+        fields = ('product_version', 'os_number', 'os_name', 'actual_os')
 
 class OsVersionsFormSet(forms.inlineformset_factory(Product, OsVersions, OsVersionsForm, extra=3)):
     

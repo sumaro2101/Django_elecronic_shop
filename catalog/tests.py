@@ -34,3 +34,4 @@ class TagDiscountTests(TestCase):
 class TagFilterQueryTests(TestCase):
     
     pass
+

@@ -1,7 +1,7 @@
 {% load static %}
 
 <h3 class="text-center">Авторизация</h3>
-<div class="card mt-2 pt-2">
+<div class="card m-2 p-3">
     <form class=" d-flex justify-content-center mb-4 p-2" action="{% url 'users:login' %}" method="post">
 
         <div class="d-flex flex-column align-items-start" style="width: 350px;">
@@ -11,8 +11,9 @@
             <div class="form-error">{{ form.non_field_errors }}</div>
             {% endif %}
 
-            <label class="form-label" for="id_username">{{ form.username.label }}</label>
-            <input class="form-control" autofocus="true" {% if form.username.value %}value="{{ form.username.value }}"{% endif %} type="text" placeholder="Введите имя" name="username" id="id_username" maxlength="150" required>
+            <label class="form-label" for="id_username">Эмеил</label>
+            <input class="form-control" autofocus="true" {% if form.username.value %}value="{{ form.username.value }}"{% endif %} type="text" placeholder="Введите Эмеил" name="username" id="id_username" maxlength="150" required>
+            <div class="form-error">{{ form.username.error }}</div>
 
             <label class="form-label mt-3" for="id_password">{{ form.password.label }}</label>
             <input class="form-control" autocomplete="current-password" placeholder="Введите пароль" type="password" name="password" id="id_password" required>
@@ -21,7 +22,7 @@
         </div>
     </form>
     <div class="d-flex justify-content-center">
-        <a class="me-4 link-underline-dark text-black" href="">Забыли пароль?</a>
+        <a class="me-4 link-underline-dark text-black" href="{% url 'users:password_way' %}">Забыли пароль?</a>
         <a class="link-underline-dark text-black" href="{% url 'users:reg' %}">Регистрация!</a>
     </div>
 </div>

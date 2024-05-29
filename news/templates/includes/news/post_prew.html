@@ -7,10 +7,10 @@
     <span style="display: flex;">
         <span>
             <div class="d-flex">
-                <a href="#" class="posts-comment-image-link me-2">
+                <a href="{{ post.name_user.get_absolute_url }}" class="posts-comment-image-link me-2">
                     <div style="height: 24px; width: 24px;">
-                        {% if post.image_user %}
-                        <img src="{{ post.image_user.url }}" style="border-radius: 3px; display: block; overflow: hidden; height: 24px; width: 24px;" alt="{{ comment.description }}">
+                        {% if post.name_user.image %}
+                        <img src="{{ post.name_user.image.url }}" style="border-radius: 3px; display: block; overflow: hidden; height: 24px; width: 24px;" alt="{{ comment.description }}">
                         {% else %}
                         <img src="{% static 'images/image not found.jpeg' %}" style="border-radius: 3px; display: block; overflow: hidden; height: 24px; width: 24px;" alt="{{ comment.description }}">
                         {% endif %}
@@ -45,7 +45,7 @@
             {% if post.image %}
             <img src="{{ post.image.url }}" style="cursor: pointer; max-width: 100%; height: auto; vertical-align: middle; overflow: hidden;" alt="{{ post.title }}">
             {% else %}
-            <img src="{% static 'images/image not found.jpeg' %}" style="cursor: pointer; max-width: 100%; height: auto; vertical-align: middle;" alt="{{ post.title }}">
+            <img src="{% static 'images/image not found.jpeg' %}" style="cursor: pointer; max-width: 100%; height: 200px; vertical-align: middle;" alt="{{ post.title }}">
             {% endif %}
         </a>
         <p style="margin-top: 12px; font-size: 1rem; line-height: 1.56;">{{ post.description|linebreaks|truncatewords:50 }}</p>
