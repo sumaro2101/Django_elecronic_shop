@@ -202,8 +202,7 @@ class UserPasswordTemporary(PasswordResetView):
     template_name = 'passwords/password_reset_form.html'
     email_template_name = 'passwords/password_temporary_email.html'
     success_url = reverse_lazy('users:password_reset_done')
-    extra_email_context = {'is_temporary': True}
-    extra_context = {'title': 'Electronic Shop', 'cat_selected': 4,}
+    extra_context = {'title': 'Electronic Shop', 'cat_selected': 4, 'is_temporary': True,}
     
     
 class UserPasswordTemporaryDone(PasswordResetConfirmView):
