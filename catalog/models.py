@@ -9,7 +9,6 @@ from django.contrib.auth import get_user_model
 
     
 class Category(models.Model):
-
     category = models.CharField(max_length=50, verbose_name='Категория', primary_key=True, db_column='category')
     descriptions = models.TextField(verbose_name='Описание', null=True, blank=True)
     image = models.ImageField(upload_to='category', null=True, blank=True, verbose_name='изображение')

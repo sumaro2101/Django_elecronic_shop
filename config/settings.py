@@ -179,12 +179,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'users.User'
 
 AUTHENTICATION_BACKENDS = [
-    'users.authentication.EmailAuthBackend',
     'django.contrib.auth.backends.ModelBackend',
+    'users.authentication.EmailAuthBackend',
 ]
 
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 YANDEX_MAIL = yandex_mail()
 EMAIL_HOST = YANDEX_MAIL.get('host')

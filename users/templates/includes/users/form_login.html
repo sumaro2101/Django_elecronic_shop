@@ -11,8 +11,8 @@
             <div class="form-error">{{ form.non_field_errors }}</div>
             {% endif %}
 
-            <label class="form-label" for="id_username">Эмеил</label>
-            <input class="form-control" autofocus="true" {% if form.username.value %}value="{{ form.username.value }}"{% endif %} type="text" placeholder="Введите Эмеил" name="username" id="id_username" maxlength="150" required>
+            <label class="form-label" for="id_username">Имя пользователя или Эмеил</label>
+            <input class="form-control" autofocus="true" {% if form.username.value %}value="{{ form.username.value }}"{% endif %} type="text" placeholder="Введите имя пользователя или Эмеил" name="username" id="id_username" maxlength="150" required>
             <div class="form-error">{{ form.username.error }}</div>
 
             <label class="form-label mt-3" for="id_password">{{ form.password.label }}</label>

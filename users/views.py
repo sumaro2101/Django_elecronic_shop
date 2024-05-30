@@ -104,10 +104,7 @@ class UserConfirmEmailView(RequiredNotAuthenticatedMixin, TemplateView):
     
     def dispatch(self, *args, **kwargs):
         self.valid = False
-        try:
-            self.user = self.get_user(kwargs['uidb64'])
-        except:
-            return self.render_to_response(self.get_context_data())
+        self.user = self.get_user(kwargs['uidb64'])
         if self.user is not None:
             token = kwargs['token']
             if token == self.reset_url_token:
@@ -130,7 +127,11 @@ class UserConfirmEmailView(RequiredNotAuthenticatedMixin, TemplateView):
     
     def get_user(self, uidb64):
         uid = urlsafe_base64_decode(uidb64).decode()
-        return get_user_model()._default_manager.get(pk=uid)
+        try:
+            user = get_user_model()._default_manager.get(pk=uid)
+        except:
+            user = None
+        return user
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

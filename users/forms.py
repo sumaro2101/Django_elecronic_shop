@@ -12,7 +12,7 @@ from django_countries.widgets import CountrySelectWidget
 
 class UserLoginForm(AuthenticationForm):
     
-    username = forms.EmailField()
+    username = forms.CharField()
     password = forms.CharField(label='Пароль')
     
     class Meta:

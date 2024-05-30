@@ -14,10 +14,11 @@ urlpatterns = [
     #registration
     path('regisration/', views.RegisterUser.as_view(), name='reg'),
     path('regisration/done/', views.UserRegistrationDode.as_view(), name='done'),
+    path('regisration/verify/<uidb64>/<token>/', views.UserConfirmEmailView.as_view(), name='verify_email'),
     
     #user
-    path('user/<slug:username>/', views.UserDetailView.as_view(), name='user'),
-    path('user/<slug:username>/update/', views.UpdateProfileUser.as_view(), name='update'),
+    path('user/<str:username>/', views.UserDetailView.as_view(), name='user'),
+    path('user/<str:username>/update/', views.UpdateProfileUser.as_view(), name='update'),
     
     #password_gate
     path('password_way/', views.UserChoiceWayView.as_view(), name='password_way'),
