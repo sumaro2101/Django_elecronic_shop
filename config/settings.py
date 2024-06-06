@@ -75,6 +75,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.redirects.middleware.RedirectFallbackMiddleware',
+    'django.contrib.sites.middleware.CurrentSiteMiddleware',
     
     #django_debug_toolbar
     'debug_toolbar.middleware.DebugToolbarMiddleware',

@@ -1,15 +1,15 @@
 from typing import Any
 from django.db.models.base import Model as Model
-from django.db.models.query import QuerySet
+from django.db.models.query import QuerySet, Q
 from django.contrib.auth import mixins
-from django.forms import BaseModelForm, inlineformset_factory
+from django.forms import BaseModelForm
 from django.urls import reverse_lazy
 from django.views.generic import (ListView, TemplateView, DetailView,
                                   CreateView, UpdateView, DeleteView)
 from django.db import transaction
 
-from .models import Product, OsVersions
-from .forms import ProductForm, OsVersionsForm, OsVersionsFormSet
+from .models import Product
+from .forms import ProductForm, OsVersionsFormSet
 from pytils.translit import slugify
 # Create your views here.
 
@@ -23,11 +23,10 @@ class ProductCreateView(mixins.LoginRequiredMixin, CreateView):
             context['os_versions'] = OsVersionsFormSet(self.request.POST, instance=self.object)
         else:
             context['os_versions'] = OsVersionsFormSet(instance=self.object)
-            
+
         context['title'] = 'Electronic Shop'
         context['cat_selected'] = 2
         return context
-    
     
     def form_valid(self, form):
         context = self.get_context_data()
@@ -44,28 +43,35 @@ class ProductCreateView(mixins.LoginRequiredMixin, CreateView):
                 return super().form_invalid(form)
              
         return super().form_valid(form)
+    
+    def form_invalid(self, form: BaseModelForm):
+        form = super().form_invalid(form)
+        print(self.request.POST)
+        return form
         
 
-class ProductUpdateView(mixins.PermissionRequiredMixin, mixins.LoginRequiredMixin, UpdateView):
+class ProductUpdateView(mixins.UserPassesTestMixin ,mixins.LoginRequiredMixin, UpdateView):
     form_class = ProductForm
     model = Product
-    permission_required = 'catalog.update_product'
     slug_url_kwarg = 'product_id'
     slug_field = 'url'
     context_object_name = 'product_edit'
     
-    
+    def get_form_kwargs(self) -> dict[str, Any]:
+        kwargs = super().get_form_kwargs()
+        kwargs['user'] = self.request.user
+        return kwargs
+     
     def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
         context = super(ProductUpdateView, self).get_context_data(**kwargs)
         if self.request.method == 'POST':
             context['os_versions'] = OsVersionsFormSet(self.request.POST, instance=self.object)
         else:
             context['os_versions'] = OsVersionsFormSet(instance=self.object)
-        
+        context['moderator'] = self.request.user.groups.get_queryset().filter(name='moderators').exists()
         context['title'] = 'Electronic Shop'
         context['cat_selected'] = 2
-        return context
-    
+        return context  
     
     def form_valid(self, form):
         context = self.get_context_data()
@@ -81,7 +87,12 @@ class ProductUpdateView(mixins.PermissionRequiredMixin, mixins.LoginRequiredMixi
                 return super().form_invalid(form)
             
         return super().form_valid(form)
-
+    
+    def test_func(self) -> bool | None:
+        return self.request.user == self.get_object().owner or\
+            self.request.user.groups.filter(name='moderators').exists() or\
+                self.request.user.is_superuser
+    
 
 class ProductDeleteView(mixins.PermissionRequiredMixin, mixins.LoginRequiredMixin, DeleteView):
     model = Product
@@ -126,12 +137,11 @@ class CatalogCompaniesListView(ListView):
     
     paginate_by = 10
     
-    
     def get_queryset(self, *args, **kwargs) -> QuerySet[Any]:
         queryset = super().get_queryset(*args, **kwargs)
         self.path_list = ['catalog']
         
-        self.obj = queryset.filter(category__url=self.kwargs['cats_id'])
+        self.obj = queryset.filter(Q(category__url=self.kwargs['cats_id'], discontinued=0))
         self.path_list.append(self.kwargs['cats_id'])
         
         self.company = self.request.GET.get('comp', 'all')
@@ -152,7 +162,6 @@ class CatalogCompaniesListView(ListView):
         
         return self.obj
 
-    
     def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
         context = super().get_context_data(**kwargs)
         context['title'] = self.title
@@ -164,7 +173,7 @@ class CatalogCompaniesListView(ListView):
         return context
         
  
-class ProductDetailView(DetailView):
+class ProductDetailView(mixins.UserPassesTestMixin, DetailView):
     
     queryset = Product.objects.select_related('company', 'category')
     slug_field = 'url'
@@ -175,7 +184,6 @@ class ProductDetailView(DetailView):
     title = 'Electronic Shop'
     cat_selected = 2
     
-    
     def get_object(self, queryset=queryset):
         self.path_list = ['catalog']
         
@@ -185,8 +193,13 @@ class ProductDetailView(DetailView):
         self.path_list.extend([obj.category.url, obj.company.url, obj.url])
         self.company_logo = obj.company.image
         
-        return obj
+        return obj  
     
+    def test_func(self) -> bool | None:
+        return self.request.user.is_staff or\
+            self.request.user.is_superuser or\
+                self.get_object().discontinued == 0 or\
+                    self.request.user == self.get_object().owner
     
     def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
         context = super().get_context_data(**kwargs)
@@ -195,6 +208,7 @@ class ProductDetailView(DetailView):
         context['path_list'] = self.path_list
         context['company_logo'] = self.company_logo
         context['version'] = self.version[0] if self.version.exists() else None
+        context['moderator'] = self.request.user.groups.get_queryset().filter(name='moderators').exists()
         
         return context
         
