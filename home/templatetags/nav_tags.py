@@ -65,7 +65,7 @@ def show_right_bar(base_model, product):
         title_nav = 'Новинки'
         end_lines = 'В разработке'
     
-    list_new_items = product.values('name', 'release', 'url')
+    list_new_items = product.filter(discontinued=0).values('name', 'release', 'url')
     
     right_bar = {
         'title_nav': title_nav,

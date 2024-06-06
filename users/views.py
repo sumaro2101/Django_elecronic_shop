@@ -71,13 +71,13 @@ class RegisterUser(RequiredNotAuthenticatedMixin, PasswordContextMixin, CreateVi
         form.save()
         
         user = get_user_model()._default_manager.get(email=email)
-        current_site = get_current_site(self.request)
+        current_site = self.request.site
         update_session_auth_hash(self.request, user)
         
         context = {
                 "email": email,
-                "domain": current_site.domain,
-                "site_name": current_site.name,
+                "domain": current_site.domain if current_site.domain != 'example.com' else settiings.ALLOWED_HOSTS[0] + ':8000',
+                "site_name": current_site.name if current_site.name != 'example.com' else 'EL_COM',
                 "uid": urlsafe_base64_encode(force_bytes(user.pk)),
                 "user": user,
                 "token": self.token_generator.make_token(user),
@@ -178,6 +178,13 @@ class UserChangePassword(mixins.LoginRequiredMixin, PasswordChangeView):
 class UserChangePasswordDone(mixins.LoginRequiredMixin, PasswordChangeDoneView):
     template_name = 'passwords/password_change_done.html'
     extra_context = {'title': 'Electronic Shop', 'cat_selected': 4}
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        update_session_auth_hash(self.request, self.request.user)
+        context["title"] = 'Electronic Shop'
+        context["cat_selected"] = 4
+        return context
     
 
 class UserResetPassword(PasswordResetView):
