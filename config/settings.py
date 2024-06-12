@@ -27,14 +27,14 @@ load_dotenv(ENV_DIR)
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = find_env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 CACHE_ENABLE = True
 GLOBAL_CACHE = True
 
-ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOSTS'),]
+ALLOWED_HOSTS = [find_env('ALLOWED_HOSTS'),]
 INTERNAL_IPS = ['127.0.0.1',]
 SITE_ID = 1
 
@@ -137,11 +137,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'elshop',
-        'USER': 'postgres',
-        'HOST': 'localhost',
-        'PORT': 5433,
-        'PASSWORD': os.environ.get('PASSWORD_POSTGRES'),
+        'NAME': find_env('DB_NAME'),
+        'USER': find_env('DB_USER'),
+        'HOST': find_env('DB_HOST'),
+        'PORT': find_env('DB_PORT'),
+        'PASSWORD': find_env('PASSWORD_POSTGRES'),
     }
 }
 
