@@ -11,23 +11,30 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+from dotenv import load_dotenv
 import os
+
 from .config_parse import yandex_mail
+from .utils import find_env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+ENV_DIR = Path(__file__).resolve() / '.env'
 
+load_dotenv(ENV_DIR)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-4_^=c%twn#_vo#vwzy7vj52g1o%h#9lb+^0h$cu5tjjbgqn8=k'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+CACHE_ENABLE = True
+GLOBAL_CACHE = True
 
-ALLOWED_HOSTS = ['127.0.0.1',]
+ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOSTS'),]
 INTERNAL_IPS = ['127.0.0.1',]
 SITE_ID = 1
 
@@ -80,7 +87,15 @@ MIDDLEWARE = [
     #django_debug_toolbar
     'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
-
+if CACHE_ENABLE and GLOBAL_CACHE:
+    MIDDLEWARE += [
+        #global cache
+        'django.middleware.cache.UpdateCacheMiddleware',
+        'django.middleware.common.CommonMiddleware',
+        'django.middleware.cache.FetchFromCacheMiddleware',
+        ]
+    
+    
 ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
@@ -130,6 +145,24 @@ DATABASES = {
     }
 }
 
+if CACHE_ENABLE:
+    match find_env('TEST'):
+        case 'False':
+            backend_cache = {
+            'BACKEND': 'django.core.cache.backends.redis.RedisCache',
+            'LOCATION': find_env('LOCATION_CACHE'),
+            'TIMEOUT': 60 * 10,
+            }
+        case _:
+            backend_cache = {
+            'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
+    }
+            
+    CACHES = {
+    'default': backend_cache,
+    }
+    CACHE_MIDDLEWARE_KEY_PREFIX='el_shop_cache'
+    CACHE_MIDDLEWARE_SECONDS=600
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators

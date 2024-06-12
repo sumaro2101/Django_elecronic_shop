@@ -2,12 +2,14 @@ from django.db.models.base import Model as Model
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.views.generic.edit import ModelFormMixin
+from django.views.decorators.cache import never_cache
+from django.utils.decorators import method_decorator
 from django.shortcuts import redirect
 from news.models import Posts, PostComment
 from .forms import AddPostForm, AddCommentForm
 from pytils.translit import slugify
 from django.utils import timezone
-from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin ,UserPassesTestMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 # Create your views here.
 
 
@@ -54,7 +56,7 @@ class PostDetailView(ModelFormMixin, DetailView):
             
             return redirect('news:post', comment_form.post.slug)
 
- 
+@method_decorator(never_cache, 'dispatch')
 class AddPostCreateView(LoginRequiredMixin ,CreateView):
     model = Posts
     form_class = AddPostForm
