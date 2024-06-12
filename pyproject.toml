@@ -26,6 +26,9 @@ phonenumbers = "^8.13.37"
 django-countries = "^7.6.1"
 babel = "^2.15.0"
 urllib3 = "^2.2.1"
+python-dotenv = "^1.0.1"
+hiredis = "^2.3.2"
+redis = "^5.0.5"
 
 
 [tool.poetry.group.dev.dependencies]

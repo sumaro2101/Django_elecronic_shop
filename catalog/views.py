@@ -1,18 +1,23 @@
 from typing import Any
 from django.db.models.base import Model as Model
-from django.db.models.query import QuerySet, Q
+from django.db.models.query import QuerySet
 from django.contrib.auth import mixins
 from django.forms import BaseModelForm
 from django.urls import reverse_lazy
 from django.views.generic import (ListView, TemplateView, DetailView,
                                   CreateView, UpdateView, DeleteView)
+from django.views.decorators.cache import never_cache
+from django.utils.decorators import method_decorator
 from django.db import transaction
 
 from .models import Product
 from .forms import ProductForm, OsVersionsFormSet
+from .services import cache_request, get_product_queryset_filter
 from pytils.translit import slugify
 # Create your views here.
 
+
+@method_decorator(never_cache, 'dispatch')
 class ProductCreateView(mixins.LoginRequiredMixin, CreateView):
     form_class = ProductForm
     model = Product
@@ -128,7 +133,7 @@ class CatalogTemplateView(TemplateView):
 
 class CatalogCompaniesListView(ListView):
     
-    queryset = Product.objects.get_queryset()
+    queryset = Product.objects.get_queryset().select_related('category', 'company')
     context_object_name = 'products'
     template_name = 'catalog/category_list.html'
     
@@ -139,40 +144,25 @@ class CatalogCompaniesListView(ListView):
     
     def get_queryset(self, *args, **kwargs) -> QuerySet[Any]:
         queryset = super().get_queryset(*args, **kwargs)
-        self.path_list = ['catalog']
         
-        self.obj = queryset.filter(Q(category__url=self.kwargs['cats_id'], discontinued=0))
-        self.path_list.append(self.kwargs['cats_id'])
+        company = self.request.GET.get('comp', 'all')
+        actual_filter = self.request.GET.get('filter', 'all')
         
-        self.company = self.request.GET.get('comp', 'all')
-        self.actual_filter = self.request.GET.get('filter', 'all')
-        
-        if self.company == 'all':
-            pass
-        else:
-            self.path_list.append(self.company)
-            self.obj = self.obj.filter(company__url=self.company)
-        
-        if self.actual_filter == 'all':
-            pass
-        elif self.actual_filter == 'is_new':
-            self.obj = [item for item in self.obj if item.is_new()]
-        else:
-            self.obj = self.obj.order_by(self.actual_filter)
-        
-        return self.obj
+        self.path_list = (elem for elem in ('catalog', self.kwargs['cats_id'], company) if elem != 'all')
+
+        return get_product_queryset_filter(queryset, filter_=actual_filter, company=company, category=self.kwargs['cats_id'])
 
     def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
         context = super().get_context_data(**kwargs)
         context['title'] = self.title
-        context['actual_company'] = self.company
-        context['actual_filter'] = self.actual_filter
+        context['actual_company'] = self.request.GET.get('comp', 'all')
+        context['actual_filter'] = self.request.GET.get('filter', 'all')
         context['cat_selected'] = self.cat_selected
         context['path_list'] = self.path_list
         
         return context
         
- 
+
 class ProductDetailView(mixins.UserPassesTestMixin, DetailView):
     
     queryset = Product.objects.select_related('company', 'category')
@@ -187,7 +177,9 @@ class ProductDetailView(mixins.UserPassesTestMixin, DetailView):
     def get_object(self, queryset=queryset):
         self.path_list = ['catalog']
         
-        obj = super().get_object(queryset)
+        queryset = self.get_queryset()
+        slug = self.kwargs.get(self.slug_url_kwarg)
+        obj = cache_request(queryset.get(url=slug))
         
         self.version = obj.osversions_set.filter(actual_os=True)
         self.path_list.extend([obj.category.url, obj.company.url, obj.url])
@@ -196,10 +188,11 @@ class ProductDetailView(mixins.UserPassesTestMixin, DetailView):
         return obj  
     
     def test_func(self) -> bool | None:
+        obj = self.get_object()
         return self.request.user.is_staff or\
             self.request.user.is_superuser or\
-                self.get_object().discontinued == 0 or\
-                    self.request.user == self.get_object().owner
+                obj.discontinued == 0 or\
+                    self.request.user == obj.owner
     
     def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
         context = super().get_context_data(**kwargs)
@@ -207,7 +200,7 @@ class ProductDetailView(mixins.UserPassesTestMixin, DetailView):
         context['cat_selected'] = self.cat_selected
         context['path_list'] = self.path_list
         context['company_logo'] = self.company_logo
-        context['version'] = self.version[0] if self.version.exists() else None
+        context['version'] = cache_request(self.version[0]) if self.version.exists() else None
         context['moderator'] = self.request.user.groups.get_queryset().filter(name='moderators').exists()
         
         return context

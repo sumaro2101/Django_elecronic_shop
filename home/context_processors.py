@@ -8,4 +8,4 @@ def get_base_model(request):
     return {'base_model': base_model}
 
 def get_product(request):
-    return {'product': Product.objects.select_related('company', 'category')}
+    return {'product': Product.objects.select_related('company', 'category').filter(discontinued=0)}
