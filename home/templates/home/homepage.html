@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+{% load static %}
+{% load home_tags %}
+
+{% block content %}
+
+{% with product=product %}
+
+<div class="card m-0 pt-2">
+    {% show_sale_products product %}
+</div>
+
+<div class="card m-0 mt-4 pt-2">
+    {% show_best_products product %}
+</div>
+{% endwith %}
+
+{% endblock content %}

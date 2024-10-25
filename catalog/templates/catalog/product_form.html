@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+<h3 class="p-2">
+    {% if product_edit %}Изменение товара: {{ product_edit.name }}{% else %}Добавление товара{% endif %}
+</h3>
+<div class="card m-1 p-2">
+    <div class="card-body p-3">
+        {% include 'includes/catalog/product_create.html' %}
+    </div>
+</div>
+{% endblock %}

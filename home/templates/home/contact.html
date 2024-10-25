@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+{% load static %}
+{% load contact_tags %}
+
+{% block content %}
+<div class="p-2">
+
+{% get_contact_form as contact %}
+    {% show_statemen_list contact %}
+    
+    <div class="card p-3 mt-3 ">
+        {% show_statemen_form contact %}
+        
+        <div class="p-2 text-center mt-2">
+            {% show_contacts contact %}  
+        </div>
+
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+<div class="card m-0 p-2">      
+    <h4>
+        Удаление товара {{ product_delete.name }}
+    </h4>
+    <div class="card-body p-0">
+        <form action="{% url 'catalog:delete' product_delete.url %}" method="post">
+            {% csrf_token %}
+            <p>
+                Вы уверены что хотите удалить {{ product_delete.name }}?
+            </p>
+            <button type="submit" class="btn btn-danger me-2">Удалить</button>
+            <a href="{% url 'catalog:product' product_delete.url %}" class="btn border" style="box-shadow: 0 1px 2px 0 rgba(0,0,0,.16);">Отменить</a>
+        </form>
+    </div>
+</div>
+{% endblock content %}

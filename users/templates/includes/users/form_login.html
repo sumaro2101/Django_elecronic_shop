@@ -1,0 +1,28 @@
+{% load static %}
+
+<h3 class="text-center">Авторизация</h3>
+<div class="card m-2 p-3">
+    <form class=" d-flex justify-content-center mb-4 p-2" action="{% url 'users:login' %}" method="post">
+
+        <div class="d-flex flex-column align-items-start" style="width: 350px;">
+            {% csrf_token %}
+            <input  type="hidden" name="text" value="{{ next }}"/>
+            {% if form.non_field_errors %}
+            <div class="form-error">{{ form.non_field_errors }}</div>
+            {% endif %}
+
+            <label class="form-label" for="id_username">Имя пользователя или Эмеил</label>
+            <input class="form-control" autofocus="true" {% if form.username.value %}value="{{ form.username.value }}"{% endif %} type="text" placeholder="Введите имя пользователя или Эмеил" name="username" id="id_username" maxlength="150" required>
+            <div class="form-error">{{ form.username.error }}</div>
+
+            <label class="form-label mt-3" for="id_password">{{ form.password.label }}</label>
+            <input class="form-control" autocomplete="current-password" placeholder="Введите пароль" type="password" name="password" id="id_password" required>
+
+            <button class="btn mt-2 border" style="box-shadow: 0 1px 2px 0 rgba(0,0,0,.16);" type="submit">Войти</button>
+        </div>
+    </form>
+    <div class="d-flex justify-content-center">
+        <a class="me-4 link-underline-dark text-black" href="{% url 'users:password_way' %}">Забыли пароль?</a>
+        <a class="link-underline-dark text-black" href="{% url 'users:reg' %}">Регистрация!</a>
+    </div>
+</div>

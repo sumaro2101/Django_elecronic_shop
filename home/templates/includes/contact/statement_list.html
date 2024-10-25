@@ -1,0 +1,12 @@
+
+<h7 class="ps-2">{{ text }}</h7>
+
+<ul class="mt-2 mb-4 list-group list-group-flush">
+    {% for item in statement %}
+    <li class="list-group-item bg-body-tertiary" style="font-size: 15px;">{{ item }}</li>
+    {% empty %}
+    <li class="list-group-item bg-body-tertiary" style="font-size: 15px;">В разработке</li>
+    {% endfor %}
+</ul>
+
+<h7 class="ps-2" style="font-size: 16px;">{{ text_title_form }}</h7>

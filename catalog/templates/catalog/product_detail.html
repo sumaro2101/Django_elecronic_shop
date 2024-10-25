@@ -1,0 +1,97 @@
+{% extends "index.html" %}
+{% load static %}
+{% load tags_filter %}
+
+{% block content %}
+{% include 'includes/catalog/path_nav.html' %}
+<div class="card m-0 p-2">      
+    <div class="d-flex justify-content-between">
+      <h4 class="card-title mt-2 ms-2">{{item.name}} {% if item.is_new %}<span class="badge text-bg-secondary ms-2">NEW</span>{% endif %}{% if item.is_sale %}<span class="badge ms-2" style="background-color: rgb(0, 173, 181);">SALE</span>{% endif %}</h4>
+      <div>
+        {% if request.user == item.owner or moderator or request.user.is_superuser %}
+        <a href="{% url 'catalog:update' item.url %}" class="btn border" style="box-shadow: 0 1px 2px 0 rgba(0,0,0,.16);">Изменить</a>
+        {% endif %}
+        {% if perms.catalog.delete_product %}
+        <a href="{% url 'catalog:delete' item.url %}" class="btn border" style="box-shadow: 0 1px 2px 0 rgba(0,0,0,.16);">Удалить</a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="card-body bg-body-tertiary p-3 rounded card_big_style">
+        <div id="carouselExampleRide" class="carousel slide my-3 card_big_images" data-bs-ride="true">
+            <div class="carousel-inner card_big_images_carousel card-main-picture-slider">
+              <div class="carousel-item active">
+                {% if item.image_item %}
+                <img src="{{ item.image_item.url }}" class="d-block w-auto card-style-image" alt="{{ item.name }}">
+                {% else %}
+                <img src="{% static 'images/image not found.jpeg' %}" class="d-block w-auto card-style-image" alt="{{ item.name }}">
+                {% endif %}
+              </div>
+              <div class="carousel-item">
+                {% if item.image_item %}
+                <img src="{{ item.image_item.url }}" class="d-block w-auto card-style-image" alt="{{ item.name }}">
+                {% else %}
+                <img src="{% static 'images/image not found.jpeg' %}" class="d-block w-auto card-style-image" alt="{{ item.name }}">
+                {% endif %}
+              </div>
+              <div class="carousel-item">
+                {% if item.image_item %}
+                <img src="{{ item.image_item.url }}" class="d-block w-auto card-style-image" alt="{{ item.name }}">
+                {% else %}
+                <img src="{% static 'images/image not found.jpeg' %}" class="d-block w-auto card-style-image" alt="{{ item.name }}">
+                {% endif %}
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+              <span class="visually-hidden">Предыдущая</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+              <span class="visually-hidden">Следующая</span>
+            </button>
+        </div>
+        <div class="card-style-brand">
+          <div>
+            ядер - 6x(3.46 ГГц), 6 ГБ, 1 SIM, Super Retina XDR, 2556x1179, камера 48+12 Мп, NFC, 5G, GPS, 3349 мА*ч 
+          </div>
+        </div>
+        <a href="" class="card-style-brand-img-a" >
+          {% if company_logo %}
+          <img src="{{ company_logo.url }}" class="card-style-brand-img" alt="{{ item.name }}">
+          {% else %}
+          <img src="{% static 'images/image not found.jpeg' %}" class="card-style-brand-img" alt="{{ item.name }}">
+          {% endif %}
+        </a>
+        <div class="card-style-buy">
+          <div class="card-style-buy-block">
+            <div class="card-style-buy-price">
+              {% if item.is_sale %}
+                <div style="font-size: 22px;">{{ item.price|discount:item.discount }} ₽</div>
+                <div class="text-secondary text-decoration-line-through" style="font-size: 14px;">{{ item.price|round_dicimal }} ₽</div>
+              {% else %}
+                  <div style="font-size: 22px;">{{ item.price|round_dicimal }} ₽</div>
+              {% endif %}
+            </div>
+            <button class="card-style-button-buy">Купить</button>
+          </div>
+        </div>
+        <div class="card-style-descr">
+          <h5 class="mt-3">Описание</h5>
+            <p>{{ item.descriptions }}</p>
+            {% if version %}
+            <div>
+              <h6>
+                Тип операционной системы
+              </h6>
+              <p>
+                {{ version.os_name }}: {{ version.os_number }}
+              </p>
+            </div>
+            {% endif %}
+        </div>
+        
+    </div>
+    
+</div>
+
+{% endblock content %}
